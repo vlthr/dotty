@@ -1,0 +1,54 @@
+<p>The <a href="https://github.com/lampepfl/dotty">Dotty project</a>
+is a platform to develop new technology for Scala
+tooling and to try out concepts of future Scala language versions.
+Its compiler is a new design intended to reflect the
+lessons we learned from work with the Scala compiler. A clean redesign
+today will let us iterate faster with new ideas in the future.</p>
+<p>Today we reached an important milestone: the Dotty compiler can
+compile itself, and the compiled compiler can act as a drop-in for the
+original one. This is what one calls a <em>bootstrap</em>.</p>
+<!--more-->
+<h2><a href="#why-is-this-important" id="why-is-this-important">Why is this important?</a></h2>
+<p>The main reason is that this gives us a some validation of the
+<em>trustworthiness</em> of the compiler itself. Compilers are complex beasts,
+and many things can go wrong. By far the worst things that can go
+wrong are bugs where incorrect code is produced. It's not fun debugging code that looks perfectly
+fine, yet gets translated to something subtly wrong by the compiler.</p>
+<p>Having the compiler compile itself is a good test to demonstrate that
+the generated code has reached a certain level of quality. Not only is
+a compiler a large program (44k lines in the case of dotty), it is
+also one that exercises a large part of the language in quite
+intricate ways. Moreover, bugs in the code of a compiler don't tend to
+go unnoticed, precisely because every part of a compiler feeds into
+other parts and all together are necessary to produce a correct
+translation.</p>
+<h2><a href="#are-we-done-yet" id="are-we-done-yet">Are we done yet?</a></h2>
+<p>Far from it! The compiler is still very rough. A lot more work is
+needed to</p>
+<ul>
+<li>make it more robust, in particular when analyzing incorrect programs,</li>
+<li>improve error messages and warnings,</li>
+<li>improve the efficiency of some of the generated code,</li>
+<li>improve compilation speed,</li>
+<li>embed it in external tools such as sbt, REPL, IDEs,</li>
+<li>remove restrictions on what Scala code can be compiled,</li>
+<li>help in migrating Scala code that will have to be changed.</li>
+</ul>
+<h2><a href="#what-are-the-next-steps" id="what-are-the-next-steps">What are the next steps?</a></h2>
+<p>Over the coming weeks and months, we plan to work on the following topics:</p>
+<ul>
+<li>Make snapshot releases.</li>
+<li>Work on SBT integration of the compiler.</li>
+<li>Work on IDE support.</li>
+<li>Investigate the best way to obtaining a REPL.</li>
+<li>Work on the build infrastructure.</li>
+</ul>
+<p>If you want to get your hands dirty with any of this, now is a good
+moment to get involved! Join the team of contributors, including
+Dmitry Petrashko (<a href="https://github.com/DarkDimius">@DarkDimius</a>),
+Guillaume Martres (<a href="https://github.com/smarter">@smarter</a>),
+Ondrey Lhotak (<a href="https://github.com/olhotak">@olhotak</a>),
+Samuel Gruetter (<a href="https://github.com/samuelgruetter">@samuelgruetter</a>),
+Vera Salvis (<a href="https://github.com/vsalvis">@vsalvis</a>),
+and Jason Zaugg (<a href="https://github.com/retronym">@retronym</a>).</p>
+<p>To get started: <a href="https://github.com/lampepfl/dotty">https://github.com/lampepfl/dotty</a>.</p>

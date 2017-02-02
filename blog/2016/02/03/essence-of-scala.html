@@ -1,0 +1,128 @@
+<p>What do you get if you boil Scala on a slow flame and wait until all
+incidental features evaporate and only the most concentrated essence
+remains? After doing this for 8 years we believe we have the answer:
+it's DOT, the calculus of dependent object types, that underlies Scala.</p>
+<p>A <a href="http://infoscience.epfl.ch/record/215280">paper on DOT</a> will be
+presented in April at <a href="http://events.inf.ed.ac.uk/wf2016">Wadlerfest</a>,
+an event celebrating Phil Wadler's 60th birthday. There's also a prior
+technical report (<a href="http://arxiv.org/abs/1510.05216">From F to DOT</a>)
+by Tiark Rompf and Nada Amin describing a slightly different version
+of the calculus. Each paper describes a proof of type soundness that
+has been machine-checked for correctness.</p>
+<h2><a href="#the-dot-calculus" id="the-dot-calculus">The DOT calculus</a></h2>
+<p>A calculus is a kind of mini-language that is small enough to be
+studied formally. Translated to Scala notation, the language covered
+by DOT is described by the following abstract grammar:</p>
+<pre><code>Value       v  =  (x: T) =&gt; t            Function
+                  new { x: T =&gt; ds }     Object
+
+Definition  d  =  def a = t              Method definition
+                  type A = T             Type
+
+Term        t  =  v                      Value
+                  x                      Variable
+                  t1(t2)                 Application
+                  t.a                    Selection
+                  { val x = t1; t2 }     Local definition
+
+Type        T  =  Any                    Top type
+                  Nothing                Bottom type
+                  x.A                    Selection
+                  (x: T1) =&gt; T2          Function
+                  { def a: T }           Method declaration
+                  { type T &gt;: T1 &lt;: T2 } Type declaration
+                  T1 &amp; T2                Intersection
+                  { x =&gt; T }             Recursion
+</code></pre>
+<p>The grammar uses several kinds of names:</p>
+<pre><code>x      for (immutable) variables
+a      for (parameterless) methods
+A      for types
+</code></pre>
+<p>The full calculus adds to this syntax formal <em>typing rules</em> that
+assign types <code>T</code> to terms <code>t</code> and formal <em>evaluation rules</em> that
+describe how a program is evaluated. The following <em>type soundness</em>
+property was shown with a mechanized, (i.e. machine-checked) proof:</p>
+<blockquote>
+<p>If a term <code>t</code> has type <code>T</code>, and the evaluation of <code>t</code> terminates, then
+the result of the evaluation will be a value <code>v</code> of type <code>T</code>.</p>
+</blockquote>
+<h2><a href="#difficulties" id="difficulties">Difficulties</a></h2>
+<p>Formulating the precise soundness theorem and proving it was unexpectedly hard,
+because it uncovered some technical challenges that had not been
+studied in depth before. In DOT - as well as in many programming languages -
+you can have conflicting definitions. For instance you might have an abstract
+type declaration in a base class with two conflicting aliases in subclasses:</p>
+<pre><code> trait Base { type A }
+ trait Sub1 extends Base { type A = String }
+ trait Sub2 extends Base { type A = Int }
+ trait Bad extends Sub1 with Sub2
+</code></pre>
+<p>Now, if you combine <code>Sub1</code> and <code>Sub2</code> in trait <code>Bad</code> you get a conflict,
+since the type <code>A</code> is supposed to be equal to both <code>String</code> and <code>Int</code>. If you do
+not detect the conflict and assume the equalities at face value you
+get <code>String = A = Int</code>, hence by transitivity <code>String = Int</code>! Once you
+are that far, you can of course engineer all sorts of situations where
+a program will typecheck but cause a wrong execution at runtime. In
+other words, type soundness is violated.</p>
+<p>Now, the problem is that one cannot always detect these
+inconsistencies, at least not by a local analysis that does not need
+to look at the whole program. What's worse, once you have an
+inconsistent set of definitions you can use these definitions to
+&quot;prove&quot; their own consistency - much like a mathematical theory that
+assumes <code>true = false</code> can &quot;prove&quot; every proposition including its own
+correctness.</p>
+<p>The crucial reason why type soundness still holds is this: If one
+compares <code>T</code> with an alias, one does so always relative to some <em>path</em>
+<code>x</code> that refers to the object containing <code>T</code>.  So it's really <code>x.T = Int</code>. Now, we can show that during evaluation every such path refers
+to some object that was created with a <code>new</code>, and that, furthermore,
+every such object has consistent type definitions. The tricky bit is
+to carefully distinguish between the full typing rules, which allow
+inconsistencies, and the typing rules arising from runtime values,
+which do not.</p>
+<h2><a href="#why-is-this-important" id="why-is-this-important">Why is This Important?</a></h2>
+<p>There are at least four reasons why insights obtained in the DOT
+project are important.</p>
+<ol>
+<li>
+<p>They give us a well-founded explanation of <em>nominal typing</em>.
+Nominal typing means that a type is distinguished from others
+simply by having a different name.
+For instance, given two trait definitions</p>
+<pre><code>  trait A extends AnyRef { def f: Int }
+  trait B extends AnyRef { def f: Int }
+</code></pre>
+<p>we consider <code>A</code> and <code>B</code> to be different types, even though both
+traits have the same parents and both define the same members.
+The opposite of
+nominal typing is structural typing, which treats types
+that have the same structure as being the same. Most programming
+languages are at least in part nominal whereas most formal type systems,
+including DOT, are structural. But the abstract types in DOT
+provide a way to express nominal types such as classes and traits.
+The Wadlerfest paper contains examples that show how
+one can express classes for standard types such as <code>Boolean</code> and <code>List</code> in DOT.</p>
+</li>
+<li>
+<p>They give us a stable basis on which we can study richer languages
+that resemble Scala more closely. For instance, we can encode
+type parameters as type members of objects in DOT. This encoding
+can give us a better understanding of the interactions of
+subtyping and generics. It can explain why variance rules
+are the way they are and what the precise typing rules for
+wildcard parameters <code>[_ &lt;: T]</code>, <code>[_ &gt;: T]</code> should be.</p>
+</li>
+<li>
+<p>DOT also provides a blueprint for Scala compilation. The new Scala
+compiler <em>dotty</em> has internal data structures that closely resemble DOT.
+In particular, type parameters are immediately mapped to type members,
+in the way we propose to encode them also in the calculus.</p>
+</li>
+<li>Finally, the proof principles explored in the DOT work give us guidelines
+to assess and treat other possible soundness issues. We now know much
+better what conditions must be fulfilled to ensure type soundness.
+This lets us put other constructs of the Scala language to the test,
+either to increase our confidence that they are indeed sound, or
+to show that they are unsound. In my next blog I will
+present some of the issues we have discovered through that exercise.</li>
+</ol>
