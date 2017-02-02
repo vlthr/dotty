@@ -7913,51 +7913,6 @@ was created, otherwise <code>null</code>.</p>
             </div>
         </div><!-- end member -->
         
-        <div id="dclText(sd)" class="member ">
-            <div class="member-title">
-                <span class="member-annotations">
-                    
-                </span>
-                <span class="member-modifiers">
-                    
-                </span>
-                <span class="member-kind">
-                    def
-                </span>
-                <span class="member-name ">
-                    
-                        dclText
-                    
-                </span>
-
-                
-                    
-                    <span class="no-left">(</span>
-                        
-                        
-                            <span class="no-left">
-                                sd:
-                            </span>
-                            SingleDenotation
-                            
-                        
-                    <span class="no-left">)</span>
-                    
-                
-
-                
-
-                
-                <span class="no-left">: Text</span>
-                
-            </div><!-- end member-title -->
-
-            <div class="member-body">
-                <p>Textual representation of single denotation's declaration</p>
-
-            </div>
-        </div><!-- end member -->
-        
         <div id="dclText(sym)" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
@@ -7999,6 +7954,51 @@ was created, otherwise <code>null</code>.</p>
 
             <div class="member-body">
                 <p>Textual representation of symbol's declaration</p>
+
+            </div>
+        </div><!-- end member -->
+        
+        <div id="dclText(sd)" class="member ">
+            <div class="member-title">
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        dclText
+                    
+                </span>
+
+                
+                    
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                sd:
+                            </span>
+                            SingleDenotation
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                
+
+                
+
+                
+                <span class="no-left">: Text</span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                <p>Textual representation of single denotation's declaration</p>
 
             </div>
         </div><!-- end member -->
@@ -12622,52 +12622,6 @@ It has</p>
             </div>
         </div><!-- end member -->
         
-        <div id="toText(sym)" class="member ">
-            <div class="member-title">
-                <span class="member-annotations">
-                    
-                </span>
-                <span class="member-modifiers">
-                    
-                </span>
-                <span class="member-kind">
-                    def
-                </span>
-                <span class="member-name ">
-                    
-                        toText
-                    
-                </span>
-
-                
-                    
-                    <span class="no-left">(</span>
-                        
-                        
-                            <span class="no-left">
-                                sym:
-                            </span>
-                            Symbol
-                            
-                        
-                    <span class="no-left">)</span>
-                    
-                
-
-                
-
-                
-                <span class="no-left">: Text</span>
-                
-            </div><!-- end member-title -->
-
-            <div class="member-body">
-                <p>Textual representation, including symbol's kind e.g., &quot;class Foo&quot;, &quot;method Bar&quot;.
-If hasMeaninglessName is true, uses the owner's name to disambiguate i...</p>
-
-            </div>
-        </div><!-- end member -->
-        
         <div id="toText(const)" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
@@ -12713,7 +12667,7 @@ If hasMeaninglessName is true, uses the owner's name to disambiguate i...</p>
             </div>
         </div><!-- end member -->
         
-        <div id="toText(tree)" class="member ">
+        <div id="toText(denot)" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
                     
@@ -12736,58 +12690,9 @@ If hasMeaninglessName is true, uses the owner's name to disambiguate i...</p>
                         
                         
                             <span class="no-left">
-                                tree:
+                                denot:
                             </span>
-                            <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Tree.html">Tree</a>
-<span class="no-left no-right">[</span>
-T
-<span class="no-left">]</span>
-                            
-                        
-                    <span class="no-left">)</span>
-                    
-                
-
-                
-
-                
-                <span class="no-left">: [T >: dotty.tools.dotc.ast.Trees.Untyped] => 
-  (tree: dotty.tools.dotc.ast.Trees.Tree[T])dotty.tools.dotc.printing.Texts.Text (not handled)</span>
-                
-            </div><!-- end member-title -->
-
-            <div class="member-body">
-                <p>Textual representation of tree</p>
-
-            </div>
-        </div><!-- end member -->
-        
-        <div id="toText(name)" class="member ">
-            <div class="member-title">
-                <span class="member-annotations">
-                    
-                </span>
-                <span class="member-modifiers">
-                    
-                </span>
-                <span class="member-kind">
-                    def
-                </span>
-                <span class="member-name ">
-                    
-                        toText
-                    
-                </span>
-
-                
-                    
-                    <span class="no-left">(</span>
-                        
-                        
-                            <span class="no-left">
-                                name:
-                            </span>
-                            Name
+                            Denotation
                             
                         
                     <span class="no-left">)</span>
@@ -12802,7 +12707,7 @@ T
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The name as a text</p>
+                <p>Textual representation of denotation</p>
 
             </div>
         </div><!-- end member -->
@@ -12852,7 +12757,7 @@ T
             </div>
         </div><!-- end member -->
         
-        <div id="toText(denot)" class="member ">
+        <div id="toText(sym)" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
                     
@@ -12875,9 +12780,9 @@ T
                         
                         
                             <span class="no-left">
-                                denot:
+                                sym:
                             </span>
-                            Denotation
+                            Symbol
                             
                         
                     <span class="no-left">)</span>
@@ -12892,7 +12797,57 @@ T
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Textual representation of denotation</p>
+                <p>Textual representation, including symbol's kind e.g., &quot;class Foo&quot;, &quot;method Bar&quot;.
+If hasMeaninglessName is true, uses the owner's name to disambiguate i...</p>
+
+            </div>
+        </div><!-- end member -->
+        
+        <div id="toText(tree)" class="member ">
+            <div class="member-title">
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        toText
+                    
+                </span>
+
+                
+                    
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                tree:
+                            </span>
+                            <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Tree.html">Tree</a>
+<span class="no-left no-right">[</span>
+T
+<span class="no-left">]</span>
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                
+
+                
+
+                
+                <span class="no-left">: [T >: dotty.tools.dotc.ast.Trees.Untyped] => 
+  (tree: dotty.tools.dotc.ast.Trees.Tree[T])dotty.tools.dotc.printing.Texts.Text (not handled)</span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                <p>Textual representation of tree</p>
 
             </div>
         </div><!-- end member -->
@@ -12983,6 +12938,51 @@ T
 
             <div class="member-body">
                 <p>Textual representation of type</p>
+
+            </div>
+        </div><!-- end member -->
+        
+        <div id="toText(name)" class="member ">
+            <div class="member-title">
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        toText
+                    
+                </span>
+
+                
+                    
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                name:
+                            </span>
+                            Name
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                
+
+                
+
+                
+                <span class="no-left">: Text</span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                <p>The name as a text</p>
 
             </div>
         </div><!-- end member -->
@@ -13644,7 +13644,7 @@ if squashing is enabled, phases in same subgroup will be sq...</p>
             </div>
         </div><!-- end member -->
         
-        <div id="wait(x$0,x$1)" class="member ">
+        <div id="wait()" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
                     
@@ -13665,20 +13665,6 @@ if squashing is enabled, phases in same subgroup will be sq...</p>
                     
                     <span class="no-left">(</span>
                         
-                        
-                            <span class="no-left">
-                                x$0:
-                            </span>
-                            Long
-                            
-                                <span class="no-left">, </span>
-                            
-                        
-                            <span class="">
-                                x$1:
-                            </span>
-                            Int
-                            
                         
                     <span class="no-left">)</span>
                     
@@ -13740,7 +13726,7 @@ if squashing is enabled, phases in same subgroup will be sq...</p>
             </div>
         </div><!-- end member -->
         
-        <div id="wait()" class="member ">
+        <div id="wait(x$0,x$1)" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
                     
@@ -13761,6 +13747,20 @@ if squashing is enabled, phases in same subgroup will be sq...</p>
                     
                     <span class="no-left">(</span>
                         
+                        
+                            <span class="no-left">
+                                x$0:
+                            </span>
+                            Long
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                x$1:
+                            </span>
+                            Int
+                            
                         
                     <span class="no-left">)</span>
                     

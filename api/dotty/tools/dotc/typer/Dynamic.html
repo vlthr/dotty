@@ -5334,13 +5334,21 @@
 
     
     <div id="entity-body" class="entity-section">
-        <p>Translates selection that does not typecheck according to the scala.Dynamic rules:
+        <p>Handles programmable member selections of <code>Dynamic</code> instances and values
+with structural types. Two functionalities:</p>
+<ol>
+<li>Translates selection that does not typecheck according to the scala.Dynamic rules:
 foo.bar(baz) = quux                   ~~&gt; foo.selectDynamic(bar).update(baz, quux)
 foo.bar = baz                         ~~&gt; foo.updateDynamic(&quot;bar&quot;)(baz)
 foo.bar(x = bazX, y = bazY, baz, ...) ~~&gt; foo.applyDynamicNamed(&quot;bar&quot;)((&quot;x&quot;, bazX), (&quot;y&quot;, bazY), (&quot;&quot;, baz), ...)
 foo.bar(baz0, baz1, ...)              ~~&gt; foo.applyDynamic(bar)(baz0, baz1, ...)
-foo.bar                               ~~&gt; foo.selectDynamic(bar)</p>
+foo.bar                               ~~&gt; foo.selectDynamic(bar)</li>
+</ol>
 <p>The first matching rule of is applied.</p>
+<ol>
+<li>Translates member selections on structural types to calls of <code>selectDynamic</code>
+or <code>selectDynamicMethod</code> on a <code>Selectable</code> instance. @See handleStructural.</li>
+</ol>
 
     </div>
     
@@ -5430,6 +5438,72 @@ foo.bar                               ~~&gt; foo.selectDynamic(bar)</p>
 
             <div class="member-body">
                 
+            </div>
+        </div><!-- end member -->
+        
+        <div id="handleStructural(tree)(ctx)" class="member ">
+            <div class="member-title">
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        handleStructural
+                    
+                </span>
+
+                
+                    
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                tree:
+                            </span>
+                            <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a>
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                    <span class="no-left">(</span>
+                        
+                        <span class="no-left keyword">implicit</span>
+                        
+                        
+                            <span class="no-left">
+                                ctx:
+                            </span>
+                            <a href="../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a>
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                
+
+                
+
+                
+                <span class="no-left">: Tree</span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                <p>Handle reflection-based dispatch for members of structural types.
+Given <code>x.a</code>, where <code>x</code> is of (widened) type <code>T</code> and <code>x.a</code> is of type <code>U</code>:</p>
+<p>If <code>U</code> is a value type,...</p>
+<p>[U]</p>
+<p></p>
+<p>[(T1,...,Tn) =&gt; R]</p>
+<p></p>
+<p>
+</p>
+
             </div>
         </div><!-- end member -->
         

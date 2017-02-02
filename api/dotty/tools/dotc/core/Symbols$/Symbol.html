@@ -10298,7 +10298,7 @@ of this run.</p>
                             <span class="no-left">
                                 fs:
                             </span>
-                            FlagConjunction
+                            FlagSet
                             
                                 <span class="no-left">, </span>
                             
@@ -10334,66 +10334,8 @@ of this run.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Has this denotation all of the flags in <code>fs</code> set, whereas none of the flags
+                <p>Has this denotation one of the flags in <code>fs</code> set, whereas none of the flags
 in <code>butNot</code> are set?</p>
-
-            </div>
-        </div><!-- end member -->
-        
-        <div id="is(fs)(ctx)" class="member ">
-            <div class="member-title">
-                <span class="member-annotations">
-                    
-                </span>
-                <span class="member-modifiers">
-                    
-                </span>
-                <span class="member-kind">
-                    def
-                </span>
-                <span class="member-name ">
-                    
-                        is
-                    
-                </span>
-
-                
-                    
-                    <span class="no-left">(</span>
-                        
-                        
-                            <span class="no-left">
-                                fs:
-                            </span>
-                            FlagConjunction
-                            
-                        
-                    <span class="no-left">)</span>
-                    
-                    <span class="no-left">(</span>
-                        
-                        <span class="no-left keyword">implicit</span>
-                        
-                        
-                            <span class="no-left">
-                                ctx:
-                            </span>
-                            Context
-                            
-                        
-                    <span class="no-left">)</span>
-                    
-                
-
-                
-
-                
-                <span class="no-left">: Boolean</span>
-                
-            </div><!-- end member-title -->
-
-            <div class="member-body">
-                <p>Has this denotation all of the flags in <code>fs</code> set?</p>
 
             </div>
         </div><!-- end member -->
@@ -10456,6 +10398,64 @@ in <code>butNot</code> are set?</p>
             </div>
         </div><!-- end member -->
         
+        <div id="is(fs)(ctx)" class="member ">
+            <div class="member-title">
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        is
+                    
+                </span>
+
+                
+                    
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                fs:
+                            </span>
+                            FlagConjunction
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                    <span class="no-left">(</span>
+                        
+                        <span class="no-left keyword">implicit</span>
+                        
+                        
+                            <span class="no-left">
+                                ctx:
+                            </span>
+                            Context
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                
+
+                
+
+                
+                <span class="no-left">: Boolean</span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                <p>Has this denotation all of the flags in <code>fs</code> set?</p>
+
+            </div>
+        </div><!-- end member -->
+        
         <div id="is(fs,butNot)(ctx)" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
@@ -10481,7 +10481,7 @@ in <code>butNot</code> are set?</p>
                             <span class="no-left">
                                 fs:
                             </span>
-                            FlagSet
+                            FlagConjunction
                             
                                 <span class="no-left">, </span>
                             
@@ -10517,7 +10517,7 @@ in <code>butNot</code> are set?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Has this denotation one of the flags in <code>fs</code> set, whereas none of the flags
+                <p>Has this denotation all of the flags in <code>fs</code> set, whereas none of the flags
 in <code>butNot</code> are set?</p>
 
             </div>
@@ -14832,7 +14832,7 @@ representing...
                             <span class="no-left">
                                 that: =&gt;
                             </span>
-                            SingleDenotation
+                            Denotation
                             
                         
                     <span class="no-left">)</span>
@@ -14842,12 +14842,13 @@ representing...
                 
 
                 
-                <span class="no-left">: SingleDenotation</span>
+                <span class="no-left">: Denotation</span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <p>If this denotation does not exist, fallback to alternative</p>
+
             </div>
         </div><!-- end member -->
         
@@ -14876,7 +14877,7 @@ representing...
                             <span class="no-left">
                                 that: =&gt;
                             </span>
-                            Denotation
+                            SingleDenotation
                             
                         
                     <span class="no-left">)</span>
@@ -14886,13 +14887,12 @@ representing...
                 
 
                 
-                <span class="no-left">: Denotation</span>
+                <span class="no-left">: SingleDenotation</span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If this denotation does not exist, fallback to alternative</p>
-
+                
             </div>
         </div><!-- end member -->
         
@@ -15819,6 +15819,63 @@ from source.</p>
             </div>
         </div><!-- end member -->
         
+        <div id="requiredMethod(name)(ctx)" class="member ">
+            <div class="member-title">
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        requiredMethod
+                    
+                </span>
+
+                
+                    
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                name:
+                            </span>
+                            PreName
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                    <span class="no-left">(</span>
+                        
+                        <span class="no-left keyword">implicit</span>
+                        
+                        
+                            <span class="no-left">
+                                ctx:
+                            </span>
+                            Context
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                
+
+                
+
+                
+                <span class="no-left">: TermSymbol</span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                
+            </div>
+        </div><!-- end member -->
+        
         <div id="requiredMethod(name,argTypes)(ctx)" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
@@ -15856,63 +15913,6 @@ from source.</p>
 <span class="no-left no-right">[</span>
 Type
 <span class="no-left">]</span>
-                            
-                        
-                    <span class="no-left">)</span>
-                    
-                    <span class="no-left">(</span>
-                        
-                        <span class="no-left keyword">implicit</span>
-                        
-                        
-                            <span class="no-left">
-                                ctx:
-                            </span>
-                            Context
-                            
-                        
-                    <span class="no-left">)</span>
-                    
-                
-
-                
-
-                
-                <span class="no-left">: TermSymbol</span>
-                
-            </div><!-- end member-title -->
-
-            <div class="member-body">
-                
-            </div>
-        </div><!-- end member -->
-        
-        <div id="requiredMethod(name)(ctx)" class="member ">
-            <div class="member-title">
-                <span class="member-annotations">
-                    
-                </span>
-                <span class="member-modifiers">
-                    
-                </span>
-                <span class="member-kind">
-                    def
-                </span>
-                <span class="member-name ">
-                    
-                        requiredMethod
-                    
-                </span>
-
-                
-                    
-                    <span class="no-left">(</span>
-                        
-                        
-                            <span class="no-left">
-                                name:
-                            </span>
-                            PreName
                             
                         
                     <span class="no-left">)</span>
@@ -16857,52 +16857,6 @@ as seen from subclasses.</p>
             </div>
         </div><!-- end member -->
         
-        <div id="showSummary(ctx)" class="member ">
-            <div class="member-title">
-                <span class="member-annotations">
-                    
-                </span>
-                <span class="member-modifiers">
-                    
-                </span>
-                <span class="member-kind">
-                    def
-                </span>
-                <span class="member-name ">
-                    
-                        showSummary
-                    
-                </span>
-
-                
-                    
-                    <span class="no-left">(</span>
-                        
-                        <span class="no-left keyword">implicit</span>
-                        
-                        
-                            <span class="no-left">
-                                ctx:
-                            </span>
-                            Context
-                            
-                        
-                    <span class="no-left">)</span>
-                    
-                
-
-                
-
-                
-                <span class="no-left">: String</span>
-                
-            </div><!-- end member-title -->
-
-            <div class="member-body">
-                
-            </div>
-        </div><!-- end member -->
-        
         <div id="showSummary(depth)(ctx)" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
@@ -16960,6 +16914,52 @@ as seen from subclasses.</p>
 Recursion depth is limited to some smallish value. Default is
 Config.summarizeDepth.</p>
 
+            </div>
+        </div><!-- end member -->
+        
+        <div id="showSummary(ctx)" class="member ">
+            <div class="member-title">
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        showSummary
+                    
+                </span>
+
+                
+                    
+                    <span class="no-left">(</span>
+                        
+                        <span class="no-left keyword">implicit</span>
+                        
+                        
+                            <span class="no-left">
+                                ctx:
+                            </span>
+                            Context
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                
+
+                
+
+                
+                <span class="no-left">: String</span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                
             </div>
         </div><!-- end member -->
         
@@ -18833,7 +18833,7 @@ and at signature <code>NotAMethod</code>.</p>
             </div>
         </div><!-- end member -->
         
-        <div id="wait(x$0,x$1)" class="member ">
+        <div id="wait()" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
                     
@@ -18854,20 +18854,6 @@ and at signature <code>NotAMethod</code>.</p>
                     
                     <span class="no-left">(</span>
                         
-                        
-                            <span class="no-left">
-                                x$0:
-                            </span>
-                            Long
-                            
-                                <span class="no-left">, </span>
-                            
-                        
-                            <span class="">
-                                x$1:
-                            </span>
-                            Int
-                            
                         
                     <span class="no-left">)</span>
                     
@@ -18929,7 +18915,7 @@ and at signature <code>NotAMethod</code>.</p>
             </div>
         </div><!-- end member -->
         
-        <div id="wait()" class="member ">
+        <div id="wait(x$0,x$1)" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
                     
@@ -18950,6 +18936,20 @@ and at signature <code>NotAMethod</code>.</p>
                     
                     <span class="no-left">(</span>
                         
+                        
+                            <span class="no-left">
+                                x$0:
+                            </span>
+                            Long
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                x$1:
+                            </span>
+                            Int
+                            
                         
                     <span class="no-left">)</span>
                     
