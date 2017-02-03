@@ -7913,51 +7913,6 @@ was created, otherwise <code>null</code>.</p>
             </div>
         </div><!-- end member -->
         
-        <div id="dclText(sym)" class="member ">
-            <div class="member-title">
-                <span class="member-annotations">
-                    
-                </span>
-                <span class="member-modifiers">
-                    
-                </span>
-                <span class="member-kind">
-                    def
-                </span>
-                <span class="member-name ">
-                    
-                        dclText
-                    
-                </span>
-
-                
-                    
-                    <span class="no-left">(</span>
-                        
-                        
-                            <span class="no-left">
-                                sym:
-                            </span>
-                            Symbol
-                            
-                        
-                    <span class="no-left">)</span>
-                    
-                
-
-                
-
-                
-                <span class="no-left">: Text</span>
-                
-            </div><!-- end member-title -->
-
-            <div class="member-body">
-                <p>Textual representation of symbol's declaration</p>
-
-            </div>
-        </div><!-- end member -->
-        
         <div id="dclText(sd)" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
@@ -7999,6 +7954,51 @@ was created, otherwise <code>null</code>.</p>
 
             <div class="member-body">
                 <p>Textual representation of single denotation's declaration</p>
+
+            </div>
+        </div><!-- end member -->
+        
+        <div id="dclText(sym)" class="member ">
+            <div class="member-title">
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        dclText
+                    
+                </span>
+
+                
+                    
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                sym:
+                            </span>
+                            Symbol
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                
+
+                
+
+                
+                <span class="no-left">: Text</span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                <p>Textual representation of symbol's declaration</p>
 
             </div>
         </div><!-- end member -->
@@ -12622,7 +12622,7 @@ It has</p>
             </div>
         </div><!-- end member -->
         
-        <div id="toText(const)" class="member ">
+        <div id="toText(name)" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
                     
@@ -12645,9 +12645,9 @@ It has</p>
                         
                         
                             <span class="no-left">
-                                const:
+                                name:
                             </span>
-                            Constant
+                            Name
                             
                         
                     <span class="no-left">)</span>
@@ -12662,52 +12662,7 @@ It has</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Textual representation of constant</p>
-
-            </div>
-        </div><!-- end member -->
-        
-        <div id="toText(denot)" class="member ">
-            <div class="member-title">
-                <span class="member-annotations">
-                    
-                </span>
-                <span class="member-modifiers">
-                    
-                </span>
-                <span class="member-kind">
-                    def
-                </span>
-                <span class="member-name ">
-                    
-                        toText
-                    
-                </span>
-
-                
-                    
-                    <span class="no-left">(</span>
-                        
-                        
-                            <span class="no-left">
-                                denot:
-                            </span>
-                            Denotation
-                            
-                        
-                    <span class="no-left">)</span>
-                    
-                
-
-                
-
-                
-                <span class="no-left">: Text</span>
-                
-            </div><!-- end member-title -->
-
-            <div class="member-body">
-                <p>Textual representation of denotation</p>
+                <p>The name as a text</p>
 
             </div>
         </div><!-- end member -->
@@ -12753,52 +12708,6 @@ It has</p>
 
             <div class="member-body">
                 <p>Textual representation of annotation</p>
-
-            </div>
-        </div><!-- end member -->
-        
-        <div id="toText(sym)" class="member ">
-            <div class="member-title">
-                <span class="member-annotations">
-                    
-                </span>
-                <span class="member-modifiers">
-                    
-                </span>
-                <span class="member-kind">
-                    def
-                </span>
-                <span class="member-name ">
-                    
-                        toText
-                    
-                </span>
-
-                
-                    
-                    <span class="no-left">(</span>
-                        
-                        
-                            <span class="no-left">
-                                sym:
-                            </span>
-                            Symbol
-                            
-                        
-                    <span class="no-left">)</span>
-                    
-                
-
-                
-
-                
-                <span class="no-left">: Text</span>
-                
-            </div><!-- end member-title -->
-
-            <div class="member-body">
-                <p>Textual representation, including symbol's kind e.g., &quot;class Foo&quot;, &quot;method Bar&quot;.
-If hasMeaninglessName is true, uses the owner's name to disambiguate i...</p>
 
             </div>
         </div><!-- end member -->
@@ -12897,6 +12806,142 @@ T
             </div>
         </div><!-- end member -->
         
+        <div id="toText(const)" class="member ">
+            <div class="member-title">
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        toText
+                    
+                </span>
+
+                
+                    
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                const:
+                            </span>
+                            Constant
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                
+
+                
+
+                
+                <span class="no-left">: Text</span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                <p>Textual representation of constant</p>
+
+            </div>
+        </div><!-- end member -->
+        
+        <div id="toText(sym)" class="member ">
+            <div class="member-title">
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        toText
+                    
+                </span>
+
+                
+                    
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                sym:
+                            </span>
+                            Symbol
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                
+
+                
+
+                
+                <span class="no-left">: Text</span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                <p>Textual representation, including symbol's kind e.g., &quot;class Foo&quot;, &quot;method Bar&quot;.
+If hasMeaninglessName is true, uses the owner's name to disambiguate i...</p>
+
+            </div>
+        </div><!-- end member -->
+        
+        <div id="toText(denot)" class="member ">
+            <div class="member-title">
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        toText
+                    
+                </span>
+
+                
+                    
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                denot:
+                            </span>
+                            Denotation
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                
+
+                
+
+                
+                <span class="no-left">: Text</span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                <p>Textual representation of denotation</p>
+
+            </div>
+        </div><!-- end member -->
+        
         <div id="toText(tp)" class="member ">
             <div class="member-title">
                 <span class="member-annotations">
@@ -12938,51 +12983,6 @@ T
 
             <div class="member-body">
                 <p>Textual representation of type</p>
-
-            </div>
-        </div><!-- end member -->
-        
-        <div id="toText(name)" class="member ">
-            <div class="member-title">
-                <span class="member-annotations">
-                    
-                </span>
-                <span class="member-modifiers">
-                    
-                </span>
-                <span class="member-kind">
-                    def
-                </span>
-                <span class="member-name ">
-                    
-                        toText
-                    
-                </span>
-
-                
-                    
-                    <span class="no-left">(</span>
-                        
-                        
-                            <span class="no-left">
-                                name:
-                            </span>
-                            Name
-                            
-                        
-                    <span class="no-left">)</span>
-                    
-                
-
-                
-
-                
-                <span class="no-left">: Text</span>
-                
-            </div><!-- end member-title -->
-
-            <div class="member-body">
-                <p>The name as a text</p>
 
             </div>
         </div><!-- end member -->
