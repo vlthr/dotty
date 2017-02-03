@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,6 +5333,17 @@
         <span id="entity-name">
             SafeSubstMap
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">TypeMap</span>
+            
+        </div>
+        
     </div>
 
     
@@ -5340,12 +5354,55 @@ of a TypeRef unless the name matches up with one of the substituted symbols.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">SafeSubstMap</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                from:
+                            </span>
+                            List
+<span class="no-left no-right">[</span>
+Symbol
+<span class="no-left">]</span>
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                to:
+                            </span>
+                            List
+<span class="no-left no-right">[</span>
+Type
+<span class="no-left">]</span>
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="from" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'from');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5366,17 +5423,37 @@ of a TypeRef unless the name matches up with one of the substituted symbols.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Symbol
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-from">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-from">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="to" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'to');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5397,17 +5474,37 @@ of a TypeRef unless the name matches up with one of the substituted symbols.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Type
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-to">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-to">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="apply(tp)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'apply(tp)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5446,8 +5543,24 @@ of a TypeRef unless the name matches up with one of the substituted symbols.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-apply(tp)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-apply(tp)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

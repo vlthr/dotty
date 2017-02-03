@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             dotty.tools.dotc.sbt
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="DefaultShowAPI$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'DefaultShowAPI$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,12 +5379,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-DefaultShowAPI$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-DefaultShowAPI$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ExtractAPI" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ExtractAPI');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5392,7 +5425,8 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>This phase sends a representation of the API of classes to sbt via callbacks.</p>
+                <div class="member-body-short" id="short-body-ExtractAPI">
+                    <p>This phase sends a representation of the API of classes to sbt via callbacks.</p>
 <p>This is used by sbt for incremental recompilation.</p>
 <p>See the documentation o...
 <a href="http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html">http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html</a>
@@ -5400,11 +5434,36 @@
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ExtractAPI">
+                    <p>This phase sends a representation of the API of classes to sbt via callbacks.</p>
+<p>This is used by sbt for incremental recompilation.</p>
+<p>See the documentation of <code>ExtractAPICollector</code>, <code>ExtractDependencies</code>,
+<code>ExtractDependenciesCollector</code> and
+<a href="http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html">http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html</a> for more
+information on incremental recompilation.</p>
+<p>The following flags affect this phase:
+-Yforce-sbt-phases
+-Ydump-sbt-inc</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ExtractAPICollector" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ExtractAPICollector');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5428,7 +5487,8 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Extracts full (including private members) API representation out of Symbols and Types.</p>
+                <div class="member-body-short" id="short-body-ExtractAPICollector">
+                    <p>Extracts full (including private members) API representation out of Symbols and Types.</p>
 <p>The exact representation used for each type is not important: th...
 </p>
 <p>
@@ -5447,11 +5507,62 @@
 <p>
 <a href="http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html#Hashing+an+API+representation">http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html#Hashing+an+API+representation</a></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ExtractAPICollector">
+                    <p>Extracts full (including private members) API representation out of Symbols and Types.</p>
+<p>The exact representation used for each type is not important: the only thing
+that matters is that a binary-incompatible or source-incompatible change to
+the API (for example, changing the signature of a method, or adding a parent
+to a class) should result in a change to the API representation so that sbt
+can recompile files that depend on this API.</p>
+<p>Note that we only records types as they are defined and never &quot;as seen from&quot;
+some other prefix because <code>Types#asSeenFrom</code> is a complex operation and
+doing it for every inherited member would be slow, and because the number
+of prefixes can be enormous in some cases:</p>
+<p>class Outer {
+type T &lt;: S
+type S
+class A extends Outer { /<em>...</em>/ }
+class B extends Outer { /<em>...</em>/ }
+class C extends Outer { /<em>...</em>/ }
+class D extends Outer { /<em>...</em>/ }
+class E extends Outer { /<em>...</em>/ }
+}</p>
+<p><code>S</code> might be refined in an arbitrary way inside <code>A</code> for example, this
+affects the type of <code>T</code> as seen from <code>Outer#A</code>, so we could record that, but
+the class <code>A</code> also contains itself as a member, so <code>Outer#A#A#A#...</code> is a
+valid prefix for <code>T</code>. Even if we avoid loops, we still have a combinatorial
+explosion of possible prefixes, like <code>Outer#A#B#C#D#E</code>.</p>
+<p>It is much simpler to record <code>T</code> once where it is defined, but that means
+that the API representation of <code>T</code> may not change even though <code>T</code> as seen
+from some prefix has changed. This is why in <code>ExtractDependencies</code> we need
+to traverse used types to not miss dependencies, see the documentation of
+<code>ExtractDependencies#usedTypeTraverser</code>.</p>
+<p>TODO: sbt does not store the full representation that we compute, instead it
+hashes parts of it to reduce memory usage, then to see if something changed,
+it compares the hashes instead of comparing the representations. We should
+investigate whether we can just directly compute hashes in this phase
+without going through an intermediate representation, see
+<a href="http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html#Hashing+an+API+representation">http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html#Hashing+an+API+representation</a></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ExtractDependencies" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ExtractDependencies');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5475,7 +5586,8 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>This phase sends information on classes' dependencies to sbt via callbacks.</p>
+                <div class="member-body-short" id="short-body-ExtractDependencies">
+                    <p>This phase sends information on classes' dependencies to sbt via callbacks.</p>
 <p>This is used by sbt for incremental recompilation. Briefly, when a file
 chan...
 </p>
@@ -5485,11 +5597,40 @@ chan...
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ExtractDependencies">
+                    <p>This phase sends information on classes' dependencies to sbt via callbacks.</p>
+<p>This is used by sbt for incremental recompilation. Briefly, when a file
+changes sbt will recompile it, if its API has changed (determined by what
+<code>ExtractAPI</code> sent) then sbt will determine which reverse-dependencies
+(determined by what <code>ExtractDependencies</code> sent) of the API have to be
+recompiled depending on what changed.</p>
+<p>See the documentation of <code>ExtractDependenciesCollector</code>, <code>ExtractAPI</code>,
+<code>ExtractAPICollector</code> and
+<a href="http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html">http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html</a> for more
+information on how sbt incremental compilation works.</p>
+<p>The following flags affect this phase:
+-Yforce-sbt-phases
+-Ydump-sbt-inc</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ExtractDependenciesCollector" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ExtractDependenciesCollector');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5513,16 +5654,39 @@ chan...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Extract the dependency information of a compilation unit.</p>
+                <div class="member-body-short" id="short-body-ExtractDependenciesCollector">
+                    <p>Extract the dependency information of a compilation unit.</p>
 <p>To understand why we track the used names see the section &quot;Name hashing
 algorithm&quot; in <a href="http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html">http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html</a>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ExtractDependenciesCollector">
+                    <p>Extract the dependency information of a compilation unit.</p>
+<p>To understand why we track the used names see the section &quot;Name hashing
+algorithm&quot; in <a href="http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html">http://www.scala-sbt.org/0.13/docs/Understanding-Recompilation.html</a>
+To understand why we need to track dependencies introduced by inheritance
+specially, see the subsection &quot;Dependencies introduced by member reference and
+inheritance&quot; in the &quot;Name hashing algorithm&quot; section.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SafeLazy$" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SafeLazy$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5546,12 +5710,29 @@ algorithm&quot; in <a href="http://www.scala-sbt.org/0.13/docs/Understanding-Rec
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-SafeLazy$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-SafeLazy$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ShowAPI$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ShowAPI$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5575,12 +5756,29 @@ algorithm&quot; in <a href="http://www.scala-sbt.org/0.13/docs/Understanding-Rec
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ShowAPI$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ShowAPI$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ThunkHolder" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ThunkHolder');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5604,10 +5802,28 @@ algorithm&quot; in <a href="http://www.scala-sbt.org/0.13/docs/Understanding-Rec
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create and hold thunks. A thunk is a (potentially) unevaluated value
+                <div class="member-body-short" id="short-body-ThunkHolder">
+                    <p>Create and hold thunks. A thunk is a (potentially) unevaluated value
 that may be evaluated once.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ThunkHolder">
+                    <p>Create and hold thunks. A thunk is a (potentially) unevaluated value
+that may be evaluated once.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

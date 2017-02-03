@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             PathResolver
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="Defaults$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Defaults$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,14 +5379,33 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Default values based on those in Environment as interpreted according
+                <div class="member-body-short" id="short-body-Defaults$">
+                    <p>Default values based on those in Environment as interpreted according
 to the path resolution specification.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Defaults$">
+                    <p>Default values based on those in Environment as interpreted according
+to the path resolution specification.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Environment$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Environment$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5394,13 +5429,31 @@ to the path resolution specification.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Values found solely by inspecting environment or property variables.</p>
+                <div class="member-body-short" id="short-body-Environment$">
+                    <p>Values found solely by inspecting environment or property variables.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Environment$">
+                    <p>Values found solely by inspecting environment or property variables.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="firstNonEmpty(xs)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'firstNonEmpty(xs)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5442,12 +5495,29 @@ String
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-firstNonEmpty(xs)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-firstNonEmpty(xs)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="fromPathString(path)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'fromPathString(path)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5499,12 +5569,29 @@ String
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-fromPathString(path)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-fromPathString(path)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="main(args)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'main(args)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5546,12 +5633,29 @@ String
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-main(args)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-main(args)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="makeAbsolute(cp)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'makeAbsolute(cp)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5590,13 +5694,31 @@ String
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Map all classpath elements to absolute paths and reconstruct the classpath.</p>
+                <div class="member-body-short" id="short-body-makeAbsolute(cp)">
+                    <p>Map all classpath elements to absolute paths and reconstruct the classpath.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-makeAbsolute(cp)">
+                    <p>Map all classpath elements to absolute paths and reconstruct the classpath.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ppcp(s)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ppcp(s)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5635,9 +5757,26 @@ String
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>pretty print class path</p>
+                <div class="member-body-short" id="short-body-ppcp(s)">
+                    <p>pretty print class path</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ppcp(s)">
+                    <p>pretty print class path</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

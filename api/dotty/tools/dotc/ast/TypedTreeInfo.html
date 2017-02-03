@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,38 @@
         <span id="entity-name">
             TypedTreeInfo
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">TreeInfo</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="closure$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'closure$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,13 +5388,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An extractor for closures, either contained in a block or standalone.</p>
+                <div class="member-body-short" id="short-body-closure$">
+                    <p>An extractor for closures, either contained in a block or standalone.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-closure$">
+                    <p>An extractor for closures, either contained in a block or standalone.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="closureBody(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'closureBody(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5421,13 +5464,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If tree is a closure, its body, otherwise tree itself</p>
+                <div class="member-body-short" id="short-body-closureBody(tree)(ctx)">
+                    <p>If tree is a closure, its body, otherwise tree itself</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-closureBody(tree)(ctx)">
+                    <p>If tree is a closure, its body, otherwise tree itself</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="constToLiteral(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'constToLiteral(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5479,7 +5540,8 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If <code>tree</code> is a constant expression, its value as a Literal,
+                <div class="member-body-short" id="short-body-constToLiteral(tree)(ctx)">
+                    <p>If <code>tree</code> is a constant expression, its value as a Literal,
 or <code>tree</code> itself otherwise.</p>
 <p>Note: Demanding idempotency instead of purity in literalize is stric...
 </p>
@@ -5502,11 +5564,53 @@ or <code>tree</code> itself otherwise.</p>
   TypeApply
 </code></pre>
 
+                </div>
+                <div class="member-body-long" id ="long-body-constToLiteral(tree)(ctx)">
+                    <p>If <code>tree</code> is a constant expression, its value as a Literal,
+or <code>tree</code> itself otherwise.</p>
+<p>Note: Demanding idempotency instead of purity in literalize is strictly speaking too loose.
+Example</p>
+<p>object O { final val x = 42; println(&quot;43&quot;) }
+O.x</p>
+<p>Strictly speaking we can't replace <code>O.x</code> with <code>42</code>.  But this would make
+most expressions non-constant. Maybe we can change the spec to accept this
+kind of eliding behavior. Or else enforce true purity in the compiler.
+The choice will be affected by what we will do with <code>inline</code> and with
+Singleton type bounds (see SIP 23). Presumably</p>
+<p>object O1 { val x: Singleton = 42; println(&quot;43&quot;) }
+object O2 { inline val x = 42; println(&quot;43&quot;) }</p>
+<p>should behave differently.</p>
+<p>O1.x  should have the same effect as   { println(&quot;43&quot;); 42 }</p>
+<p>whereas</p>
+<p>O2.x = 42</p>
+<p>Revisit this issue once we have implemented <code>inline</code>. Then we can demand
+purity of the prefix unless the selection goes to an inline val.</p>
+<p>Note: This method should be applied to all term tree nodes that are not literals,
+that can be idempotent, and that can have constant types. So far, only nodes
+of the following classes qualify:</p>
+<pre><code>  Ident
+  Select
+  TypeApply
+</code></pre>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="decomposeCall(tree)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'decomposeCall(tree)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5540,19 +5644,49 @@ or <code>tree</code> itself otherwise.</p>
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: <span class="no-right">(</span>
+Tree<span>, </span>List
+<span class="no-left no-right">[</span>
+Tree
+<span class="no-left">]</span><span>, </span>List
+<span class="no-left no-right">[</span>
+List
+<span class="no-left no-right">[</span>
+Tree
+<span class="no-left">]</span>
+<span class="no-left">]</span>
+<span class="no-left">)</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Decompose a call fn<a href="#">targs</a>...(vargs_n)
+                <div class="member-body-short" id="short-body-decomposeCall(tree)">
+                    <p>Decompose a call fn<a href="#">targs</a>...(vargs_n)
 into its constituents (where targs, vargss may be empty)</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-decomposeCall(tree)">
+                    <p>Decompose a call fn<a href="#">targs</a>...(vargs_n)
+into its constituents (where targs, vargss may be empty)</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="defPath(sym,root)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'defPath(sym,root)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5607,21 +5741,45 @@ into its constituents (where targs, vargss may be empty)</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Tree
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Going from child to parent, the path of tree nodes that starts
+                <div class="member-body-short" id="short-body-defPath(sym,root)(ctx)">
+                    <p>Going from child to parent, the path of tree nodes that starts
 with a definition of symbol <code>sym</code> and ends with <code>root</code>, or Nil
 if no such path exists.
 Pre: <code>sy...</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-defPath(sym,root)(ctx)">
+                    <p>Going from child to parent, the path of tree nodes that starts
+with a definition of symbol <code>sym</code> and ends with <code>root</code>, or Nil
+if no such path exists.
+Pre: <code>sym</code> must have a position.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="definedSym(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'definedSym(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5673,13 +5831,31 @@ Pre: <code>sy...</code></p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If <code>tree</code> is a DefTree, the symbol defined by it, otherwise NoSymbol</p>
+                <div class="member-body-short" id="short-body-definedSym(tree)(ctx)">
+                    <p>If <code>tree</code> is a DefTree, the symbol defined by it, otherwise NoSymbol</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-definedSym(tree)(ctx)">
+                    <p>If <code>tree</code> is a DefTree, the symbol defined by it, otherwise NoSymbol</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="definingStats(sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'definingStats(sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5726,21 +5902,45 @@ Pre: <code>sy...</code></p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Tree
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The statement sequence that contains a definition of <code>sym</code>, or Nil
+                <div class="member-body-short" id="short-body-definingStats(sym)(ctx)">
+                    <p>The statement sequence that contains a definition of <code>sym</code>, or Nil
 if none was found.
 For a tree to be found, The symbol must have a position and its defi...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-definingStats(sym)(ctx)">
+                    <p>The statement sequence that contains a definition of <code>sym</code>, or Nil
+if none was found.
+For a tree to be found, The symbol must have a position and its definition
+tree must be reachable from come tree stored in an enclosing context.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="exprPurity(tree)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'exprPurity(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5792,13 +5992,31 @@ For a tree to be found, The symbol must have a position and its defi...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The purity level of this expression.</p>
+                <div class="member-body-short" id="short-body-exprPurity(tree)(ctx)">
+                    <p>The purity level of this expression.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-exprPurity(tree)(ctx)">
+                    <p>The purity level of this expression.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isCatchCase(cdef)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isCatchCase(cdef)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5850,13 +6068,31 @@ For a tree to be found, The symbol must have a position and its defi...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is this pattern node a catch-all or type-test pattern?</p>
+                <div class="member-body-short" id="short-body-isCatchCase(cdef)(ctx)">
+                    <p>Is this pattern node a catch-all or type-test pattern?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isCatchCase(cdef)(ctx)">
+                    <p>Is this pattern node a catch-all or type-test pattern?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isIdempotentExpr(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isIdempotentExpr(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5908,12 +6144,29 @@ For a tree to be found, The symbol must have a position and its defi...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-isIdempotentExpr(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-isIdempotentExpr(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isIdempotentRef(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isIdempotentRef(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5965,12 +6218,29 @@ For a tree to be found, The symbol must have a position and its defi...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-isIdempotentRef(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-isIdempotentRef(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isPureExpr(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isPureExpr(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6022,12 +6292,29 @@ For a tree to be found, The symbol must have a position and its defi...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-isPureExpr(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-isPureExpr(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isPureRef(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isPureRef(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6079,12 +6366,29 @@ For a tree to be found, The symbol must have a position and its defi...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-isPureRef(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-isPureRef(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isSelf(tree,enclClass)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isSelf(tree,enclClass)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6144,13 +6448,31 @@ For a tree to be found, The symbol must have a position and its defi...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is tree a <code>this</code> node which belongs to <code>enclClass</code>?</p>
+                <div class="member-body-short" id="short-body-isSelf(tree,enclClass)(ctx)">
+                    <p>Is tree a <code>this</code> node which belongs to <code>enclClass</code>?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isSelf(tree,enclClass)(ctx)">
+                    <p>Is tree a <code>this</code> node which belongs to <code>enclClass</code>?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isSimpleThrowable(tp)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isSimpleThrowable(tp)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6202,12 +6524,29 @@ For a tree to be found, The symbol must have a position and its defi...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-isSimpleThrowable(tp)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-isSimpleThrowable(tp)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isStructuralTermSelect(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isStructuralTermSelect(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6259,14 +6598,33 @@ For a tree to be found, The symbol must have a position and its defi...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is this a selection of a member of a structural type that is not a member
+                <div class="member-body-short" id="short-body-isStructuralTermSelect(tree)(ctx)">
+                    <p>Is this a selection of a member of a structural type that is not a member
 of an underlying class or trait?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isStructuralTermSelect(tree)(ctx)">
+                    <p>Is this a selection of a member of a structural type that is not a member
+of an underlying class or trait?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isVariableOrGetter(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isVariableOrGetter(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6318,14 +6676,33 @@ of an underlying class or trait?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is tree a reference to a mutable variable, or to a potential getter
+                <div class="member-body-short" id="short-body-isVariableOrGetter(tree)(ctx)">
+                    <p>Is tree a reference to a mutable variable, or to a potential getter
 that has a setter in the same class?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isVariableOrGetter(tree)(ctx)">
+                    <p>Is tree a reference to a mutable variable, or to a potential getter
+that has a setter in the same class?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="localSyms(stats)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'localSyms(stats)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6375,18 +6752,39 @@ Tree
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Symbol
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The symbols defined locally in a statement list</p>
+                <div class="member-body-short" id="short-body-localSyms(stats)(ctx)">
+                    <p>The symbols defined locally in a statement list</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-localSyms(stats)(ctx)">
+                    <p>The symbols defined locally in a statement list</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="mayBeVarGetter(sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'mayBeVarGetter(sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6438,13 +6836,31 @@ Tree
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is symbol potentially a getter of a mutable variable?</p>
+                <div class="member-body-short" id="short-body-mayBeVarGetter(sym)(ctx)">
+                    <p>Is symbol potentially a getter of a mutable variable?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-mayBeVarGetter(sym)(ctx)">
+                    <p>Is symbol potentially a getter of a mutable variable?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="minOf(l0,ls)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'minOf(l0,ls)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6494,12 +6910,29 @@ PurityLevel
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-minOf(l0,ls)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-minOf(l0,ls)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="patVars(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'patVars(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6546,18 +6979,39 @@ PurityLevel
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Symbol
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The variables defined by a pattern, in reverse order of their appearance.</p>
+                <div class="member-body-short" id="short-body-patVars(tree)(ctx)">
+                    <p>The variables defined by a pattern, in reverse order of their appearance.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-patVars(tree)(ctx)">
+                    <p>The variables defined by a pattern, in reverse order of their appearance.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="refPurity(tree)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'refPurity(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6609,12 +7063,29 @@ PurityLevel
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-refPurity(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-refPurity(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="sliceTopLevel(tree,cls)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'sliceTopLevel(tree,cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6669,18 +7140,39 @@ PurityLevel
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Tree
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The tree containing only the top-level classes and objects matching either <code>cls</code> or its companion object</p>
+                <div class="member-body-short" id="short-body-sliceTopLevel(tree,cls)(ctx)">
+                    <p>The tree containing only the top-level classes and objects matching either <code>cls</code> or its companion object</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-sliceTopLevel(tree,cls)(ctx)">
+                    <p>The tree containing only the top-level classes and objects matching either <code>cls</code> or its companion object</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="statPurity(tree)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'statPurity(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6732,13 +7224,31 @@ PurityLevel
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The purity level of this statement.</p>
+                <div class="member-body-short" id="short-body-statPurity(tree)(ctx)">
+                    <p>The purity level of this statement.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-statPurity(tree)(ctx)">
+                    <p>The purity level of this statement.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="stripCast(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'stripCast(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6790,13 +7300,31 @@ PurityLevel
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Strips layers of <code>.asInstanceOf[T]</code> / <code>_.$asInstanceOf[T]()</code> from an expression</p>
+                <div class="member-body-short" id="short-body-stripCast(tree)(ctx)">
+                    <p>Strips layers of <code>.asInstanceOf[T]</code> / <code>_.$asInstanceOf[T]()</code> from an expression</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-stripCast(tree)(ctx)">
+                    <p>Strips layers of <code>.asInstanceOf[T]</code> / <code>_.$asInstanceOf[T]()</code> from an expression</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="topLevelClasses(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'topLevelClasses(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6843,15 +7371,36 @@ PurityLevel
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+ClassSymbol
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The top level classes in this tree, including only those module classes that
+                <div class="member-body-short" id="short-body-topLevelClasses(tree)(ctx)">
+                    <p>The top level classes in this tree, including only those module classes that
 are not a linked class of some other class in the result.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-topLevelClasses(tree)(ctx)">
+                    <p>The top level classes in this tree, including only those module classes that
+are not a linked class of some other class in the result.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

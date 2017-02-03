@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,38 @@
         <span id="entity-name">
             Companion
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">Entity</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="companionPath" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'companionPath');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5360,17 +5385,37 @@
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+String
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-companionPath">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-companionPath">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="companionPath_=(xs)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'companionPath_=(xs)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5412,12 +5457,29 @@ String
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-companionPath_=(xs)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-companionPath_=(xs)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hasCompanion" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hasCompanion');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5443,8 +5505,24 @@ String
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-hasCompanion">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-hasCompanion">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

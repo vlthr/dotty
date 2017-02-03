@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,61 @@
         <span id="entity-name">
             ClassUnpickler
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">LocalUnpickler</span>
+            
+            
+            <span class="keyword">with</span>
+            
+            <span class="entity-super-type">TypeParamsCompleter</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">ClassUnpickler</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                infoRef:
+                            </span>
+                            Int
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="infoRef" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'infoRef');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5365,12 +5413,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-infoRef">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-infoRef">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="completerTypeParams(sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'completerTypeParams(sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5417,18 +5482,39 @@
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+TypeSymbol
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The type parameters computed by the completer before completion has finished</p>
+                <div class="member-body-short" id="short-body-completerTypeParams(sym)(ctx)">
+                    <p>The type parameters computed by the completer before completion has finished</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-completerTypeParams(sym)(ctx)">
+                    <p>The type parameters computed by the completer before completion has finished</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="init()(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'init()(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5469,18 +5555,39 @@
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+TypeSymbol
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Force reading type params early, we need them in setClassInfo of subclasses.</p>
+                <div class="member-body-short" id="short-body-init()(ctx)">
+                    <p>Force reading type params early, we need them in setClassInfo of subclasses.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-init()(ctx)">
+                    <p>Force reading type params early, we need them in setClassInfo of subclasses.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="loadTypeParams(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'loadTypeParams(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5516,17 +5623,37 @@
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+TypeSymbol
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-loadTypeParams(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-loadTypeParams(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="readTypeParams()(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'readTypeParams()(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5567,13 +5694,32 @@
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+TypeSymbol
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-readTypeParams()(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-readTypeParams()(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

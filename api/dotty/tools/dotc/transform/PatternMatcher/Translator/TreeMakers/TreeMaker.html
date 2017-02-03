@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             abstract
         </span>
@@ -5330,16 +5333,41 @@
         <span id="entity-name">
             TreeMaker
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">TreeMaker</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="currSub" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'currSub');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5365,12 +5393,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-currSub">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-currSub">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="chainBefore(next)(casegen)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'chainBefore(next)(casegen)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5415,17 +5460,34 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-chainBefore(next)(casegen)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-chainBefore(next)(casegen)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="incorporateOuterRebinding(outerSubst)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'incorporateOuterRebinding(outerSubst)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5464,12 +5526,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-incorporateOuterRebinding(outerSubst)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-incorporateOuterRebinding(outerSubst)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="introducedRebindings" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'introducedRebindings');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5495,12 +5574,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-introducedRebindings">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-introducedRebindings">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="pos" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'pos');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5526,12 +5622,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-pos">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-pos">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="rebindings" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'rebindings');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5557,14 +5670,33 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>captures the scope and the value of the bindings in patterns
+                <div class="member-body-short" id="short-body-rebindings">
+                    <p>captures the scope and the value of the bindings in patterns
 important <em>when</em> the substitution happens (can't accumulate and do at once after the full ma...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-rebindings">
+                    <p>captures the scope and the value of the bindings in patterns
+important <em>when</em> the substitution happens (can't accumulate and do at once after the full matcher has been constructed)</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="subPatternsAsRebindings" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'subPatternsAsRebindings');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5590,7 +5722,8 @@ important <em>when</em> the substitution happens (can't accumulate and do at onc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The substitution that specifies the trees that compute the values of the subpattern binders.</p>
+                <div class="member-body-short" id="short-body-subPatternsAsRebindings">
+                    <p>The substitution that specifies the trees that compute the values of the subpattern binders.</p>
 <p>Should not be used to perform actual substitution!
 Only use...
 </p>
@@ -5599,7 +5732,30 @@ Only use...
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-subPatternsAsRebindings">
+                    <p>The substitution that specifies the trees that compute the values of the subpattern binders.</p>
+<p>Should not be used to perform actual substitution!
+Only used to reason symbolically about the values the subpattern binders are bound to.
+See TreeMakerToCond#updateSubstitution.</p>
+<p>Overridden in PreserveSubPatBinders to pretend it replaces the subpattern binders by subpattern refs
+(Even though we don't do so anymore -- see SI-5158, SI-5739 and SI-6070.)</p>
+<p>TODO: clean this up, would be nicer to have some higher-level way to compute
+the binders bound by this tree maker and the symbolic values that correspond to them</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             private
         </span>
@@ -5330,16 +5333,72 @@
         <span id="entity-name">
             ExplainingPrinter
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">RefinedPrinter</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">ExplainingPrinter</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                seen:
+                            </span>
+                            Seen
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">ExplainingPrinter</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                _ctx:
+                            </span>
+                            Context
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="_ctx" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_ctx');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5360,17 +5419,34 @@
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-_ctx">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-_ctx">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="seen" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'seen');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5396,12 +5472,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-seen">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-seen">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="polyParamNameString(param)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'polyParamNameString(param)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5440,12 +5533,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-polyParamNameString(param)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-polyParamNameString(param)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="simpleNameString(sym)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'simpleNameString(sym)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5484,10 +5594,28 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The name of the symbol without a unique id. Under refined printing,
+                <div class="member-body-short" id="short-body-simpleNameString(sym)">
+                    <p>The name of the symbol without a unique id. Under refined printing,
 the decoded original name.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-simpleNameString(sym)">
+                    <p>The name of the symbol without a unique id. Under refined printing,
+the decoded original name.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

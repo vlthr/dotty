@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,17 @@
         <span id="entity-name">
             Completer
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type"><a href="../../../../../.././api/dotty/tools/dotc/core/SymDenotations$/LazyType.html">LazyType</a></span>
+            
+        </div>
+        
     </div>
 
     
@@ -5339,12 +5353,59 @@
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Completer</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                original:
+                            </span>
+                            Tree
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Completer</span>
+                    <span class="no-left">(</span>
+                        
+                        <span class="no-left keyword">implicit</span>
+                        
+                        
+                            <span class="no-left">
+                                ctx:
+                            </span>
+                            Context
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="ctx" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ctx');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5365,17 +5426,34 @@
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ctx">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ctx">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="original" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'original');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5396,17 +5474,34 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-original">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-original">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="addInlineInfo(denot)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'addInlineInfo(denot)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5445,12 +5540,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-addInlineInfo(denot)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-addInlineInfo(denot)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="complete(denot)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'complete(denot)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5502,13 +5614,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Sets all missing fields of given denotation</p>
+                <div class="member-body-short" id="short-body-complete(denot)(ctx)">
+                    <p>Sets all missing fields of given denotation</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-complete(denot)(ctx)">
+                    <p>Sets all missing fields of given denotation</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="completeInCreationContext(denot)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'completeInCreationContext(denot)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5547,14 +5677,33 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Intentionally left without <code>implicit ctx</code> parameter. We need
+                <div class="member-body-short" id="short-body-completeInCreationContext(denot)">
+                    <p>Intentionally left without <code>implicit ctx</code> parameter. We need
 to pick up the context at the point where the completer was created.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-completeInCreationContext(denot)">
+                    <p>Intentionally left without <code>implicit ctx</code> parameter. We need
+to pick up the context at the point where the completer was created.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="creationContext" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'creationContext');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5575,18 +5724,36 @@ to pick up the context at the point where the completer was created.</p>
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The context with which this completer was created</p>
+                <div class="member-body-short" id="short-body-creationContext">
+                    <p>The context with which this completer was created</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-creationContext">
+                    <p>The context with which this completer was created</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="localContext(owner)" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'localContext(owner)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5620,17 +5787,34 @@ to pick up the context at the point where the completer was created.</p>
                 
 
                 
-                <span class="no-left">: FreshContext</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Contexts$/FreshContext.html">FreshContext</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-localContext(owner)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-localContext(owner)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typeSig(sym)" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typeSig(sym)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5664,13 +5848,29 @@ to pick up the context at the point where the completer was created.</p>
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typeSig(sym)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typeSig(sym)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,27 @@
         <span id="entity-name">
             TreeChecker
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">DotClass</span>
+            
+            
+            <span class="keyword">with</span>
+            
+            <span class="entity-super-type"><a href="../../../../.././api/dotty/tools/dotc/core/Phases$/Phase.html">Phase</a></span>
+            
+            
+            <span class="keyword">with</span>
+            
+            <span class="entity-super-type"><a href="../../../../.././api/dotty/tools/dotc/core/DenotTransformers$/SymTransformer.html">SymTransformer</a></span>
+            
+        </div>
+        
     </div>
 
     
@@ -5348,12 +5372,35 @@ represented as TypeTrees then).</li>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">TreeChecker</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="Checker" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Checker');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5377,12 +5424,29 @@ represented as TypeTrees then).</li>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-Checker">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-Checker">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoSuperClass" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoSuperClass');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5403,17 +5467,34 @@ represented as TypeTrees then).</li>
                 
 
                 
-                <span class="no-left">: FlagSet</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Flags$/FlagSet.html">FlagSet</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-NoSuperClass">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-NoSuperClass">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="seenClasses" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'seenClasses');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5434,17 +5515,37 @@ represented as TypeTrees then).</li>
                 
 
                 
-                <span class="no-left">: HashMap</span>
+                <span class="no-left">: HashMap
+<span class="no-left no-right">[</span>
+String<span class="">, </span><a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-seenClasses">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-seenClasses">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="seenModuleVals" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'seenModuleVals');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5465,17 +5566,37 @@ represented as TypeTrees then).</li>
                 
 
                 
-                <span class="no-left">: HashMap</span>
+                <span class="no-left">: HashMap
+<span class="no-left no-right">[</span>
+String<span class="">, </span><a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-seenModuleVals">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-seenModuleVals">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="check(phasesToRun,ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'check(phasesToRun,ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5520,17 +5641,34 @@ represented as TypeTrees then).</li>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-check(phasesToRun,ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-check(phasesToRun,ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="checkCompanion(symd)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'checkCompanion(symd)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5582,12 +5720,29 @@ represented as TypeTrees then).</li>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-checkCompanion(symd)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-checkCompanion(symd)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isValidJVMMethodName(name)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isValidJVMMethodName(name)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5626,12 +5781,29 @@ represented as TypeTrees then).</li>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-isValidJVMMethodName(name)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-isValidJVMMethodName(name)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isValidJVMName(name)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isValidJVMName(name)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5670,12 +5842,29 @@ represented as TypeTrees then).</li>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-isValidJVMName(name)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-isValidJVMName(name)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="phaseName" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'phaseName');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5701,14 +5890,35 @@ represented as TypeTrees then).</li>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A name given to the <code>Phase</code> that can be used to debug the compiler. For
+                <div class="member-body-short" id="short-body-phaseName">
+                    <p>A name given to the <code>Phase</code> that can be used to debug the compiler. For
 instance, it is possible to print trees after a given phase using:</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-phaseName">
+                    <p>A name given to the <code>Phase</code> that can be used to debug the compiler. For
+instance, it is possible to print trees after a given phase using:</p>
+<pre><code class="language-bash">$ ./bin/dotc -Xprint:&lt;phaseNameHere&gt; sourceFile.scala
+</code></pre>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="previousPhases(phases)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'previousPhases(phases)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5758,17 +5968,37 @@ instance, it is possible to print trees after a given phase using:</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Phases$/Phase.html">Phase</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-previousPhases(phases)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-previousPhases(phases)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="printError(str)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'printError(str)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5820,12 +6050,29 @@ instance, it is possible to print trees after a given phase using:</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-printError(str)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-printError(str)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="run(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'run(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5866,12 +6113,29 @@ instance, it is possible to print trees after a given phase using:</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-run(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-run(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="testDuplicate(sym,registry,typ)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'testDuplicate(sym,registry,typ)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5942,12 +6206,29 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dotc/cor
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-testDuplicate(sym,registry,typ)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-testDuplicate(sym,registry,typ)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="transformSym(symd)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'transformSym(symd)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5994,13 +6275,29 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dotc/cor
                 
 
                 
-                <span class="no-left">: SymDenotation</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/SymDenotations$/SymDenotation.html">SymDenotation</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-transformSym(symd)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-transformSym(symd)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

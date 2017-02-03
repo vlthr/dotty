@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             SuperAccessors
         </span>
+        
+        
     </div>
 
     
@@ -5351,12 +5356,41 @@ there are no abstract members which override this member in Java's rules
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">SuperAccessors</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                thisTransformer:
+                            </span>
+                            DenotTransformer
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="accDefs" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'accDefs');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5377,18 +5411,42 @@ there are no abstract members which override this member in Java's rules
                 
 
                 
-                <span class="no-left">: Map</span>
+                <span class="no-left">: Map
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a><span class="">, </span>ListBuffer
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a>
+<span class="no-left">]</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>List buffers for new accessor definitions, indexed by class</p>
+                <div class="member-body-short" id="short-body-accDefs">
+                    <p>List buffers for new accessor definitions, indexed by class</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-accDefs">
+                    <p>List buffers for new accessor definitions, indexed by class</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="invalidEnclClass" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'invalidEnclClass');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5409,12 +5467,13 @@ there are no abstract members which override this member in Java's rules
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Some parts of trees will get a new owner in subsequent phases.
+                <div class="member-body-short" id="short-body-invalidEnclClass">
+                    <p>Some parts of trees will get a new owner in subsequent phases.
 These are value class methods, which will become extension methods.
 (By-name arguments us...
 </p>
@@ -5423,11 +5482,36 @@ These are value class methods, which will become extension methods.
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-invalidEnclClass">
+                    <p>Some parts of trees will get a new owner in subsequent phases.
+These are value class methods, which will become extension methods.
+(By-name arguments used to be included also, but these
+don't get a new class anymore, they are just wrapped in a new method).</p>
+<p>These regions will have to be treated specially for the purpose
+of adding accessors. For instance, super calls from these regions
+always have to go through an accessor.</p>
+<p>The <code>invalidEnclClass</code> field, if different from NoSymbol,
+contains the symbol that is not a valid owner.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="thisTransformer" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'thisTransformer');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5448,17 +5532,34 @@ These are value class methods, which will become extension methods.
                 
 
                 
-                <span class="no-left">: DenotTransformer</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/DenotTransformers$/DenotTransformer.html">DenotTransformer</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-thisTransformer">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-thisTransformer">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ensureProtectedAccessOK(sel,targs)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ensureProtectedAccessOK(sel,targs)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5516,19 +5617,38 @@ These are value class methods, which will become extension methods.
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Replace <code>sel</code> (or <code>sel[targs]</code> if <code>targs</code> is nonempty) with a protected accessor
+                <div class="member-body-short" id="short-body-ensureProtectedAccessOK(sel,targs)(ctx)">
+                    <p>Replace <code>sel</code> (or <code>sel[targs]</code> if <code>targs</code> is nonempty) with a protected accessor
 call, if necessary.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ensureProtectedAccessOK(sel,targs)(ctx)">
+                    <p>Replace <code>sel</code> (or <code>sel[targs]</code> if <code>targs</code> is nonempty) with a protected accessor
+call, if necessary.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hostForAccessorOf(sym,referencingClass)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hostForAccessorOf(sym,referencingClass)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5583,21 +5703,42 @@ call, if necessary.</p>
                 
 
                 
-                <span class="no-left">: ClassSymbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/ClassSymbol.html">ClassSymbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Return the innermost enclosing class C of referencingClass for which either
+                <div class="member-body-short" id="short-body-hostForAccessorOf(sym,referencingClass)(ctx)">
+                    <p>Return the innermost enclosing class C of referencingClass for which either
 of the following holds:
 - C is a subclass of sym.owner or
 - C is declared in...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-hostForAccessorOf(sym,referencingClass)(ctx)">
+                    <p>Return the innermost enclosing class C of referencingClass for which either
+of the following holds:
+- C is a subclass of sym.owner or
+- C is declared in the same package as sym's owner</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="invalidEnclClass_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'invalidEnclClass_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5636,7 +5777,8 @@ of the following holds:
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Some parts of trees will get a new owner in subsequent phases.
+                <div class="member-body-short" id="short-body-invalidEnclClass_=(x$1)">
+                    <p>Some parts of trees will get a new owner in subsequent phases.
 These are value class methods, which will become extension methods.
 (By-name arguments us...
 </p>
@@ -5645,11 +5787,36 @@ These are value class methods, which will become extension methods.
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-invalidEnclClass_=(x$1)">
+                    <p>Some parts of trees will get a new owner in subsequent phases.
+These are value class methods, which will become extension methods.
+(By-name arguments used to be included also, but these
+don't get a new class anymore, they are just wrapped in a new method).</p>
+<p>These regions will have to be treated specially for the purpose
+of adding accessors. For instance, super calls from these regions
+always have to go through an accessor.</p>
+<p>The <code>invalidEnclClass</code> field, if different from NoSymbol,
+contains the symbol that is not a valid owner.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isDisallowed(sym)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isDisallowed(sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5701,14 +5868,33 @@ These are value class methods, which will become extension methods.
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Disallow some super.XX calls targeting Any methods which would
+                <div class="member-body-short" id="short-body-isDisallowed(sym)(ctx)">
+                    <p>Disallow some super.XX calls targeting Any methods which would
 otherwise lead to either a compiler crash or runtime failure.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isDisallowed(sym)(ctx)">
+                    <p>Disallow some super.XX calls targeting Any methods which would
+otherwise lead to either a compiler crash or runtime failure.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isProtectedAccessor(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isProtectedAccessor(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5760,12 +5946,29 @@ otherwise lead to either a compiler crash or runtime failure.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-isProtectedAccessor(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-isProtectedAccessor(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isThisType(tpe)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isThisType(tpe)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5817,13 +6020,31 @@ otherwise lead to either a compiler crash or runtime failure.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is 'tpe' a ThisType, or a type proxy with a ThisType as transitively underlying type?</p>
+                <div class="member-body-short" id="short-body-isThisType(tpe)(ctx)">
+                    <p>Is 'tpe' a ThisType, or a type proxy with a ThisType as transitively underlying type?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isThisType(tpe)(ctx)">
+                    <p>Is 'tpe' a ThisType, or a type proxy with a ThisType as transitively underlying type?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="needsProtectedAccessor(sym,pos)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'needsProtectedAccessor(sym,pos)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5883,18 +6104,47 @@ otherwise lead to either a compiler crash or runtime failure.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Does <code>sym</code> need an accessor when accessed from <code>currentClass</code>?
+                <div class="member-body-short" id="short-body-needsProtectedAccessor(sym,pos)(ctx)">
+                    <p>Does <code>sym</code> need an accessor when accessed from <code>currentClass</code>?
 A special case arises for classes with explicit self-types. If the
 self type is a Java class,...
 </p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-needsProtectedAccessor(sym,pos)(ctx)">
+                    <p>Does <code>sym</code> need an accessor when accessed from <code>currentClass</code>?
+A special case arises for classes with explicit self-types. If the
+self type is a Java class, and a protected accessor is needed, we issue
+an error. If the self type is a Scala class, we don't add an accessor.
+An accessor is not needed if the access boundary is larger than the
+enclosing package, since that translates to 'public' on the host sys.
+(as Java has no real package nesting).</p>
+<p>If the access happens inside a 'trait', access is more problematic since
+the implementation code is moved to an '$class' class which does not
+inherit anything. Since we can't (yet) add accessors for 'required'
+classes, this has to be signaled as error.
+FIXME Need to better understand this logic</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="protectedAccessor(tree,targs)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'protectedAccessor(tree,targs)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5952,17 +6202,34 @@ self type is a Java class,...
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-protectedAccessor(tree,targs)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-protectedAccessor(tree,targs)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="protectedAccessorCall(sel,targs)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'protectedAccessorCall(sel,targs)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6020,20 +6287,40 @@ self type is a Java class,...
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Add a protected accessor, if needed, and return a tree that calls
+                <div class="member-body-short" id="short-body-protectedAccessorCall(sel,targs)(ctx)">
+                    <p>Add a protected accessor, if needed, and return a tree that calls
 the accessor and returns the same member. The result is already
 typed.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-protectedAccessorCall(sel,targs)(ctx)">
+                    <p>Add a protected accessor, if needed, and return a tree that calls
+the accessor and returns the same member. The result is already
+typed.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="protectedSetter(tree)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'protectedSetter(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6080,17 +6367,34 @@ typed.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-protectedSetter(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-protectedSetter(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="superAccessorCall(sel)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'superAccessorCall(sel)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6137,18 +6441,36 @@ typed.</p>
                 
 
                 
-                <span class="no-left">: Select</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Select">Select</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A super accessor call corresponding to <code>sel</code></p>
+                <div class="member-body-short" id="short-body-superAccessorCall(sel)(ctx)">
+                    <p>A super accessor call corresponding to <code>sel</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-superAccessorCall(sel)(ctx)">
+                    <p>A super accessor call corresponding to <code>sel</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="transformAssign(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'transformAssign(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6195,18 +6517,36 @@ typed.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Transform assignment, adding a protected setter if needed</p>
+                <div class="member-body-short" id="short-body-transformAssign(tree)(ctx)">
+                    <p>Transform assignment, adding a protected setter if needed</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-transformAssign(tree)(ctx)">
+                    <p>Transform assignment, adding a protected setter if needed</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="transformSelect(tree,targs)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'transformSelect(tree,targs)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6264,18 +6604,36 @@ typed.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Transform select node, adding super and protected accessors as needed</p>
+                <div class="member-body-short" id="short-body-transformSelect(tree,targs)(ctx)">
+                    <p>Transform select node, adding super and protected accessors as needed</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-transformSelect(tree,targs)(ctx)">
+                    <p>Transform select node, adding super and protected accessors as needed</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="transformSuperSelect(sel)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'transformSuperSelect(sel)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6322,19 +6680,38 @@ typed.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Check selection <code>super.f</code> for conforming to rules. If necessary,
+                <div class="member-body-short" id="short-body-transformSuperSelect(sel)(ctx)">
+                    <p>Check selection <code>super.f</code> for conforming to rules. If necessary,
 replace by a super accessor call.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-transformSuperSelect(sel)(ctx)">
+                    <p>Check selection <code>super.f</code> for conforming to rules. If necessary,
+replace by a super accessor call.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="validCurrentClass(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'validCurrentClass(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6375,12 +6752,29 @@ replace by a super accessor call.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-validCurrentClass(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-validCurrentClass(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withInvalidCurrentClass(trans)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withInvalidCurrentClass(trans)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6432,12 +6826,29 @@ replace by a super accessor call.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-withInvalidCurrentClass(trans)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-withInvalidCurrentClass(trans)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="wrapDefDef(ddef)(op)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'wrapDefDef(ddef)(op)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6495,18 +6906,36 @@ replace by a super accessor call.</p>
                 
 
                 
-                <span class="no-left">: DefDef</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#DefDef">DefDef</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Wrap <code>DefDef</code> producing operation <code>op</code>, potentially setting <code>invalidClass</code> info</p>
+                <div class="member-body-short" id="short-body-wrapDefDef(ddef)(op)(ctx)">
+                    <p>Wrap <code>DefDef</code> producing operation <code>op</code>, potentially setting <code>invalidClass</code> info</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-wrapDefDef(ddef)(op)(ctx)">
+                    <p>Wrap <code>DefDef</code> producing operation <code>op</code>, potentially setting <code>invalidClass</code> info</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="wrapTemplate(tree)(op)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'wrapTemplate(tree)(op)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6564,14 +6993,31 @@ replace by a super accessor call.</p>
                 
 
                 
-                <span class="no-left">: Template</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Template">Template</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Wrap template to template transform <code>op</code> with needed initialization and finalization</p>
+                <div class="member-body-short" id="short-body-wrapTemplate(tree)(op)(ctx)">
+                    <p>Wrap template to template transform <code>op</code> with needed initialization and finalization</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-wrapTemplate(tree)(op)(ctx)">
+                    <p>Wrap template to template transform <code>op</code> with needed initialization and finalization</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

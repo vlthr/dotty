@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,56 @@
         <span id="entity-name">
             IterableMonoTransforms
         </span>
+        
+        <span id="entity-type-params">
+            <span class="no-left">[</span>
+            
+            <span class="no-left">
+                
+                    +A,
+                
+            </span>
+            
+            <span class="no-left">
+                
+                    +Repr
+                
+            </span>
+            
+            <span class="no-left">]</span>
+        </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">Any</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="coll" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'coll');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5360,17 +5403,37 @@
                 
 
                 
-                <span class="no-left">: Iterable</span>
+                <span class="no-left">: Iterable
+<span class="no-left no-right">[</span>
+A
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-coll">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-coll">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="drop(n)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'drop(n)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5409,12 +5472,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-drop(n)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-drop(n)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="filter(p)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'filter(p)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5453,12 +5533,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-filter(p)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-filter(p)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="fromLikeIterable(coll)" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'fromLikeIterable(coll)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5500,12 +5597,29 @@ A
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-fromLikeIterable(coll)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-fromLikeIterable(coll)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="partition(p)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'partition(p)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5539,17 +5653,36 @@ A
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: <span class="no-right">(</span>
+Repr<span>, </span>Repr
+<span class="no-left">)</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-partition(p)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-partition(p)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="to(fi)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'to(fi)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5586,13 +5719,32 @@ C
                 
 
                 
-                <span class="no-left">: C</span>
+                <span class="no-left">: C
+<span class="no-left no-right">[</span>
+A
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-to(fi)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-to(fi)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

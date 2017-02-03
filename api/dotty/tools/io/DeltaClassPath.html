@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,67 @@
         <span id="entity-name">
             DeltaClassPath
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">MergedClassPath</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section empty">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">DeltaClassPath</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                original:
+                            </span>
+                            MergedClassPath
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                subst:
+                            </span>
+                            Map
+<span class="no-left no-right">[</span>
+ClassPath<span class="">, </span>ClassPath
+<span class="no-left">]</span>
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section empty">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section empty">
         
         <div id="original" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'original');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5365,12 +5419,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-original">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-original">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="subst" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'subst');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5391,13 +5462,32 @@
                 
 
                 
-                <span class="no-left">: Map</span>
+                <span class="no-left">: Map
+<span class="no-left no-right">[</span>
+ClassPath<span class="">, </span>ClassPath
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-subst">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-subst">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

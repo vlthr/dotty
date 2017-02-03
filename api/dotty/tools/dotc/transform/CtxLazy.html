@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,20 @@
         <span id="entity-name">
             CtxLazy
         </span>
+        
+        <span id="entity-type-params">
+            <span class="no-left">[</span>
+            
+            <span class="no-left">
+                
+                    T
+                
+            </span>
+            
+            <span class="no-left">]</span>
+        </span>
+        
+        
     </div>
 
     
@@ -5344,12 +5361,41 @@ the expression intiializing the lazy val depends only on the root context, but n
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">CtxLazy</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                expr:
+                            </span>
+                            Context<span class="right-arrow"> =&gt; </span>T
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="expr" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'expr');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5370,17 +5416,34 @@ the expression intiializing the lazy val depends only on the root context, but n
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a><span class="right-arrow"> =&gt; </span>T</span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-expr">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-expr">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="forced" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'forced');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5406,12 +5469,29 @@ the expression intiializing the lazy val depends only on the root context, but n
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-forced">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-forced">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="myValue" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'myValue');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5437,12 +5517,29 @@ the expression intiializing the lazy val depends only on the root context, but n
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-myValue">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-myValue">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="apply()(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'apply()(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5488,12 +5585,29 @@ the expression intiializing the lazy val depends only on the root context, but n
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-apply()(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-apply()(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="forced_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'forced_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5532,12 +5646,29 @@ the expression intiializing the lazy val depends only on the root context, but n
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-forced_=(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-forced_=(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="myValue_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'myValue_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5576,8 +5707,24 @@ the expression intiializing the lazy val depends only on the root context, but n
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-myValue_=(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-myValue_=(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

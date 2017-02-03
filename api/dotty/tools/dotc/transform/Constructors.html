@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,22 @@
         <span id="entity-name">
             Constructors
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">MiniPhaseTransform</span>
+            
+            
+            <span class="keyword">with</span>
+            
+            <span class="entity-super-type"><a href="../../../../.././api/dotty/tools/dotc/core/DenotTransformers$/IdentityDenotTransformer.html">IdentityDenotTransformer</a></span>
+            
+        </div>
+        
     </div>
 
     
@@ -5343,12 +5362,35 @@ into the constructor if possible.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Constructors</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="MutableParamAccessor" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'MutableParamAccessor');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5374,12 +5416,29 @@ into the constructor if possible.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-MutableParamAccessor">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-MutableParamAccessor">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="retainedPrivateVals" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'retainedPrivateVals');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5400,17 +5459,37 @@ into the constructor if possible.</p>
                 
 
                 
-                <span class="no-left">: Set</span>
+                <span class="no-left">: Set
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-retainedPrivateVals">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-retainedPrivateVals">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="seenPrivateVals" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'seenPrivateVals');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5431,17 +5510,37 @@ into the constructor if possible.</p>
                 
 
                 
-                <span class="no-left">: Set</span>
+                <span class="no-left">: Set
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-seenPrivateVals">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-seenPrivateVals">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="checkPostCondition(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'checkPostCondition(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5493,15 +5592,35 @@ into the constructor if possible.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>All initializers for non-lazy fields should be moved into constructor.
+                <div class="member-body-short" id="short-body-checkPostCondition(tree)(ctx)">
+                    <p>All initializers for non-lazy fields should be moved into constructor.
 All non-abstract methods should be implemented (this is assured for constructors
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-checkPostCondition(tree)(ctx)">
+                    <p>All initializers for non-lazy fields should be moved into constructor.
+All non-abstract methods should be implemented (this is assured for constructors
+in this phase and for other methods in memoize).</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="markUsedPrivateSymbols(tree)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'markUsedPrivateSymbols(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5553,12 +5672,29 @@ All non-abstract methods should be implemented (this is assured for constructors
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-markUsedPrivateSymbols(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-markUsedPrivateSymbols(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="mightBeDropped(sym)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'mightBeDropped(sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5610,14 +5746,33 @@ All non-abstract methods should be implemented (this is assured for constructors
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Class members that can be eliminated if referenced only from their own
+                <div class="member-body-short" id="short-body-mightBeDropped(sym)(ctx)">
+                    <p>Class members that can be eliminated if referenced only from their own
 constructor.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-mightBeDropped(sym)(ctx)">
+                    <p>Class members that can be eliminated if referenced only from their own
+constructor.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="noDirectRefsFrom(tree)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'noDirectRefsFrom(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5669,12 +5824,29 @@ constructor.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-noDirectRefsFrom(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-noDirectRefsFrom(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="phaseName" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'phaseName');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5700,14 +5872,35 @@ constructor.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A name given to the <code>Phase</code> that can be used to debug the compiler. For
+                <div class="member-body-short" id="short-body-phaseName">
+                    <p>A name given to the <code>Phase</code> that can be used to debug the compiler. For
 instance, it is possible to print trees after a given phase using:</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-phaseName">
+                    <p>A name given to the <code>Phase</code> that can be used to debug the compiler. For
+instance, it is possible to print trees after a given phase using:</p>
+<pre><code class="language-bash">$ ./bin/dotc -Xprint:&lt;phaseNameHere&gt; sourceFile.scala
+</code></pre>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="runsAfter" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'runsAfter');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5728,18 +5921,42 @@ instance, it is possible to print trees after a given phase using:</p>
                 
 
                 
-                <span class="no-left">: Set</span>
+                <span class="no-left">: Set
+<span class="no-left no-right">[</span>
+Class
+<span class="no-left no-right">[</span>
+Nothing<span class="bounds"> &lt;: </span><a href="../../../../.././api/dotty/tools/dotc/core/Phases$/Phase.html">Phase</a>
+<span class="no-left">]</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>List of names of phases that should precede this phase</p>
+                <div class="member-body-short" id="short-body-runsAfter">
+                    <p>List of names of phases that should precede this phase</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-runsAfter">
+                    <p>List of names of phases that should precede this phase</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="transformIdent(tree)(ctx,info)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'transformIdent(tree)(ctx,info)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5794,17 +6011,34 @@ instance, it is possible to print trees after a given phase using:</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-transformIdent(tree)(ctx,info)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-transformIdent(tree)(ctx,info)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="transformSelect(tree)(ctx,info)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'transformSelect(tree)(ctx,info)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5859,17 +6093,34 @@ instance, it is possible to print trees after a given phase using:</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-transformSelect(tree)(ctx,info)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-transformSelect(tree)(ctx,info)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="transformTemplate(tree)(ctx,info)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'transformTemplate(tree)(ctx,info)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5924,17 +6175,34 @@ instance, it is possible to print trees after a given phase using:</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-transformTemplate(tree)(ctx,info)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-transformTemplate(tree)(ctx,info)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="transformValDef(tree)(ctx,info)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'transformValDef(tree)(ctx,info)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5989,13 +6257,29 @@ instance, it is possible to print trees after a given phase using:</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-transformValDef(tree)(ctx,info)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-transformValDef(tree)(ctx,info)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

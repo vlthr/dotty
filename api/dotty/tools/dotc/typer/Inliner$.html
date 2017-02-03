@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             Inliner
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="bodyAndAccessors(sym)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'bodyAndAccessors(sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5386,17 +5402,39 @@
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: <span class="no-right">(</span>
+<a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a><span>, </span>List
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#MemberDef">MemberDef</a>
+<span class="no-left">]</span>
+<span class="no-left">)</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-bodyAndAccessors(sym)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-bodyAndAccessors(sym)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="bodyToInline(sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'bodyToInline(sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5443,18 +5481,36 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The body to inline for method <code>sym</code>.</p>
+                <div class="member-body-short" id="short-body-bodyToInline(sym)(ctx)">
+                    <p>The body to inline for method <code>sym</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-bodyToInline(sym)(ctx)">
+                    <p>The body to inline for method <code>sym</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="dropInlined(inlined)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'dropInlined(inlined)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5501,18 +5557,36 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Replace <code>Inlined</code> node by a block that contains its bindings and expansion</p>
+                <div class="member-body-short" id="short-body-dropInlined(inlined)(ctx)">
+                    <p>Replace <code>Inlined</code> node by a block that contains its bindings and expansion</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-dropInlined(inlined)(ctx)">
+                    <p>Replace <code>Inlined</code> node by a block that contains its bindings and expansion</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hasBodyToInline(sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hasBodyToInline(sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5564,14 +5638,33 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p><code>sym</code> has an inline method with a known body to inline (note: definitions coming
+                <div class="member-body-short" id="short-body-hasBodyToInline(sym)(ctx)">
+                    <p><code>sym</code> has an inline method with a known body to inline (note: definitions coming
 from Scala2x class files might be <code>@inline</code>, but still lack that body.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-hasBodyToInline(sym)(ctx)">
+                    <p><code>sym</code> has an inline method with a known body to inline (note: definitions coming
+from Scala2x class files might be <code>@inline</code>, but still lack that body.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="inlineCall(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'inlineCall(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5626,19 +5719,38 @@ from Scala2x class files might be <code>@inline</code>, but still lack that body
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Try to inline a call to a <code>@inline</code> method. Fail with error if the maximal
+                <div class="member-body-short" id="short-body-inlineCall(tree,pt)(ctx)">
+                    <p>Try to inline a call to a <code>@inline</code> method. Fail with error if the maximal
 inline depth is exceeded.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-inlineCall(tree,pt)(ctx)">
+                    <p>Try to inline a call to a <code>@inline</code> method. Fail with error if the maximal
+inline depth is exceeded.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="makeInlineable(tree)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'makeInlineable(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5685,21 +5797,42 @@ inline depth is exceeded.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Adds accessors accessors for all non-public term members accessed
+                <div class="member-body-short" id="short-body-makeInlineable(tree)(ctx)">
+                    <p>Adds accessors accessors for all non-public term members accessed
 from <code>tree</code>. Non-public type members are currently left as they are.
 This means that ref...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-makeInlineable(tree)(ctx)">
+                    <p>Adds accessors accessors for all non-public term members accessed
+from <code>tree</code>. Non-public type members are currently left as they are.
+This means that references to a private type will lead to typing failures
+on the code when it is inlined. Less than ideal, but hard to do better (see below).</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="qualifier(tree)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'qualifier(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5746,19 +5879,41 @@ This means that ref...
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Tree.html">Tree</a>
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The qualifier part of a Select or Ident.
+                <div class="member-body-short" id="short-body-qualifier(tree)(ctx)">
+                    <p>The qualifier part of a Select or Ident.
 For an Ident, this is the <code>This</code> of the current class. (TODO: use elsewhere as well?)</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-qualifier(tree)(ctx)">
+                    <p>The qualifier part of a Select or Ident.
+For an Ident, this is the <code>This</code> of the current class. (TODO: use elsewhere as well?)</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="registerInlineInfo(sym,treeExpr)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'registerInlineInfo(sym,treeExpr)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5818,13 +5973,31 @@ For an Ident, this is the <code>This</code> of the current class. (TODO: use els
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Register inline info for given inline method <code>sym</code>.</p>
+                <div class="member-body-short" id="short-body-registerInlineInfo(sym,treeExpr)(ctx)">
+                    <p>Register inline info for given inline method <code>sym</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-registerInlineInfo(sym,treeExpr)(ctx)">
+                    <p>Register inline info for given inline method <code>sym</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="removeInlineAccessors(sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'removeInlineAccessors(sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5871,15 +6044,36 @@ For an Ident, this is the <code>This</code> of the current class. (TODO: use els
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#MemberDef">MemberDef</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The accessors to non-public members needed by the inlinable body of <code>sym</code>.
+                <div class="member-body-short" id="short-body-removeInlineAccessors(sym)(ctx)">
+                    <p>The accessors to non-public members needed by the inlinable body of <code>sym</code>.
 These accessors are dropped as a side effect of calling this method.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-removeInlineAccessors(sym)(ctx)">
+                    <p>The accessors to non-public members needed by the inlinable body of <code>sym</code>.
+These accessors are dropped as a side effect of calling this method.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

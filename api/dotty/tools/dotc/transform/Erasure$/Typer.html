@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,55 @@
         <span id="entity-name">
             Typer
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">ReTyper</span>
+            
+            
+            <span class="keyword">with</span>
+            
+            <span class="entity-super-type">NoChecking</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Typer</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="NoBridgeFlags" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoBridgeFlags');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5360,17 +5402,34 @@
                 
 
                 
-                <span class="no-left">: FlagSet</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Flags$/FlagSet.html">FlagSet</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-NoBridgeFlags">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-NoBridgeFlags">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="adapt(tree,pt,original)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'adapt(tree,pt,original)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5433,17 +5492,34 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-adapt(tree,pt,original)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-adapt(tree,pt,original)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="adaptProto(tree,pt)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'adaptProto(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5498,17 +5574,34 @@
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-adaptProto(tree,pt)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-adaptProto(tree,pt)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="addBridges(oldStats,newStats)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'addBridges(oldStats,newStats)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5569,17 +5662,37 @@
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-addBridges(oldStats,newStats)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-addBridges(oldStats,newStats)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="erasedType(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'erasedType(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5626,17 +5739,34 @@
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-erasedType(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-erasedType(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="makeBridgeDef(newDef,parentSym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'makeBridgeDef(newDef,parentSym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5691,18 +5821,36 @@
                 
 
                 
-                <span class="no-left">: DefDef</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#DefDef">DefDef</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create a bridge DefDef which overrides a parent method.</p>
+                <div class="member-body-short" id="short-body-makeBridgeDef(newDef,parentSym)(ctx)">
+                    <p>Create a bridge DefDef which overrides a parent method.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-makeBridgeDef(newDef,parentSym)(ctx)">
+                    <p>Create a bridge DefDef which overrides a parent method.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="promote(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'promote(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5749,18 +5897,39 @@
                 
 
                 
-                <span class="no-left">: ThisTree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Tree.html#ThisTree">ThisTree</a>
+<span class="no-left no-right">[</span>
+<a href="../../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Checks that the given tree has been typed</p>
+                <div class="member-body-short" id="short-body-promote(tree)(ctx)">
+                    <p>Checks that the given tree has been typed</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-promote(tree)(ctx)">
+                    <p>Checks that the given tree has been typed</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="protoArgs(pt)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'protoArgs(pt)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5794,17 +5963,37 @@
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-protoArgs(pt)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-protoArgs(pt)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="runtimeCallWithProtoArgs(name,pt,args)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'runtimeCallWithProtoArgs(name,pt,args)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5870,17 +6059,34 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-runtimeCallWithProtoArgs(name,pt,args)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-runtimeCallWithProtoArgs(name,pt,args)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedApply(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedApply(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5935,19 +6141,38 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Besides normal typing, this method collects all arguments
+                <div class="member-body-short" id="short-body-typedApply(tree,pt)(ctx)">
+                    <p>Besides normal typing, this method collects all arguments
 to a compacted function into a single argument of array type.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-typedApply(tree,pt)(ctx)">
+                    <p>Besides normal typing, this method collects all arguments
+to a compacted function into a single argument of array type.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedClosure(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedClosure(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6002,20 +6227,40 @@ to a compacted function into a single argument of array type.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>After erasure, we may have to replace the closure method by a bridge.
+                <div class="member-body-short" id="short-body-typedClosure(tree,pt)(ctx)">
+                    <p>After erasure, we may have to replace the closure method by a bridge.
 LambdaMetaFactory handles this automatically for most types, but we have
 to deal w...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-typedClosure(tree,pt)(ctx)">
+                    <p>After erasure, we may have to replace the closure method by a bridge.
+LambdaMetaFactory handles this automatically for most types, but we have
+to deal with boxing and unboxing of value classes ourselves.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedDefDef(ddef,sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedDefDef(ddef,sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6070,20 +6315,43 @@ to deal w...</p>
                 
 
                 
-                <span class="no-left">: DefDef</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/DefDef.html">DefDef</a>
+<span class="no-left no-right">[</span>
+<a href="../../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Besides normal typing, this function also compacts anonymous functions
+                <div class="member-body-short" id="short-body-typedDefDef(ddef,sym)(ctx)">
+                    <p>Besides normal typing, this function also compacts anonymous functions
 with more than <code>MaxImplementedFunctionArity</code> parameters to ise a single
 parameter o...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-typedDefDef(ddef,sym)(ctx)">
+                    <p>Besides normal typing, this function also compacts anonymous functions
+with more than <code>MaxImplementedFunctionArity</code> parameters to ise a single
+parameter of type <code>[]Object</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedIf(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedIf(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6138,17 +6406,34 @@ parameter o...</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedIf(tree,pt)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedIf(tree,pt)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedLiteral(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedLiteral(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6195,17 +6480,34 @@ parameter o...</p>
                 
 
                 
-                <span class="no-left">: Literal</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Literal">Literal</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedLiteral(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedLiteral(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedMatch(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedMatch(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6260,17 +6562,37 @@ parameter o...</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Tree.html">Tree</a>
+<span class="no-left no-right">[</span>
+T
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedMatch(tree,pt)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedMatch(tree,pt)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedSelect(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedSelect(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6325,12 +6647,13 @@ parameter o...</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Type check select nodes, applying the following rewritings exhaustively
+                <div class="member-body-short" id="short-body-typedSelect(tree,pt)(ctx)">
+                    <p>Type check select nodes, applying the following rewritings exhaustively
 on selections <code>e.m</code>, where <code>OT</code> is the type of the owner of <code>m</code> and <code>ET</code>
 is the erased t...</p>
 <pre><code>e.m1 -&gt; e.m2          if `m1` is a member of Any or AnyVal and `m2` is
@@ -6349,11 +6672,45 @@ e.clone -&gt; e.clone'         where clone' is Object's clone method
 e.m -&gt; e.[]m                if `m` is an array operation other than `clone`.
 </code></pre>
 
+                </div>
+                <div class="member-body-long" id ="long-body-typedSelect(tree,pt)(ctx)">
+                    <p>Type check select nodes, applying the following rewritings exhaustively
+on selections <code>e.m</code>, where <code>OT</code> is the type of the owner of <code>m</code> and <code>ET</code>
+is the erased type of the selection's original qualifier expression.</p>
+<pre><code>e.m1 -&gt; e.m2          if `m1` is a member of Any or AnyVal and `m2` is
+                      the same-named member in Object.
+e.m -&gt; box(e).m       if `e` is primitive and `m` is a member or a reference class
+                      or `e` has an erased value class type.
+e.m -&gt; unbox(e).m     if `e` is not primitive and `m` is a member of a primtive type.
+e.m -&gt; cast(e, OT).m  if the type of `e` does not conform to OT and `m`
+                      is not an array operation.
+</code></pre>
+<p>If <code>m</code> is an array operation, i.e. one of the members apply, update, length, clone, and
+<init> of class Array, we additionally try the following rewritings:</p>
+<pre><code>e.m -&gt; runtime.array_m(e)   if ET is Object
+e.m -&gt; cast(e, ET).m        if the type of `e` does not conform to ET
+e.clone -&gt; e.clone'         where clone' is Object's clone method
+e.m -&gt; e.[]m                if `m` is an array operation other than `clone`.
+</code></pre>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedSeqLiteral(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedSeqLiteral(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6408,17 +6765,34 @@ e.m -&gt; e.[]m                if `m` is an array operation other than `clone`.
                 
 
                 
-                <span class="no-left">: SeqLiteral</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#SeqLiteral">SeqLiteral</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedSeqLiteral(tree,pt)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedSeqLiteral(tree,pt)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedStats(stats,exprOwner)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedStats(stats,exprOwner)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6476,17 +6850,37 @@ e.m -&gt; e.[]m                if `m` is an array operation other than `clone`.
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedStats(stats,exprOwner)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedStats(stats,exprOwner)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedThis(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedThis(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6533,17 +6927,34 @@ e.m -&gt; e.[]m                if `m` is an array operation other than `clone`.
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedThis(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedThis(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedTry(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedTry(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6598,17 +7009,34 @@ e.m -&gt; e.[]m                if `m` is an array operation other than `clone`.
                 
 
                 
-                <span class="no-left">: Try</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Try">Try</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedTry(tree,pt)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedTry(tree,pt)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedTypeApply(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedTypeApply(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6663,17 +7091,34 @@ e.m -&gt; e.[]m                if `m` is an array operation other than `clone`.
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedTypeApply(tree,pt)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedTypeApply(tree,pt)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedTypeDef(tdef,sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedTypeDef(tdef,sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6728,17 +7173,34 @@ e.m -&gt; e.[]m                if `m` is an array operation other than `clone`.
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedTypeDef(tdef,sym)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedTypeDef(tdef,sym)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedTypeTree(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedTypeTree(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6793,20 +7255,40 @@ e.m -&gt; e.[]m                if `m` is an array operation other than `clone`.
                 
 
                 
-                <span class="no-left">: TypeTree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#TypeTree">TypeTree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>When erasing most TypeTrees we should not semi-erase value types.
+                <div class="member-body-short" id="short-body-typedTypeTree(tree,pt)(ctx)">
+                    <p>When erasing most TypeTrees we should not semi-erase value types.
 This is not the case for [[DefDef#tpt]], [[ValDef#tpt]] and [[Typed#tpt]], they
 are handled...[typedDefDef][typedValDef][typedTyped]</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-typedTypeTree(tree,pt)(ctx)">
+                    <p>When erasing most TypeTrees we should not semi-erase value types.
+This is not the case for [[DefDef#tpt]], [[ValDef#tpt]] and [[Typed#tpt]], they
+are handled separately by [[typedDefDef]], [[typedValDef]] and [[typedTyped]].</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedTyped(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedTyped(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6861,18 +7343,36 @@ are handled...[typedDefDef][typedValDef][typedTyped]</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>This override is only needed to semi-erase type ascriptions</p>
+                <div class="member-body-short" id="short-body-typedTyped(tree,pt)(ctx)">
+                    <p>This override is only needed to semi-erase type ascriptions</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-typedTyped(tree,pt)(ctx)">
+                    <p>This override is only needed to semi-erase type ascriptions</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedValDef(vdef,sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedValDef(vdef,sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6927,13 +7427,29 @@ are handled...[typedDefDef][typedValDef][typedTyped]</p>
                 
 
                 
-                <span class="no-left">: ValDef</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#ValDef">ValDef</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedValDef(vdef,sym)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedValDef(vdef,sym)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

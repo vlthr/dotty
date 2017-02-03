@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             Calculated
         </span>
+        
+        
     </div>
 
     
@@ -5340,12 +5345,23 @@ those in Defaults.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="containers" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'containers');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5371,12 +5387,29 @@ those in Defaults.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-containers">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-containers">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="basis" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'basis');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5397,17 +5430,40 @@ those in Defaults.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Traversable
+<span class="no-left no-right">[</span>
+ClassPath
+<span class="no-left">]</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-basis">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-basis">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="javaBootClassPath" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'javaBootClassPath');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5433,12 +5489,29 @@ those in Defaults.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-javaBootClassPath">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-javaBootClassPath">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="javaExtDirs" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'javaExtDirs');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5464,12 +5537,29 @@ those in Defaults.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-javaExtDirs">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-javaExtDirs">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="javaUserClassPath" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'javaUserClassPath');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5495,12 +5585,29 @@ those in Defaults.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-javaUserClassPath">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-javaUserClassPath">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="priorityClassPath" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'priorityClassPath');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5526,12 +5633,29 @@ those in Defaults.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-priorityClassPath">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-priorityClassPath">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="scalaBootClassPath" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'scalaBootClassPath');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5557,12 +5681,29 @@ those in Defaults.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-scalaBootClassPath">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-scalaBootClassPath">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="scalaExtDirs" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'scalaExtDirs');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5588,12 +5729,29 @@ those in Defaults.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-scalaExtDirs">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-scalaExtDirs">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="scalaHome" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'scalaHome');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5619,12 +5777,29 @@ those in Defaults.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-scalaHome">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-scalaHome">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="sourcePath" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'sourcePath');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5650,7 +5825,8 @@ those in Defaults.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Scaladoc doesn't need any bootstrapping, otherwise will create errors such as:
+                <div class="member-body-short" id="short-body-sourcePath">
+                    <p>Scaladoc doesn't need any bootstrapping, otherwise will create errors such as:
 [scaladoc] ../scala-trunk/src/reflect/scala/reflect/macros/Reifiers.scala:8...:
 [scaladoc]
 [scaladoc]
@@ -5659,11 +5835,35 @@ those in Defaults.</p>
 <root>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-sourcePath">
+                    <p>Scaladoc doesn't need any bootstrapping, otherwise will create errors such as:
+[scaladoc] ../scala-trunk/src/reflect/scala/reflect/macros/Reifiers.scala:89: error: object api is not a member of package reflect
+[scaladoc] case class ReificationException(val pos: reflect.api.PositionApi, val msg: String) extends Throwable(msg)
+[scaladoc]                                              ^
+because the bootstrapping will look at the sourcepath and create package &quot;reflect&quot; in &quot;<root>&quot;
+and then when typing relative names, instead of picking <root>.scala.relect, typedIdentifier will pick up the
+<root>.reflect package created by the bootstrapping. Thus, no bootstrapping for scaladoc!
+TODO: we should refactor this as a separate -bootstrap option to have a clean implementation, no?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="toString" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'toString');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5689,12 +5889,29 @@ those in Defaults.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-toString">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-toString">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="useJavaClassPath" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'useJavaClassPath');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5720,12 +5937,29 @@ those in Defaults.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-useJavaClassPath">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-useJavaClassPath">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="userClassPath" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'userClassPath');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5751,14 +5985,38 @@ those in Defaults.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Against my better judgment, giving in to martin here and allowing
+                <div class="member-body-short" id="short-body-userClassPath">
+                    <p>Against my better judgment, giving in to martin here and allowing
 CLASSPATH to be used automatically.  So for the user-specified part
 of the classpath:</p>
 <ul>
 <li>If -classpath or -cp is given, it is that</li>
 </ul>
 
+                </div>
+                <div class="member-body-long" id ="long-body-userClassPath">
+                    <p>Against my better judgment, giving in to martin here and allowing
+CLASSPATH to be used automatically.  So for the user-specified part
+of the classpath:</p>
+<ul>
+<li>If -classpath or -cp is given, it is that</li>
+<li>Otherwise, if CLASSPATH is set, it is that</li>
+<li>If neither of those, then &quot;.&quot; is used.</li>
+</ul>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

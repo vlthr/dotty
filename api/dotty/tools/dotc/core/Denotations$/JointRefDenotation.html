@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,72 @@
         <span id="entity-name">
             JointRefDenotation
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">NonSymSingleDenotation</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">JointRefDenotation</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                symbol:
+                            </span>
+                            Symbol
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                infoOrCompleter:
+                            </span>
+                            Type
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                initValidFor:
+                            </span>
+                            Period
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="infoOrCompleter" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'infoOrCompleter');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5365,14 +5424,33 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The type info, or, if this is a SymDenotation where the symbol
+                <div class="member-body-short" id="short-body-infoOrCompleter">
+                    <p>The type info, or, if this is a SymDenotation where the symbol
 is not yet completed, the completer</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-infoOrCompleter">
+                    <p>The type info, or, if this is a SymDenotation where the symbol
+is not yet completed, the completer</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="initValidFor" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'initValidFor');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5398,12 +5476,29 @@ is not yet completed, the completer</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-initValidFor">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-initValidFor">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="symbol" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'symbol');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5429,12 +5524,29 @@ is not yet completed, the completer</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-symbol">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-symbol">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hasUniqueSym" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hasUniqueSym');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5460,12 +5572,29 @@ is not yet completed, the completer</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-hasUniqueSym">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-hasUniqueSym">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="newLikeThis(s,i)" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'newLikeThis(s,i)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5512,8 +5641,24 @@ is not yet completed, the completer</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-newLikeThis(s,i)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-newLikeThis(s,i)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

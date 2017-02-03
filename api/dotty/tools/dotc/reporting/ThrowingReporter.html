@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,17 @@
         <span id="entity-name">
             ThrowingReporter
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">Reporter</span>
+            
+        </div>
+        
     </div>
 
     
@@ -5340,12 +5354,41 @@ info to the underlying reporter.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">ThrowingReporter</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                reportInfo:
+                            </span>
+                            Reporter
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="reportInfo" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'reportInfo');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5371,12 +5414,29 @@ info to the underlying reporter.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-reportInfo">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-reportInfo">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="doReport(m)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'doReport(m)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5428,9 +5488,26 @@ info to the underlying reporter.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Report a diagnostic</p>
+                <div class="member-body-short" id="short-body-doReport(m)(ctx)">
+                    <p>Report a diagnostic</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-doReport(m)(ctx)">
+                    <p>Report a diagnostic</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

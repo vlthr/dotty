@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             RefChecks
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="LevelInfo" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'LevelInfo');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,13 +5379,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A class to help in forward reference checking</p>
+                <div class="member-body-short" id="short-body-LevelInfo">
+                    <p>A class to help in forward reference checking</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-LevelInfo">
+                    <p>A class to help in forward reference checking</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="OptLevelInfo" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'OptLevelInfo');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5393,12 +5427,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-OptLevelInfo">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-OptLevelInfo">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="LevelAndIndex" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'LevelAndIndex');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5421,7 +5472,7 @@
                     <span class="equals"> = </span>
                     Map
 <span class="no-left no-right">[</span>
-Symbol<span class="">, </span><span class="no-right">(</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a><span class="">, </span><span class="no-right">(</span>
 LevelInfo<span>, </span>Int
 <span class="no-left">)</span>
 <span class="no-left">]</span>
@@ -5432,12 +5483,29 @@ LevelInfo<span>, </span>Int
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-LevelAndIndex">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-LevelAndIndex">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoLevelInfo" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoLevelInfo');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5463,12 +5531,29 @@ LevelInfo<span>, </span>Int
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-NoLevelInfo">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-NoLevelInfo">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="defaultMethodFilter" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'defaultMethodFilter');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5489,17 +5574,34 @@ LevelInfo<span>, </span>Int
                 
 
                 
-                <span class="no-left">: NameFilter</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Types$/NameFilter.html">NameFilter</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-defaultMethodFilter">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-defaultMethodFilter">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="checkAllOverrides(clazz)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'checkAllOverrides(clazz)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5551,7 +5653,8 @@ LevelInfo<span>, </span>Int
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <ol>
+                <div class="member-body-short" id="short-body-checkAllOverrides(clazz)(ctx)">
+                    <ol>
 <li>Check all members of class <code>clazz</code> for overriding conditions.
 That is for overriding member M and overridden member O:</li>
 </ol>
@@ -5563,11 +5666,56 @@ That is for overriding member M and overridden member O:</li>
 []
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-checkAllOverrides(clazz)(ctx)">
+                    <ol>
+<li>Check all members of class <code>clazz</code> for overriding conditions.
+That is for overriding member M and overridden member O:</li>
+</ol>
+<p>1.1. M must have the same or stronger access privileges as O.
+1.2. O must not be final.
+1.3. O is deferred, or M has <code>override</code> modifier.
+1.4. If O is stable, then so is M.
+// @M: LIFTED 1.5. Neither M nor O are a parameterized type alias
+1.6. If O is a type alias, then M is an alias of O.
+1.7. If O is an abstract type then
+1.7.1 either M is an abstract type, and M's bounds are sharper than O's bounds.
+or M is a type alias or class which conforms to O's bounds.
+1.7.2 higher-order type arguments must respect bounds on higher-order type parameters  -- @M
+(explicit bounds and those implied by variance annotations) -- @see checkKindBounds
+1.8. If O and M are values, then
+1.8.1  M's type is a subtype of O's type, or
+1.8.2  M is of type []S, O is of type ()T and S &lt;: T, or
+1.8.3  M is of type ()S, O is of type []T and S &lt;: T, or
+1.9.  If M is a macro def, O cannot be deferred unless there's a concrete method overriding O.
+1.10. If M is not a macro def, O cannot be a macro def.
+2. Check that only abstract classes have deferred members
+3. Check that concrete classes do not have deferred definitions
+that are not implemented in a subclass.
+4. Check that every member with an <code>override</code> modifier
+overrides some other member.
+TODO check that classes are not overridden
+TODO This still needs to be cleaned up; the current version is a staright port of what was there
+before, but it looks too complicated and method bodies are far too large.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="checkCompanionNameClashes(cls)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'checkCompanionNameClashes(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5619,14 +5767,33 @@ That is for overriding member M and overridden member O:</li>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Check that a class and its companion object to not both define
+                <div class="member-body-short" id="short-body-checkCompanionNameClashes(cls)(ctx)">
+                    <p>Check that a class and its companion object to not both define
 a class or module with same name</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-checkCompanionNameClashes(cls)(ctx)">
+                    <p>Check that a class and its companion object to not both define
+a class or module with same name</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="checkDeprecatedOvers(tree)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'checkDeprecatedOvers(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5678,15 +5845,35 @@ a class or module with same name</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Check that a deprecated val or def does not override a
+                <div class="member-body-short" id="short-body-checkDeprecatedOvers(tree)(ctx)">
+                    <p>Check that a deprecated val or def does not override a
 concrete, non-deprecated method.  If it does, then
 deprecation is meaningless.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-checkDeprecatedOvers(tree)(ctx)">
+                    <p>Check that a deprecated val or def does not override a
+concrete, non-deprecated method.  If it does, then
+deprecation is meaningless.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="checkOverloadedRestrictions(clazz)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'checkOverloadedRestrictions(clazz)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5738,13 +5925,31 @@ deprecation is meaningless.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Only one overloaded alternative is allowed to define default arguments</p>
+                <div class="member-body-short" id="short-body-checkOverloadedRestrictions(clazz)(ctx)">
+                    <p>Only one overloaded alternative is allowed to define default arguments</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-checkOverloadedRestrictions(clazz)(ctx)">
+                    <p>Only one overloaded alternative is allowed to define default arguments</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="checkParents(cls)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'checkParents(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5796,14 +6001,33 @@ deprecation is meaningless.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Check that self type of this class conforms to self types of parents.
+                <div class="member-body-short" id="short-body-checkParents(cls)(ctx)">
+                    <p>Check that self type of this class conforms to self types of parents.
 and required classes.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-checkParents(cls)(ctx)">
+                    <p>Check that self type of this class conforms to self types of parents.
+and required classes.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="checkUndesiredProperties(sym,pos)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'checkUndesiredProperties(sym,pos)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5863,12 +6087,29 @@ and required classes.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-checkUndesiredProperties(sym,pos)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-checkUndesiredProperties(sym,pos)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isDefaultGetter(name)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isDefaultGetter(name)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5907,8 +6148,24 @@ and required classes.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-isDefaultGetter(name)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-isDefaultGetter(name)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

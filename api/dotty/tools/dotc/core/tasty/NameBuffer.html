@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,50 @@
         <span id="entity-name">
             NameBuffer
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">TastyBuffer</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">NameBuffer</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="nameRefs" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nameRefs');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5360,17 +5397,37 @@
                 
 
                 
-                <span class="no-left">: LinkedHashMap</span>
+                <span class="no-left">: LinkedHashMap
+<span class="no-left no-right">[</span>
+TastyName<span class="">, </span>NameRef
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-nameRefs">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-nameRefs">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="assemble()" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'assemble()');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5403,15 +5460,35 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Hook to be overridden in subclasses.
+                <div class="member-body-short" id="short-body-assemble()">
+                    <p>Hook to be overridden in subclasses.
 Perform all actions necessary to assemble the final byte array.
 After <code>assemble</code> no more output actions to this buffe...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-assemble()">
+                    <p>Hook to be overridden in subclasses.
+Perform all actions necessary to assemble the final byte array.
+After <code>assemble</code> no more output actions to this buffer are permitted.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="fullNameIndex(name)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'fullNameIndex(name)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5450,12 +5527,29 @@ After <code>assemble</code> no more output actions to this buffe...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-fullNameIndex(name)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-fullNameIndex(name)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="nameIndex(name)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nameIndex(name)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5494,12 +5588,29 @@ After <code>assemble</code> no more output actions to this buffe...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-nameIndex(name)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-nameIndex(name)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="nameIndex(name)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nameIndex(name)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5538,12 +5649,29 @@ After <code>assemble</code> no more output actions to this buffe...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-nameIndex(name)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-nameIndex(name)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="nameIndex(str)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nameIndex(str)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5582,12 +5710,29 @@ After <code>assemble</code> no more output actions to this buffe...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-nameIndex(str)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-nameIndex(str)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="pickleName(name)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'pickleName(name)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5626,12 +5771,29 @@ After <code>assemble</code> no more output actions to this buffe...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-pickleName(name)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-pickleName(name)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withLength(op,lengthWidth)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withLength(op,lengthWidth)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5678,12 +5840,29 @@ After <code>assemble</code> no more output actions to this buffe...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-withLength(op,lengthWidth)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-withLength(op,lengthWidth)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withLength$default$2" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withLength$default$2');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5709,12 +5888,29 @@ After <code>assemble</code> no more output actions to this buffe...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-withLength$default$2">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-withLength$default$2">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="writeNameRef(ref)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'writeNameRef(ref)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5753,8 +5949,24 @@ After <code>assemble</code> no more output actions to this buffe...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-writeNameRef(ref)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-writeNameRef(ref)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

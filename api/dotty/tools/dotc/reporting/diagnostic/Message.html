@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             abstract
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             Message
         </span>
+        
+        
     </div>
 
     
@@ -5348,12 +5353,41 @@ reference to these contexts.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Message</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                errorId:
+                            </span>
+                            Int
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="errorId" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'errorId');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5379,12 +5413,29 @@ reference to these contexts.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-errorId">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-errorId">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="explanation" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'explanation');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5410,15 +5461,35 @@ reference to these contexts.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The explanation should provide a detailed description of why the error
+                <div class="member-body-short" id="short-body-explanation">
+                    <p>The explanation should provide a detailed description of why the error
 occurred and use examples from the user's own code to illustrate how to
 avoid the...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-explanation">
+                    <p>The explanation should provide a detailed description of why the error
+occurred and use examples from the user's own code to illustrate how to
+avoid these errors.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="kind" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'kind');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5444,14 +5515,33 @@ avoid the...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The kind of the error message is something like &quot;Syntax&quot; or &quot;Type
+                <div class="member-body-short" id="short-body-kind">
+                    <p>The kind of the error message is something like &quot;Syntax&quot; or &quot;Type
 Mismatch&quot;</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-kind">
+                    <p>The kind of the error message is something like &quot;Syntax&quot; or &quot;Type
+Mismatch&quot;</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="msg" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'msg');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5477,7 +5567,8 @@ Mismatch&quot;</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The <code>msg</code> contains the diagnostic message e.g:</p>
+                <div class="member-body-short" id="short-body-msg">
+                    <p>The <code>msg</code> contains the diagnostic message e.g:</p>
 <blockquote>
 <p>expected: String
 found:    Int</p>
@@ -5485,11 +5576,34 @@ found:    Int</p>
 <p>This message will be placed underneath the position given by the enclosing
 <code>Mes...</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-msg">
+                    <p>The <code>msg</code> contains the diagnostic message e.g:</p>
+<blockquote>
+<p>expected: String
+found:    Int</p>
+</blockquote>
+<p>This message will be placed underneath the position given by the enclosing
+<code>MessageContainer</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="persist" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'persist');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5515,11 +5629,30 @@ found:    Int</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The implicit <code>Context</code> in messages is a large thing that we don't want
+                <div class="member-body-short" id="short-body-persist">
+                    <p>The implicit <code>Context</code> in messages is a large thing that we don't want
 persisted. This method gets around that by duplicating the message
 without the impl...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-persist">
+                    <p>The implicit <code>Context</code> in messages is a large thing that we don't want
+persisted. This method gets around that by duplicating the message
+without the implicit context being passed along.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

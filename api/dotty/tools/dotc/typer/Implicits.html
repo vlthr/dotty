@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             Implicits
         </span>
+        
+        
     </div>
 
     
@@ -5339,12 +5344,23 @@
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="ExplainedImplicitSearch" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ExplainedImplicitSearch');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5368,12 +5384,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ExplainedImplicitSearch">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ExplainedImplicitSearch">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ImplicitSearch" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ImplicitSearch');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5397,13 +5430,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An implicit search; parameters as in <code>inferImplicit</code></p>
+                <div class="member-body-short" id="short-body-ImplicitSearch">
+                    <p>An implicit search; parameters as in <code>inferImplicit</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ImplicitSearch">
+                    <p>An implicit search; parameters as in <code>inferImplicit</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="assumedCanEqual(ltp,rtp)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'assumedCanEqual(ltp,rtp)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5463,12 +5514,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-assumedCanEqual(ltp,rtp)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-assumedCanEqual(ltp,rtp)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="checkCanEqual(ltp,rtp,pos)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'checkCanEqual(ltp,rtp,pos)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5536,13 +5604,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Check that equality tests between types <code>ltp</code> and <code>rtp</code> make sense</p>
+                <div class="member-body-short" id="short-body-checkCanEqual(ltp,rtp,pos)(ctx)">
+                    <p>Check that equality tests between types <code>ltp</code> and <code>rtp</code> make sense</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-checkCanEqual(ltp,rtp,pos)(ctx)">
+                    <p>Check that equality tests between types <code>ltp</code> and <code>rtp</code> make sense</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="inferImplicit(pt,argument,pos)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'inferImplicit(pt,argument,pos)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5610,13 +5696,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Find an implicit parameter or conversion.</p>
+                <div class="member-body-short" id="short-body-inferImplicit(pt,argument,pos)(ctx)">
+                    <p>Find an implicit parameter or conversion.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-inferImplicit(pt,argument,pos)(ctx)">
+                    <p>Find an implicit parameter or conversion.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="inferImplicitArg(formal,error,pos)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'inferImplicitArg(formal,error,pos)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5679,18 +5783,36 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Find an implicit argument for parameter <code>formal</code>.</p>
+                <div class="member-body-short" id="short-body-inferImplicitArg(formal,error,pos)(ctx)">
+                    <p>Find an implicit argument for parameter <code>formal</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-inferImplicitArg(formal,error,pos)(ctx)">
+                    <p>Find an implicit argument for parameter <code>formal</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="inferView(from,to)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'inferView(from,to)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5750,14 +5872,33 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Find an implicit conversion to apply to given tree <code>from</code> so that the
+                <div class="member-body-short" id="short-body-inferView(from,to)(ctx)">
+                    <p>Find an implicit conversion to apply to given tree <code>from</code> so that the
 result is compatible with type <code>to</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-inferView(from,to)(ctx)">
+                    <p>Find an implicit conversion to apply to given tree <code>from</code> so that the
+result is compatible with type <code>to</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="synthesizedClassTag(formal,pos)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'synthesizedClassTag(formal,pos)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5812,19 +5953,38 @@ result is compatible with type <code>to</code>.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If <code>formal</code> is of the form ClassTag[T], where <code>T</code> is a class type,
+                <div class="member-body-short" id="short-body-synthesizedClassTag(formal,pos)(ctx)">
+                    <p>If <code>formal</code> is of the form ClassTag[T], where <code>T</code> is a class type,
 synthesize a class tag for <code>T</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-synthesizedClassTag(formal,pos)(ctx)">
+                    <p>If <code>formal</code> is of the form ClassTag[T], where <code>T</code> is a class type,
+synthesize a class tag for <code>T</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="viewExists(from,to)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'viewExists(from,to)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5884,8 +6044,24 @@ synthesize a class tag for <code>T</code>.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-viewExists(from,to)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-viewExists(from,to)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

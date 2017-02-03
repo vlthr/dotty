@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             ThunkHolder
         </span>
+        
+        
     </div>
 
     
@@ -5340,12 +5345,23 @@ that may be evaluated once.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="thunks" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'thunks');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5366,17 +5382,40 @@ that may be evaluated once.</p>
                 
 
                 
-                <span class="no-left">: ListBuffer</span>
+                <span class="no-left">: ListBuffer
+<span class="no-left no-right">[</span>
+Lazy
+<span class="no-left no-right">[</span>
+Nothing<span class="bounds"> &lt;: </span>Any
+<span class="no-left">]</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-thunks">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-thunks">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="forceThunks()" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'forceThunks()');">[+]</span>
                 <span class="member-annotations">
                     @tailrec 
                 </span>
@@ -5409,13 +5448,31 @@ that may be evaluated once.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Force all unevaluated thunks to prevent space leaks.</p>
+                <div class="member-body-short" id="short-body-forceThunks()">
+                    <p>Force all unevaluated thunks to prevent space leaks.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-forceThunks()">
+                    <p>Force all unevaluated thunks to prevent space leaks.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="lzy(t)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'lzy(t)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5449,19 +5506,41 @@ that may be evaluated once.</p>
                 
 
                 
-                <span class="no-left">: Lazy</span>
+                <span class="no-left">: Lazy
+<span class="no-left no-right">[</span>
+T
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Store the by-name parameter <code>s</code> in a <code>Lazy</code> container without evaluating it.
+                <div class="member-body-short" id="short-body-lzy(t)">
+                    <p>Store the by-name parameter <code>s</code> in a <code>Lazy</code> container without evaluating it.
 It will be forced by the next call to <code>forceThunks()</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-lzy(t)">
+                    <p>Store the by-name parameter <code>s</code> in a <code>Lazy</code> container without evaluating it.
+It will be forced by the next call to <code>forceThunks()</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="strict2lzy(t)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'strict2lzy(t)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5495,17 +5574,41 @@ It will be forced by the next call to <code>forceThunks()</code></p>
                 
 
                 
-                <span class="no-left">: Lazy</span>
+                <span class="no-left">: Lazy
+<span class="no-left no-right">[</span>
+T
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Store the parameter <code>s</code> in a <code>Lazy</code> container, since <code>s</code> is not by-name, there
+                <div class="member-body-short" id="short-body-strict2lzy(t)">
+                    <p>Store the parameter <code>s</code> in a <code>Lazy</code> container, since <code>s</code> is not by-name, there
 is nothing to force.</p>
 <p>TODO: Get rid of this method. It is only needed because so...
 <a href="https://github.com/sbt/zinc/issues/114">https://github.com/sbt/zinc/issues/114</a></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-strict2lzy(t)">
+                    <p>Store the parameter <code>s</code> in a <code>Lazy</code> container, since <code>s</code> is not by-name, there
+is nothing to force.</p>
+<p>TODO: Get rid of this method. It is only needed because some xsbti.api classes
+take lazy arguments when they could be strict, but this can be fixed in sbt,
+see <a href="https://github.com/sbt/zinc/issues/114">https://github.com/sbt/zinc/issues/114</a></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

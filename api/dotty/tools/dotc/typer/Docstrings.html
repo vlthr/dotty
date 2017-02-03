@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             Docstrings
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="cookComments(syms,owner)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'cookComments(syms,owner)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5402,16 +5418,37 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The Docstrings typer will handle the expansion of <code>@define</code> and
+                <div class="member-body-short" id="short-body-cookComments(syms,owner)(ctx)">
+                    <p>The Docstrings typer will handle the expansion of <code>@define</code> and
 <code>&lt;invalid inheritdoc annotation&gt;</code> if there is a <code>DocContext</code> present as a property in the
 supp...</p>
 <p></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-cookComments(syms,owner)(ctx)">
+                    <p>The Docstrings typer will handle the expansion of <code>@define</code> and
+<code>&lt;invalid inheritdoc annotation&gt;</code> if there is a <code>DocContext</code> present as a property in the
+supplied <code>ctx</code>.</p>
+<p>It will also type any <code>@usecase</code> available in function definitions.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="expandParentDocs(sym)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'expandParentDocs(sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5463,8 +5500,24 @@ supp...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-expandParentDocs(sym)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-expandParentDocs(sym)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

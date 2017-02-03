@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             Interpreter
         </span>
+        
+        
     </div>
 
     
@@ -5339,12 +5344,23 @@
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="beQuietDuring(operation)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'beQuietDuring(operation)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5383,13 +5399,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Suppress output during evaluation of <code>operation</code>.</p>
+                <div class="member-body-short" id="short-body-beQuietDuring(operation)">
+                    <p>Suppress output during evaluation of <code>operation</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-beQuietDuring(operation)">
+                    <p>Suppress output during evaluation of <code>operation</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="bind(id,boundType,value)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'bind(id,boundType,value)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5457,13 +5491,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Tries to bind an id to a value, returns the outcome of trying to bind</p>
+                <div class="member-body-short" id="short-body-bind(id,boundType,value)(ctx)">
+                    <p>Tries to bind an id to a value, returns the outcome of trying to bind</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-bind(id,boundType,value)(ctx)">
+                    <p>Tries to bind an id to a value, returns the outcome of trying to bind</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="delayOutputDuring(operation)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'delayOutputDuring(operation)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5502,13 +5554,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Suppresses output and saves it for <code>lastOutput</code> to collect</p>
+                <div class="member-body-short" id="short-body-delayOutputDuring(operation)">
+                    <p>Suppresses output and saves it for <code>lastOutput</code> to collect</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-delayOutputDuring(operation)">
+                    <p>Suppresses output and saves it for <code>lastOutput</code> to collect</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="interpret(line)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'interpret(line)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5560,15 +5630,35 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Interpret one line of input. All feedback, including parse errors and
+                <div class="member-body-short" id="short-body-interpret(line)(ctx)">
+                    <p>Interpret one line of input. All feedback, including parse errors and
 evaluation results, are printed via the context's reporter. Values
 defined are ava...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-interpret(line)(ctx)">
+                    <p>Interpret one line of input. All feedback, including parse errors and
+evaluation results, are printed via the context's reporter. Values
+defined are available for future interpreted strings.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="lastOutput()" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'lastOutput()');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5596,14 +5686,34 @@ defined are ava...</p>
                 
 
                 
-                <span class="no-left">: Seq</span>
+                <span class="no-left">: Seq
+<span class="no-left no-right">[</span>
+String
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Gets the last output not printed immediately</p>
+                <div class="member-body-short" id="short-body-lastOutput()">
+                    <p>Gets the last output not printed immediately</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-lastOutput()">
+                    <p>Gets the last output not printed immediately</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

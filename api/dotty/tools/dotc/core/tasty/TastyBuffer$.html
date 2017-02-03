@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             TastyBuffer
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="Addr" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Addr');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,13 +5379,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An address pointing to an index in a Tasty buffer's byte array</p>
+                <div class="member-body-short" id="short-body-Addr">
+                    <p>An address pointing to an index in a Tasty buffer's byte array</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Addr">
+                    <p>An address pointing to an index in a Tasty buffer's byte array</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Addr$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Addr$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5393,13 +5427,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An address pointing to an index in a Tasty buffer's byte array</p>
+                <div class="member-body-short" id="short-body-Addr$">
+                    <p>An address pointing to an index in a Tasty buffer's byte array</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Addr$">
+                    <p>An address pointing to an index in a Tasty buffer's byte array</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="AddrWidth" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'AddrWidth');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5425,15 +5477,35 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The maximal number of address bytes.
+                <div class="member-body-short" id="short-body-AddrWidth">
+                    <p>The maximal number of address bytes.
 Since addresses are written as base-128 natural numbers,
 the value of 4 gives a maximal array size of 256M.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-AddrWidth">
+                    <p>The maximal number of address bytes.
+Since addresses are written as base-128 natural numbers,
+the value of 4 gives a maximal array size of 256M.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoAddr" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoAddr');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5459,12 +5531,29 @@ the value of 4 gives a maximal array size of 256M.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-NoAddr">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-NoAddr">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="natSize(nat)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'natSize(nat)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5503,9 +5592,26 @@ the value of 4 gives a maximal array size of 256M.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The number of digits of the natural number <code>nat</code>, written in base 128 format.</p>
+                <div class="member-body-short" id="short-body-natSize(nat)">
+                    <p>The number of digits of the natural number <code>nat</code>, written in base 128 format.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-natSize(nat)">
+                    <p>The number of digits of the natural number <code>nat</code>, written in base 128 format.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

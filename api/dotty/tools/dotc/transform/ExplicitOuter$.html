@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             ExplicitOuter
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="OuterOps" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'OuterOps');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,18 +5379,51 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The operations in this class
+                <div class="member-body-short" id="short-body-OuterOps">
+                    <p>The operations in this class
 - add outer parameters
 - pass outer arguments to these parameters
 - replace outer this references by outer paths.
 They are ca...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-OuterOps">
+                    <p>The operations in this class
+- add outer parameters
+- pass outer arguments to these parameters
+- replace outer this references by outer paths.
+They are called from erasure. There are two constraints which
+suggest these operations should be done in erasure.
+- Replacing this references with outer paths loses aliasing information,
+so programs will not typecheck with unerased types unless a lot of type
+refinements are added. Therefore, outer paths should be computed no
+earlier than erasure.
+- outer parameters should not show up in signatures, so again
+they cannot be added before erasure.
+- outer arguments need access to outer parameters as well as to the
+original type prefixes of types in New expressions. These prefixes
+get erased during erasure. Therefore, outer arguments have to be passed
+no later than erasure.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="OuterOps$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'OuterOps$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5398,18 +5447,51 @@ They are ca...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The operations in this class
+                <div class="member-body-short" id="short-body-OuterOps$">
+                    <p>The operations in this class
 - add outer parameters
 - pass outer arguments to these parameters
 - replace outer this references by outer paths.
 They are ca...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-OuterOps$">
+                    <p>The operations in this class
+- add outer parameters
+- pass outer arguments to these parameters
+- replace outer this references by outer paths.
+They are called from erasure. There are two constraints which
+suggest these operations should be done in erasure.
+- Replacing this references with outer paths loses aliasing information,
+so programs will not typecheck with unerased types unless a lot of type
+refinements are added. Therefore, outer paths should be computed no
+earlier than erasure.
+- outer parameters should not show up in signatures, so again
+they cannot be added before erasure.
+- outer arguments need access to outer parameters as well as to the
+original type prefixes of types in New expressions. These prefixes
+get erased during erasure. Therefore, outer arguments have to be passed
+no later than erasure.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Hoistable" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Hoistable');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5430,17 +5512,34 @@ They are ca...
                 
 
                 
-                <span class="no-left">: FlagSet</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Flags$/FlagSet.html">FlagSet</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-Hoistable">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-Hoistable">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ensureOuterAccessors(cls)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ensureOuterAccessors(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5492,13 +5591,31 @@ They are ca...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Ensure that class <code>cls</code> has outer accessors</p>
+                <div class="member-body-short" id="short-body-ensureOuterAccessors(cls)(ctx)">
+                    <p>Ensure that class <code>cls</code> has outer accessors</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ensureOuterAccessors(cls)(ctx)">
+                    <p>Ensure that class <code>cls</code> has outer accessors</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="fixThis(tpe)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'fixThis(tpe)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5545,23 +5662,48 @@ They are ca...
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>It's possible (i1755.scala gives an example) that the type
+                <div class="member-body-short" id="short-body-fixThis(tpe)(ctx)">
+                    <p>It's possible (i1755.scala gives an example) that the type
 given by outerPrefix contains a This-reference to a module outside
 the context where that mod...
 </p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-fixThis(tpe)(ctx)">
+                    <p>It's possible (i1755.scala gives an example) that the type
+given by outerPrefix contains a This-reference to a module outside
+the context where that module is defined. This needs to be translated
+to an access to the module object from the enclosing class or object.</p>
+<p>This solution is a bit of a hack; it would be better to avoid
+such references to the This of a module from outside the module
+in the first place. I was not yet able to find out how such references
+arise and how to avoid them.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hasLocalInstantiation(cls)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hasLocalInstantiation(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5613,13 +5755,31 @@ the context where that mod...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Class is always instantiated in the compilation unit where it is defined</p>
+                <div class="member-body-short" id="short-body-hasLocalInstantiation(cls)(ctx)">
+                    <p>Class is always instantiated in the compilation unit where it is defined</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-hasLocalInstantiation(cls)(ctx)">
+                    <p>Class is always instantiated in the compilation unit where it is defined</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hasOuter(cls)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hasOuter(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5671,13 +5831,31 @@ the context where that mod...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Class has an outer accessor. Can be called only after phase ExplicitOuter.</p>
+                <div class="member-body-short" id="short-body-hasOuter(cls)(ctx)">
+                    <p>Class has an outer accessor. Can be called only after phase ExplicitOuter.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-hasOuter(cls)(ctx)">
+                    <p>Class has an outer accessor. Can be called only after phase ExplicitOuter.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hasOuterParam(cls)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hasOuterParam(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5729,13 +5907,31 @@ the context where that mod...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Class constructor takes an outer argument. Can be called only after phase ExplicitOuter.</p>
+                <div class="member-body-short" id="short-body-hasOuterParam(cls)(ctx)">
+                    <p>Class constructor takes an outer argument. Can be called only after phase ExplicitOuter.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-hasOuterParam(cls)(ctx)">
+                    <p>Class constructor takes an outer argument. Can be called only after phase ExplicitOuter.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="needsOuterAlways(cls)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'needsOuterAlways(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5787,16 +5983,37 @@ the context where that mod...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Class unconditionally needs an outer pointer. This is the case if
+                <div class="member-body-short" id="short-body-needsOuterAlways(cls)(ctx)">
+                    <p>Class unconditionally needs an outer pointer. This is the case if
 the class needs an outer pointer if referenced and one of the following holds:
 - we mi...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-needsOuterAlways(cls)(ctx)">
+                    <p>Class unconditionally needs an outer pointer. This is the case if
+the class needs an outer pointer if referenced and one of the following holds:
+- we might not know at all instantiation sites whether outer is referenced or not
+- we need to potentially pass along outer to a parent class or trait</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="needsOuterIfReferenced(cls)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'needsOuterIfReferenced(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5848,13 +6065,31 @@ the class needs an outer pointer if referenced and one of the following holds:
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Class needs an outer pointer, provided there is a reference to an outer this in it.</p>
+                <div class="member-body-short" id="short-body-needsOuterIfReferenced(cls)(ctx)">
+                    <p>Class needs an outer pointer, provided there is a reference to an outer this in it.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-needsOuterIfReferenced(cls)(ctx)">
+                    <p>Class needs an outer pointer, provided there is a reference to an outer this in it.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="newOuterAccessor(owner,cls)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'newOuterAccessor(owner,cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5909,18 +6144,36 @@ the class needs an outer pointer if referenced and one of the following holds:
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A new outer accessor for class <code>cls</code> which is a member of <code>owner</code></p>
+                <div class="member-body-short" id="short-body-newOuterAccessor(owner,cls)(ctx)">
+                    <p>A new outer accessor for class <code>cls</code> which is a member of <code>owner</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-newOuterAccessor(owner,cls)(ctx)">
+                    <p>A new outer accessor for class <code>cls</code> which is a member of <code>owner</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="newOuterAccessors(cls)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'newOuterAccessors(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5967,18 +6220,39 @@ the class needs an outer pointer if referenced and one of the following holds:
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The outer accessor and potentially outer param accessor needed for class <code>cls</code></p>
+                <div class="member-body-short" id="short-body-newOuterAccessors(cls)(ctx)">
+                    <p>The outer accessor and potentially outer param accessor needed for class <code>cls</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-newOuterAccessors(cls)(ctx)">
+                    <p>The outer accessor and potentially outer param accessor needed for class <code>cls</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="newOuterParamAccessor(cls)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'newOuterParamAccessor(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6025,18 +6299,36 @@ the class needs an outer pointer if referenced and one of the following holds:
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A new param accessor for the outer field in class <code>cls</code></p>
+                <div class="member-body-short" id="short-body-newOuterParamAccessor(cls)(ctx)">
+                    <p>A new param accessor for the outer field in class <code>cls</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-newOuterParamAccessor(cls)(ctx)">
+                    <p>A new param accessor for the outer field in class <code>cls</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="newOuterSym(owner,cls,name,flags)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'newOuterSym(owner,cls,name,flags)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6107,18 +6399,36 @@ the class needs an outer pointer if referenced and one of the following holds:
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A new outer accessor or param accessor</p>
+                <div class="member-body-short" id="short-body-newOuterSym(owner,cls,name,flags)(ctx)">
+                    <p>A new outer accessor or param accessor</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-newOuterSym(owner,cls,name,flags)(ctx)">
+                    <p>A new outer accessor or param accessor</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="outer(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'outer(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6159,12 +6469,29 @@ the class needs an outer pointer if referenced and one of the following holds:
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-outer(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-outer(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="outerAccName(cls)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'outerAccName(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6211,17 +6538,34 @@ the class needs an outer pointer if referenced and one of the following holds:
                 
 
                 
-                <span class="no-left">: TermName</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Names$/TermName.html">TermName</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-outerAccName(cls)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-outerAccName(cls)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="outerAccessor(cls)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'outerAccessor(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6268,21 +6612,46 @@ the class needs an outer pointer if referenced and one of the following holds:
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The outer accessor of class <code>cls</code>. To find it is a bit tricky. The
+                <div class="member-body-short" id="short-body-outerAccessor(cls)(ctx)">
+                    <p>The outer accessor of class <code>cls</code>. To find it is a bit tricky. The
 class might have been moved with new owners between ExplicitOuter and Erasure,
 where th...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-outerAccessor(cls)(ctx)">
+                    <p>The outer accessor of class <code>cls</code>. To find it is a bit tricky. The
+class might have been moved with new owners between ExplicitOuter and Erasure,
+where the method is also called. For instance, it might have been part
+of a by-name argument, and therefore be moved under a closure method
+by ElimByName. In that case looking up the method again at Erasure with the
+fully qualified name <code>outerAccName</code> will fail, because the <code>outerAccName</code>'s
+result is phase dependent. In that case we use a backup strategy where we search all
+definitions in the class to find the one with the OuterAccessor flag.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="outerParamAccessor(cls)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'outerParamAccessor(cls)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6329,18 +6698,36 @@ where th...
                 
 
                 
-                <span class="no-left">: TermSymbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$.html#TermSymbol">TermSymbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The outer parameter accessor of cass <code>cls</code></p>
+                <div class="member-body-short" id="short-body-outerParamAccessor(cls)(ctx)">
+                    <p>The outer parameter accessor of cass <code>cls</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-outerParamAccessor(cls)(ctx)">
+                    <p>The outer parameter accessor of cass <code>cls</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="outerPrefix(tpe)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'outerPrefix(tpe)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6387,18 +6774,36 @@ where th...
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The outer prefix implied by type <code>tpe</code></p>
+                <div class="member-body-short" id="short-body-outerPrefix(tpe)(ctx)">
+                    <p>The outer prefix implied by type <code>tpe</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-outerPrefix(tpe)(ctx)">
+                    <p>The outer prefix implied by type <code>tpe</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="referencesOuter(cls,tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'referencesOuter(cls,tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6458,9 +6863,26 @@ where th...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Tree references an outer class of <code>cls</code> which is not a static owner.</p>
+                <div class="member-body-short" id="short-body-referencesOuter(cls,tree)(ctx)">
+                    <p>Tree references an outer class of <code>cls</code> which is not a static owner.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-referencesOuter(cls,tree)(ctx)">
+                    <p>Tree references an outer class of <code>cls</code> which is not a static owner.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,17 @@
         <span id="entity-name">
             UndoFilter
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">DelegateFilter</span>
+            
+        </div>
+        
     </div>
 
     
@@ -5348,12 +5362,41 @@ you didn't actually want to undo!</li>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">UndoFilter</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                maxUndo:
+                            </span>
+                            Int
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="maxUndo" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'maxUndo');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5379,12 +5422,29 @@ you didn't actually want to undo!</li>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-maxUndo">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-maxUndo">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="state" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'state');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5410,16 +5470,38 @@ you didn't actually want to undo!</li>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An enum representing what the user is &quot;currently&quot; doing. Used to
+                <div class="member-body-short" id="short-body-state">
+                    <p>An enum representing what the user is &quot;currently&quot; doing. Used to
 collapse sequential actions into one undo step: e.g. 10 plai
 chars typed becomes 1 undo...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-state">
+                    <p>An enum representing what the user is &quot;currently&quot; doing. Used to
+collapse sequential actions into one undo step: e.g. 10 plai
+chars typed becomes 1 undo step, or 10 chars deleted becomes one undo
+step, but 4 chars typed followed by 3 chars deleted followed by 3 chars
+typed gets grouped into 3 different undo steps</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="undoBuffer" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'undoBuffer');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5440,21 +5522,53 @@ chars typed becomes 1 undo...
                 
 
                 
-                <span class="no-left">: Buffer</span>
+                <span class="no-left">: Buffer
+<span class="no-left no-right">[</span>
+<span class="no-right">(</span>
+Vector
+<span class="no-left no-right">[</span>
+Char
+<span class="no-left">]</span><span>, </span>Int
+<span class="no-left">)</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The current stack of states that undo/redo would cycle through.</p>
+                <div class="member-body-short" id="short-body-undoBuffer">
+                    <p>The current stack of states that undo/redo would cycle through.</p>
 <p>Not really the appropriate data structure, since when it reaches
 <code>maxUndo</code> in length we re...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-undoBuffer">
+                    <p>The current stack of states that undo/redo would cycle through.</p>
+<p>Not really the appropriate data structure, since when it reaches
+<code>maxUndo</code> in length we remove one element from the start whenever we
+append one element to the end, which costs <code>O(n)</code>. On the other hand,
+It also costs <code>O(n)</code> to maintain the buffer of previous states, and
+so <code>n</code> is probably going to be pretty small anyway (tens?) so <code>O(n)</code>
+is perfectly fine.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="undoIndex" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'undoIndex');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5480,13 +5594,31 @@ chars typed becomes 1 undo...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The current position in the undoStack that the terminal is currently in.</p>
+                <div class="member-body-short" id="short-body-undoIndex">
+                    <p>The current position in the undoStack that the terminal is currently in.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-undoIndex">
+                    <p>The current position in the undoStack that the terminal is currently in.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="_1" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_1');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5512,12 +5644,29 @@ chars typed becomes 1 undo...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-_1">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-_1">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="copy(maxUndo)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'copy(maxUndo)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5556,12 +5705,29 @@ chars typed becomes 1 undo...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-copy(maxUndo)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-copy(maxUndo)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="copy$default$1" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'copy$default$1');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5587,12 +5753,29 @@ chars typed becomes 1 undo...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-copy$default$1">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-copy$default$1">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="currentUndo" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'currentUndo');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5618,12 +5801,29 @@ chars typed becomes 1 undo...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-currentUndo">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-currentUndo">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="filter" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'filter');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5649,12 +5849,29 @@ chars typed becomes 1 undo...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-filter">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-filter">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="identifier" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'identifier');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5680,15 +5897,35 @@ chars typed becomes 1 undo...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>the <code>.toString</code> of this object, except by making it separate we force
+                <div class="member-body-short" id="short-body-identifier">
+                    <p>the <code>.toString</code> of this object, except by making it separate we force
 the implementer to provide something and stop them from accidentally
 leaving it as t...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-identifier">
+                    <p>the <code>.toString</code> of this object, except by making it separate we force
+the implementer to provide something and stop them from accidentally
+leaving it as the meaningless default.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="pushUndos(b,c)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'pushUndos(b,c)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5738,12 +5975,29 @@ Char
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-pushUndos(b,c)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-pushUndos(b,c)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="redo(b,c)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'redo(b,c)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5788,17 +6042,39 @@ Char
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: <span class="no-right">(</span>
+Vector
+<span class="no-left no-right">[</span>
+Char
+<span class="no-left">]</span><span>, </span>Int<span>, </span>Str
+<span class="no-left">)</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-redo(b,c)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-redo(b,c)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="state_=(x$1)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'state_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5837,16 +6113,38 @@ Char
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An enum representing what the user is &quot;currently&quot; doing. Used to
+                <div class="member-body-short" id="short-body-state_=(x$1)">
+                    <p>An enum representing what the user is &quot;currently&quot; doing. Used to
 collapse sequential actions into one undo step: e.g. 10 plai
 chars typed becomes 1 undo...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-state_=(x$1)">
+                    <p>An enum representing what the user is &quot;currently&quot; doing. Used to
+collapse sequential actions into one undo step: e.g. 10 plai
+chars typed becomes 1 undo step, or 10 chars deleted becomes one undo
+step, but 4 chars typed followed by 3 chars deleted followed by 3 chars
+typed gets grouped into 3 different undo steps</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="undo(b,c)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'undo(b,c)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5891,17 +6189,39 @@ Char
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: <span class="no-right">(</span>
+Vector
+<span class="no-left no-right">[</span>
+Char
+<span class="no-left">]</span><span>, </span>Int<span>, </span>Str
+<span class="no-left">)</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-undo(b,c)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-undo(b,c)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="undoIndex_=(x$1)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'undoIndex_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5940,13 +6260,31 @@ Char
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The current position in the undoStack that the terminal is currently in.</p>
+                <div class="member-body-short" id="short-body-undoIndex_=(x$1)">
+                    <p>The current position in the undoStack that the terminal is currently in.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-undoIndex_=(x$1)">
+                    <p>The current position in the undoStack that the terminal is currently in.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="wrap(bc,rest)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'wrap(bc,rest)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6001,8 +6339,24 @@ Int
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-wrap(bc,rest)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-wrap(bc,rest)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

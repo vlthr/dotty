@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             TreeUnpickler
         </span>
+        
+        
     </div>
 
     
@@ -5339,12 +5344,60 @@
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">TreeUnpickler</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                reader:
+                            </span>
+                            TastyReader
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                tastyName:
+                            </span>
+                            Table
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                posUnpicklerOpt:
+                            </span>
+                            Option
+<span class="no-left no-right">[</span>
+PositionUnpickler
+<span class="no-left">]</span>
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="Completer" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Completer');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5368,12 +5421,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-Completer">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-Completer">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="LazyReader" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'LazyReader');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5397,12 +5467,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-LazyReader">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-LazyReader">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="OwnerTree" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'OwnerTree');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5426,15 +5513,36 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A lazy datastructure that records how definitions are nested in TASTY data.
+                <div class="member-body-short" id="short-body-OwnerTree">
+                    <p>A lazy datastructure that records how definitions are nested in TASTY data.
 The structure is lazy because it needs to be computed only for forward refe...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-OwnerTree">
+                    <p>A lazy datastructure that records how definitions are nested in TASTY data.
+The structure is lazy because it needs to be computed only for forward references
+to symbols that happen before the referenced symbol is created (see <code>symbolAt</code>).
+Such forward references are rare.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="TreeReader" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'TreeReader');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5458,12 +5566,29 @@ The structure is lazy because it needs to be computed only for forward refe...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-TreeReader">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-TreeReader">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ownerTree" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ownerTree');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5489,13 +5614,31 @@ The structure is lazy because it needs to be computed only for forward refe...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The root owner tree. See <code>OwnerTree</code> class definition. Set by <code>enterTopLevel</code>.</p>
+                <div class="member-body-short" id="short-body-ownerTree">
+                    <p>The root owner tree. See <code>OwnerTree</code> class definition. Set by <code>enterTopLevel</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ownerTree">
+                    <p>The root owner tree. See <code>OwnerTree</code> class definition. Set by <code>enterTopLevel</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="posUnpicklerOpt" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'posUnpicklerOpt');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5516,17 +5659,37 @@ The structure is lazy because it needs to be computed only for forward refe...
                 
 
                 
-                <span class="no-left">: Option</span>
+                <span class="no-left">: Option
+<span class="no-left no-right">[</span>
+PositionUnpickler
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-posUnpicklerOpt">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-posUnpicklerOpt">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="reader" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'reader');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5552,12 +5715,29 @@ The structure is lazy because it needs to be computed only for forward refe...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-reader">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-reader">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="roots" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'roots');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5578,19 +5758,41 @@ The structure is lazy because it needs to be computed only for forward refe...
                 
 
                 
-                <span class="no-left">: Set</span>
+                <span class="no-left">: Set
+<span class="no-left no-right">[</span>
+SymDenotation
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The root symbol denotation which are defined by the Tasty file associated with this
+                <div class="member-body-short" id="short-body-roots">
+                    <p>The root symbol denotation which are defined by the Tasty file associated with this
 TreeUnpickler. Set by <code>enterTopLevel</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-roots">
+                    <p>The root symbol denotation which are defined by the Tasty file associated with this
+TreeUnpickler. Set by <code>enterTopLevel</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="seenRoots" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'seenRoots');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5611,19 +5813,41 @@ TreeUnpickler. Set by <code>enterTopLevel</code>.</p>
                 
 
                 
-                <span class="no-left">: Set</span>
+                <span class="no-left">: Set
+<span class="no-left no-right">[</span>
+Symbol
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The root symbols that are defined in this Tasty file. This
+                <div class="member-body-short" id="short-body-seenRoots">
+                    <p>The root symbols that are defined in this Tasty file. This
 is a subset of <code>roots.map(_.symbol)</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-seenRoots">
+                    <p>The root symbols that are defined in this Tasty file. This
+is a subset of <code>roots.map(_.symbol)</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="symAtAddr" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'symAtAddr');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5644,18 +5868,39 @@ is a subset of <code>roots.map(_.symbol)</code>.</p>
                 
 
                 
-                <span class="no-left">: HashMap</span>
+                <span class="no-left">: HashMap
+<span class="no-left no-right">[</span>
+Addr<span class="">, </span>Symbol
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A map from addresses of definition entries to the symbols they define</p>
+                <div class="member-body-short" id="short-body-symAtAddr">
+                    <p>A map from addresses of definition entries to the symbols they define</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-symAtAddr">
+                    <p>A map from addresses of definition entries to the symbols they define</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="tastyName" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'tastyName');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5681,12 +5926,29 @@ is a subset of <code>roots.map(_.symbol)</code>.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-tastyName">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-tastyName">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="treeAtAddr" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'treeAtAddr');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5707,20 +5969,43 @@ is a subset of <code>roots.map(_.symbol)</code>.</p>
                 
 
                 
-                <span class="no-left">: HashMap</span>
+                <span class="no-left">: HashMap
+<span class="no-left no-right">[</span>
+Addr<span class="">, </span><a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A temporary map from addresses of definition entries to the trees they define.
+                <div class="member-body-short" id="short-body-treeAtAddr">
+                    <p>A temporary map from addresses of definition entries to the trees they define.
 Used to remember trees of symbols that are created by a completion. Empt...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-treeAtAddr">
+                    <p>A temporary map from addresses of definition entries to the trees they define.
+Used to remember trees of symbols that are created by a completion. Emptied
+once the tree is inlined into a larger tree.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typeAtAddr" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typeAtAddr');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5741,20 +6026,43 @@ Used to remember trees of symbols that are created by a completion. Empt...
                 
 
                 
-                <span class="no-left">: HashMap</span>
+                <span class="no-left">: HashMap
+<span class="no-left no-right">[</span>
+Addr<span class="">, </span>Type
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A map from addresses of type entries to the types they define.
+                <div class="member-body-short" id="short-body-typeAtAddr">
+                    <p>A map from addresses of type entries to the types they define.
 Currently only populated for types that might be recursively referenced
 from within thems...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-typeAtAddr">
+                    <p>A map from addresses of type entries to the types they define.
+Currently only populated for types that might be recursively referenced
+from within themselves (i.e. RefinedTypes, PolyTypes, MethodTypes).</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="enterTopLevel(roots)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'enterTopLevel(roots)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5809,13 +6117,31 @@ SymDenotation
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Enter all toplevel classes and objects into their scopes</p>
+                <div class="member-body-short" id="short-body-enterTopLevel(roots)(ctx)">
+                    <p>Enter all toplevel classes and objects into their scopes</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-enterTopLevel(roots)(ctx)">
+                    <p>Enter all toplevel classes and objects into their scopes</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ownerTree_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ownerTree_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5854,13 +6180,31 @@ SymDenotation
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The root owner tree. See <code>OwnerTree</code> class definition. Set by <code>enterTopLevel</code>.</p>
+                <div class="member-body-short" id="short-body-ownerTree_=(x$1)">
+                    <p>The root owner tree. See <code>OwnerTree</code> class definition. Set by <code>enterTopLevel</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ownerTree_=(x$1)">
+                    <p>The root owner tree. See <code>OwnerTree</code> class definition. Set by <code>enterTopLevel</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="registerSym(addr,sym)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'registerSym(addr,sym)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5907,12 +6251,29 @@ SymDenotation
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-registerSym(addr,sym)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-registerSym(addr,sym)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="roots_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'roots_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5954,14 +6315,33 @@ SymDenotation
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The root symbol denotation which are defined by the Tasty file associated with this
+                <div class="member-body-short" id="short-body-roots_=(x$1)">
+                    <p>The root symbol denotation which are defined by the Tasty file associated with this
 TreeUnpickler. Set by <code>enterTopLevel</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-roots_=(x$1)">
+                    <p>The root symbol denotation which are defined by the Tasty file associated with this
+TreeUnpickler. Set by <code>enterTopLevel</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="seenRoots_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'seenRoots_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6003,14 +6383,33 @@ Symbol
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The root symbols that are defined in this Tasty file. This
+                <div class="member-body-short" id="short-body-seenRoots_=(x$1)">
+                    <p>The root symbols that are defined in this Tasty file. This
 is a subset of <code>roots.map(_.symbol)</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-seenRoots_=(x$1)">
+                    <p>The root symbols that are defined in this Tasty file. This
+is a subset of <code>roots.map(_.symbol)</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="toTermName(tname)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'toTermName(tname)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6049,12 +6448,29 @@ is a subset of <code>roots.map(_.symbol)</code>.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-toTermName(tname)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-toTermName(tname)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="toTermName(ref)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'toTermName(ref)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6093,12 +6509,29 @@ is a subset of <code>roots.map(_.symbol)</code>.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-toTermName(ref)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-toTermName(ref)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="toTypeName(ref)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'toTypeName(ref)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6137,12 +6570,29 @@ is a subset of <code>roots.map(_.symbol)</code>.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-toTypeName(ref)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-toTypeName(ref)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="unpickle()(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'unpickle()(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6183,14 +6633,34 @@ is a subset of <code>roots.map(_.symbol)</code>.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The unpickled trees</p>
+                <div class="member-body-short" id="short-body-unpickle()(ctx)">
+                    <p>The unpickled trees</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-unpickle()(ctx)">
+                    <p>The unpickled trees</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

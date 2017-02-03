@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             dotty.tools.dotc.reporting.diagnostic
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="ExtendMessage" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ExtendMessage');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,16 +5379,37 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An extended message keeps the contained message from being evaluated, while
+                <div class="member-body-short" id="short-body-ExtendMessage">
+                    <p>An extended message keeps the contained message from being evaluated, while
 allowing for extension for the <code>msg</code> string</p>
 <p>This is useful when we need to add...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ExtendMessage">
+                    <p>An extended message keeps the contained message from being evaluated, while
+allowing for extension for the <code>msg</code> string</p>
+<p>This is useful when we need to add additional information to an existing
+message.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Message" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Message');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5396,7 +5433,8 @@ allowing for extension for the <code>msg</code> string</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A <code>Message</code> contains all semantic information necessary to easily
+                <div class="member-body-short" id="short-body-Message">
+                    <p>A <code>Message</code> contains all semantic information necessary to easily
 comprehend what caused the message to be logged. Each message can be turned
 into a <code>Messa...</code>
 </p>
@@ -5405,11 +5443,37 @@ into a <code>Messa...</code>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Message">
+                    <p>A <code>Message</code> contains all semantic information necessary to easily
+comprehend what caused the message to be logged. Each message can be turned
+into a <code>MessageContainer</code> which contains the log level and can later be
+consumed by a subclass of <code>Reporter</code>. However, the error position is only
+part of <code>MessageContainer</code>, not <code>Message</code>.</p>
+<p>NOTE: you should not be persisting messages. Most messages take an implicit
+<code>Context</code> and these contexts weigh in at about 4mb per instance, as such
+persisting these will result in a memory leak.</p>
+<p>Instead use the <code>persist</code> method to create an instance that does not keep a
+reference to these contexts.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Message$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Message$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5433,12 +5497,29 @@ into a <code>Messa...</code>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-Message$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-Message$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="MessageContainer" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'MessageContainer');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5462,12 +5543,29 @@ into a <code>Messa...</code>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-MessageContainer">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-MessageContainer">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="MessageContainer$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'MessageContainer$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5491,12 +5589,29 @@ into a <code>Messa...</code>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-MessageContainer$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-MessageContainer$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoExplanation" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoExplanation');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5520,13 +5635,31 @@ into a <code>Messa...</code>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The fallback <code>Message</code> containing no explanation and having no <code>kind</code></p>
+                <div class="member-body-short" id="short-body-NoExplanation">
+                    <p>The fallback <code>Message</code> containing no explanation and having no <code>kind</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-NoExplanation">
+                    <p>The fallback <code>Message</code> containing no explanation and having no <code>kind</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoExplanation$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoExplanation$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5550,14 +5683,33 @@ into a <code>Messa...</code>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The extractor for <code>NoExplanation</code> can be used to check whether any error
+                <div class="member-body-short" id="short-body-NoExplanation$">
+                    <p>The extractor for <code>NoExplanation</code> can be used to check whether any error
 lacks an explanation</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-NoExplanation$">
+                    <p>The extractor for <code>NoExplanation</code> can be used to check whether any error
+lacks an explanation</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="messages$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'messages$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5581,8 +5733,24 @@ lacks an explanation</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-messages$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-messages$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

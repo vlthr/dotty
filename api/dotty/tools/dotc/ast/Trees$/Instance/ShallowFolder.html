@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,29 @@
         <span id="entity-name">
             ShallowFolder
         </span>
+        
+        <span id="entity-type-params">
+            <span class="no-left">[</span>
+            
+            <span class="no-left">
+                
+                    X
+                
+            </span>
+            
+            <span class="no-left">]</span>
+        </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">TreeAccumulator</span>
+            
+        </div>
+        
     </div>
 
     
@@ -5340,12 +5366,41 @@ subtrees where <code>f</code> returns a different result for the root, i.e. <cod
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">ShallowFolder</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                f:
+                            </span>
+                            <span>(</span>X<span>, </span>Tree<span>) =&gt; </span>X
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="f" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'f');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5366,17 +5421,34 @@ subtrees where <code>f</code> returns a different result for the root, i.e. <cod
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: <span>(</span>X<span>, </span>Tree<span>) =&gt; </span>X</span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-f">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-f">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="apply(x,tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'apply(x,tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5436,8 +5508,24 @@ subtrees where <code>f</code> returns a different result for the root, i.e. <cod
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-apply(x,tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-apply(x,tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

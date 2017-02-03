@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             abstract
         </span>
@@ -5330,6 +5333,17 @@
         <span id="entity-name">
             Reporter
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">ReporterResult</span>
+            
+        </div>
+        
     </div>
 
     
@@ -5340,12 +5354,35 @@ error messages.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Reporter</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="ErrorHandler" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ErrorHandler');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5366,7 +5403,7 @@ error messages.</p>
                 
                 <span class="type-alias">
                     <span class="equals"> = </span>
-                    MessageContainer<span class="right-arrow"> =&gt; </span>Context<span class="right-arrow"> =&gt; </span>Unit
+                    <a href="../../../../.././api/dotty/tools/dotc/reporting/diagnostic/MessageContainer.html">MessageContainer</a><span class="right-arrow"> =&gt; </span><a href="../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a><span class="right-arrow"> =&gt; </span>Unit
                 </span>
                 
 
@@ -5374,12 +5411,29 @@ error messages.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ErrorHandler">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ErrorHandler">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="_truncationOK" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_truncationOK');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5405,15 +5459,35 @@ error messages.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Whether very long lines can be truncated.  This exists so important
+                <div class="member-body-short" id="short-body-_truncationOK">
+                    <p>Whether very long lines can be truncated.  This exists so important
 debugging information (like printing the classpath) is not rendered
 invisible due to...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-_truncationOK">
+                    <p>Whether very long lines can be truncated.  This exists so important
+debugging information (like printing the classpath) is not rendered
+invisible due to the max message length.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="errorCount" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'errorCount');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5439,12 +5513,29 @@ invisible due to...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-errorCount">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-errorCount">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="errors" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'errors');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5465,17 +5556,37 @@ invisible due to...</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/reporting/diagnostic/messages$/Error.html">Error</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-errors">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-errors">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="incompleteHandler" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'incompleteHandler');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5501,12 +5612,29 @@ invisible due to...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-incompleteHandler">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-incompleteHandler">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="reportedFeaturesUseSites" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'reportedFeaturesUseSites');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5527,17 +5655,37 @@ invisible due to...</p>
                 
 
                 
-                <span class="no-left">: Set</span>
+                <span class="no-left">: Set
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-reportedFeaturesUseSites">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-reportedFeaturesUseSites">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="unreportedWarnings" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'unreportedWarnings');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5558,17 +5706,37 @@ invisible due to...</p>
                 
 
                 
-                <span class="no-left">: HashMap</span>
+                <span class="no-left">: HashMap
+<span class="no-left no-right">[</span>
+String<span class="">, </span>Int
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-unreportedWarnings">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-unreportedWarnings">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="warningCount" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'warningCount');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5594,12 +5762,29 @@ invisible due to...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-warningCount">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-warningCount">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="_truncationOK_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_truncationOK_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5638,15 +5823,35 @@ invisible due to...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Whether very long lines can be truncated.  This exists so important
+                <div class="member-body-short" id="short-body-_truncationOK_=(x$1)">
+                    <p>Whether very long lines can be truncated.  This exists so important
 debugging information (like printing the classpath) is not rendered
 invisible due to...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-_truncationOK_=(x$1)">
+                    <p>Whether very long lines can be truncated.  This exists so important
+debugging information (like printing the classpath) is not rendered
+invisible due to the max message length.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="allErrors" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'allErrors');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5667,17 +5872,37 @@ invisible due to...</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/reporting/diagnostic/messages$/Error.html">Error</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-allErrors">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-allErrors">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="countString(n,elements)" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'countString(n,elements)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5724,13 +5949,31 @@ invisible due to...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Returns a string meaning &quot;n elements&quot;.</p>
+                <div class="member-body-short" id="short-body-countString(n,elements)">
+                    <p>Returns a string meaning &quot;n elements&quot;.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-countString(n,elements)">
+                    <p>Returns a string meaning &quot;n elements&quot;.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="doReport(m)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'doReport(m)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5782,13 +6025,31 @@ invisible due to...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Report a diagnostic</p>
+                <div class="member-body-short" id="short-body-doReport(m)(ctx)">
+                    <p>Report a diagnostic</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-doReport(m)(ctx)">
+                    <p>Report a diagnostic</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="errorCount_=(x$1)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'errorCount_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5827,12 +6088,29 @@ invisible due to...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-errorCount_=(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-errorCount_=(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="errorsReported" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'errorsReported');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5858,14 +6136,33 @@ invisible due to...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Have errors been reported by this reporter, or in the
+                <div class="member-body-short" id="short-body-errorsReported">
+                    <p>Have errors been reported by this reporter, or in the
 case where this is a StoreReporter, by an outer reporter?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-errorsReported">
+                    <p>Have errors been reported by this reporter, or in the
+case where this is a StoreReporter, by an outer reporter?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="errors_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'errors_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5907,12 +6204,29 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-errors_=(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-errors_=(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="flush()(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'flush()(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5958,13 +6272,31 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Issue all error messages in this reporter to next outer one, or make sure they are written.</p>
+                <div class="member-body-short" id="short-body-flush()(ctx)">
+                    <p>Issue all error messages in this reporter to next outer one, or make sure they are written.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-flush()(ctx)">
+                    <p>Issue all error messages in this reporter to next outer one, or make sure they are written.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hasErrors" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hasErrors');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5990,12 +6322,29 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-hasErrors">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-hasErrors">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hasPending" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hasPending');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6021,13 +6370,31 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Does this reporter contain not yet reported errors or warnings?</p>
+                <div class="member-body-short" id="short-body-hasPending">
+                    <p>Does this reporter contain not yet reported errors or warnings?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-hasPending">
+                    <p>Does this reporter contain not yet reported errors or warnings?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hasWarnings" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hasWarnings');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6053,12 +6420,29 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-hasWarnings">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-hasWarnings">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="incomplete(m)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'incomplete(m)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6110,12 +6494,29 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-incomplete(m)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-incomplete(m)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="incompleteHandler_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'incompleteHandler_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6154,12 +6555,29 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-incompleteHandler_=(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-incompleteHandler_=(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isHidden(m)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isHidden(m)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6211,13 +6629,31 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Should this diagnostic not be reported at all?</p>
+                <div class="member-body-short" id="short-body-isHidden(m)(ctx)">
+                    <p>Should this diagnostic not be reported at all?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isHidden(m)(ctx)">
+                    <p>Should this diagnostic not be reported at all?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isReportedFeatureUseSite(featureTrait)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isReportedFeatureUseSite(featureTrait)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6256,12 +6692,29 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-isReportedFeatureUseSite(featureTrait)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-isReportedFeatureUseSite(featureTrait)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="printSummary(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'printSummary(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6302,13 +6755,31 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Print the summary of warnings and errors</p>
+                <div class="member-body-short" id="short-body-printSummary(ctx)">
+                    <p>Print the summary of warnings and errors</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-printSummary(ctx)">
+                    <p>Print the summary of warnings and errors</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="removeBufferedMessages(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'removeBufferedMessages(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6344,18 +6815,39 @@ case where this is a StoreReporter, by an outer reporter?</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/reporting/diagnostic/MessageContainer.html">MessageContainer</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If this reporter buffers messages, remove and return all buffered messages.</p>
+                <div class="member-body-short" id="short-body-removeBufferedMessages(ctx)">
+                    <p>If this reporter buffers messages, remove and return all buffered messages.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-removeBufferedMessages(ctx)">
+                    <p>If this reporter buffers messages, remove and return all buffered messages.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="report(m)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'report(m)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6407,12 +6899,29 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-report(m)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-report(m)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="reportNewFeatureUseSite(featureTrait)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'reportNewFeatureUseSite(featureTrait)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6451,12 +6960,29 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-reportNewFeatureUseSite(featureTrait)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-reportNewFeatureUseSite(featureTrait)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="summary" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'summary');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6482,13 +7008,31 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Summary of warnings and errors</p>
+                <div class="member-body-short" id="short-body-summary">
+                    <p>Summary of warnings and errors</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-summary">
+                    <p>Summary of warnings and errors</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="truncationOK" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'truncationOK');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6514,12 +7058,29 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-truncationOK">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-truncationOK">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="warningCount_=(x$1)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'warningCount_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6558,12 +7119,29 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-warningCount_=(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-warningCount_=(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withIncompleteHandler(handler)(op)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withIncompleteHandler(handler)(op)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6613,12 +7191,29 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-withIncompleteHandler(handler)(op)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-withIncompleteHandler(handler)(op)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withoutTruncating(body)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withoutTruncating(body)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6657,8 +7252,24 @@ case where this is a StoreReporter, by an outer reporter?</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-withoutTruncating(body)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-withoutTruncating(body)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

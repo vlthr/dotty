@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,6 +5333,17 @@
         <span id="entity-name">
             TypeApplications
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">AnyVal</span>
+            
+        </div>
+        
     </div>
 
     
@@ -5339,12 +5353,41 @@
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">TypeApplications</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                self:
+                            </span>
+                            Type
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="self" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'self');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5370,12 +5413,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-self">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-self">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="EtaExpand(tparams)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'EtaExpand(tparams)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5430,17 +5490,41 @@ TypeSymbol
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Convert a type constructor <code>TC</code> which has type parameters <code>T1, ..., Tn</code>
+                <div class="member-body-short" id="short-body-EtaExpand(tparams)(ctx)">
+                    <p>Convert a type constructor <code>TC</code> which has type parameters <code>T1, ..., Tn</code>
 in a context where type parameters <code>U1,...,Un</code> are expected to</p>
 <p>LambdaXYZ { Apply = TCh...</p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-EtaExpand(tparams)(ctx)">
+                    <p>Convert a type constructor <code>TC</code> which has type parameters <code>T1, ..., Tn</code>
+in a context where type parameters <code>U1,...,Un</code> are expected to</p>
+<p>LambdaXYZ { Apply = TC[hk$0, ..., hk$n] }</p>
+<p>Here, XYZ corresponds to the variances of
+- <code>U1,...,Un</code> if the variances of <code>T1,...,Tn</code> are pairwise compatible with <code>U1,...,Un</code>,
+- <code>T1,...,Tn</code> otherwise.
+v1 is compatible with v2, if v1 = v2 or v2 is non-variant.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="EtaExpandIfHK(bound)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'EtaExpandIfHK(bound)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5492,13 +5576,31 @@ in a context where type parameters <code>U1,...,Un</code> are expected to</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Eta expand if <code>self</code> is a (non-lambda) class reference and <code>bound</code> is a higher-kinded type</p>
+                <div class="member-body-short" id="short-body-EtaExpandIfHK(bound)(ctx)">
+                    <p>Eta expand if <code>self</code> is a (non-lambda) class reference and <code>bound</code> is a higher-kinded type</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-EtaExpandIfHK(bound)(ctx)">
+                    <p>Eta expand if <code>self</code> is a (non-lambda) class reference and <code>bound</code> is a higher-kinded type</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="LambdaAbstract(tparams)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'LambdaAbstract(tparams)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5553,17 +5655,39 @@ TypeParamInfo
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Lambda abstract <code>self</code> with given type parameters. Examples:</p>
+                <div class="member-body-short" id="short-body-LambdaAbstract(tparams)(ctx)">
+                    <p>Lambda abstract <code>self</code> with given type parameters. Examples:</p>
 <pre><code>type T[X] = U        becomes    type T = [X] -&gt; U
 type T[X] &gt;: L &lt;: U  becomes    type T &gt;: L &lt;: ([X] -&gt; U)
 </code></pre>
 <p>TODO: Handle parameterized lower bounds</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-LambdaAbstract(tparams)(ctx)">
+                    <p>Lambda abstract <code>self</code> with given type parameters. Examples:</p>
+<pre><code>type T[X] = U        becomes    type T = [X] -&gt; U
+type T[X] &gt;: L &lt;: U  becomes    type T &gt;: L &lt;: ([X] -&gt; U)
+</code></pre>
+<p>TODO: Handle parameterized lower bounds</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="adaptHkVariances(bound)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'adaptHkVariances(bound)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5615,7 +5739,8 @@ type T[X] &gt;: L &lt;: U  becomes    type T &gt;: L &lt;: ([X] -&gt; U)
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If argument A and type parameter P are higher-kinded, adapt the variances
+                <div class="member-body-short" id="short-body-adaptHkVariances(bound)(ctx)">
+                    <p>If argument A and type parameter P are higher-kinded, adapt the variances
 of A to those of P, ensuring that the variances of the type lambda A
 agree wit...</p>
 <p>[X]
@@ -5634,11 +5759,48 @@ agree wit...</p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-adaptHkVariances(bound)(ctx)">
+                    <p>If argument A and type parameter P are higher-kinded, adapt the variances
+of A to those of P, ensuring that the variances of the type lambda A
+agree with the variances of corresponding higher-kinded type parameters of P. Example:</p>
+<p>class GenericCompanion[+CC[X]]
+GenericCompanion[List]</p>
+<p>with adaptHkVariances, the argument <code>List</code> will expand to</p>
+<p>[X] =&gt; List[X]</p>
+<p>instead of</p>
+<p>[+X] =&gt; List[X]</p>
+<p>even though <code>List</code> is covariant. This adaptation is necessary to ignore conflicting
+variances in overriding members that have types of hk-type parameters such as
+<code>GenericCompanion[GenTraversable]</code> or <code>GenericCompanion[ListBuffer]</code>.
+When checking overriding, we need to validate the subtype relationship</p>
+<pre><code>GenericCompanion[[X] -&gt; ListBuffer[X]] &lt;: GenericCompanion[[+X] -&gt; GenTraversable[X]]
+</code></pre>
+<p>Without adaptation, this would be false, and hence an overriding error would
+result. But with adaptation, the rhs argument will be adapted to</p>
+<p>[X] -&gt; GenTraversable[X]</p>
+<p>which makes the subtype test succeed. The crucial point here is that, since
+GenericCompanion only expects a non-variant CC, the fact that GenTraversable
+is covariant is irrelevant, so can be ignored.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="appliedTo(args)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'appliedTo(args)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5693,15 +5855,35 @@ Type
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The type representing</p>
+                <div class="member-body-short" id="short-body-appliedTo(args)(ctx)">
+                    <p>The type representing</p>
 <p>T[U1, ..., Un]</p>
 <p>where</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-appliedTo(args)(ctx)">
+                    <p>The type representing</p>
+<p>T[U1, ..., Un]</p>
+<p>where</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="appliedTo(arg)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'appliedTo(arg)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5753,12 +5935,29 @@ Type
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-appliedTo(arg)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-appliedTo(arg)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="appliedTo(arg1,arg2)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'appliedTo(arg1,arg2)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5818,12 +6017,29 @@ Type
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-appliedTo(arg1,arg2)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-appliedTo(arg1,arg2)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="applyIfParameterized(args)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'applyIfParameterized(args)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5878,12 +6094,29 @@ Type
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-applyIfParameterized(args)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-applyIfParameterized(args)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="argInfo(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'argInfo(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5924,14 +6157,33 @@ Type
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If this is the image of a type argument; recover the type argument,
+                <div class="member-body-short" id="short-body-argInfo(ctx)">
+                    <p>If this is the image of a type argument; recover the type argument,
 otherwise NoType.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-argInfo(ctx)">
+                    <p>If this is the image of a type argument; recover the type argument,
+otherwise NoType.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="argInfos(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'argInfos(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5967,20 +6219,43 @@ otherwise NoType.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Type
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If this is an encoding of a (partially) applied type, return its arguments,
+                <div class="member-body-short" id="short-body-argInfos(ctx)">
+                    <p>If this is an encoding of a (partially) applied type, return its arguments,
 otherwise return Nil.
 Existential types in arguments are returned as TypeBou...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-argInfos(ctx)">
+                    <p>If this is an encoding of a (partially) applied type, return its arguments,
+otherwise return Nil.
+Existential types in arguments are returned as TypeBounds instances.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="argTypes(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'argTypes(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6016,18 +6291,39 @@ Existential types in arguments are returned as TypeBou...</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Type
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Argument types where existential types in arguments are disallowed</p>
+                <div class="member-body-short" id="short-body-argTypes(ctx)">
+                    <p>Argument types where existential types in arguments are disallowed</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-argTypes(ctx)">
+                    <p>Argument types where existential types in arguments are disallowed</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="argTypesHi(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'argTypesHi(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6063,18 +6359,39 @@ Existential types in arguments are returned as TypeBou...</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Type
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Argument types where existential types in arguments are approximated by their upper bound</p>
+                <div class="member-body-short" id="short-body-argTypesHi(ctx)">
+                    <p>Argument types where existential types in arguments are approximated by their upper bound</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-argTypesHi(ctx)">
+                    <p>Argument types where existential types in arguments are approximated by their upper bound</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="argTypesLo(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'argTypesLo(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6110,18 +6427,39 @@ Existential types in arguments are returned as TypeBou...</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Type
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Argument types where existential types in arguments are approximated by their lower bound</p>
+                <div class="member-body-short" id="short-body-argTypesLo(ctx)">
+                    <p>Argument types where existential types in arguments are approximated by their lower bound</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-argTypesLo(ctx)">
+                    <p>Argument types where existential types in arguments are approximated by their lower bound</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="baseArgInfos(base)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'baseArgInfos(base)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6168,19 +6506,41 @@ Existential types in arguments are returned as TypeBou...</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Type
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The type arguments of this type's base type instance wrt. <code>base</code>.
+                <div class="member-body-short" id="short-body-baseArgInfos(base)(ctx)">
+                    <p>The type arguments of this type's base type instance wrt. <code>base</code>.
 Existential types in arguments are returned as TypeBounds instances.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-baseArgInfos(base)(ctx)">
+                    <p>The type arguments of this type's base type instance wrt. <code>base</code>.
+Existential types in arguments are returned as TypeBounds instances.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="baseArgTypes(base)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'baseArgTypes(base)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6227,19 +6587,41 @@ Existential types in arguments are returned as TypeBounds instances.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Type
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The type arguments of this type's base type instance wrt.<code>base</code>.
+                <div class="member-body-short" id="short-body-baseArgTypes(base)(ctx)">
+                    <p>The type arguments of this type's base type instance wrt.<code>base</code>.
 Existential types in arguments are disallowed.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-baseArgTypes(base)(ctx)">
+                    <p>The type arguments of this type's base type instance wrt.<code>base</code>.
+Existential types in arguments are disallowed.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="baseArgTypesHi(base)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'baseArgTypesHi(base)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6286,19 +6668,41 @@ Existential types in arguments are disallowed.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Type
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The type arguments of this type's base type instance wrt.<code>base</code>.
+                <div class="member-body-short" id="short-body-baseArgTypesHi(base)(ctx)">
+                    <p>The type arguments of this type's base type instance wrt.<code>base</code>.
 Existential types in arguments are approximated by their upper bound.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-baseArgTypesHi(base)(ctx)">
+                    <p>The type arguments of this type's base type instance wrt.<code>base</code>.
+Existential types in arguments are approximated by their upper bound.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="baseArgTypesLo(base)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'baseArgTypesLo(base)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6345,19 +6749,41 @@ Existential types in arguments are approximated by their upper bound.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Type
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The type arguments of this type's base type instance wrt.<code>base</code>.
+                <div class="member-body-short" id="short-body-baseArgTypesLo(base)(ctx)">
+                    <p>The type arguments of this type's base type instance wrt.<code>base</code>.
 Existential types in arguments are approximated by their lower bound.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-baseArgTypesLo(base)(ctx)">
+                    <p>The type arguments of this type's base type instance wrt.<code>base</code>.
+Existential types in arguments are approximated by their lower bound.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="baseTypeWithArgs(base)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'baseTypeWithArgs(base)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6409,16 +6835,37 @@ Existential types in arguments are approximated by their lower bound.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The base type including all type arguments and applicable refinements
+                <div class="member-body-short" id="short-body-baseTypeWithArgs(base)(ctx)">
+                    <p>The base type including all type arguments and applicable refinements
 of this type. Refinements are applicable if they refine a member of
 the parent typ...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-baseTypeWithArgs(base)(ctx)">
+                    <p>The base type including all type arguments and applicable refinements
+of this type. Refinements are applicable if they refine a member of
+the parent type which furthermore is not a name-mangled type parameter.
+Existential types in arguments are returned as TypeBounds instances.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="dropAlias(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'dropAlias(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6459,13 +6906,31 @@ the parent typ...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If this is a type alias, its underlying type, otherwise the type itself</p>
+                <div class="member-body-short" id="short-body-dropAlias(ctx)">
+                    <p>If this is a type alias, its underlying type, otherwise the type itself</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-dropAlias(ctx)">
+                    <p>If this is a type alias, its underlying type, otherwise the type itself</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="elemType(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'elemType(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6506,13 +6971,31 @@ the parent typ...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The element type of a sequence or array</p>
+                <div class="member-body-short" id="short-body-elemType(ctx)">
+                    <p>The element type of a sequence or array</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-elemType(ctx)">
+                    <p>The element type of a sequence or array</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ensureHK(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ensureHK(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6553,13 +7036,31 @@ the parent typ...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If self is not higher-kinded, eta expand it.</p>
+                <div class="member-body-short" id="short-body-ensureHK(ctx)">
+                    <p>If self is not higher-kinded, eta expand it.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ensureHK(ctx)">
+                    <p>If self is not higher-kinded, eta expand it.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hkTypeParams(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hkTypeParams(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6595,18 +7096,39 @@ the parent typ...
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+TypeParamInfo
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If <code>self</code> is a higher-kinded type, its type parameters, otherwise Nil</p>
+                <div class="member-body-short" id="short-body-hkTypeParams(ctx)">
+                    <p>If <code>self</code> is a higher-kinded type, its type parameters, otherwise Nil</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-hkTypeParams(ctx)">
+                    <p>If <code>self</code> is a higher-kinded type, its type parameters, otherwise Nil</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isHK(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isHK(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6647,13 +7169,31 @@ the parent typ...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is self type higher-kinded (i.e. of kind != &quot;*&quot;)?</p>
+                <div class="member-body-short" id="short-body-isHK(ctx)">
+                    <p>Is self type higher-kinded (i.e. of kind != &quot;*&quot;)?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isHK(ctx)">
+                    <p>Is self type higher-kinded (i.e. of kind != &quot;*&quot;)?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="namedTypeParams(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'namedTypeParams(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6689,20 +7229,43 @@ the parent typ...
                 
 
                 
-                <span class="no-left">: Set</span>
+                <span class="no-left">: Set
+<span class="no-left no-right">[</span>
+TypeSymbol
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The named type parameters declared or inherited by this type.
+                <div class="member-body-short" id="short-body-namedTypeParams(ctx)">
+                    <p>The named type parameters declared or inherited by this type.
 These are all uninstantiated named type parameters of this type or one
 of its base types.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-namedTypeParams(ctx)">
+                    <p>The named type parameters declared or inherited by this type.
+These are all uninstantiated named type parameters of this type or one
+of its base types.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="safeAppliedTo(args)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'safeAppliedTo(args)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6757,15 +7320,36 @@ Type
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A cycle-safe version of <code>appliedTo</code> where computing type parameters do not force
+                <div class="member-body-short" id="short-body-safeAppliedTo(args)(ctx)">
+                    <p>A cycle-safe version of <code>appliedTo</code> where computing type parameters do not force
 the typeconstructor. Instead, if the type constructor is completing, we...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-safeAppliedTo(args)(ctx)">
+                    <p>A cycle-safe version of <code>appliedTo</code> where computing type parameters do not force
+the typeconstructor. Instead, if the type constructor is completing, we make
+up hk type parameters matching the arguments. This is needed when unpickling
+Scala2 files such as <code>scala.collection.generic.Mapfactory</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="safeDealias(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'safeDealias(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6806,13 +7390,31 @@ the typeconstructor. Instead, if the type constructor is completing, we...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Dealias type if it can be done without forcing the TypeRef's info</p>
+                <div class="member-body-short" id="short-body-safeDealias(ctx)">
+                    <p>Dealias type if it can be done without forcing the TypeRef's info</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-safeDealias(ctx)">
+                    <p>Dealias type if it can be done without forcing the TypeRef's info</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="toBounds(tparam)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'toBounds(tparam)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6864,14 +7466,33 @@ the typeconstructor. Instead, if the type constructor is completing, we...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Turn this type, which is used as an argument for
+                <div class="member-body-short" id="short-body-toBounds(tparam)(ctx)">
+                    <p>Turn this type, which is used as an argument for
 type parameter <code>tparam</code>, into a TypeBounds RHS</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-toBounds(tparam)(ctx)">
+                    <p>Turn this type, which is used as an argument for
+type parameter <code>tparam</code>, into a TypeBounds RHS</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="translateParameterized(from,to)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'translateParameterized(from,to)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6931,15 +7552,35 @@ type parameter <code>tparam</code>, into a TypeBounds RHS</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Translate a type of the form From[T] to To[T], keep other types as they are.
+                <div class="member-body-short" id="short-body-translateParameterized(from,to)(ctx)">
+                    <p>Translate a type of the form From[T] to To[T], keep other types as they are.
 <code>from</code> and <code>to</code> must be static classes, both with one type parameter, and the same...
 [T][T]</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-translateParameterized(from,to)(ctx)">
+                    <p>Translate a type of the form From[T] to To[T], keep other types as they are.
+<code>from</code> and <code>to</code> must be static classes, both with one type parameter, and the same variance.
+Do the same for by name types =&gt; From[T] and =&gt; To[T]</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typeParamSymbols(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typeParamSymbols(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6975,18 +7616,39 @@ type parameter <code>tparam</code>, into a TypeBounds RHS</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+TypeSymbol
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If <code>self</code> is a generic class, its type parameter symbols, otherwise Nil</p>
+                <div class="member-body-short" id="short-body-typeParamSymbols(ctx)">
+                    <p>If <code>self</code> is a generic class, its type parameter symbols, otherwise Nil</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-typeParamSymbols(ctx)">
+                    <p>If <code>self</code> is a generic class, its type parameter symbols, otherwise Nil</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typeParams(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typeParams(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7022,21 +7684,53 @@ type parameter <code>tparam</code>, into a TypeBounds RHS</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+TypeParamInfo
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The type parameters of this type are:
+                <div class="member-body-short" id="short-body-typeParams(ctx)">
+                    <p>The type parameters of this type are:
 For a ClassInfo type, the type parameters of its class.
 For a typeref referring to a class, the type parameters of...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-typeParams(ctx)">
+                    <p>The type parameters of this type are:
+For a ClassInfo type, the type parameters of its class.
+For a typeref referring to a class, the type parameters of the class.
+For a typeref referring to a Lambda class, the type parameters of
+its right hand side or upper bound.
+For a refinement type, the type parameters of its parent, dropping
+any type parameter that is-rebound by the refinement. &quot;Re-bind&quot; means:
+The refinement contains a TypeAlias for the type parameter, or
+it introduces bounds for the type parameter, and we are not in the
+special case of a type Lambda, where a LambdaTrait gets refined
+with the bounds on its hk args. See <code>LambdaAbstract</code>, where these
+types get introduced, and see <code>isBoundedLambda</code> below for the test.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="underlyingIfRepeated(isJava)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'underlyingIfRepeated(isJava)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7088,14 +7782,33 @@ For a typeref referring to a class, the type parameters of...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If this is repeated parameter type, its underlying Seq type,
+                <div class="member-body-short" id="short-body-underlyingIfRepeated(isJava)(ctx)">
+                    <p>If this is repeated parameter type, its underlying Seq type,
 or, if isJava is true, Array type, else the type itself.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-underlyingIfRepeated(isJava)(ctx)">
+                    <p>If this is repeated parameter type, its underlying Seq type,
+or, if isJava is true, Array type, else the type itself.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="widenToNamedTypeParams(params)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'widenToNamedTypeParams(params)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7150,15 +7863,38 @@ TypeSymbol
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The smallest supertype of this type that instantiated none of the named type parameters
+                <div class="member-body-short" id="short-body-widenToNamedTypeParams(params)(ctx)">
+                    <p>The smallest supertype of this type that instantiated none of the named type parameters
 in <code>params</code>. That is, for each named type parameter <code>p</code> in <code>params</code>,...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-widenToNamedTypeParams(params)(ctx)">
+                    <p>The smallest supertype of this type that instantiated none of the named type parameters
+in <code>params</code>. That is, for each named type parameter <code>p</code> in <code>params</code>, either there is
+no type field named <code>p</code> in this type, or <code>p</code> is a named type parameter of this type.
+The first case is important for the recursive case of AndTypes, because some of their operands might
+be missing the named parameter altogether, but the AndType as a whole can still
+contain it.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withoutArgs(typeArgs)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withoutArgs(typeArgs)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7200,9 +7936,26 @@ Type
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The core type without any type arguments.</p>
+                <div class="member-body-short" id="short-body-withoutArgs(typeArgs)">
+                    <p>The core type without any type arguments.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-withoutArgs(typeArgs)">
+                    <p>The core type without any type arguments.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

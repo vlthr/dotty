@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             private sealed abstract
         </span>
@@ -5330,6 +5333,17 @@
         <span id="entity-name">
             StatementHandler
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">StatementInfo</span>
+            
+        </div>
+        
     </div>
 
     
@@ -5340,12 +5354,41 @@ in a single interpreter request.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">StatementHandler</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                statement:
+                            </span>
+                            Tree
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="boundNames" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'boundNames');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5366,18 +5409,39 @@ in a single interpreter request.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../../../.././api/dotty/tools/dotc/core/Names$/Name.html">Name</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The names defined in the statement</p>
+                <div class="member-body-short" id="short-body-boundNames">
+                    <p>The names defined in the statement</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-boundNames">
+                    <p>The names defined in the statement</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="definesImplicit" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'definesImplicit');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5403,13 +5467,31 @@ in a single interpreter request.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Statement defines an implicit calue or method</p>
+                <div class="member-body-short" id="short-body-definesImplicit">
+                    <p>Statement defines an implicit calue or method</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-definesImplicit">
+                    <p>Statement defines an implicit calue or method</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="importedNames" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'importedNames');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5430,18 +5512,39 @@ in a single interpreter request.</p>
                 
 
                 
-                <span class="no-left">: Seq</span>
+                <span class="no-left">: Seq
+<span class="no-left no-right">[</span>
+<a href="../../../../../../.././api/dotty/tools/dotc/core/Names$/Name.html">Name</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The names imported by the statement (if it is an import clause)</p>
+                <div class="member-body-short" id="short-body-importedNames">
+                    <p>The names imported by the statement (if it is an import clause)</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-importedNames">
+                    <p>The names imported by the statement (if it is an import clause)</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="importsWildcard" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'importsWildcard');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5467,13 +5570,31 @@ in a single interpreter request.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Statement is an import that contains a wildcard</p>
+                <div class="member-body-short" id="short-body-importsWildcard">
+                    <p>Statement is an import that contains a wildcard</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-importsWildcard">
+                    <p>Statement is an import that contains a wildcard</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="statement" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'statement');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5494,18 +5615,36 @@ in a single interpreter request.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The statement</p>
+                <div class="member-body-short" id="short-body-statement">
+                    <p>The statement</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-statement">
+                    <p>The statement</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="usedNames" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'usedNames');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5526,18 +5665,39 @@ in a single interpreter request.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../../../.././api/dotty/tools/dotc/core/Names$/Name.html">Name</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The names defined previously and referred to in the statement</p>
+                <div class="member-body-short" id="short-body-usedNames">
+                    <p>The names defined previously and referred to in the statement</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-usedNames">
+                    <p>The names defined previously and referred to in the statement</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="defNames" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'defNames');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5558,17 +5718,37 @@ in a single interpreter request.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../../../.././api/dotty/tools/dotc/core/Names$/Name.html">Name</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-defNames">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-defNames">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="extraCodeToEvaluate(req,code)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'extraCodeToEvaluate(req,code)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5615,12 +5795,29 @@ in a single interpreter request.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-extraCodeToEvaluate(req,code)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-extraCodeToEvaluate(req,code)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="resultExtractionCode(req,code)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'resultExtractionCode(req,code)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5667,12 +5864,29 @@ in a single interpreter request.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-resultExtractionCode(req,code)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-resultExtractionCode(req,code)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="valAndVarNames" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'valAndVarNames');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5693,13 +5907,32 @@ in a single interpreter request.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../../../.././api/dotty/tools/dotc/core/Names$/Name.html">Name</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-valAndVarNames">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-valAndVarNames">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

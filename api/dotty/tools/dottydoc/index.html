@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             dotty.tools.dottydoc
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="dotty.tools.dottydoc.core" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'dotty.tools.dottydoc.core');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,12 +5379,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-dotty.tools.dottydoc.core">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-dotty.tools.dottydoc.core">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="dotty.tools.dottydoc.model" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'dotty.tools.dottydoc.model');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5392,12 +5425,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-dotty.tools.dottydoc.model">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-dotty.tools.dottydoc.model">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="dotty.tools.dottydoc.staticsite" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'dotty.tools.dottydoc.staticsite');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5421,12 +5471,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-dotty.tools.dottydoc.staticsite">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-dotty.tools.dottydoc.staticsite">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="dotty.tools.dottydoc.util" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'dotty.tools.dottydoc.util');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5450,12 +5517,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-dotty.tools.dottydoc.util">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-dotty.tools.dottydoc.util">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="DocCompiler" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'DocCompiler');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5479,18 +5563,44 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Custom Compiler with phases for the documentation tool</p>
+                <div class="member-body-short" id="short-body-DocCompiler">
+                    <p>Custom Compiler with phases for the documentation tool</p>
 <p>The idea here is to structure <code>dottydoc</code> around the new infrastructure. As
 such, dottydoc will itse...
 </p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-DocCompiler">
+                    <p>Custom Compiler with phases for the documentation tool</p>
+<p>The idea here is to structure <code>dottydoc</code> around the new infrastructure. As
+such, dottydoc will itself be a compiler. It will, however, produce a format
+that can be used by other tools or web-browsers.</p>
+<p>Example:
+1. Use the existing FrontEnd to typecheck the code being fed to dottydoc,
+wihtout discarding AnyVal interfaces
+2. Create an AST that is serializable
+3. Serialize to JS object</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="DocDriver" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'DocDriver');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5514,14 +5624,33 @@ such, dottydoc will itse...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p><code>DocDriver</code> implements the main entry point to the Dotty documentation
+                <div class="member-body-short" id="short-body-DocDriver">
+                    <p><code>DocDriver</code> implements the main entry point to the Dotty documentation
 tool. It's methods are used by the external scala and java APIs.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-DocDriver">
+                    <p><code>DocDriver</code> implements the main entry point to the Dotty documentation
+tool. It's methods are used by the external scala and java APIs.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="DocFrontEnd" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'DocFrontEnd');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5545,16 +5674,37 @@ tool. It's methods are used by the external scala and java APIs.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p><code>DocFrontEnd</code> uses the Dotty <code>FrontEnd</code> without discarding the AnyVal
+                <div class="member-body-short" id="short-body-DocFrontEnd">
+                    <p><code>DocFrontEnd</code> uses the Dotty <code>FrontEnd</code> without discarding the AnyVal
 interfaces for Boolean, Int, Char, Long, Byte etc.</p>
 <p>It currently still throws away Java...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-DocFrontEnd">
+                    <p><code>DocFrontEnd</code> uses the Dotty <code>FrontEnd</code> without discarding the AnyVal
+interfaces for Boolean, Int, Char, Long, Byte etc.</p>
+<p>It currently still throws away Java sources by overriding
+<code>discardAfterTyper</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Main$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Main$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5578,9 +5728,26 @@ interfaces for Boolean, Int, Char, Long, Byte etc.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Main runnable for DottyDoc</p>
+                <div class="member-body-short" id="short-body-Main$">
+                    <p>Main runnable for DottyDoc</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Main$">
+                    <p>Main runnable for DottyDoc</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

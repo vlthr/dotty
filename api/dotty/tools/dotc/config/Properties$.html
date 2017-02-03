@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,6 +5333,17 @@
         <span id="entity-name">
             Properties
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">PropertiesTrait</span>
+            
+        </div>
+        
     </div>
 
     
@@ -5339,12 +5353,23 @@
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="ScalaCompilerVersion" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ScalaCompilerVersion');">[+]</span>
                 <span class="member-annotations">
                     @sharable 
                 </span>
@@ -5370,13 +5395,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Scala manifest attributes.</p>
+                <div class="member-body-short" id="short-body-ScalaCompilerVersion">
+                    <p>Scala manifest attributes.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ScalaCompilerVersion">
+                    <p>Scala manifest attributes.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="pickJarBasedOn" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'pickJarBasedOn');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5397,17 +5440,37 @@
                 
 
                 
-                <span class="no-left">: Class</span>
+                <span class="no-left">: Class
+<span class="no-left no-right">[</span>
+Nothing<span class="bounds"> &lt;: </span>Any
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-pickJarBasedOn">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-pickJarBasedOn">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="propCategory" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'propCategory');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5433,8 +5496,24 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-propCategory">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-propCategory">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             Definitions
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="MaxImplementedFunctionArity" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'MaxImplementedFunctionArity');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5365,17 +5381,40 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The maximum arity N of a function type that's implemented
+                <div class="member-body-short" id="short-body-MaxImplementedFunctionArity">
+                    <p>The maximum arity N of a function type that's implemented
 as a trait <code>scala.FunctionN</code>. Functions of higher arity are possible,
 but are mapped in erasure...
 []
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-MaxImplementedFunctionArity">
+                    <p>The maximum arity N of a function type that's implemented
+as a trait <code>scala.FunctionN</code>. Functions of higher arity are possible,
+but are mapped in erasure to functions taking a single parameter of type
+Object[].
+The limit 22 is chosen for Scala2x interop. It could be something
+else without affecting the set of programs that can be compiled.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="MaxStructuralMethodArity" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'MaxStructuralMethodArity');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5401,13 +5440,31 @@ but are mapped in erasure...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The maximal arity of a function that can be accessed as member of a structural type</p>
+                <div class="member-body-short" id="short-body-MaxStructuralMethodArity">
+                    <p>The maximal arity of a function that can be accessed as member of a structural type</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-MaxStructuralMethodArity">
+                    <p>The maximal arity of a function that can be accessed as member of a structural type</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="MaxTupleArity" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'MaxTupleArity');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5433,10 +5490,28 @@ but are mapped in erasure...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The maximum number of elements in a tuple or product.
+                <div class="member-body-short" id="short-body-MaxTupleArity">
+                    <p>The maximum number of elements in a tuple or product.
 This should be removed once we go to hlists.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-MaxTupleArity">
+                    <p>The maximum number of elements in a tuple or product.
+This should be removed once we go to hlists.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

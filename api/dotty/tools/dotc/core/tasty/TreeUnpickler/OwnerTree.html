@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             OwnerTree
         </span>
+        
+        
     </div>
 
     
@@ -5342,12 +5347,65 @@ Such forward references are rare.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">OwnerTree</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                addr:
+                            </span>
+                            Addr
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                tag:
+                            </span>
+                            Int
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                reader:
+                            </span>
+                            TreeReader
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                end:
+                            </span>
+                            Addr
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="addr" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'addr');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5373,12 +5431,29 @@ Such forward references are rare.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-addr">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-addr">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="children" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'children');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5399,18 +5474,39 @@ Such forward references are rare.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+OwnerTree
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>All definitions that have the definition at <code>addr</code> as closest enclosing definition</p>
+                <div class="member-body-short" id="short-body-children">
+                    <p>All definitions that have the definition at <code>addr</code> as closest enclosing definition</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-children">
+                    <p>All definitions that have the definition at <code>addr</code> as closest enclosing definition</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="end" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'end');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5436,12 +5532,29 @@ Such forward references are rare.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-end">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-end">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="reader" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'reader');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5467,12 +5580,29 @@ Such forward references are rare.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-reader">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-reader">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="tag" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'tag');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5498,12 +5628,29 @@ Such forward references are rare.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-tag">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-tag">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="findOwner(addr)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'findOwner(addr)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5555,13 +5702,31 @@ Such forward references are rare.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Find the owner of definition at <code>addr</code></p>
+                <div class="member-body-short" id="short-body-findOwner(addr)(ctx)">
+                    <p>Find the owner of definition at <code>addr</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-findOwner(addr)(ctx)">
+                    <p>Find the owner of definition at <code>addr</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="toString" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'toString');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5587,8 +5752,24 @@ Such forward references are rare.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-toString">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-toString">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             Positions
         </span>
+        
+        
     </div>
 
     
@@ -5344,12 +5349,23 @@ because point would lie beyond end.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="Coord" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Coord');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5373,14 +5389,33 @@ because point would lie beyond end.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The coordinate of a symbol. This is either an index or
+                <div class="member-body-short" id="short-body-Coord">
+                    <p>The coordinate of a symbol. This is either an index or
 a zero-range position.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Coord">
+                    <p>The coordinate of a symbol. This is either an index or
+a zero-range position.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Coord$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Coord$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5404,14 +5439,33 @@ a zero-range position.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The coordinate of a symbol. This is either an index or
+                <div class="member-body-short" id="short-body-Coord$">
+                    <p>The coordinate of a symbol. This is either an index or
 a zero-range position.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Coord$">
+                    <p>The coordinate of a symbol. This is either an index or
+a zero-range position.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Position" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Position');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5435,16 +5489,38 @@ a zero-range position.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A position indicates a range between a start offset and an end offset.
+                <div class="member-body-short" id="short-body-Position">
+                    <p>A position indicates a range between a start offset and an end offset.
 Positions can be synthetic or source-derived. A source-derived position
 has in ad...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Position">
+                    <p>A position indicates a range between a start offset and an end offset.
+Positions can be synthetic or source-derived. A source-derived position
+has in addition a point lies somewhere between start and end. The point
+is roughly where the ^ would go if an error was diagnosed at that position.
+All quantities are encoded opaquely in a Long.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Position$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Position$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5468,16 +5544,38 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A position indicates a range between a start offset and an end offset.
+                <div class="member-body-short" id="short-body-Position$">
+                    <p>A position indicates a range between a start offset and an end offset.
 Positions can be synthetic or source-derived. A source-derived position
 has in ad...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Position$">
+                    <p>A position indicates a range between a start offset and an end offset.
+Positions can be synthetic or source-derived. A source-derived position
+has in addition a point lies somewhere between start and end. The point
+is roughly where the ^ would go if an error was diagnosed at that position.
+All quantities are encoded opaquely in a Long.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="MaxOffset" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'MaxOffset');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5503,13 +5601,31 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The maximal representable offset in a position</p>
+                <div class="member-body-short" id="short-body-MaxOffset">
+                    <p>The maximal representable offset in a position</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-MaxOffset">
+                    <p>The maximal representable offset in a position</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoCoord" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoCoord');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5535,13 +5651,31 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A sentinel for a missing coordinate</p>
+                <div class="member-body-short" id="short-body-NoCoord">
+                    <p>A sentinel for a missing coordinate</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-NoCoord">
+                    <p>A sentinel for a missing coordinate</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoPosition" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoPosition');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5567,13 +5701,31 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A sentinel for a non-existing position</p>
+                <div class="member-body-short" id="short-body-NoPosition">
+                    <p>A sentinel for a non-existing position</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-NoPosition">
+                    <p>A sentinel for a non-existing position</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="StartEndBits" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'StartEndBits');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5599,12 +5751,29 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-StartEndBits">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-StartEndBits">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="StartEndMask" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'StartEndMask');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5630,12 +5799,29 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-StartEndMask">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-StartEndMask">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SyntheticPointDelta" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SyntheticPointDelta');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5661,12 +5847,29 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-SyntheticPointDelta">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-SyntheticPointDelta">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Position(start,end)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Position(start,end)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5713,13 +5916,31 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A synthetic position with given start and end</p>
+                <div class="member-body-short" id="short-body-Position(start,end)">
+                    <p>A synthetic position with given start and end</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Position(start,end)">
+                    <p>A synthetic position with given start and end</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Position(start,end,point)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Position(start,end,point)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5774,13 +5995,31 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A source-derived position with given start, end, and point delta</p>
+                <div class="member-body-short" id="short-body-Position(start,end,point)">
+                    <p>A source-derived position with given start, end, and point delta</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Position(start,end,point)">
+                    <p>A source-derived position with given start, end, and point delta</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Position(start)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Position(start)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5819,13 +6058,31 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A synthetic zero-extent position that starts and ends at given <code>start</code>.</p>
+                <div class="member-body-short" id="short-body-Position(start)">
+                    <p>A synthetic zero-extent position that starts and ends at given <code>start</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Position(start)">
+                    <p>A synthetic zero-extent position that starts and ends at given <code>start</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="fromOffsets(start,end,pointDelta)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'fromOffsets(start,end,pointDelta)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5880,12 +6137,29 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-fromOffsets(start,end,pointDelta)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-fromOffsets(start,end,pointDelta)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="indexCoord(n)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'indexCoord(n)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5924,13 +6198,31 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An index coordinate</p>
+                <div class="member-body-short" id="short-body-indexCoord(n)">
+                    <p>An index coordinate</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-indexCoord(n)">
+                    <p>An index coordinate</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="offsetToInt(x)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'offsetToInt(x)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5969,14 +6261,33 @@ has in ad...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Convert offset <code>x</code> to an integer by sign extending the original
+                <div class="member-body-short" id="short-body-offsetToInt(x)">
+                    <p>Convert offset <code>x</code> to an integer by sign extending the original
 field of <code>StartEndBits</code> width.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-offsetToInt(x)">
+                    <p>Convert offset <code>x</code> to an integer by sign extending the original
+field of <code>StartEndBits</code> width.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="positionCoord(pos)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'positionCoord(pos)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6015,8 +6326,24 @@ field of <code>StartEndBits</code> width.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-positionCoord(pos)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-positionCoord(pos)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

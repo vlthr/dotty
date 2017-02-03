@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             Cursor
         </span>
+        
+        
     </div>
 
     
@@ -5339,12 +5344,59 @@
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Cursor</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                base:
+                            </span>
+                            Symbol
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Cursor</span>
+                    <span class="no-left">(</span>
+                        
+                        <span class="no-left keyword">implicit</span>
+                        
+                        
+                            <span class="no-left">
+                                ctx:
+                            </span>
+                            Context
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="base" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'base');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5365,17 +5417,34 @@
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-base">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-base">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ctx" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ctx');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5396,17 +5465,34 @@
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ctx">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ctx">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="curEntry" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'curEntry');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5427,18 +5513,36 @@
                 
 
                 
-                <span class="no-left">: ScopeEntry</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Scopes$/ScopeEntry.html">ScopeEntry</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The current entry candidate for overriding</p>
+                <div class="member-body-short" id="short-body-curEntry">
+                    <p>The current entry candidate for overriding</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-curEntry">
+                    <p>The current entry candidate for overriding</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="decls" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'decls');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5459,18 +5563,36 @@
                 
 
                 
-                <span class="no-left">: MutableScope</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Scopes$/MutableScope.html">MutableScope</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The symbols that can take part in an overriding pair</p>
+                <div class="member-body-short" id="short-body-decls">
+                    <p>The symbols that can take part in an overriding pair</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-decls">
+                    <p>The symbols that can take part in an overriding pair</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="nextEntry" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nextEntry');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5491,18 +5613,36 @@
                 
 
                 
-                <span class="no-left">: ScopeEntry</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Scopes$/ScopeEntry.html">ScopeEntry</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The current entry candidate for overridden</p>
+                <div class="member-body-short" id="short-body-nextEntry">
+                    <p>The current entry candidate for overridden</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-nextEntry">
+                    <p>The current entry candidate for overridden</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="overridden" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'overridden');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5523,18 +5663,36 @@
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If not null: The symbol overridden by overriding</p>
+                <div class="member-body-short" id="short-body-overridden">
+                    <p>If not null: The symbol overridden by overriding</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-overridden">
+                    <p>If not null: The symbol overridden by overriding</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="overriding" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'overriding');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5555,18 +5713,36 @@
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The current candidate symbol for overriding</p>
+                <div class="member-body-short" id="short-body-overriding">
+                    <p>The current candidate symbol for overriding</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-overriding">
+                    <p>The current candidate symbol for overriding</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="self" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'self');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5587,17 +5763,34 @@
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-self">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-self">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="subParents" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'subParents');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5618,17 +5811,37 @@
                 
 
                 
-                <span class="no-left">: HashMap</span>
+                <span class="no-left">: HashMap
+<span class="no-left no-right">[</span>
+<a href="../../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a><span class="">, </span>BitSet
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-subParents">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-subParents">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="visited" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'visited');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5649,20 +5862,43 @@
                 
 
                 
-                <span class="no-left">: HashSet</span>
+                <span class="no-left">: HashSet
+<span class="no-left no-right">[</span>
+<a href="../../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The scope entries that have already been visited as overridden
+                <div class="member-body-short" id="short-body-visited">
+                    <p>The scope entries that have already been visited as overridden
 (maybe excluded because of hasCommonParentAsSubclass).
 These will not appear as overridin...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-visited">
+                    <p>The scope entries that have already been visited as overridden
+(maybe excluded because of hasCommonParentAsSubclass).
+These will not appear as overriding</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="curEntry_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'curEntry_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5701,13 +5937,31 @@ These will not appear as overridin...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The current entry candidate for overriding</p>
+                <div class="member-body-short" id="short-body-curEntry_=(x$1)">
+                    <p>The current entry candidate for overriding</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-curEntry_=(x$1)">
+                    <p>The current entry candidate for overriding</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="exclude(sym)" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'exclude(sym)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5746,14 +6000,33 @@ These will not appear as overridin...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Symbols to exclude: Here these are constructors and private locals.
+                <div class="member-body-short" id="short-body-exclude(sym)">
+                    <p>Symbols to exclude: Here these are constructors and private locals.
 But it may be refined in subclasses.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-exclude(sym)">
+                    <p>Symbols to exclude: Here these are constructors and private locals.
+But it may be refined in subclasses.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hasCommonParentAsSubclass(cls1,cls2)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hasCommonParentAsSubclass(cls1,cls2)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5800,12 +6073,29 @@ But it may be refined in subclasses.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-hasCommonParentAsSubclass(cls1,cls2)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-hasCommonParentAsSubclass(cls1,cls2)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hasNext" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hasNext');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5831,12 +6121,29 @@ But it may be refined in subclasses.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-hasNext">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-hasNext">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="matches(sym1,sym2)" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'matches(sym1,sym2)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5883,15 +6190,35 @@ But it may be refined in subclasses.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Does <code>sym1</code> match <code>sym2</code> so that it qualifies as overriding.
+                <div class="member-body-short" id="short-body-matches(sym1,sym2)">
+                    <p>Does <code>sym1</code> match <code>sym2</code> so that it qualifies as overriding.
 Types always match. Term symbols match if their membertypes
 relative to <base>.this do</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-matches(sym1,sym2)">
+                    <p>Does <code>sym1</code> match <code>sym2</code> so that it qualifies as overriding.
+Types always match. Term symbols match if their membertypes
+relative to <base>.this do</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="next()" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'next()');">[+]</span>
                 <span class="member-annotations">
                     @tailrec 
                 </span>
@@ -5924,12 +6251,29 @@ relative to <base>.this do</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-next()">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-next()">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="nextEntry_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nextEntry_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5968,13 +6312,31 @@ relative to <base>.this do</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The current entry candidate for overridden</p>
+                <div class="member-body-short" id="short-body-nextEntry_=(x$1)">
+                    <p>The current entry candidate for overridden</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-nextEntry_=(x$1)">
+                    <p>The current entry candidate for overridden</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="nextOverriding()" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nextOverriding()');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6007,12 +6369,29 @@ relative to <base>.this do</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-nextOverriding()">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-nextOverriding()">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="overridden_=(x$1)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'overridden_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6051,13 +6430,31 @@ relative to <base>.this do</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If not null: The symbol overridden by overriding</p>
+                <div class="member-body-short" id="short-body-overridden_=(x$1)">
+                    <p>If not null: The symbol overridden by overriding</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-overridden_=(x$1)">
+                    <p>If not null: The symbol overridden by overriding</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="overriding_=(x$1)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'overriding_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6096,13 +6493,31 @@ relative to <base>.this do</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The current candidate symbol for overriding</p>
+                <div class="member-body-short" id="short-body-overriding_=(x$1)">
+                    <p>The current candidate symbol for overriding</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-overriding_=(x$1)">
+                    <p>The current candidate symbol for overriding</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="parents" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'parents');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6123,14 +6538,34 @@ relative to <base>.this do</p>
                 
 
                 
-                <span class="no-left">: Array</span>
+                <span class="no-left">: Array
+<span class="no-left no-right">[</span>
+<a href="../../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The parents of base (may also be refined).</p>
+                <div class="member-body-short" id="short-body-parents">
+                    <p>The parents of base (may also be refined).</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-parents">
+                    <p>The parents of base (may also be refined).</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

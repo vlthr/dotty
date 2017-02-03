@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             Regexes
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="CleanCommentLine" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'CleanCommentLine');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5365,14 +5381,33 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The body of a line, dropping the (optional) start star-marker,
+                <div class="member-body-short" id="short-body-CleanCommentLine">
+                    <p>The body of a line, dropping the (optional) start star-marker,
 one leading whitespace and all trailing whitespace</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-CleanCommentLine">
+                    <p>The body of a line, dropping the (optional) start star-marker,
+one leading whitespace and all trailing whitespace</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="CodeBlockEndRegex" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'CodeBlockEndRegex');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5398,13 +5433,31 @@ one leading whitespace and all trailing whitespace</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The end of a Scaladoc code block</p>
+                <div class="member-body-short" id="short-body-CodeBlockEndRegex">
+                    <p>The end of a Scaladoc code block</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-CodeBlockEndRegex">
+                    <p>The end of a Scaladoc code block</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="CodeBlockStartRegex" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'CodeBlockStartRegex');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5430,13 +5483,31 @@ one leading whitespace and all trailing whitespace</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The start of a Scaladoc code block</p>
+                <div class="member-body-short" id="short-body-CodeBlockStartRegex">
+                    <p>The start of a Scaladoc code block</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-CodeBlockStartRegex">
+                    <p>The start of a Scaladoc code block</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="DangerousTags" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'DangerousTags');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5462,14 +5533,33 @@ one leading whitespace and all trailing whitespace</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Dangerous HTML tags that should be replaced by something safer,
+                <div class="member-body-short" id="short-body-DangerousTags">
+                    <p>Dangerous HTML tags that should be replaced by something safer,
 such as wiki syntax, or that should be dropped</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-DangerousTags">
+                    <p>Dangerous HTML tags that should be replaced by something safer,
+such as wiki syntax, or that should be dropped</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="JavadocTags" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'JavadocTags');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5495,14 +5585,33 @@ such as wiki syntax, or that should be dropped</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Javadoc tags that should be replaced by something useful, such as wiki
+                <div class="member-body-short" id="short-body-JavadocTags">
+                    <p>Javadoc tags that should be replaced by something useful, such as wiki
 syntax, or that should be dropped.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-JavadocTags">
+                    <p>Javadoc tags that should be replaced by something useful, such as wiki
+syntax, or that should be dropped.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SafeTags" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SafeTags');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5528,13 +5637,31 @@ syntax, or that should be dropped.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Safe HTML tags that can be kept.</p>
+                <div class="member-body-short" id="short-body-SafeTags">
+                    <p>Safe HTML tags that can be kept.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-SafeTags">
+                    <p>Safe HTML tags that can be kept.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SimpleTagRegex" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SimpleTagRegex');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5560,13 +5687,31 @@ syntax, or that should be dropped.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A Scaladoc tag not linked to a symbol. Returns the name of the tag, and the rest of the line.</p>
+                <div class="member-body-short" id="short-body-SimpleTagRegex">
+                    <p>A Scaladoc tag not linked to a symbol. Returns the name of the tag, and the rest of the line.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-SimpleTagRegex">
+                    <p>A Scaladoc tag not linked to a symbol. Returns the name of the tag, and the rest of the line.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SingleTagRegex" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SingleTagRegex');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5592,13 +5737,31 @@ syntax, or that should be dropped.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A Scaladoc tag not linked to a symbol and not followed by text</p>
+                <div class="member-body-short" id="short-body-SingleTagRegex">
+                    <p>A Scaladoc tag not linked to a symbol and not followed by text</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-SingleTagRegex">
+                    <p>A Scaladoc tag not linked to a symbol and not followed by text</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SymbolTagRegex" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SymbolTagRegex');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5624,14 +5787,33 @@ syntax, or that should be dropped.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A Scaladoc tag linked to a symbol. Returns the name of the tag, the name
+                <div class="member-body-short" id="short-body-SymbolTagRegex">
+                    <p>A Scaladoc tag linked to a symbol. Returns the name of the tag, the name
 of the symbol, and the rest of the line.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-SymbolTagRegex">
+                    <p>A Scaladoc tag linked to a symbol. Returns the name of the tag, the name
+of the symbol, and the rest of the line.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="TrailingWhitespace" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'TrailingWhitespace');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5657,12 +5839,29 @@ of the symbol, and the rest of the line.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-TrailingWhitespace">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-TrailingWhitespace">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="endOfLine" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'endOfLine');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5688,12 +5887,29 @@ of the symbol, and the rest of the line.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-endOfLine">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-endOfLine">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="endOfText" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'endOfText');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5719,12 +5935,29 @@ of the symbol, and the rest of the line.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-endOfText">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-endOfText">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="safeTagMarker" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'safeTagMarker');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5750,12 +5983,29 @@ of the symbol, and the rest of the line.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-safeTagMarker">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-safeTagMarker">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="htmlReplacement(mtch)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'htmlReplacement(mtch)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5794,14 +6044,33 @@ of the symbol, and the rest of the line.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Maps a dangerous HTML tag to a safe wiki replacement, or an empty string
+                <div class="member-body-short" id="short-body-htmlReplacement(mtch)">
+                    <p>Maps a dangerous HTML tag to a safe wiki replacement, or an empty string
 if it cannot be salvaged.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-htmlReplacement(mtch)">
+                    <p>Maps a dangerous HTML tag to a safe wiki replacement, or an empty string
+if it cannot be salvaged.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="javadocReplacement(mtch)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'javadocReplacement(mtch)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5840,9 +6109,26 @@ if it cannot be salvaged.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Maps a javadoc tag to a useful wiki replacement, or an empty string if it cannot be salvaged.</p>
+                <div class="member-body-short" id="short-body-javadocReplacement(mtch)">
+                    <p>Maps a javadoc tag to a useful wiki replacement, or an empty string if it cannot be salvaged.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-javadocReplacement(mtch)">
+                    <p>Maps a javadoc tag to a useful wiki replacement, or an empty string if it cannot be salvaged.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

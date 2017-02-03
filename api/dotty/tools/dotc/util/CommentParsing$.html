@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             CommentParsing
         </span>
+        
+        
     </div>
 
     
@@ -5343,12 +5348,23 @@ handled by dottydoc.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="cleanupSectionText(str)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'cleanupSectionText(str)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5387,13 +5403,31 @@ handled by dottydoc.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Cleanup section text</p>
+                <div class="member-body-short" id="short-body-cleanupSectionText(str)">
+                    <p>Cleanup section text</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-cleanupSectionText(str)">
+                    <p>Cleanup section text</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="extractSectionParam(str,section)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'extractSectionParam(str,section)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5442,13 +5476,31 @@ Int<span>, </span>Int
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Extract the section parameter</p>
+                <div class="member-body-short" id="short-body-extractSectionParam(str,section)">
+                    <p>Extract the section parameter</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-extractSectionParam(str,section)">
+                    <p>Extract the section parameter</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="extractSectionTag(str,section)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'extractSectionTag(str,section)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5497,13 +5549,31 @@ Int<span>, </span>Int
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Extract the section tag, treating the section tag as an identifier</p>
+                <div class="member-body-short" id="short-body-extractSectionTag(str,section)">
+                    <p>Extract the section tag, treating the section tag as an identifier</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-extractSectionTag(str,section)">
+                    <p>Extract the section tag, treating the section tag as an identifier</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="extractSectionText(str,section)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'extractSectionText(str,section)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5547,18 +5617,38 @@ Int<span>, </span>Int
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: <span class="no-right">(</span>
+Int<span>, </span>Int
+<span class="no-left">)</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Extract the section text, except for the tag and comment newlines</p>
+                <div class="member-body-short" id="short-body-extractSectionText(str,section)">
+                    <p>Extract the section text, except for the tag and comment newlines</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-extractSectionText(str,section)">
+                    <p>Extract the section text, except for the tag and comment newlines</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="findAll(str,start)(p)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'findAll(str,start)(p)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5611,19 +5701,41 @@ Int<span>, </span>Int
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Int
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Return first index following <code>start</code> and starting a line (i.e. after skipLineLead)
+                <div class="member-body-short" id="short-body-findAll(str,start)(p)">
+                    <p>Return first index following <code>start</code> and starting a line (i.e. after skipLineLead)
 which satisfies predicate <code>p</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-findAll(str,start)(p)">
+                    <p>Return first index following <code>start</code> and starting a line (i.e. after skipLineLead)
+which satisfies predicate <code>p</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="findNext(str,start)(p)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'findNext(str,start)(p)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5681,14 +5793,33 @@ which satisfies predicate <code>p</code>.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Returns first index following <code>start</code> and starting a line (i.e. after skipLineLead) or starting the comment
+                <div class="member-body-short" id="short-body-findNext(str,start)(p)">
+                    <p>Returns first index following <code>start</code> and starting a line (i.e. after skipLineLead) or starting the comment
 which satisfies predicate <code>p</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-findNext(str,start)(p)">
+                    <p>Returns first index following <code>start</code> and starting a line (i.e. after skipLineLead) or starting the comment
+which satisfies predicate <code>p</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="groupDoc(str,sections)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'groupDoc(str,sections)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5735,19 +5866,43 @@ Int<span>, </span>Int
                 
 
                 
-                <span class="no-left">: Option</span>
+                <span class="no-left">: Option
+<span class="no-left no-right">[</span>
+<span class="no-right">(</span>
+Int<span>, </span>Int
+<span class="no-left">)</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Optionally start and end index of return section in <code>str</code>, or <code>None</code>
+                <div class="member-body-short" id="short-body-groupDoc(str,sections)">
+                    <p>Optionally start and end index of return section in <code>str</code>, or <code>None</code>
 if <code>str</code> does not have a @group.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-groupDoc(str,sections)">
+                    <p>Optionally start and end index of return section in <code>str</code>, or <code>None</code>
+if <code>str</code> does not have a @group.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="mergeInheritdocSections(str,idxs)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'mergeInheritdocSections(str,idxs)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5792,18 +5947,39 @@ Int
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Int
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Merge the inheritdoc sections, as they never make sense on their own</p>
+                <div class="member-body-short" id="short-body-mergeInheritdocSections(str,idxs)">
+                    <p>Merge the inheritdoc sections, as they never make sense on their own</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-mergeInheritdocSections(str,idxs)">
+                    <p>Merge the inheritdoc sections, as they never make sense on their own</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="mergeUsecaseSections(str,idxs)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'mergeUsecaseSections(str,idxs)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5848,19 +6024,41 @@ Int
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Int
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Merge sections following an usecase into the usecase comment, so they
+                <div class="member-body-short" id="short-body-mergeUsecaseSections(str,idxs)">
+                    <p>Merge sections following an usecase into the usecase comment, so they
 can override the parent symbol's sections</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-mergeUsecaseSections(str,idxs)">
+                    <p>Merge sections following an usecase into the usecase comment, so they
+can override the parent symbol's sections</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="paramDocs(str,tag,sections)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'paramDocs(str,tag,sections)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5915,19 +6113,43 @@ Int<span>, </span>Int
                 
 
                 
-                <span class="no-left">: Map</span>
+                <span class="no-left">: Map
+<span class="no-left no-right">[</span>
+String<span class="">, </span><span class="no-right">(</span>
+Int<span>, </span>Int
+<span class="no-left">)</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A map from parameter names to start/end indices describing all parameter
+                <div class="member-body-short" id="short-body-paramDocs(str,tag,sections)">
+                    <p>A map from parameter names to start/end indices describing all parameter
 sections in <code>str</code> tagged with <code>tag</code>, where <code>sections</code> is the index of <code>str</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-paramDocs(str,tag,sections)">
+                    <p>A map from parameter names to start/end indices describing all parameter
+sections in <code>str</code> tagged with <code>tag</code>, where <code>sections</code> is the index of <code>str</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="removeSections(raw,xs)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'removeSections(raw,xs)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5977,12 +6199,29 @@ String
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-removeSections(raw,xs)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-removeSections(raw,xs)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="returnDoc(str,sections)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'returnDoc(str,sections)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6029,19 +6268,43 @@ Int<span>, </span>Int
                 
 
                 
-                <span class="no-left">: Option</span>
+                <span class="no-left">: Option
+<span class="no-left no-right">[</span>
+<span class="no-right">(</span>
+Int<span>, </span>Int
+<span class="no-left">)</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Optionally start and end index of return section in <code>str</code>, or <code>None</code>
+                <div class="member-body-short" id="short-body-returnDoc(str,sections)">
+                    <p>Optionally start and end index of return section in <code>str</code>, or <code>None</code>
 if <code>str</code> does not have a @return.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-returnDoc(str,sections)">
+                    <p>Optionally start and end index of return section in <code>str</code>, or <code>None</code>
+if <code>str</code> does not have a @return.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="sectionTagMap(str,sections)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'sectionTagMap(str,sections)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6088,18 +6351,41 @@ Int<span>, </span>Int
                 
 
                 
-                <span class="no-left">: Map</span>
+                <span class="no-left">: Map
+<span class="no-left no-right">[</span>
+String<span class="">, </span><span class="no-right">(</span>
+Int<span>, </span>Int
+<span class="no-left">)</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A map from the section tag to section parameters</p>
+                <div class="member-body-short" id="short-body-sectionTagMap(str,sections)">
+                    <p>A map from the section tag to section parameters</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-sectionTagMap(str,sections)">
+                    <p>A map from the section tag to section parameters</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="skipIdent(str,start)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'skipIdent(str,start)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6146,14 +6432,33 @@ Int<span>, </span>Int
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Returns index of string <code>str</code> following <code>start</code> skipping
+                <div class="member-body-short" id="short-body-skipIdent(str,start)">
+                    <p>Returns index of string <code>str</code> following <code>start</code> skipping
 sequence of identifier characters.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-skipIdent(str,start)">
+                    <p>Returns index of string <code>str</code> following <code>start</code> skipping
+sequence of identifier characters.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="skipLineLead(str,start)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'skipLineLead(str,start)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6200,15 +6505,35 @@ sequence of identifier characters.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Returns index of string <code>str</code> after <code>start</code> skipping longest
+                <div class="member-body-short" id="short-body-skipLineLead(str,start)">
+                    <p>Returns index of string <code>str</code> after <code>start</code> skipping longest
 sequence of space and tab characters, possibly also containing
 a single <code>*</code> character or the <code>/``*...</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-skipLineLead(str,start)">
+                    <p>Returns index of string <code>str</code> after <code>start</code> skipping longest
+sequence of space and tab characters, possibly also containing
+a single <code>*</code> character or the <code>/``**</code> sequence.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="skipTag(str,start)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'skipTag(str,start)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6255,14 +6580,33 @@ a single <code>*</code> character or the <code>/``*...</code></p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Returns index of string <code>str</code> following <code>start</code> skipping
+                <div class="member-body-short" id="short-body-skipTag(str,start)">
+                    <p>Returns index of string <code>str</code> following <code>start</code> skipping
 sequence of identifier characters.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-skipTag(str,start)">
+                    <p>Returns index of string <code>str</code> following <code>start</code> skipping
+sequence of identifier characters.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="skipToEol(str,start)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'skipToEol(str,start)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6309,13 +6653,31 @@ sequence of identifier characters.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Skips to next occurrence of <code>\n</code> or to the position after the <code>/``**</code> sequence following index <code>start</code>.</p>
+                <div class="member-body-short" id="short-body-skipToEol(str,start)">
+                    <p>Skips to next occurrence of <code>\n</code> or to the position after the <code>/``**</code> sequence following index <code>start</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-skipToEol(str,start)">
+                    <p>Skips to next occurrence of <code>\n</code> or to the position after the <code>/``**</code> sequence following index <code>start</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="skipVariable(str,start)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'skipVariable(str,start)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6362,13 +6724,31 @@ sequence of identifier characters.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Returns index following variable, or start index if no variable was recognized</p>
+                <div class="member-body-short" id="short-body-skipVariable(str,start)">
+                    <p>Returns index following variable, or start index if no variable was recognized</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-skipVariable(str,start)">
+                    <p>Returns index following variable, or start index if no variable was recognized</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="skipWhitespace(str,start)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'skipWhitespace(str,start)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6415,14 +6795,33 @@ sequence of identifier characters.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Returns index of string <code>str</code> following <code>start</code> skipping longest
+                <div class="member-body-short" id="short-body-skipWhitespace(str,start)">
+                    <p>Returns index of string <code>str</code> following <code>start</code> skipping longest
 sequence of whitespace characters characters (but no newlines)</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-skipWhitespace(str,start)">
+                    <p>Returns index of string <code>str</code> following <code>start</code> skipping longest
+sequence of whitespace characters characters (but no newlines)</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="startTag(str,sections)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'startTag(str,sections)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6474,14 +6873,33 @@ Int<span>, </span>Int
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The first start tag of a list of tag intervals,
+                <div class="member-body-short" id="short-body-startTag(str,sections)">
+                    <p>The first start tag of a list of tag intervals,
 or the end of the whole comment string - 2 if list is empty</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-startTag(str,sections)">
+                    <p>The first start tag of a list of tag intervals,
+or the end of the whole comment string - 2 if list is empty</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="startsWithTag(str,section,tag)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'startsWithTag(str,section,tag)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6538,13 +6956,31 @@ Int<span>, </span>Int
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Does interval <code>iv</code> start with given <code>tag</code>?</p>
+                <div class="member-body-short" id="short-body-startsWithTag(str,section,tag)">
+                    <p>Does interval <code>iv</code> start with given <code>tag</code>?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-startsWithTag(str,section,tag)">
+                    <p>Does interval <code>iv</code> start with given <code>tag</code>?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="startsWithTag(str,start,tag)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'startsWithTag(str,start,tag)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6599,12 +7035,29 @@ Int<span>, </span>Int
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-startsWithTag(str,start,tag)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-startsWithTag(str,start,tag)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="tagIndex(str,p)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'tagIndex(str,p)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6646,23 +7099,53 @@ Int<span>, </span>Int
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<span class="no-right">(</span>
+Int<span>, </span>Int
+<span class="no-left">)</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Produces a string index, which is a list of <code>sections</code>, i.e
+                <div class="member-body-short" id="short-body-tagIndex(str,p)">
+                    <p>Produces a string index, which is a list of <code>sections</code>, i.e
 pairs of start/end positions of all tagged sections in the string.
 Every section starts with a...
 </p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-tagIndex(str,p)">
+                    <p>Produces a string index, which is a list of <code>sections</code>, i.e
+pairs of start/end positions of all tagged sections in the string.
+Every section starts with an at sign and extends to the next at sign,
+or to the end of the comment string, but excluding the final two
+characters which terminate the comment.</p>
+<p>Also take usecases into account - they need to expand until the next
+usecase or the end of the string, as they might include other sections
+of their own</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="tagIndex$default$2" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'tagIndex$default$2');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6683,23 +7166,48 @@ Every section starts with a...
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: Int<span class="right-arrow"> =&gt; </span>Boolean</span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Produces a string index, which is a list of <code>sections</code>, i.e
+                <div class="member-body-short" id="short-body-tagIndex$default$2">
+                    <p>Produces a string index, which is a list of <code>sections</code>, i.e
 pairs of start/end positions of all tagged sections in the string.
 Every section starts with a...
 </p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-tagIndex$default$2">
+                    <p>Produces a string index, which is a list of <code>sections</code>, i.e
+pairs of start/end positions of all tagged sections in the string.
+Every section starts with an at sign and extends to the next at sign,
+or to the end of the comment string, but excluding the final two
+characters which terminate the comment.</p>
+<p>Also take usecases into account - they need to expand until the next
+usecase or the end of the string, as they might include other sections
+of their own</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="variableName(str)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'variableName(str)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6738,9 +7246,26 @@ Every section starts with a...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Extracts variable name from a string, stripping any pair of surrounding braces</p>
+                <div class="member-body-short" id="short-body-variableName(str)">
+                    <p>Extracts variable name from a string, stripping any pair of surrounding braces</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-variableName(str)">
+                    <p>Extracts variable name from a string, stripping any pair of surrounding braces</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

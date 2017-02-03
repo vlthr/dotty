@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             Denotations
         </span>
+        
+        
     </div>
 
     
@@ -5379,12 +5384,23 @@ ClassDenotation          A denotation representing a single class definition.</p
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="DenotUnion" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'DenotUnion');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5408,12 +5424,29 @@ ClassDenotation          A denotation representing a single class definition.</p
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-DenotUnion">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-DenotUnion">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="DenotUnion$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'DenotUnion$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5437,12 +5470,29 @@ ClassDenotation          A denotation representing a single class definition.</p
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-DenotUnion$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-DenotUnion$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Denotation" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Denotation');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5466,7 +5516,8 @@ ClassDenotation          A denotation representing a single class definition.</p
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A denotation is the result of resolving
+                <div class="member-body-short" id="short-body-Denotation">
+                    <p>A denotation is the result of resolving
 a name (either simple identifier or select) during a given period.</p>
 <p>Denotations can be combined with <code>&amp;</code> and <code>|</code>.
 &amp; is...</p>
@@ -5479,11 +5530,45 @@ a name (either simple identifier or select) during a given period.</p>
 </p>
 <p></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Denotation">
+                    <p>A denotation is the result of resolving
+a name (either simple identifier or select) during a given period.</p>
+<p>Denotations can be combined with <code>&amp;</code> and <code>|</code>.
+&amp; is conjunction, | is disjunction.</p>
+<p><code>&amp;</code> will create an overloaded denotation from two
+non-overloaded denotations if their signatures differ.
+Analogously <code>|</code> of two denotations with different signatures will give
+an empty denotation <code>NoDenotation</code>.</p>
+<p>A denotation might refer to <code>NoSymbol</code>. This is the case if the denotation
+was produced from a disjunction of two denotations with different symbols
+and there was no common symbol in a superclass that could substitute for
+both symbols. Here is an example:</p>
+<p>Say, we have:</p>
+<p>class A { def f: A }
+class B { def f: B }
+val x: A | B = if (test) new A else new B
+val y = x.f</p>
+<p>Then the denotation of <code>y</code> is <code>SingleDenotation(NoSymbol, A | B)</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="DenotationsBase" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'DenotationsBase');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5507,12 +5592,29 @@ a name (either simple identifier or select) during a given period.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-DenotationsBase">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-DenotationsBase">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ErrorDenotation" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ErrorDenotation');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5536,12 +5638,29 @@ a name (either simple identifier or select) during a given period.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ErrorDenotation">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ErrorDenotation">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="JointRefDenotation" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'JointRefDenotation');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5565,12 +5684,29 @@ a name (either simple identifier or select) during a given period.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-JointRefDenotation">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-JointRefDenotation">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="MissingRef" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'MissingRef');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5594,14 +5730,33 @@ a name (either simple identifier or select) during a given period.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An error denotation that provides more info about the missing reference.
+                <div class="member-body-short" id="short-body-MissingRef">
+                    <p>An error denotation that provides more info about the missing reference.
 Produced by staticRef, consumed by requiredSymbol.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-MissingRef">
+                    <p>An error denotation that provides more info about the missing reference.
+Produced by staticRef, consumed by requiredSymbol.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="MissingRef$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'MissingRef$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5625,14 +5780,33 @@ Produced by staticRef, consumed by requiredSymbol.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An error denotation that provides more info about the missing reference.
+                <div class="member-body-short" id="short-body-MissingRef$">
+                    <p>An error denotation that provides more info about the missing reference.
 Produced by staticRef, consumed by requiredSymbol.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-MissingRef$">
+                    <p>An error denotation that provides more info about the missing reference.
+Produced by staticRef, consumed by requiredSymbol.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="MultiDenotation" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'MultiDenotation');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5656,13 +5830,31 @@ Produced by staticRef, consumed by requiredSymbol.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An overloaded denotation consisting of the alternatives of both given denotations.</p>
+                <div class="member-body-short" id="short-body-MultiDenotation">
+                    <p>An overloaded denotation consisting of the alternatives of both given denotations.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-MultiDenotation">
+                    <p>An overloaded denotation consisting of the alternatives of both given denotations.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="MultiDenotation$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'MultiDenotation$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5686,13 +5878,31 @@ Produced by staticRef, consumed by requiredSymbol.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An overloaded denotation consisting of the alternatives of both given denotations.</p>
+                <div class="member-body-short" id="short-body-MultiDenotation$">
+                    <p>An overloaded denotation consisting of the alternatives of both given denotations.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-MultiDenotation$">
+                    <p>An overloaded denotation consisting of the alternatives of both given denotations.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoQualifyingRef" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoQualifyingRef');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5716,15 +5926,35 @@ Produced by staticRef, consumed by requiredSymbol.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An error denotation that provides more info about alternatives
+                <div class="member-body-short" id="short-body-NoQualifyingRef">
+                    <p>An error denotation that provides more info about alternatives
 that were found but that do not qualify.
 Produced by staticRef, consumed by requiredSymbo...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-NoQualifyingRef">
+                    <p>An error denotation that provides more info about alternatives
+that were found but that do not qualify.
+Produced by staticRef, consumed by requiredSymbol.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoQualifyingRef$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoQualifyingRef$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5748,15 +5978,35 @@ Produced by staticRef, consumed by requiredSymbo...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An error denotation that provides more info about alternatives
+                <div class="member-body-short" id="short-body-NoQualifyingRef$">
+                    <p>An error denotation that provides more info about alternatives
 that were found but that do not qualify.
 Produced by staticRef, consumed by requiredSymbo...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-NoQualifyingRef$">
+                    <p>An error denotation that provides more info about alternatives
+that were found but that do not qualify.
+Produced by staticRef, consumed by requiredSymbol.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NonSymSingleDenotation" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NonSymSingleDenotation');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5780,12 +6030,29 @@ Produced by staticRef, consumed by requiredSymbo...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-NonSymSingleDenotation">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-NonSymSingleDenotation">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="PreDenotation" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'PreDenotation');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5809,14 +6076,33 @@ Produced by staticRef, consumed by requiredSymbo...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A PreDenotation represents a group of single denotations
+                <div class="member-body-short" id="short-body-PreDenotation">
+                    <p>A PreDenotation represents a group of single denotations
 It is used as an optimization to avoid forming MultiDenotations too eagerly.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-PreDenotation">
+                    <p>A PreDenotation represents a group of single denotations
+It is used as an optimization to avoid forming MultiDenotations too eagerly.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SingleDenotation" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SingleDenotation');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5840,13 +6126,31 @@ It is used as an optimization to avoid forming MultiDenotations too eagerly.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A non-overloaded denotation</p>
+                <div class="member-body-short" id="short-body-SingleDenotation">
+                    <p>A non-overloaded denotation</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-SingleDenotation">
+                    <p>A non-overloaded denotation</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="StaleSymbol" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'StaleSymbol');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5870,13 +6174,31 @@ It is used as an optimization to avoid forming MultiDenotations too eagerly.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An exception for accessing symbols that are no longer valid in current run</p>
+                <div class="member-body-short" id="short-body-StaleSymbol">
+                    <p>An exception for accessing symbols that are no longer valid in current run</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-StaleSymbol">
+                    <p>An exception for accessing symbols that are no longer valid in current run</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="UniqueRefDenotation" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'UniqueRefDenotation');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5900,12 +6222,29 @@ It is used as an optimization to avoid forming MultiDenotations too eagerly.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-UniqueRefDenotation">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-UniqueRefDenotation">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="doubleDefError(denot1,denot2,pre)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'doubleDefError(denot1,denot2,pre)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5973,12 +6312,29 @@ It is used as an optimization to avoid forming MultiDenotations too eagerly.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-doubleDefError(denot1,denot2,pre)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-doubleDefError(denot1,denot2,pre)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="doubleDefError$default$3" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'doubleDefError$default$3');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6004,12 +6360,29 @@ It is used as an optimization to avoid forming MultiDenotations too eagerly.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-doubleDefError$default$3">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-doubleDefError$default$3">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="eqDenotation" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'eqDenotation');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6030,17 +6403,37 @@ It is used as an optimization to avoid forming MultiDenotations too eagerly.</p>
                 
 
                 
-                <span class="no-left">: Eq</span>
+                <span class="no-left">: Eq
+<span class="no-left no-right">[</span>
+Denotation<span class="">, </span>Denotation
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-eqDenotation">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-eqDenotation">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isDoubleDef(sym1,sym2)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isDoubleDef(sym1,sym2)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6100,9 +6493,26 @@ It is used as an optimization to avoid forming MultiDenotations too eagerly.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A double definition</p>
+                <div class="member-body-short" id="short-body-isDoubleDef(sym1,sym2)(ctx)">
+                    <p>A double definition</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isDoubleDef(sym1,sym2)(ctx)">
+                    <p>A double definition</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

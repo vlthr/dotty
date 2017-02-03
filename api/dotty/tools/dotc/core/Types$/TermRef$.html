@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             TermRef
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="all(prefix,name)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'all(prefix,name)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5399,15 +5415,35 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create term ref with given name, without specifying a signature.
+                <div class="member-body-short" id="short-body-all(prefix,name)(ctx)">
+                    <p>Create term ref with given name, without specifying a signature.
 Its meaning is the (potentially multi-) denotation of the member(s)
 of prefix with give...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-all(prefix,name)(ctx)">
+                    <p>Create term ref with given name, without specifying a signature.
+Its meaning is the (potentially multi-) denotation of the member(s)
+of prefix with given name.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="apply(prefix,sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'apply(prefix,sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5467,15 +5503,35 @@ of prefix with give...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create term ref referring to given symbol, taking the signature
+                <div class="member-body-short" id="short-body-apply(prefix,sym)(ctx)">
+                    <p>Create term ref referring to given symbol, taking the signature
 from the symbol if it is completed, or creating a term ref without
 signature, if symbol...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-apply(prefix,sym)(ctx)">
+                    <p>Create term ref referring to given symbol, taking the signature
+from the symbol if it is completed, or creating a term ref without
+signature, if symbol is not yet completed.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="apply(prefix,name,denot)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'apply(prefix,name,denot)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5543,15 +5599,35 @@ signature, if symbol...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create term ref to given initial denotation, taking the signature
+                <div class="member-body-short" id="short-body-apply(prefix,name,denot)(ctx)">
+                    <p>Create term ref to given initial denotation, taking the signature
 from the denotation if it is completed, or creating a term ref without
 signature, if d...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-apply(prefix,name,denot)(ctx)">
+                    <p>Create term ref to given initial denotation, taking the signature
+from the denotation if it is completed, or creating a term ref without
+signature, if denotation is not yet completed.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="symbolicRefs(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'symbolicRefs(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5592,12 +5668,29 @@ signature, if d...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-symbolicRefs(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-symbolicRefs(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="unapply(x$1)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'unapply(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5636,12 +5729,29 @@ signature, if d...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-unapply(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-unapply(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withFixedSym(prefix,name,sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withFixedSym(prefix,name,sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5709,14 +5819,33 @@ signature, if d...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create a non-member term ref (which cannot be reloaded using <code>member</code>),
+                <div class="member-body-short" id="short-body-withFixedSym(prefix,name,sym)(ctx)">
+                    <p>Create a non-member term ref (which cannot be reloaded using <code>member</code>),
 with given prefix, name, and signature</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-withFixedSym(prefix,name,sym)(ctx)">
+                    <p>Create a non-member term ref (which cannot be reloaded using <code>member</code>),
+with given prefix, name, and signature</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withSig(prefix,sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withSig(prefix,sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5776,14 +5905,33 @@ with given prefix, name, and signature</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create a term ref to given symbol, taking the signature from the symbol
+                <div class="member-body-short" id="short-body-withSig(prefix,sym)(ctx)">
+                    <p>Create a term ref to given symbol, taking the signature from the symbol
 (which must be completed).</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-withSig(prefix,sym)(ctx)">
+                    <p>Create a term ref to given symbol, taking the signature from the symbol
+(which must be completed).</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withSig(prefix,name,sig)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withSig(prefix,name,sig)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5851,13 +5999,31 @@ with given prefix, name, and signature</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create a term ref with given prefix, name and signature</p>
+                <div class="member-body-short" id="short-body-withSig(prefix,name,sig)(ctx)">
+                    <p>Create a term ref with given prefix, name and signature</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-withSig(prefix,name,sig)(ctx)">
+                    <p>Create a term ref with given prefix, name and signature</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withSigAndDenot(prefix,name,sig,denot)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withSigAndDenot(prefix,name,sig,denot)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5933,13 +6099,31 @@ with given prefix, name, and signature</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create a term ref with given prefix, name, signature, and initial denotation</p>
+                <div class="member-body-short" id="short-body-withSigAndDenot(prefix,name,sig,denot)(ctx)">
+                    <p>Create a term ref with given prefix, name, signature, and initial denotation</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-withSigAndDenot(prefix,name,sig,denot)(ctx)">
+                    <p>Create a term ref with given prefix, name, signature, and initial denotation</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withSymAndName(prefix,sym,name)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withSymAndName(prefix,sym,name)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6007,12 +6191,34 @@ with given prefix, name, and signature</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create a term ref referring to given symbol with given name, taking the signature
+                <div class="member-body-short" id="short-body-withSymAndName(prefix,sym,name)(ctx)">
+                    <p>Create a term ref referring to given symbol with given name, taking the signature
 from the symbol if it is completed, or creating a term ref without
 sig...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-withSymAndName(prefix,sym,name)(ctx)">
+                    <p>Create a term ref referring to given symbol with given name, taking the signature
+from the symbol if it is completed, or creating a term ref without
+signature, if symbol is not yet completed. This is very similar to TermRef(Type, Symbol),
+except for two differences:
+(1) The symbol might not yet have a denotation, so the name needs to be given explicitly.
+(2) The name in the term ref need not be the same as the name of the Symbol.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

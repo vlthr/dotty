@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             LinkSource
         </span>
+        
+        
     </div>
 
     
@@ -5340,12 +5345,23 @@ Clients should inherit from Container instead.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="next" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'next');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5366,17 +5382,37 @@ Clients should inherit from Container instead.</p>
                 
 
                 
-                <span class="no-left">: Link</span>
+                <span class="no-left">: Link
+<span class="no-left no-right">[</span>
+Nothing<span class="bounds"> &lt;: </span>Any
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-next">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-next">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="allAttachments" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'allAttachments');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5397,18 +5433,44 @@ Clients should inherit from Container instead.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<span class="no-right">(</span>
+Key
+<span class="no-left no-right">[</span>
+Nothing<span class="bounds"> &lt;: </span>Any
+<span class="no-left">]</span><span>, </span>Any
+<span class="no-left">)</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The list of all keys and values attached to this container.</p>
+                <div class="member-body-short" id="short-body-allAttachments">
+                    <p>The list of all keys and values attached to this container.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-allAttachments">
+                    <p>The list of all keys and values attached to this container.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="attachment(key)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'attachment(key)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5450,13 +5512,31 @@ V
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The attachment corresponding to <code>key</code>.</p>
+                <div class="member-body-short" id="short-body-attachment(key)">
+                    <p>The attachment corresponding to <code>key</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-attachment(key)">
+                    <p>The attachment corresponding to <code>key</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="attachmentOrElse(key,default)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'attachmentOrElse(key,default)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5506,14 +5586,33 @@ V
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The attachment corresponding to <code>key</code>, or <code>default</code>
+                <div class="member-body-short" id="short-body-attachmentOrElse(key,default)">
+                    <p>The attachment corresponding to <code>key</code>, or <code>default</code>
 if no attachment with <code>key</code> exists.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-attachmentOrElse(key,default)">
+                    <p>The attachment corresponding to <code>key</code>, or <code>default</code>
+if no attachment with <code>key</code> exists.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="getAttachment(key)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'getAttachment(key)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5550,18 +5649,39 @@ V
                 
 
                 
-                <span class="no-left">: Option</span>
+                <span class="no-left">: Option
+<span class="no-left no-right">[</span>
+V
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Optionally get attachment corresponding to <code>key</code></p>
+                <div class="member-body-short" id="short-body-getAttachment(key)">
+                    <p>Optionally get attachment corresponding to <code>key</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-getAttachment(key)">
+                    <p>Optionally get attachment corresponding to <code>key</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="next_=(x$1)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'next_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5603,12 +5723,29 @@ Nothing<span class="bounds"> &lt;: </span>Any
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-next_=(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-next_=(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="putAttachment(key,value)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'putAttachment(key,value)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5653,18 +5790,39 @@ V
                 
 
                 
-                <span class="no-left">: Option</span>
+                <span class="no-left">: Option
+<span class="no-left no-right">[</span>
+V
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Add attachment with given <code>key</code> and <code>value</code>.</p>
+                <div class="member-body-short" id="short-body-putAttachment(key,value)">
+                    <p>Add attachment with given <code>key</code> and <code>value</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-putAttachment(key,value)">
+                    <p>Add attachment with given <code>key</code> and <code>value</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="removeAttachment(key)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'removeAttachment(key)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5701,14 +5859,34 @@ V
                 
 
                 
-                <span class="no-left">: Option</span>
+                <span class="no-left">: Option
+<span class="no-left no-right">[</span>
+V
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Remove attachment with given <code>key</code>, if it exists.</p>
+                <div class="member-body-short" id="short-body-removeAttachment(key)">
+                    <p>Remove attachment with given <code>key</code>, if it exists.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-removeAttachment(key)">
+                    <p>Remove attachment with given <code>key</code>, if it exists.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             sealed
         </span>
@@ -5330,6 +5333,39 @@
         <span id="entity-name">
             List
         </span>
+        
+        <span id="entity-type-params">
+            <span class="no-left">[</span>
+            
+            <span class="no-left">
+                
+                    +A
+                
+            </span>
+            
+            <span class="no-left">]</span>
+        </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">LinearSeq</span>
+            
+            
+            <span class="keyword">with</span>
+            
+            <span class="entity-super-type">SeqLike</span>
+            
+            
+            <span class="keyword">with</span>
+            
+            <span class="entity-super-type">Buildable</span>
+            
+        </div>
+        
     </div>
 
     
@@ -5339,12 +5375,23 @@
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="++(xs)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '++(xs)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5381,18 +5428,39 @@ B
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+B
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>When concatenating with another list <code>xs</code>, avoid copying <code>xs</code></p>
+                <div class="member-body-short" id="short-body-++(xs)">
+                    <p>When concatenating with another list <code>xs</code>, avoid copying <code>xs</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-++(xs)">
+                    <p>When concatenating with another list <code>xs</code>, avoid copying <code>xs</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="++:(prefix)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '++:(prefix)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5429,18 +5497,39 @@ B
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+B
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Prepend operation that avoids copying this list</p>
+                <div class="member-body-short" id="short-body-++:(prefix)">
+                    <p>Prepend operation that avoids copying this list</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-++:(prefix)">
+                    <p>Prepend operation that avoids copying this list</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="::(elem)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '::(elem)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5474,18 +5563,39 @@ B
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+B
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Prepend element</p>
+                <div class="member-body-short" id="short-body-::(elem)">
+                    <p>Prepend element</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-::(elem)">
+                    <p>Prepend element</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="className" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'className');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5511,16 +5621,37 @@ B
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The class name of this collection. To be used for converting to string.
+                <div class="member-body-short" id="short-body-className">
+                    <p>The class name of this collection. To be used for converting to string.
 Collections generally print like this:</p>
 <pre><code> &lt;className&gt;(elem_1, ..., elem_n)
 </code></pre>
 
+                </div>
+                <div class="member-body-long" id ="long-body-className">
+                    <p>The class name of this collection. To be used for converting to string.
+Collections generally print like this:</p>
+<pre><code> &lt;className&gt;(elem_1, ..., elem_n)
+</code></pre>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="fromIterable(c)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'fromIterable(c)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5557,17 +5688,37 @@ B
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+B
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-fromIterable(c)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-fromIterable(c)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="newBuilder" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'newBuilder');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5588,14 +5739,34 @@ B
                 
 
                 
-                <span class="no-left">: Builder</span>
+                <span class="no-left">: Builder
+<span class="no-left no-right">[</span>
+A<span class="">, </span>Repr
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Creates a new builder.</p>
+                <div class="member-body-short" id="short-body-newBuilder">
+                    <p>Creates a new builder.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-newBuilder">
+                    <p>Creates a new builder.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

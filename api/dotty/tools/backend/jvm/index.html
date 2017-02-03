@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             dotty.tools.backend.jvm
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="CollectEntryPoints" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'CollectEntryPoints');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,13 +5379,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Created by dark on 26/11/14.</p>
+                <div class="member-body-short" id="short-body-CollectEntryPoints">
+                    <p>Created by dark on 26/11/14.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-CollectEntryPoints">
+                    <p>Created by dark on 26/11/14.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="CollectEntryPoints$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'CollectEntryPoints$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5393,12 +5427,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-CollectEntryPoints$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-CollectEntryPoints$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="CollectSuperCalls" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'CollectSuperCalls');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5422,17 +5473,41 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Collect all super calls to trait members.</p>
+                <div class="member-body-short" id="short-body-CollectSuperCalls">
+                    <p>Collect all super calls to trait members.</p>
 <p>For each super reference to trait member, register a call from the current class to the
 owner of the reference...</p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-CollectSuperCalls">
+                    <p>Collect all super calls to trait members.</p>
+<p>For each super reference to trait member, register a call from the current class to the
+owner of the referenced member.</p>
+<p>This information is used to know if it is safe to remove a redundant mixin class.
+A redundant mixin class is one that is implemented by another mixin class. As the
+methods in a redundant mixin class could be implemented with a default abstract method,
+the redundant mixin class could be required as a parent by the JVM.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="DottyBackendInterface" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'DottyBackendInterface');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5456,12 +5531,29 @@ owner of the reference...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-DottyBackendInterface">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-DottyBackendInterface">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="GenBCode" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'GenBCode');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5485,12 +5577,29 @@ owner of the reference...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-GenBCode">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-GenBCode">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="GenBCodePipeline" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'GenBCodePipeline');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5514,12 +5623,29 @@ owner of the reference...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-GenBCodePipeline">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-GenBCodePipeline">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="LabelDefs" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'LabelDefs');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5543,7 +5669,8 @@ owner of the reference...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Verifies that each Label DefDef has only a single address to jump back and
+                <div class="member-body-short" id="short-body-LabelDefs">
+                    <p>Verifies that each Label DefDef has only a single address to jump back and
 reorders them such that they are not nested and this address is a
 fall-throug...</p>
 <p></p>
@@ -5553,7 +5680,54 @@ fall-throug...</p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-LabelDefs">
+                    <p>Verifies that each Label DefDef has only a single address to jump back and
+reorders them such that they are not nested and this address is a
+fall-through address for the JVM.</p>
+<pre><code class="language-scala">&lt;label&gt; def foo(i: Int) = {
+ &lt;label&gt; def bar = 0
+ &lt;label&gt; def dough(i: Int) = if (i == 0) bar else foo(i-1)
+ dough(i)
+}
+
+foo(100)
+</code></pre>
+<p>will get rewritten to:</p>
+<pre><code class="language-scala">&lt;label&gt; def foo(i: Int) = dough(i)
+&lt;label&gt; def dough(i: Int) = if (i == 0) bar else foo(i-1)
+&lt;label&gt; def bar = 2
+ foo(100)
+</code></pre>
+<p>Proposed way to generate this pattern in backend is:</p>
+<pre><code class="language-scala">foo(100)
+&lt;jump foo&gt;
+&lt;label&gt; def foo(i: Int) = dough(i)
+// &lt;jump a&gt;                           // unreachable
+&lt;label&gt; def dough(i: Int) = if (i == 0) bar else foo(i-1)
+// &lt;jump a&gt;                           // unreachable
+&lt;label&gt; def bar = 2
+// &lt;jump a&gt;                           // unreachable
+&lt;asm point a&gt;
+</code></pre>
+<p>Unreachable jumps will be eliminated by local dead code analysis.
+After JVM is smart enough to remove next-line jumps</p>
+<p>Note that Label DefDefs can be only nested in Block, otherwise no one would
+be able to call them Other DefDefs are eliminated</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

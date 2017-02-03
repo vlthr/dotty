@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,6 +5333,22 @@
         <span id="entity-name">
             TypeVar
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">CachedProxyType</span>
+            
+            
+            <span class="keyword">with</span>
+            
+            <span class="entity-super-type">ValueType</span>
+            
+        </div>
+        
     </div>
 
     
@@ -5347,12 +5366,65 @@ in the current typer state.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">TypeVar</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                origin:
+                            </span>
+                            PolyParam
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                creatorState:
+                            </span>
+                            TyperState
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                bindingTree:
+                            </span>
+                            Tree
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                owner:
+                            </span>
+                            Symbol
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="bindingTree" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'bindingTree');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5373,17 +5445,34 @@ in the current typer state.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-bindingTree">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-bindingTree">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="creatorState" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'creatorState');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5409,12 +5498,29 @@ in the current typer state.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-creatorState">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-creatorState">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="inst" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'inst');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5440,13 +5546,31 @@ in the current typer state.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The permanent instance type of the variable, or NoType is none is given yet</p>
+                <div class="member-body-short" id="short-body-inst">
+                    <p>The permanent instance type of the variable, or NoType is none is given yet</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-inst">
+                    <p>The permanent instance type of the variable, or NoType is none is given yet</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="origin" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'origin');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5472,12 +5596,29 @@ in the current typer state.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-origin">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-origin">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="owner" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'owner');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5503,12 +5644,29 @@ in the current typer state.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-owner">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-owner">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="owningState" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'owningState');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5534,14 +5692,33 @@ in the current typer state.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The state owning the variable. This is at first <code>creatorState</code>, but it can
+                <div class="member-body-short" id="short-body-owningState">
+                    <p>The state owning the variable. This is at first <code>creatorState</code>, but it can
 be changed to an enclosing state on a commit.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-owningState">
+                    <p>The state owning the variable. This is at first <code>creatorState</code>, but it can
+be changed to an enclosing state on a commit.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="computeHash" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'computeHash');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5567,12 +5744,29 @@ be changed to an enclosing state on a commit.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-computeHash">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-computeHash">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="equals(that)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'equals(that)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5611,12 +5805,29 @@ be changed to an enclosing state on a commit.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-equals(that)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-equals(that)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="inst_=(x$1)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'inst_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5655,13 +5866,31 @@ be changed to an enclosing state on a commit.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The permanent instance type of the variable, or NoType is none is given yet</p>
+                <div class="member-body-short" id="short-body-inst_=(x$1)">
+                    <p>The permanent instance type of the variable, or NoType is none is given yet</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-inst_=(x$1)">
+                    <p>The permanent instance type of the variable, or NoType is none is given yet</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="instanceOpt(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'instanceOpt(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5702,14 +5931,33 @@ be changed to an enclosing state on a commit.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The instance type of this variable, or NoType if the variable is currently
+                <div class="member-body-short" id="short-body-instanceOpt(ctx)">
+                    <p>The instance type of this variable, or NoType if the variable is currently
 uninstantiated</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-instanceOpt(ctx)">
+                    <p>The instance type of this variable, or NoType if the variable is currently
+uninstantiated</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="instantiate(fromBelow)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'instantiate(fromBelow)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5761,16 +6009,39 @@ uninstantiated</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Instantiate variable from the constraints over its <code>origin</code>.
+                <div class="member-body-short" id="short-body-instantiate(fromBelow)(ctx)">
+                    <p>Instantiate variable from the constraints over its <code>origin</code>.
 If <code>fromBelow</code> is true, the variable is instantiated to the lub
 of its lower bounds in the curr...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-instantiate(fromBelow)(ctx)">
+                    <p>Instantiate variable from the constraints over its <code>origin</code>.
+If <code>fromBelow</code> is true, the variable is instantiated to the lub
+of its lower bounds in the current constraint; otherwise it is
+instantiated to the glb of its upper bounds. However, a lower bound
+instantiation can be a singleton type only if the upper bound
+is also a singleton type.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="instantiateWith(tp)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'instantiateWith(tp)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5822,13 +6093,31 @@ of its lower bounds in the curr...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Instantiate variable with given type</p>
+                <div class="member-body-short" id="short-body-instantiateWith(tp)(ctx)">
+                    <p>Instantiate variable with given type</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-instantiateWith(tp)(ctx)">
+                    <p>Instantiate variable with given type</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isInstantiated(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isInstantiated(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5869,13 +6158,31 @@ of its lower bounds in the curr...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is the variable already instantiated?</p>
+                <div class="member-body-short" id="short-body-isInstantiated(ctx)">
+                    <p>Is the variable already instantiated?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isInstantiated(ctx)">
+                    <p>Is the variable already instantiated?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="owningState_=(x$1)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'owningState_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5914,14 +6221,33 @@ of its lower bounds in the curr...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The state owning the variable. This is at first <code>creatorState</code>, but it can
+                <div class="member-body-short" id="short-body-owningState_=(x$1)">
+                    <p>The state owning the variable. This is at first <code>creatorState</code>, but it can
 be changed to an enclosing state on a commit.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-owningState_=(x$1)">
+                    <p>The state owning the variable. This is at first <code>creatorState</code>, but it can
+be changed to an enclosing state on a commit.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="stripTypeVar(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'stripTypeVar(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5962,14 +6288,33 @@ be changed to an enclosing state on a commit.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Unwrap to instance (if instantiated) or origin (if not), until result
+                <div class="member-body-short" id="short-body-stripTypeVar(ctx)">
+                    <p>Unwrap to instance (if instantiated) or origin (if not), until result
 is no longer a TypeVar</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-stripTypeVar(ctx)">
+                    <p>Unwrap to instance (if instantiated) or origin (if not), until result
+is no longer a TypeVar</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="toString" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'toString');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5995,12 +6340,29 @@ is no longer a TypeVar</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-toString">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-toString">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="underlying(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'underlying(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6041,9 +6403,26 @@ is no longer a TypeVar</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If the variable is instantiated, its instance, otherwise its origin</p>
+                <div class="member-body-short" id="short-body-underlying(ctx)">
+                    <p>If the variable is instantiated, its instance, otherwise its origin</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-underlying(ctx)">
+                    <p>If the variable is instantiated, its instance, otherwise its origin</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

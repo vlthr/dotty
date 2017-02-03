@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             tags
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="Docstring" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Docstring');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,15 +5379,40 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Allows the extraction of docstrings from the given path. E.g:</p>
+                <div class="member-body-short" id="short-body-Docstring">
+                    <p>Allows the extraction of docstrings from the given path. E.g:</p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Docstring">
+                    <p>Allows the extraction of docstrings from the given path. E.g:</p>
+<pre><code class="language-html">{% docstring &quot;scala.collection.Seq&quot; %}
+</code></pre>
+<p>In Scaladoc, objects are denoted by a name ending in '$'. This means that
+a path that goes through, or targets an object need to appropriately
+intersperse these, e.g:</p>
+<pre><code class="language-html">{% docstring &quot;scala.collection.Seq$&quot; %}
+</code></pre>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Docstring$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Docstring$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5395,15 +5436,40 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Allows the extraction of docstrings from the given path. E.g:</p>
+                <div class="member-body-short" id="short-body-Docstring$">
+                    <p>Allows the extraction of docstrings from the given path. E.g:</p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Docstring$">
+                    <p>Allows the extraction of docstrings from the given path. E.g:</p>
+<pre><code class="language-html">{% docstring &quot;scala.collection.Seq&quot; %}
+</code></pre>
+<p>In Scaladoc, objects are denoted by a name ending in '$'. This means that
+a path that goes through, or targets an object need to appropriately
+intersperse these, e.g:</p>
+<pre><code class="language-html">{% docstring &quot;scala.collection.Seq$&quot; %}
+</code></pre>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ParamConverter" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ParamConverter');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5427,12 +5493,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ParamConverter">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ParamConverter">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="RenderLink" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'RenderLink');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5456,14 +5539,33 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Renders a <code>MaterializableLink</code> into a HTML anchor tag. If the link is
+                <div class="member-body-short" id="short-body-RenderLink">
+                    <p>Renders a <code>MaterializableLink</code> into a HTML anchor tag. If the link is
 <code>NoLink</code> it will just return a string with the link's title.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-RenderLink">
+                    <p>Renders a <code>MaterializableLink</code> into a HTML anchor tag. If the link is
+<code>NoLink</code> it will just return a string with the link's title.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="RenderLink$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'RenderLink$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5487,14 +5589,33 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Renders a <code>MaterializableLink</code> into a HTML anchor tag. If the link is
+                <div class="member-body-short" id="short-body-RenderLink$">
+                    <p>Renders a <code>MaterializableLink</code> into a HTML anchor tag. If the link is
 <code>NoLink</code> it will just return a string with the link's title.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-RenderLink$">
+                    <p>Renders a <code>MaterializableLink</code> into a HTML anchor tag. If the link is
+<code>NoLink</code> it will just return a string with the link's title.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="RenderReference" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'RenderReference');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5518,12 +5639,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-RenderReference">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-RenderReference">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="RenderReference$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'RenderReference$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5547,12 +5685,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-RenderReference$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-RenderReference$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="RenderTitle" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'RenderTitle');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5576,16 +5731,39 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Can be used to render the <code>sidebar.yml</code> entries, represented here as
+                <div class="member-body-short" id="short-body-RenderTitle">
+                    <p>Can be used to render the <code>sidebar.yml</code> entries, represented here as
 <code>Title</code>.</p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-RenderTitle">
+                    <p>Can be used to render the <code>sidebar.yml</code> entries, represented here as
+<code>Title</code>.</p>
+<pre><code class="language-html">{% renderTitle title, parent %}
+</code></pre>
+<p>The rendering currently works on depths up to 2. This means that each
+title can have a subsection with its own titles.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="RenderTitle$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'RenderTitle$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5609,16 +5787,39 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Can be used to render the <code>sidebar.yml</code> entries, represented here as
+                <div class="member-body-short" id="short-body-RenderTitle$">
+                    <p>Can be used to render the <code>sidebar.yml</code> entries, represented here as
 <code>Title</code>.</p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-RenderTitle$">
+                    <p>Can be used to render the <code>sidebar.yml</code> entries, represented here as
+<code>Title</code>.</p>
+<pre><code class="language-html">{% renderTitle title, parent %}
+</code></pre>
+<p>The rendering currently works on depths up to 2. This means that each
+title can have a subsection with its own titles.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ResourceInclude" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ResourceInclude');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5642,12 +5843,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ResourceInclude">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ResourceInclude">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ResourceInclude$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ResourceInclude$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5671,12 +5889,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ResourceInclude$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ResourceInclude$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="renderLink(baseurl,link)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'renderLink(baseurl,link)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5736,8 +5971,24 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-renderLink(baseurl,link)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-renderLink(baseurl,link)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

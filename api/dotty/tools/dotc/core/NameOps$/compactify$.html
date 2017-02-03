@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             compactify
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="md5" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'md5');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5365,12 +5381,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-md5">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-md5">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="apply(s)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'apply(s)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5422,7 +5455,8 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>COMPACTIFY</p>
+                <div class="member-body-short" id="short-body-apply(s)(ctx)">
+                    <p>COMPACTIFY</p>
 <p>The hashed name has the form (prefix + marker + md5 + marker + suffix), where
 - prefix/suffix.length = MaxNameLength / 4
 - md5.length = 32</p>
@@ -5430,7 +5464,29 @@
 <p></p>
 <p></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-apply(s)(ctx)">
+                    <p>COMPACTIFY</p>
+<p>The hashed name has the form (prefix + marker + md5 + marker + suffix), where
+- prefix/suffix.length = MaxNameLength / 4
+- md5.length = 32</p>
+<p>We obtain the formula:</p>
+<p>FileNameLength = 2*(MaxNameLength / 4) + 2.marker.length + 32 + 6</p>
+<p>(+6 for &quot;.class&quot;). MaxNameLength can therefore be computed as follows:</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

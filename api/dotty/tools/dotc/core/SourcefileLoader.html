@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,56 @@
         <span id="entity-name">
             SourcefileLoader
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">SymbolLoader</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">SourcefileLoader</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                srcfile:
+                            </span>
+                            AbstractFile
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="srcfile" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'srcfile');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5365,12 +5408,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-srcfile">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-srcfile">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="description" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'description');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5396,14 +5456,33 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Description of the resource (ClassPath, AbstractFile)
+                <div class="member-body-short" id="short-body-description">
+                    <p>Description of the resource (ClassPath, AbstractFile)
 being processed by this loader</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-description">
+                    <p>Description of the resource (ClassPath, AbstractFile)
+being processed by this loader</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="doComplete(root)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'doComplete(root)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5455,13 +5534,31 @@ being processed by this loader</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Load source or class file for <code>root</code>, return</p>
+                <div class="member-body-short" id="short-body-doComplete(root)(ctx)">
+                    <p>Load source or class file for <code>root</code>, return</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-doComplete(root)(ctx)">
+                    <p>Load source or class file for <code>root</code>, return</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="sourceFileOrNull" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'sourceFileOrNull');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5487,8 +5584,24 @@ being processed by this loader</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-sourceFileOrNull">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-sourceFileOrNull">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

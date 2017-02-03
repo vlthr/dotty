@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,56 @@
         <span id="entity-name">
             StringInterpolators
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">AnyVal</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">StringInterpolators</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                sc:
+                            </span>
+                            StringContext
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="sc" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'sc');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5365,12 +5408,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-sc">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-sc">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="em(args)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'em(args)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5425,14 +5485,33 @@ Any
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Formatting for error messages: Like <code>i</code> but suppress follow-on
+                <div class="member-body-short" id="short-body-em(args)(ctx)">
+                    <p>Formatting for error messages: Like <code>i</code> but suppress follow-on
 error messages after the first one if some of their arguments are &quot;non-sensical&quot;.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-em(args)(ctx)">
+                    <p>Formatting for error messages: Like <code>i</code> but suppress follow-on
+error messages after the first one if some of their arguments are &quot;non-sensical&quot;.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ex(args)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ex(args)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5487,14 +5566,33 @@ Any
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Formatting with added explanations: Like <code>em</code>, but add explanations to
+                <div class="member-body-short" id="short-body-ex(args)(ctx)">
+                    <p>Formatting with added explanations: Like <code>em</code>, but add explanations to
 give more info about type variables and to disambiguate where needed.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ex(args)(ctx)">
+                    <p>Formatting with added explanations: Like <code>em</code>, but add explanations to
+give more info about type variables and to disambiguate where needed.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="hl(args)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'hl(args)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5549,13 +5647,31 @@ Any
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Formatter that adds syntax highlighting to all interpolated values</p>
+                <div class="member-body-short" id="short-body-hl(args)(ctx)">
+                    <p>Formatter that adds syntax highlighting to all interpolated values</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-hl(args)(ctx)">
+                    <p>Formatter that adds syntax highlighting to all interpolated values</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="i(args)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'i(args)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5610,9 +5726,26 @@ Any
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>General purpose string formatting</p>
+                <div class="member-body-short" id="short-body-i(args)(ctx)">
+                    <p>General purpose string formatting</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-i(args)(ctx)">
+                    <p>General purpose string formatting</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

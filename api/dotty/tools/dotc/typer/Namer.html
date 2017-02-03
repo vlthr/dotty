@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             Namer
         </span>
+        
+        
     </div>
 
     
@@ -5352,12 +5357,35 @@ in a different method.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Namer</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="ClassCompleter" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ClassCompleter');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5381,12 +5409,29 @@ in a different method.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ClassCompleter">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ClassCompleter">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Completer" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Completer');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5410,13 +5455,31 @@ in a different method.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The completer of a symbol defined by a member def or import (except ClassSymbols)</p>
+                <div class="member-body-short" id="short-body-Completer">
+                    <p>The completer of a symbol defined by a member def or import (except ClassSymbols)</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Completer">
+                    <p>The completer of a symbol defined by a member def or import (except ClassSymbols)</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="TypeDefCompleter" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'TypeDefCompleter');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5440,12 +5503,29 @@ in a different method.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-TypeDefCompleter">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-TypeDefCompleter">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ExpandedTree" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ExpandedTree');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5466,17 +5546,37 @@ in a different method.</p>
                 
 
                 
-                <span class="no-left">: Key</span>
+                <span class="no-left">: Key
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ExpandedTree">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ExpandedTree">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SymOfTree" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SymOfTree');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5497,17 +5597,37 @@ in a different method.</p>
                 
 
                 
-                <span class="no-left">: Key</span>
+                <span class="no-left">: Key
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-SymOfTree">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-SymOfTree">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="TypedAhead" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'TypedAhead');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5528,17 +5648,37 @@ in a different method.</p>
                 
 
                 
-                <span class="no-left">: Key</span>
+                <span class="no-left">: Key
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-TypedAhead">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-TypedAhead">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="nestedTyper" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nestedTyper');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5559,21 +5699,46 @@ in a different method.</p>
                 
 
                 
-                <span class="no-left">: AnyRefMap</span>
+                <span class="no-left">: AnyRefMap
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a><span class="">, </span>Typer
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A map from method symbols to nested typers.
+                <div class="member-body-short" id="short-body-nestedTyper">
+                    <p>A map from method symbols to nested typers.
 Populated when methods are completed. Emptied when they are typechecked.
 The nested typer contains new versi...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-nestedTyper">
+                    <p>A map from method symbols to nested typers.
+Populated when methods are completed. Emptied when they are typechecked.
+The nested typer contains new versions of the four maps above including this
+one, so that trees that are shared between different DefDefs can be independently
+used as indices. It also contains a scope that contains nested parameters.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="scope" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'scope');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5594,21 +5759,42 @@ The nested typer contains new versi...
                 
 
                 
-                <span class="no-left">: MutableScope</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Scopes$/MutableScope.html">MutableScope</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The scope of the typer.
+                <div class="member-body-short" id="short-body-scope">
+                    <p>The scope of the typer.
 For nested typers this is a place parameters are entered during completion
 and where they survive until typechecking. A context...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-scope">
+                    <p>The scope of the typer.
+For nested typers this is a place parameters are entered during completion
+and where they survive until typechecking. A context with this typer also
+has this scope.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="addAnnotations(sym,stat)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'addAnnotations(sym,stat)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5668,17 +5854,39 @@ and where they survive until typechecking. A context...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Add annotations of <code>stat</code> to <code>sym</code>.
+                <div class="member-body-short" id="short-body-addAnnotations(sym,stat)(ctx)">
+                    <p>Add annotations of <code>stat</code> to <code>sym</code>.
 This method can be called twice on a symbol (e.g. once
 during the <code>annotate</code> phase and then again during completion).
 There...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-addAnnotations(sym,stat)(ctx)">
+                    <p>Add annotations of <code>stat</code> to <code>sym</code>.
+This method can be called twice on a symbol (e.g. once
+during the <code>annotate</code> phase and then again during completion).
+Therefore, care needs to be taken not to add annotations again
+that are already added to the symbol.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="addEnumConstants(mdef,sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'addEnumConstants(mdef,sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5738,13 +5946,31 @@ There...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Add java enum constants</p>
+                <div class="member-body-short" id="short-body-addEnumConstants(mdef,sym)(ctx)">
+                    <p>Add java enum constants</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-addEnumConstants(mdef,sym)(ctx)">
+                    <p>Add java enum constants</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="annotate(stats)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'annotate(stats)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5799,12 +6025,29 @@ There...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-annotate(stats)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-annotate(stats)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="completeParams(params)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'completeParams(params)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5859,13 +6102,31 @@ There...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Enter and typecheck parameter list</p>
+                <div class="member-body-short" id="short-body-completeParams(params)(ctx)">
+                    <p>Enter and typecheck parameter list</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-completeParams(params)(ctx)">
+                    <p>Enter and typecheck parameter list</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="createPackageSymbol(pid)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'createPackageSymbol(pid)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5912,18 +6173,36 @@ There...
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create package if it does not yet exist.</p>
+                <div class="member-body-short" id="short-body-createPackageSymbol(pid)(ctx)">
+                    <p>Create package if it does not yet exist.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-createPackageSymbol(pid)(ctx)">
+                    <p>Create package if it does not yet exist.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="createSymbol(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'createSymbol(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5970,19 +6249,38 @@ There...
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If this tree is a member def or an import, create a symbol of it
+                <div class="member-body-short" id="short-body-createSymbol(tree)(ctx)">
+                    <p>If this tree is a member def or an import, create a symbol of it
 and store in symOfTree map.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-createSymbol(tree)(ctx)">
+                    <p>If this tree is a member def or an import, create a symbol of it
+and store in symOfTree map.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="defDefSig(ddef,sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'defDefSig(ddef,sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6037,18 +6335,36 @@ and store in symOfTree map.</p>
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The type signature of a DefDef with given symbol</p>
+                <div class="member-body-short" id="short-body-defDefSig(ddef,sym)(ctx)">
+                    <p>The type signature of a DefDef with given symbol</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-defDefSig(ddef,sym)(ctx)">
+                    <p>The type signature of a DefDef with given symbol</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="enclosingClassNamed(name,pos)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'enclosingClassNamed(name,pos)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6103,18 +6419,36 @@ and store in symOfTree map.</p>
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The enclosing class with given name; error if none exists</p>
+                <div class="member-body-short" id="short-body-enclosingClassNamed(name,pos)(ctx)">
+                    <p>The enclosing class with given name; error if none exists</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-enclosingClassNamed(name,pos)(ctx)">
+                    <p>The enclosing class with given name; error if none exists</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="enterSymbol(sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'enterSymbol(sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6161,19 +6495,38 @@ and store in symOfTree map.</p>
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If <code>sym</code> exists, enter it in effective scope. Check that
+                <div class="member-body-short" id="short-body-enterSymbol(sym)(ctx)">
+                    <p>If <code>sym</code> exists, enter it in effective scope. Check that
 package members are not entered twice in the same run.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-enterSymbol(sym)(ctx)">
+                    <p>If <code>sym</code> exists, enter it in effective scope. Check that
+package members are not entered twice in the same run.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="expand(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'expand(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6225,13 +6578,31 @@ package members are not entered twice in the same run.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Expand tree and store in <code>expandedTree</code></p>
+                <div class="member-body-short" id="short-body-expand(tree)(ctx)">
+                    <p>Expand tree and store in <code>expandedTree</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-expand(tree)(ctx)">
+                    <p>Expand tree and store in <code>expandedTree</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="expanded(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'expanded(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6278,18 +6649,36 @@ package members are not entered twice in the same run.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The expanded version of this tree, or tree itself if not expanded</p>
+                <div class="member-body-short" id="short-body-expanded(tree)(ctx)">
+                    <p>The expanded version of this tree, or tree itself if not expanded</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-expanded(tree)(ctx)">
+                    <p>The expanded version of this tree, or tree itself if not expanded</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="importContext(imp,sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'importContext(imp,sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6344,18 +6733,36 @@ package members are not entered twice in the same run.</p>
                 
 
                 
-                <span class="no-left">: FreshContext</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Contexts$/FreshContext.html">FreshContext</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A new context that summarizes an import statement</p>
+                <div class="member-body-short" id="short-body-importContext(imp,sym)(ctx)">
+                    <p>A new context that summarizes an import statement</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-importContext(imp,sym)(ctx)">
+                    <p>A new context that summarizes an import statement</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="inClassContext(selfInfo)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'inClassContext(selfInfo)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6402,18 +6809,36 @@ package members are not entered twice in the same run.</p>
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A new context for the interior of a class</p>
+                <div class="member-body-short" id="short-body-inClassContext(selfInfo)(ctx)">
+                    <p>A new context for the interior of a class</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-inClassContext(selfInfo)(ctx)">
+                    <p>A new context for the interior of a class</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="index(stat)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'index(stat)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6460,18 +6885,36 @@ package members are not entered twice in the same run.</p>
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Expand tree and create top-level symbols for statement and enter them into symbol table</p>
+                <div class="member-body-short" id="short-body-index(stat)(ctx)">
+                    <p>Expand tree and create top-level symbols for statement and enter them into symbol table</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-index(stat)(ctx)">
+                    <p>Expand tree and create top-level symbols for statement and enter them into symbol table</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="index(stats)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'index(stats)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6521,18 +6964,36 @@ package members are not entered twice in the same run.</p>
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create top-level symbols for statements and enter them into symbol table</p>
+                <div class="member-body-short" id="short-body-index(stats)(ctx)">
+                    <p>Create top-level symbols for statements and enter them into symbol table</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-index(stats)(ctx)">
+                    <p>Create top-level symbols for statements and enter them into symbol table</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="indexAndAnnotate(stats)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'indexAndAnnotate(stats)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6582,17 +7043,34 @@ package members are not entered twice in the same run.</p>
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-indexAndAnnotate(stats)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-indexAndAnnotate(stats)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="indexExpanded(origStat)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'indexExpanded(origStat)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6639,19 +7117,38 @@ package members are not entered twice in the same run.</p>
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create top-level symbols for all statements in the expansion of this statement and
+                <div class="member-body-short" id="short-body-indexExpanded(origStat)(ctx)">
+                    <p>Create top-level symbols for all statements in the expansion of this statement and
 enter them into symbol table</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-indexExpanded(origStat)(ctx)">
+                    <p>Create top-level symbols for all statements in the expansion of this statement and
+enter them into symbol table</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="invalidateCompanions(pkg,xstats)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'invalidateCompanions(pkg,xstats)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6714,15 +7211,35 @@ enter them into symbol table</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>For all class definitions <code>stat</code> in <code>xstats</code>: If the companion class if
+                <div class="member-body-short" id="short-body-invalidateCompanions(pkg,xstats)(ctx)">
+                    <p>For all class definitions <code>stat</code> in <code>xstats</code>: If the companion class if
 not also defined in <code>xstats</code>, invalidate it by setting its info to
 NoType.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-invalidateCompanions(pkg,xstats)(ctx)">
+                    <p>For all class definitions <code>stat</code> in <code>xstats</code>: If the companion class if
+not also defined in <code>xstats</code>, invalidate it by setting its info to
+NoType.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isEnumConstant(vd)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isEnumConstant(vd)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6774,17 +7291,41 @@ NoType.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Determines whether this field holds an enum constant.
+                <div class="member-body-short" id="short-body-isEnumConstant(vd)(ctx)">
+                    <p>Determines whether this field holds an enum constant.
 To qualify, the following conditions must be met:
 - The field's class has the ENUM flag set
 - The f...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isEnumConstant(vd)(ctx)">
+                    <p>Determines whether this field holds an enum constant.
+To qualify, the following conditions must be met:
+- The field's class has the ENUM flag set
+- The field's class extends java.lang.Enum
+- The field has the ENUM flag set
+- The field is static
+- The field is stable</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="moduleValSig(sym)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'moduleValSig(sym)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6831,21 +7372,42 @@ To qualify, the following conditions must be met:
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The signature of a module valdef.
+                <div class="member-body-short" id="short-body-moduleValSig(sym)(ctx)">
+                    <p>The signature of a module valdef.
 This will compute the corresponding module class TypeRef immediately
 without going through the defined type of the Val...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-moduleValSig(sym)(ctx)">
+                    <p>The signature of a module valdef.
+This will compute the corresponding module class TypeRef immediately
+without going through the defined type of the ValDef. This is necessary
+to avoid cyclic references involving imports and module val defs.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="recordSym(sym,tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'recordSym(sym,tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6900,18 +7462,36 @@ without going through the defined type of the Val...
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Record <code>sym</code> as the symbol defined by <code>tree</code></p>
+                <div class="member-body-short" id="short-body-recordSym(sym,tree)(ctx)">
+                    <p>Record <code>sym</code> as the symbol defined by <code>tree</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-recordSym(sym,tree)(ctx)">
+                    <p>Record <code>sym</code> as the symbol defined by <code>tree</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="setDocstring(sym,tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'setDocstring(sym,tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6971,12 +7551,29 @@ without going through the defined type of the Val...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-setDocstring(sym,tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-setDocstring(sym,tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="symbolOfTree(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'symbolOfTree(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7023,18 +7620,36 @@ without going through the defined type of the Val...
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The symbol of the given expanded tree.</p>
+                <div class="member-body-short" id="short-body-symbolOfTree(tree)(ctx)">
+                    <p>The symbol of the given expanded tree.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-symbolOfTree(tree)(ctx)">
+                    <p>The symbol of the given expanded tree.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typeDefSig(tdef,sym,tparamSyms)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typeDefSig(tdef,sym,tparamSyms)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7100,17 +7715,34 @@ without going through the defined type of the Val...
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typeDefSig(tdef,sym,tparamSyms)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typeDefSig(tdef,sym,tparamSyms)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedAheadAnnotation(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedAheadAnnotation(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7157,17 +7789,34 @@ without going through the defined type of the Val...
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedAheadAnnotation(tree)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedAheadAnnotation(tree)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedAheadExpr(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedAheadExpr(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7222,17 +7871,34 @@ without going through the defined type of the Val...
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedAheadExpr(tree,pt)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedAheadExpr(tree,pt)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedAheadExpr$default$2" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedAheadExpr$default$2');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7258,12 +7924,29 @@ without going through the defined type of the Val...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedAheadExpr$default$2">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedAheadExpr$default$2">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedAheadImpl(tree,typed)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedAheadImpl(tree,typed)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7318,17 +8001,34 @@ without going through the defined type of the Val...
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedAheadImpl(tree,typed)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedAheadImpl(tree,typed)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedAheadType(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedAheadType(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7383,17 +8083,34 @@ without going through the defined type of the Val...
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedAheadType(tree,pt)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedAheadType(tree,pt)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="typedAheadType$default$2" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'typedAheadType$default$2');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7419,12 +8136,29 @@ without going through the defined type of the Val...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-typedAheadType$default$2">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-typedAheadType$default$2">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="valOrDefDefSig(mdef,sym,typeParams,paramss,paramFn)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'valOrDefDefSig(mdef,sym,typeParams,paramss,paramFn)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7512,14 +8246,31 @@ List
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The type signature of a ValDef or DefDef</p>
+                <div class="member-body-short" id="short-body-valOrDefDefSig(mdef,sym,typeParams,paramss,paramFn)(ctx)">
+                    <p>The type signature of a ValDef or DefDef</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-valOrDefDefSig(mdef,sym,typeParams,paramss,paramFn)(ctx)">
+                    <p>The type signature of a ValDef or DefDef</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

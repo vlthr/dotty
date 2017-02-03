@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             SpaceLogic
         </span>
+        
+        
     </div>
 
     
@@ -5339,12 +5344,23 @@
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="canDecompose(tp)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'canDecompose(tp)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5383,15 +5399,35 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is the type <code>tp</code> decomposable? i.e. all values of the type can be covered
+                <div class="member-body-short" id="short-body-canDecompose(tp)">
+                    <p>Is the type <code>tp</code> decomposable? i.e. all values of the type can be covered
 by its decomposed types.</p>
 <p>Abstract sealed class, OrType, Boolean and Java enums c...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-canDecompose(tp)">
+                    <p>Is the type <code>tp</code> decomposable? i.e. all values of the type can be covered
+by its decomposed types.</p>
+<p>Abstract sealed class, OrType, Boolean and Java enums can be decomposed.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="decompose(tp)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'decompose(tp)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5425,18 +5461,39 @@ by its decomposed types.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Space
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Get components of decomposable types</p>
+                <div class="member-body-short" id="short-body-decompose(tp)">
+                    <p>Get components of decomposable types</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-decompose(tp)">
+                    <p>Get components of decomposable types</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="flatten(space)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'flatten(space)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5470,18 +5527,39 @@ by its decomposed types.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Space
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Flatten space to get rid of <code>Or</code> for pretty print</p>
+                <div class="member-body-short" id="short-body-flatten(space)">
+                    <p>Flatten space to get rid of <code>Or</code> for pretty print</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-flatten(space)">
+                    <p>Flatten space to get rid of <code>Or</code> for pretty print</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="intersect(a,b)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'intersect(a,b)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5528,13 +5606,31 @@ by its decomposed types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Intersection of two spaces</p>
+                <div class="member-body-short" id="short-body-intersect(a,b)">
+                    <p>Intersection of two spaces</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-intersect(a,b)">
+                    <p>Intersection of two spaces</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isEqualType(tp1,tp2)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isEqualType(tp1,tp2)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5581,13 +5677,31 @@ by its decomposed types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is <code>tp1</code> the same type as <code>tp2</code>?</p>
+                <div class="member-body-short" id="short-body-isEqualType(tp1,tp2)">
+                    <p>Is <code>tp1</code> the same type as <code>tp2</code>?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isEqualType(tp1,tp2)">
+                    <p>Is <code>tp1</code> the same type as <code>tp2</code>?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isSubType(tp1,tp2)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isSubType(tp1,tp2)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5634,13 +5748,31 @@ by its decomposed types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is <code>tp1</code> a subtype of <code>tp2</code>?</p>
+                <div class="member-body-short" id="short-body-isSubType(tp1,tp2)">
+                    <p>Is <code>tp1</code> a subtype of <code>tp2</code>?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isSubType(tp1,tp2)">
+                    <p>Is <code>tp1</code> a subtype of <code>tp2</code>?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isSubspace(a,b)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isSubspace(a,b)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5687,13 +5819,31 @@ by its decomposed types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is <code>a</code> a subspace of <code>b</code>? Equivalent to <code>a - b == Empty</code>, but faster</p>
+                <div class="member-body-short" id="short-body-isSubspace(a,b)">
+                    <p>Is <code>a</code> a subspace of <code>b</code>? Equivalent to <code>a - b == Empty</code>, but faster</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isSubspace(a,b)">
+                    <p>Is <code>a</code> a subspace of <code>b</code>? Equivalent to <code>a - b == Empty</code>, but faster</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="minus(a,b)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'minus(a,b)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5740,13 +5890,31 @@ by its decomposed types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The space of a not covered by b</p>
+                <div class="member-body-short" id="short-body-minus(a,b)">
+                    <p>The space of a not covered by b</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-minus(a,b)">
+                    <p>The space of a not covered by b</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="signature(tp)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'signature(tp)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5780,18 +5948,39 @@ by its decomposed types.</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Return term parameter types of the case class <code>tp</code></p>
+                <div class="member-body-short" id="short-body-signature(tp)">
+                    <p>Return term parameter types of the case class <code>tp</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-signature(tp)">
+                    <p>Return term parameter types of the case class <code>tp</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="simplify(space)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'simplify(space)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5830,9 +6019,26 @@ by its decomposed types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Simplify space using the laws, there's no nested union after simplify</p>
+                <div class="member-body-short" id="short-body-simplify(space)">
+                    <p>Simplify space using the laws, there's no nested union after simplify</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-simplify(space)">
+                    <p>Simplify space using the laws, there's no nested union after simplify</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

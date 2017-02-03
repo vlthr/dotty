@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             private final
         </span>
@@ -5330,16 +5333,38 @@
         <span id="entity-name">
             Validator
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type"><a href="../../../../../.././api/dotty/tools/dotc/core/Types$/TypeAccumulator.html">TypeAccumulator</a></span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="base" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'base');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5360,17 +5385,34 @@
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-base">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-base">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="apply(status,tp)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'apply(status,tp)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5415,20 +5457,43 @@ VarianceError
                 
 
                 
-                <span class="no-left">: Option</span>
+                <span class="no-left">: Option
+<span class="no-left no-right">[</span>
+VarianceError
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>For PolyTypes, type parameters are skipped because they are defined
+                <div class="member-body-short" id="short-body-apply(status,tp)">
+                    <p>For PolyTypes, type parameters are skipped because they are defined
 explicitly (their TypeDefs will be passed here.) For MethodTypes, the
 same is true o...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-apply(status,tp)">
+                    <p>For PolyTypes, type parameters are skipped because they are defined
+explicitly (their TypeDefs will be passed here.) For MethodTypes, the
+same is true of the parameters (ValDefs).</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="base_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'base_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5467,12 +5532,29 @@ same is true o...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-base_=(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-base_=(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="checkVarianceOfSymbol(tvar)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'checkVarianceOfSymbol(tvar)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5506,18 +5588,39 @@ same is true o...</p>
                 
 
                 
-                <span class="no-left">: Option</span>
+                <span class="no-left">: Option
+<span class="no-left no-right">[</span>
+VarianceError
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Check variance of abstract type <code>tvar</code> when referred from <code>base</code>.</p>
+                <div class="member-body-short" id="short-body-checkVarianceOfSymbol(tvar)">
+                    <p>Check variance of abstract type <code>tvar</code> when referred from <code>base</code>.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-checkVarianceOfSymbol(tvar)">
+                    <p>Check variance of abstract type <code>tvar</code> when referred from <code>base</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ignoreVarianceIn(base)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ignoreVarianceIn(base)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5556,13 +5659,31 @@ same is true o...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is no variance checking needed within definition of <code>base</code>?</p>
+                <div class="member-body-short" id="short-body-ignoreVarianceIn(base)">
+                    <p>Is no variance checking needed within definition of <code>base</code>?</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ignoreVarianceIn(base)">
+                    <p>Is no variance checking needed within definition of <code>base</code>?</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="paramOuter(meth)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'paramOuter(meth)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5596,21 +5717,46 @@ same is true o...</p>
                 
 
                 
-                <span class="no-left">: Symbol</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The next level to take into account when determining the
+                <div class="member-body-short" id="short-body-paramOuter(meth)">
+                    <p>The next level to take into account when determining the
 relative variance with a method parameter as base. The method
 is always skipped. If the method...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-paramOuter(meth)">
+                    <p>The next level to take into account when determining the
+relative variance with a method parameter as base. The method
+is always skipped. If the method is a constructor, we also skip
+its class owner, because constructors are not checked for variance
+relative to the type parameters of their own class. On the other
+hand constructors do count for checking the variance of type parameters
+of enclosing classes. I believe the Scala 2 rules are too lenient in
+that respect.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="relativeVariance(tvar,base,v)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'relativeVariance(tvar,base,v)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5665,15 +5811,35 @@ is always skipped. If the method...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The variance of a symbol occurrence of <code>tvar</code> seen at the level of the definition of <code>base</code>.
+                <div class="member-body-short" id="short-body-relativeVariance(tvar,base,v)">
+                    <p>The variance of a symbol occurrence of <code>tvar</code> seen at the level of the definition of <code>base</code>.
 The search proceeds from <code>base</code> to the owner of <code>tvar</code>.
 Initially t...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-relativeVariance(tvar,base,v)">
+                    <p>The variance of a symbol occurrence of <code>tvar</code> seen at the level of the definition of <code>base</code>.
+The search proceeds from <code>base</code> to the owner of <code>tvar</code>.
+Initially the state is covariant, but it might change along the search.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="relativeVariance$default$3" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'relativeVariance$default$3');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5694,20 +5860,40 @@ Initially t...</p>
                 
 
                 
-                <span class="no-left">: FlagSet</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Flags$/FlagSet.html">FlagSet</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The variance of a symbol occurrence of <code>tvar</code> seen at the level of the definition of <code>base</code>.
+                <div class="member-body-short" id="short-body-relativeVariance$default$3">
+                    <p>The variance of a symbol occurrence of <code>tvar</code> seen at the level of the definition of <code>base</code>.
 The search proceeds from <code>base</code> to the owner of <code>tvar</code>.
 Initially t...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-relativeVariance$default$3">
+                    <p>The variance of a symbol occurrence of <code>tvar</code> seen at the level of the definition of <code>base</code>.
+The search proceeds from <code>base</code> to the owner of <code>tvar</code>.
+Initially the state is covariant, but it might change along the search.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="validateDefinition(base)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'validateDefinition(base)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5741,13 +5927,32 @@ Initially t...</p>
                 
 
                 
-                <span class="no-left">: Option</span>
+                <span class="no-left">: Option
+<span class="no-left no-right">[</span>
+VarianceError
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-validateDefinition(base)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-validateDefinition(base)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

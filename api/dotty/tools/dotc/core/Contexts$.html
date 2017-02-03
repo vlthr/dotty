@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             Contexts
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="Context" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Context');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,17 +5379,53 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A context is passed basically everywhere in dotc.
+                <div class="member-body-short" id="short-body-Context">
+                    <p>A context is passed basically everywhere in dotc.
 This is convenient but carries the risk of captured contexts in
 objects that turn into space leaks. To...
 </p>
 <ul></ul>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Context">
+                    <p>A context is passed basically everywhere in dotc.
+This is convenient but carries the risk of captured contexts in
+objects that turn into space leaks. To combat this risk, here are some
+conventions to follow:</p>
+<ul>
+<li>Never let an implicit context be an argument of a class whose instances
+live longer than the context.</li>
+<li>Classes that need contexts for their initialization take an explicit parameter
+named <code>initctx</code>. They pass initctx to all positions where it is needed
+(and these positions should all be part of the intialization sequence of the class).</li>
+<li>Classes that need contexts that survive initialization are instead passed
+a &quot;condensed context&quot;, typically named <code>cctx</code> (or they create one). Condensed contexts
+just add some basic information to the context base without the
+risk of capturing complete trees.</li>
+<li>To make sure these rules are kept, it would be good to do a sanity
+check using bytecode inspection with javap or scalap: Keep track
+of all class fields of type context; allow them only in whitelisted
+classes (which should be short-lived).</li>
+</ul>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Context$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Context$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5397,12 +5449,29 @@ objects that turn into space leaks. To...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-Context$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-Context$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ContextBase" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ContextBase');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5426,14 +5495,33 @@ objects that turn into space leaks. To...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A context base defines state and associated methods that exist once per
+                <div class="member-body-short" id="short-body-ContextBase">
+                    <p>A context base defines state and associated methods that exist once per
 compiler run.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ContextBase">
+                    <p>A context base defines state and associated methods that exist once per
+compiler run.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ContextState" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ContextState');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5457,13 +5545,31 @@ compiler run.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The essential mutable state of a context base, collected into a common class</p>
+                <div class="member-body-short" id="short-body-ContextState">
+                    <p>The essential mutable state of a context base, collected into a common class</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ContextState">
+                    <p>The essential mutable state of a context base, collected into a common class</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="FreshContext" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'FreshContext');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5487,14 +5593,33 @@ compiler run.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A fresh context allows selective modification
+                <div class="member-body-short" id="short-body-FreshContext">
+                    <p>A fresh context allows selective modification
 of its attributes using the with... methods.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-FreshContext">
+                    <p>A fresh context allows selective modification
+of its attributes using the with... methods.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="FreshModeChanges" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'FreshModeChanges');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5518,12 +5643,29 @@ of its attributes using the with... methods.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-FreshModeChanges">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-FreshModeChanges">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="FreshModeChanges$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'FreshModeChanges$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5547,12 +5689,29 @@ of its attributes using the with... methods.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-FreshModeChanges$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-FreshModeChanges$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="GADTMap" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'GADTMap');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5576,12 +5735,29 @@ of its attributes using the with... methods.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-GADTMap">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-GADTMap">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="InitialContext" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'InitialContext');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5605,14 +5781,33 @@ of its attributes using the with... methods.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A class defining the initial context with given context base
+                <div class="member-body-short" id="short-body-InitialContext">
+                    <p>A class defining the initial context with given context base
 and set of possible settings.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-InitialContext">
+                    <p>A class defining the initial context with given context base
+and set of possible settings.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ModeChanges" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ModeChanges');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5636,12 +5831,29 @@ and set of possible settings.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ModeChanges">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ModeChanges">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ModeChanges$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ModeChanges$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5665,12 +5877,29 @@ and set of possible settings.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ModeChanges$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ModeChanges$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoContext$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoContext$');">[+]</span>
                 <span class="member-annotations">
                     @sharable 
                 </span>
@@ -5694,12 +5923,29 @@ and set of possible settings.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-NoContext$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-NoContext$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="RunInfo" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'RunInfo');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5723,13 +5969,31 @@ and set of possible settings.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Info that changes on each compiler run</p>
+                <div class="member-body-short" id="short-body-RunInfo">
+                    <p>Info that changes on each compiler run</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-RunInfo">
+                    <p>Info that changes on each compiler run</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="FreshModeChanges(c)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'FreshModeChanges(c)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5768,12 +6032,29 @@ and set of possible settings.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-FreshModeChanges(c)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-FreshModeChanges(c)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ModeChanges(c)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ModeChanges(c)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5812,8 +6093,24 @@ and set of possible settings.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ModeChanges(c)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ModeChanges(c)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

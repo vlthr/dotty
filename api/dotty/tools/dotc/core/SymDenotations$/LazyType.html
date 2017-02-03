@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             abstract
         </span>
@@ -5330,6 +5333,27 @@
         <span id="entity-name">
             LazyType
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">UncachedGroundType</span>
+            
+            
+            <span class="keyword">with</span>
+            
+            <span class="entity-super-type">Function1</span>
+            
+            
+            <span class="keyword">with</span>
+            
+            <span class="entity-super-type">Function2</span>
+            
+        </div>
+        
     </div>
 
     
@@ -5343,12 +5367,35 @@ of these function types.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">LazyType</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="myDecls" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'myDecls');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5374,12 +5421,29 @@ of these function types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-myDecls">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-myDecls">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="myModuleClassFn" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'myModuleClassFn');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5400,17 +5464,34 @@ of these function types.</p>
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: Context<span class="right-arrow"> =&gt; </span>Symbol</span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-myModuleClassFn">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-myModuleClassFn">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="mySourceModuleFn" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'mySourceModuleFn');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5431,17 +5512,34 @@ of these function types.</p>
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: Context<span class="right-arrow"> =&gt; </span>Symbol</span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-mySourceModuleFn">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-mySourceModuleFn">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="apply(sym)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'apply(sym)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5480,12 +5578,29 @@ of these function types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-apply(sym)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-apply(sym)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="apply(module,modcls)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'apply(module,modcls)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5532,12 +5647,29 @@ of these function types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-apply(module,modcls)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-apply(module,modcls)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="complete(denot)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'complete(denot)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5589,13 +5721,31 @@ of these function types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Sets all missing fields of given denotation</p>
+                <div class="member-body-short" id="short-body-complete(denot)(ctx)">
+                    <p>Sets all missing fields of given denotation</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-complete(denot)(ctx)">
+                    <p>Sets all missing fields of given denotation</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="decls" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'decls');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5621,12 +5771,29 @@ of these function types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-decls">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-decls">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="moduleClass(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'moduleClass(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5667,12 +5834,29 @@ of these function types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-moduleClass(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-moduleClass(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="myDecls_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'myDecls_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5711,12 +5895,29 @@ of these function types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-myDecls_=(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-myDecls_=(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="myModuleClassFn_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'myModuleClassFn_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5755,12 +5956,29 @@ of these function types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-myModuleClassFn_=(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-myModuleClassFn_=(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="mySourceModuleFn_=(x$1)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'mySourceModuleFn_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5799,12 +6017,29 @@ of these function types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-mySourceModuleFn_=(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-mySourceModuleFn_=(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="proxy" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'proxy');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5830,14 +6065,33 @@ of these function types.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A proxy to this lazy type that keeps the complete operation
+                <div class="member-body-short" id="short-body-proxy">
+                    <p>A proxy to this lazy type that keeps the complete operation
 but provides fresh slots for scope/sourceModule/moduleClass</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-proxy">
+                    <p>A proxy to this lazy type that keeps the complete operation
+but provides fresh slots for scope/sourceModule/moduleClass</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="sourceModule(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'sourceModule(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5878,12 +6132,29 @@ but provides fresh slots for scope/sourceModule/moduleClass</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-sourceModule(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-sourceModule(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withDecls(decls)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withDecls(decls)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5917,17 +6188,34 @@ but provides fresh slots for scope/sourceModule/moduleClass</p>
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: LazyType<span class="and-or-separator"> &amp; </span>LazyType</span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-withDecls(decls)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-withDecls(decls)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withModuleClass(moduleClassFn)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withModuleClass(moduleClassFn)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5961,17 +6249,34 @@ but provides fresh slots for scope/sourceModule/moduleClass</p>
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: LazyType<span class="and-or-separator"> &amp; </span>LazyType</span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-withModuleClass(moduleClassFn)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-withModuleClass(moduleClassFn)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="withSourceModule(sourceModuleFn)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'withSourceModule(sourceModuleFn)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6005,13 +6310,29 @@ but provides fresh slots for scope/sourceModule/moduleClass</p>
                 
 
                 
-                <span class="no-left">: </span>
+                <span class="no-left">: LazyType<span class="and-or-separator"> &amp; </span>LazyType</span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-withSourceModule(sourceModuleFn)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-withSourceModule(sourceModuleFn)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

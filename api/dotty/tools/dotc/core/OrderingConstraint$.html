@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             OrderingConstraint
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="ConstraintLens" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ConstraintLens');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,13 +5379,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A lens for updating a single entry array in one of the three constraint maps</p>
+                <div class="member-body-short" id="short-body-ConstraintLens">
+                    <p>A lens for updating a single entry array in one of the three constraint maps</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ConstraintLens">
+                    <p>A lens for updating a single entry array in one of the three constraint maps</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ArrayValuedMap" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ArrayValuedMap');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5400,12 +5434,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ArrayValuedMap">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ArrayValuedMap">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ParamBounds" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ParamBounds');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5437,12 +5488,31 @@ Type
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ParamBounds">
+                    <p>The type of <code>OrderingConstraint#boundsMap</code></p>
+
+                </div>
+                <div class="member-body-long" id ="long-body-ParamBounds">
+                    <p>The type of <code>OrderingConstraint#boundsMap</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ParamOrdering" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ParamOrdering');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5477,12 +5547,31 @@ PolyParam
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ParamOrdering">
+                    <p>The type of <code>OrderingConstraint#lowerMap</code>, <code>OrderingConstraint#upperMap</code></p>
+
+                </div>
+                <div class="member-body-long" id ="long-body-ParamOrdering">
+                    <p>The type of <code>OrderingConstraint#lowerMap</code>, <code>OrderingConstraint#upperMap</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="boundsLens" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'boundsLens');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5503,17 +5592,37 @@ PolyParam
                 
 
                 
-                <span class="no-left">: ConstraintLens</span>
+                <span class="no-left">: ConstraintLens
+<span class="no-left no-right">[</span>
+Type
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-boundsLens">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-boundsLens">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="lowerLens" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'lowerLens');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5534,17 +5643,40 @@ PolyParam
                 
 
                 
-                <span class="no-left">: ConstraintLens</span>
+                <span class="no-left">: ConstraintLens
+<span class="no-left no-right">[</span>
+List
+<span class="no-left no-right">[</span>
+PolyParam
+<span class="no-left">]</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-lowerLens">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-lowerLens">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="upperLens" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'upperLens');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5565,17 +5697,40 @@ PolyParam
                 
 
                 
-                <span class="no-left">: ConstraintLens</span>
+                <span class="no-left">: ConstraintLens
+<span class="no-left no-right">[</span>
+List
+<span class="no-left no-right">[</span>
+PolyParam
+<span class="no-left">]</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-upperLens">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-upperLens">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="newConstraint(boundsMap,lowerMap,upperMap)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'newConstraint(boundsMap,lowerMap,upperMap)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5643,9 +5798,26 @@ PolyParam
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A new constraint with given maps</p>
+                <div class="member-body-short" id="short-body-newConstraint(boundsMap,lowerMap,upperMap)(ctx)">
+                    <p>A new constraint with given maps</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-newConstraint(boundsMap,lowerMap,upperMap)(ctx)">
+                    <p>A new constraint with given maps</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

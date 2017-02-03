@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,17 @@
         <span id="entity-name">
             NonLocalReturns
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">MiniPhaseTransform</span>
+            
+        </div>
+        
     </div>
 
     
@@ -5339,12 +5353,35 @@
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">NonLocalReturns</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="nonLocalReturnKeys" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nonLocalReturnKeys');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5365,18 +5402,39 @@
                 
 
                 
-                <span class="no-left">: Map</span>
+                <span class="no-left">: Map
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a><span class="">, </span><a href="../../../../.././api/dotty/tools/dotc/core/Symbols$.html#TermSymbol">TermSymbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A hashmap from method symbols to non-local return keys</p>
+                <div class="member-body-short" id="short-body-nonLocalReturnKeys">
+                    <p>A hashmap from method symbols to non-local return keys</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-nonLocalReturnKeys">
+                    <p>A hashmap from method symbols to non-local return keys</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ensureConforms(tree,pt)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ensureConforms(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5431,17 +5489,34 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ensureConforms(tree,pt)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ensureConforms(tree,pt)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="nonLocalReturnExceptionType(argtype)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nonLocalReturnExceptionType(argtype)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5488,18 +5563,36 @@
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The type of a non-local return expression with given argument type</p>
+                <div class="member-body-short" id="short-body-nonLocalReturnExceptionType(argtype)(ctx)">
+                    <p>The type of a non-local return expression with given argument type</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-nonLocalReturnExceptionType(argtype)(ctx)">
+                    <p>The type of a non-local return expression with given argument type</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="nonLocalReturnKey(meth)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nonLocalReturnKey(meth)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5551,13 +5644,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Return non-local return key for given method</p>
+                <div class="member-body-short" id="short-body-nonLocalReturnKey(meth)(ctx)">
+                    <p>Return non-local return key for given method</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-nonLocalReturnKey(meth)(ctx)">
+                    <p>Return non-local return key for given method</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="nonLocalReturnThrow(expr,meth)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nonLocalReturnThrow(expr,meth)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5612,21 +5723,43 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Generate a non-local return throw with given return expression from given method.
+                <div class="member-body-short" id="short-body-nonLocalReturnThrow(expr,meth)(ctx)">
+                    <p>Generate a non-local return throw with given return expression from given method.
 I.e. for the method's non-local return key, generate:</p>
 <p>throw new NonLoc...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-nonLocalReturnThrow(expr,meth)(ctx)">
+                    <p>Generate a non-local return throw with given return expression from given method.
+I.e. for the method's non-local return key, generate:</p>
+<p>throw new NonLocalReturnControl(key, expr)
+todo: maybe clone a pre-existing exception instead?
+(but what to do about exceptions that miss their targets?)</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="nonLocalReturnTry(body,key,meth)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nonLocalReturnTry(body,key,meth)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5689,12 +5822,13 @@ I.e. for the method's non-local return key, generate:</p>
                 
 
                 
-                <span class="no-left">: Block</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Block">Block</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Transform (body, key) to:</p>
+                <div class="member-body-short" id="short-body-nonLocalReturnTry(body,key,meth)(ctx)">
+                    <p>Transform (body, key) to:</p>
 <p>{
 val key = new Object()
 try {
@@ -5705,11 +5839,38 @@ if (ex.key().eq(key)) ex.value().asInstanceOf[T]
 else...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-nonLocalReturnTry(body,key,meth)(ctx)">
+                    <p>Transform (body, key) to:</p>
+<p>{
+val key = new Object()
+try {
+body
+} catch {
+case ex: NonLocalReturnControl =&gt;
+if (ex.key().eq(key)) ex.value().asInstanceOf[T]
+else throw ex
+}
+}</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="phaseName" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'phaseName');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5735,14 +5896,35 @@ else...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A name given to the <code>Phase</code> that can be used to debug the compiler. For
+                <div class="member-body-short" id="short-body-phaseName">
+                    <p>A name given to the <code>Phase</code> that can be used to debug the compiler. For
 instance, it is possible to print trees after a given phase using:</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-phaseName">
+                    <p>A name given to the <code>Phase</code> that can be used to debug the compiler. For
+instance, it is possible to print trees after a given phase using:</p>
+<pre><code class="language-bash">$ ./bin/dotc -Xprint:&lt;phaseNameHere&gt; sourceFile.scala
+</code></pre>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="runsAfter" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'runsAfter');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5763,18 +5945,42 @@ instance, it is possible to print trees after a given phase using:</p>
                 
 
                 
-                <span class="no-left">: Set</span>
+                <span class="no-left">: Set
+<span class="no-left no-right">[</span>
+Class
+<span class="no-left no-right">[</span>
+Nothing<span class="bounds"> &lt;: </span><a href="../../../../.././api/dotty/tools/dotc/core/Phases$/Phase.html">Phase</a>
+<span class="no-left">]</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>List of names of phases that should precede this phase</p>
+                <div class="member-body-short" id="short-body-runsAfter">
+                    <p>List of names of phases that should precede this phase</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-runsAfter">
+                    <p>List of names of phases that should precede this phase</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="transformDefDef(tree)(ctx,info)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'transformDefDef(tree)(ctx,info)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5829,17 +6035,34 @@ instance, it is possible to print trees after a given phase using:</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-transformDefDef(tree)(ctx,info)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-transformDefDef(tree)(ctx,info)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="transformReturn(tree)(ctx,info)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'transformReturn(tree)(ctx,info)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5894,13 +6117,29 @@ instance, it is possible to print trees after a given phase using:</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-transformReturn(tree)(ctx,info)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-transformReturn(tree)(ctx,info)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

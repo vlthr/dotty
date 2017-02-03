@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,50 @@
         <span id="entity-name">
             CharArrayLookaheadReader
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">CharArrayReader</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">CharArrayLookaheadReader</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="buf" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'buf');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5360,17 +5397,37 @@
                 
 
                 
-                <span class="no-left">: Array</span>
+                <span class="no-left">: Array
+<span class="no-left no-right">[</span>
+Char
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-buf">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-buf">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="decodeUni" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'decodeUni');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5396,13 +5453,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Switch whether unicode should be decoded</p>
+                <div class="member-body-short" id="short-body-decodeUni">
+                    <p>Switch whether unicode should be decoded</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-decodeUni">
+                    <p>Switch whether unicode should be decoded</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="error(msg,offset)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'error(msg,offset)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5449,9 +5524,26 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An error routine to call on bad unicode escapes \uxxxx.</p>
+                <div class="member-body-short" id="short-body-error(msg,offset)">
+                    <p>An error routine to call on bad unicode escapes \uxxxx.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-error(msg,offset)">
+                    <p>An error routine to call on bad unicode escapes \uxxxx.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

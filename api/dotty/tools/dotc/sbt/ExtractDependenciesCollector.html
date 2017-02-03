@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             private
         </span>
@@ -5330,6 +5333,17 @@
         <span id="entity-name">
             ExtractDependenciesCollector
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type"><a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance/TreeTraverser.html">TreeTraverser</a></span>
+            
+        </div>
+        
     </div>
 
     
@@ -5344,12 +5358,53 @@ inheritance&quot; in the &quot;Name hashing algorithm&quot; section.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">ExtractDependenciesCollector</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">ExtractDependenciesCollector</span>
+                    <span class="no-left">(</span>
+                        
+                        <span class="no-left keyword">implicit</span>
+                        
+                        
+                            <span class="no-left">
+                                ctx:
+                            </span>
+                            Context
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="usedTypeTraverser$" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'usedTypeTraverser$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5373,7 +5428,8 @@ inheritance&quot; in the &quot;Name hashing algorithm&quot; section.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Traverse a used type and record all the dependencies we need to keep track
+                <div class="member-body-short" id="short-body-usedTypeTraverser$">
+                    <p>Traverse a used type and record all the dependencies we need to keep track
 of for incremental recompilation.</p>
 <p>As a motivating example, given a type <code>T</code> def...</p>
 <p>
@@ -5387,11 +5443,53 @@ of for incremental recompilation.</p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-usedTypeTraverser$">
+                    <p>Traverse a used type and record all the dependencies we need to keep track
+of for incremental recompilation.</p>
+<p>As a motivating example, given a type <code>T</code> defined as:</p>
+<p>type T &gt;: L &lt;: H
+type L &lt;: A1
+type H &lt;: B1
+class A1 extends A0
+class B1 extends B0</p>
+<p>We need to record a dependency on <code>T</code>, <code>L</code>, <code>H</code>, <code>A1</code>, <code>B1</code>. This is
+necessary because the API representation that <code>ExtractAPI</code> produces for
+<code>T</code> just refers to the strings &quot;L&quot; and &quot;H&quot;, it does not contain their API
+representation. Therefore, the name hash of <code>T</code> does not change if for
+example the definition of <code>L</code> changes.</p>
+<p>We do not need to keep track of superclasses like <code>A0</code> and <code>B0</code> because
+the API representation of a class (and therefore its name hash) already
+contains all necessary information on superclasses.</p>
+<p>A natural question to ask is: Since traversing all referenced types to
+find all these names is costly, why not change the API representation
+produced by <code>ExtractAPI</code> to contain that information? This way the name
+hash of <code>T</code> would change if any of the types it depends on change, and we
+would only need to record a dependency on <code>T</code>. Unfortunately there is no
+simple answer to the question &quot;what does T depend on?&quot; because it depends
+on the prefix and <code>ExtractAPI</code> does not compute types as seen from every
+possible prefix, the documentation of <code>ExtractAPI</code> explains why.</p>
+<p>The tests in sbt <code>types-in-used-names-a</code>, <code>types-in-used-names-b</code>,
+<code>as-seen-from-a</code> and <code>as-seen-from-b</code> rely on this.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="_topLevelDependencies" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_topLevelDependencies');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5412,17 +5510,37 @@ of for incremental recompilation.</p>
                 
 
                 
-                <span class="no-left">: HashSet</span>
+                <span class="no-left">: HashSet
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-_topLevelDependencies">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-_topLevelDependencies">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="_topLevelInheritanceDependencies" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_topLevelInheritanceDependencies');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5443,17 +5561,37 @@ of for incremental recompilation.</p>
                 
 
                 
-                <span class="no-left">: HashSet</span>
+                <span class="no-left">: HashSet
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-_topLevelInheritanceDependencies">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-_topLevelInheritanceDependencies">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="_usedNames" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_usedNames');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5474,17 +5612,37 @@ of for incremental recompilation.</p>
                 
 
                 
-                <span class="no-left">: HashSet</span>
+                <span class="no-left">: HashSet
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Names$/Name.html">Name</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-_usedNames">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-_usedNames">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ctx" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ctx');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5505,17 +5663,34 @@ of for incremental recompilation.</p>
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ctx">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ctx">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="addDependency(sym)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'addDependency(sym)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5554,12 +5729,29 @@ of for incremental recompilation.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-addDependency(sym)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-addDependency(sym)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="addInheritanceDependency(sym)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'addInheritanceDependency(sym)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5598,12 +5790,29 @@ of for incremental recompilation.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-addInheritanceDependency(sym)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-addInheritanceDependency(sym)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="addUsedName(name)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'addUsedName(name)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5637,17 +5846,37 @@ of for incremental recompilation.</p>
                 
 
                 
-                <span class="no-left">: HashSet</span>
+                <span class="no-left">: HashSet
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Names$/Name.html">Name</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-addUsedName(name)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-addUsedName(name)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ignoreDependency(sym)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ignoreDependency(sym)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5686,12 +5915,29 @@ of for incremental recompilation.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ignoreDependency(sym)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ignoreDependency(sym)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="topLevelDependencies" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'topLevelDependencies');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5712,20 +5958,43 @@ of for incremental recompilation.</p>
                 
 
                 
-                <span class="no-left">: Set</span>
+                <span class="no-left">: Set
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The set of top-level classes that the compilation unit depends on
+                <div class="member-body-short" id="short-body-topLevelDependencies">
+                    <p>The set of top-level classes that the compilation unit depends on
 because it refers to these classes or something defined in them.
 This is always a supe...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-topLevelDependencies">
+                    <p>The set of top-level classes that the compilation unit depends on
+because it refers to these classes or something defined in them.
+This is always a superset of <code>topLevelInheritanceDependencies</code> by definition.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="topLevelInheritanceDependencies" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'topLevelInheritanceDependencies');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5746,19 +6015,41 @@ This is always a supe...</p>
                 
 
                 
-                <span class="no-left">: Set</span>
+                <span class="no-left">: Set
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Symbols$/Symbol.html">Symbol</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The set of top-level classes that the compilation unit extends or that
+                <div class="member-body-short" id="short-body-topLevelInheritanceDependencies">
+                    <p>The set of top-level classes that the compilation unit extends or that
 contain a non-top-level class that the compilaion unit extends.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-topLevelInheritanceDependencies">
+                    <p>The set of top-level classes that the compilation unit extends or that
+contain a non-top-level class that the compilaion unit extends.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="traverse(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'traverse(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5810,15 +6101,35 @@ contain a non-top-level class that the compilaion unit extends.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Traverse the tree of a source file and record the dependencies which
+                <div class="member-body-short" id="short-body-traverse(tree)(ctx)">
+                    <p>Traverse the tree of a source file and record the dependencies which
 can be retrieved using <code>topLevelDependencies</code>, <code>topLevelInheritanceDependencies</code>,
 and <code>u...</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-traverse(tree)(ctx)">
+                    <p>Traverse the tree of a source file and record the dependencies which
+can be retrieved using <code>topLevelDependencies</code>, <code>topLevelInheritanceDependencies</code>,
+and <code>usedNames</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="usedNames" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'usedNames');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5839,15 +6150,36 @@ and <code>u...</code></p>
                 
 
                 
-                <span class="no-left">: Set</span>
+                <span class="no-left">: Set
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Names$/Name.html">Name</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The names used in this class, this does not include names which are only
+                <div class="member-body-short" id="short-body-usedNames">
+                    <p>The names used in this class, this does not include names which are only
 defined and not referenced.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-usedNames">
+                    <p>The names used in this class, this does not include names which are only
+defined and not referenced.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

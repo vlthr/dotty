@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,75 @@
         <span id="entity-name">
             Site
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">ResourceFinder</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Site</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                root:
+                            </span>
+                            File
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                projectTitle:
+                            </span>
+                            String
+                            
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                documentation:
+                            </span>
+                            Map
+<span class="no-left no-right">[</span>
+String<span class="">, </span>Package
+<span class="no-left">]</span>
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="_blogInfo" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_blogInfo');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5360,17 +5422,37 @@
                 
 
                 
-                <span class="no-left">: Array</span>
+                <span class="no-left">: Array
+<span class="no-left no-right">[</span>
+BlogPost
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-_blogInfo">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-_blogInfo">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="_blogposts" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_blogposts');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5391,17 +5473,37 @@
                 
 
                 
-                <span class="no-left">: Array</span>
+                <span class="no-left">: Array
+<span class="no-left no-right">[</span>
+File
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-_blogposts">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-_blogposts">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="_compilableFiles" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_compilableFiles');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5422,17 +5524,37 @@
                 
 
                 
-                <span class="no-left">: Array</span>
+                <span class="no-left">: Array
+<span class="no-left no-right">[</span>
+File
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-_compilableFiles">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-_compilableFiles">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="_staticAssets" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_staticAssets');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5453,17 +5575,37 @@
                 
 
                 
-                <span class="no-left">: Array</span>
+                <span class="no-left">: Array
+<span class="no-left no-right">[</span>
+File
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-_staticAssets">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-_staticAssets">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="docs" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'docs');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5484,18 +5626,39 @@
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+Nothing<span class="bounds"> &lt;: </span>Any
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Documentation serialized to java maps</p>
+                <div class="member-body-short" id="short-body-docs">
+                    <p>Documentation serialized to java maps</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-docs">
+                    <p>Documentation serialized to java maps</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="documentation" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'documentation');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5516,17 +5679,37 @@
                 
 
                 
-                <span class="no-left">: Map</span>
+                <span class="no-left">: Map
+<span class="no-left no-right">[</span>
+String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc/model/Package.html">Package</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-documentation">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-documentation">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="fs" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'fs');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5552,12 +5735,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-fs">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-fs">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="includes" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'includes');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5578,20 +5778,47 @@
                 
 
                 
-                <span class="no-left">: Map</span>
+                <span class="no-left">: Map
+<span class="no-left no-right">[</span>
+String<span class="">, </span>Include
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Include files are allowed under the directory <code>_includes</code>. These files
+                <div class="member-body-short" id="short-body-includes">
+                    <p>Include files are allowed under the directory <code>_includes</code>. These files
 have to be compilable files and can be used with liquid includes:</p>
 <p></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-includes">
+                    <p>Include files are allowed under the directory <code>_includes</code>. These files
+have to be compilable files and can be used with liquid includes:</p>
+<pre><code>{% include &quot;some-file&quot; %}
+</code></pre>
+<p>You can also use the <code>with</code> statement:</p>
+<pre><code>{% include &quot;some-file&quot; with { key: value } %}
+</code></pre>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="layouts" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'layouts');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5612,23 +5839,49 @@ have to be compilable files and can be used with liquid includes:</p>
                 
 
                 
-                <span class="no-left">: Map</span>
+                <span class="no-left">: Map
+<span class="no-left no-right">[</span>
+String<span class="">, </span>Layout
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Files that define a layout then referred to by <code>layout: filename-no-ext</code>
+                <div class="member-body-short" id="short-body-layouts">
+                    <p>Files that define a layout then referred to by <code>layout: filename-no-ext</code>
 in yaml front-matter.</p>
 <p>The compiler will look in two locations, <code>&lt;root&gt;/_layouts/</code> a...
 </p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-layouts">
+                    <p>Files that define a layout then referred to by <code>layout: filename-no-ext</code>
+in yaml front-matter.</p>
+<p>The compiler will look in two locations, <code>&lt;root&gt;/_layouts/</code> and
+in the bundled jar file's resources <code>/_layouts</code>.</p>
+<p>If the user supplies a layout that has the same name as one of the
+defaults, the user-defined one will take precedence.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="projectTitle" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'projectTitle');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5654,12 +5907,29 @@ in yaml front-matter.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-projectTitle">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-projectTitle">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="root" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'root');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5685,12 +5955,29 @@ in yaml front-matter.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-root">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-root">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="sidebar" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'sidebar');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5716,13 +6003,31 @@ in yaml front-matter.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Sidebar created from <code>sidebar.yml</code> file in site root</p>
+                <div class="member-body-short" id="short-body-sidebar">
+                    <p>Sidebar created from <code>sidebar.yml</code> file in site root</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-sidebar">
+                    <p>Sidebar created from <code>sidebar.yml</code> file in site root</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="_1" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_1');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5748,12 +6053,29 @@ in yaml front-matter.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-_1">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-_1">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="_2" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_2');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5779,12 +6101,29 @@ in yaml front-matter.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-_2">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-_2">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="_3" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, '_3');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5810,12 +6149,29 @@ in yaml front-matter.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-_3">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-_3">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="blogInfo(ctx)" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'blogInfo(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5851,17 +6207,37 @@ in yaml front-matter.</p>
                 
 
                 
-                <span class="no-left">: Array</span>
+                <span class="no-left">: Array
+<span class="no-left no-right">[</span>
+BlogPost
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-blogInfo(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-blogInfo(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="blogposts(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'blogposts(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5897,19 +6273,43 @@ in yaml front-matter.</p>
                 
 
                 
-                <span class="no-left">: Array</span>
+                <span class="no-left">: Array
+<span class="no-left no-right">[</span>
+File
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>All files that are considered blogposts, currently this means that files have been placed in:</p>
+                <div class="member-body-short" id="short-body-blogposts(ctx)">
+                    <p>All files that are considered blogposts, currently this means that files have been placed in:</p>
 <p></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-blogposts(ctx)">
+                    <p>All files that are considered blogposts, currently this means that files have been placed in:</p>
+<pre><code>./blog/_posts/year-month-day-title.ext
+</code></pre>
+<p>where <code>ext</code> is either markdown or html.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="collectFiles(dir,includes)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'collectFiles(dir,includes)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5951,17 +6351,37 @@ in yaml front-matter.</p>
                 
 
                 
-                <span class="no-left">: Array</span>
+                <span class="no-left">: Array
+<span class="no-left no-right">[</span>
+File
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-collectFiles(dir,includes)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-collectFiles(dir,includes)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="compilableFiles(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'compilableFiles(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5997,20 +6417,43 @@ in yaml front-matter.</p>
                 
 
                 
-                <span class="no-left">: Array</span>
+                <span class="no-left">: Array
+<span class="no-left no-right">[</span>
+File
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>All files that are considered compilable assets in this context. This
+                <div class="member-body-short" id="short-body-compilableFiles(ctx)">
+                    <p>All files that are considered compilable assets in this context. This
 is mainly markdown and html files, but could include other files in the
 future.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-compilableFiles(ctx)">
+                    <p>All files that are considered compilable assets in this context. This
+is mainly markdown and html files, but could include other files in the
+future.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="copy(root,projectTitle,documentation)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'copy(root,projectTitle,documentation)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6068,12 +6511,29 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-copy(root,projectTitle,documentation)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-copy(root,projectTitle,documentation)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="copy$default$1" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'copy$default$1');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6099,12 +6559,29 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-copy$default$1">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-copy$default$1">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="copy$default$2" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'copy$default$2');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6130,12 +6607,29 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-copy$default$2">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-copy$default$2">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="copy$default$3" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'copy$default$3');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6156,17 +6650,37 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
                 
 
                 
-                <span class="no-left">: Map</span>
+                <span class="no-left">: Map
+<span class="no-left no-right">[</span>
+String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc/model/Package.html">Package</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-copy$default$3">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-copy$default$3">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="copyStaticFiles(outDir)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'copyStaticFiles(outDir)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6218,13 +6732,31 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Copy static files to <code>outDir</code></p>
+                <div class="member-body-short" id="short-body-copyStaticFiles(outDir)(ctx)">
+                    <p>Copy static files to <code>outDir</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-copyStaticFiles(outDir)(ctx)">
+                    <p>Copy static files to <code>outDir</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="copyStaticFiles$default$1" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'copyStaticFiles$default$1');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6250,13 +6782,31 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Copy static files to <code>outDir</code></p>
+                <div class="member-body-short" id="short-body-copyStaticFiles$default$1">
+                    <p>Copy static files to <code>outDir</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-copyStaticFiles$default$1">
+                    <p>Copy static files to <code>outDir</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="createOutput(outDir)(op)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'createOutput(outDir)(op)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6319,12 +6869,29 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-createOutput(outDir)(op)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-createOutput(outDir)(op)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="defaultParams(pageLocation,additionalDepth)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'defaultParams(pageLocation,additionalDepth)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6371,13 +6938,31 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Generate default params included in each page</p>
+                <div class="member-body-short" id="short-body-defaultParams(pageLocation,additionalDepth)">
+                    <p>Generate default params included in each page</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-defaultParams(pageLocation,additionalDepth)">
+                    <p>Generate default params included in each page</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="defaultParams$default$2" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'defaultParams$default$2');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6403,13 +6988,31 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Generate default params included in each page</p>
+                <div class="member-body-short" id="short-body-defaultParams$default$2">
+                    <p>Generate default params included in each page</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-defaultParams$default$2">
+                    <p>Generate default params included in each page</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="generateApiDocs(outDir)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'generateApiDocs(outDir)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6461,13 +7064,31 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Generate HTML for the API documentation</p>
+                <div class="member-body-short" id="short-body-generateApiDocs(outDir)(ctx)">
+                    <p>Generate HTML for the API documentation</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-generateApiDocs(outDir)(ctx)">
+                    <p>Generate HTML for the API documentation</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="generateApiDocs$default$1" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'generateApiDocs$default$1');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6493,13 +7114,31 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Generate HTML for the API documentation</p>
+                <div class="member-body-short" id="short-body-generateApiDocs$default$1">
+                    <p>Generate HTML for the API documentation</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-generateApiDocs$default$1">
+                    <p>Generate HTML for the API documentation</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="generateBlog(outDir)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'generateBlog(outDir)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6551,13 +7190,31 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Generate blog from files in <code>blog/_posts</code> and output in <code>outDir</code></p>
+                <div class="member-body-short" id="short-body-generateBlog(outDir)(ctx)">
+                    <p>Generate blog from files in <code>blog/_posts</code> and output in <code>outDir</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-generateBlog(outDir)(ctx)">
+                    <p>Generate blog from files in <code>blog/_posts</code> and output in <code>outDir</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="generateBlog$default$1" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'generateBlog$default$1');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6583,13 +7240,31 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Generate blog from files in <code>blog/_posts</code> and output in <code>outDir</code></p>
+                <div class="member-body-short" id="short-body-generateBlog$default$1">
+                    <p>Generate blog from files in <code>blog/_posts</code> and output in <code>outDir</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-generateBlog$default$1">
+                    <p>Generate blog from files in <code>blog/_posts</code> and output in <code>outDir</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="generateHtmlFiles(outDir)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'generateHtmlFiles(outDir)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6641,13 +7316,31 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Generate HTML files from markdown and .html sources</p>
+                <div class="member-body-short" id="short-body-generateHtmlFiles(outDir)(ctx)">
+                    <p>Generate HTML files from markdown and .html sources</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-generateHtmlFiles(outDir)(ctx)">
+                    <p>Generate HTML files from markdown and .html sources</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="generateHtmlFiles$default$1" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'generateHtmlFiles$default$1');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6673,13 +7366,31 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Generate HTML files from markdown and .html sources</p>
+                <div class="member-body-short" id="short-body-generateHtmlFiles$default$1">
+                    <p>Generate HTML files from markdown and .html sources</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-generateHtmlFiles$default$1">
+                    <p>Generate HTML files from markdown and .html sources</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="initFiles(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'initFiles(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6720,12 +7431,29 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-initFiles(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-initFiles(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="mkdirs(path)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'mkdirs(path)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6777,13 +7505,31 @@ String<span class="">, </span><a href="../../../../.././api/dotty/tools/dottydoc
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create directories and issue an error if could not</p>
+                <div class="member-body-short" id="short-body-mkdirs(path)(ctx)">
+                    <p>Create directories and issue an error if could not</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-mkdirs(path)(ctx)">
+                    <p>Create directories and issue an error if could not</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="render(page,params)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'render(page,params)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6841,19 +7587,41 @@ String<span class="">, </span>AnyRef
                 
 
                 
-                <span class="no-left">: Option</span>
+                <span class="no-left">: Option
+<span class="no-left no-right">[</span>
+String
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Render a page to html, the resulting string is the result of the complete
+                <div class="member-body-short" id="short-body-render(page,params)(ctx)">
+                    <p>Render a page to html, the resulting string is the result of the complete
 expansion of the template with all its layouts and includes.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-render(page,params)(ctx)">
+                    <p>Render a page to html, the resulting string is the result of the complete
+expansion of the template with all its layouts and includes.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="render$default$2" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'render$default$2');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6874,19 +7642,41 @@ expansion of the template with all its layouts and includes.</p>
                 
 
                 
-                <span class="no-left">: Map</span>
+                <span class="no-left">: Map
+<span class="no-left no-right">[</span>
+String<span class="">, </span>Object
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Render a page to html, the resulting string is the result of the complete
+                <div class="member-body-short" id="short-body-render$default$2">
+                    <p>Render a page to html, the resulting string is the result of the complete
 expansion of the template with all its layouts and includes.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-render$default$2">
+                    <p>Render a page to html, the resulting string is the result of the complete
+expansion of the template with all its layouts and includes.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="staticAssets(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'staticAssets(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6922,19 +7712,41 @@ expansion of the template with all its layouts and includes.</p>
                 
 
                 
-                <span class="no-left">: Array</span>
+                <span class="no-left">: Array
+<span class="no-left no-right">[</span>
+File
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>All files that are considered static in this context, this can be
+                <div class="member-body-short" id="short-body-staticAssets(ctx)">
+                    <p>All files that are considered static in this context, this can be
 anything from CSS, JS to images and other files.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-staticAssets(ctx)">
+                    <p>All files that are considered static in this context, this can be
+anything from CSS, JS to images and other files.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="stringToSourceFile(name,path,sourceCode)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'stringToSourceFile(name,path,sourceCode)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6984,18 +7796,36 @@ anything from CSS, JS to images and other files.</p>
                 
 
                 
-                <span class="no-left">: SourceFile</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/util/SourceFile.html">SourceFile</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Create virtual file from string <code>sourceCode</code></p>
+                <div class="member-body-short" id="short-body-stringToSourceFile(name,path,sourceCode)">
+                    <p>Create virtual file from string <code>sourceCode</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-stringToSourceFile(name,path,sourceCode)">
+                    <p>Create virtual file from string <code>sourceCode</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="stripRoot(f)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'stripRoot(f)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7034,13 +7864,35 @@ anything from CSS, JS to images and other files.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>This function allows the stripping of the path that leads up to root.</p>
+                <div class="member-body-short" id="short-body-stripRoot(f)">
+                    <p>This function allows the stripping of the path that leads up to root.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-stripRoot(f)">
+                    <p>This function allows the stripping of the path that leads up to root.</p>
+<pre><code class="language-scala">stripRoot(new JFile(&quot;/some/root/dir/css/index.css&quot;))
+// returns: dir/css/index.css
+// given that root is: /some/root
+</code></pre>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="toSourceFile(f)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'toSourceFile(f)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -7074,13 +7926,29 @@ anything from CSS, JS to images and other files.</p>
                 
 
                 
-                <span class="no-left">: SourceFile</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/util/SourceFile.html">SourceFile</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-toSourceFile(f)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-toSourceFile(f)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

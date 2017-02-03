@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             TreeExtractors
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="BinaryOp$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'BinaryOp$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,13 +5379,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Match arg1.op(arg2) and extract (arg1, op.symbol, arg2)</p>
+                <div class="member-body-short" id="short-body-BinaryOp$">
+                    <p>Match arg1.op(arg2) and extract (arg1, op.symbol, arg2)</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-BinaryOp$">
+                    <p>Match arg1.op(arg2) and extract (arg1, op.symbol, arg2)</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NewWithArgs$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NewWithArgs$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5393,13 +5427,31 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Match new C(args) and extract (C, args)</p>
+                <div class="member-body-short" id="short-body-NewWithArgs$">
+                    <p>Match new C(args) and extract (C, args)</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-NewWithArgs$">
+                    <p>Match new C(args) and extract (C, args)</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ValueClassUnbox$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ValueClassUnbox$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5423,11 +5475,30 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>For an instance v of a value class like:
+                <div class="member-body-short" id="short-body-ValueClassUnbox$">
+                    <p>For an instance v of a value class like:
 class V(val underlying: X) extends AnyVal
 Match v.underlying() and extract v</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ValueClassUnbox$">
+                    <p>For an instance v of a value class like:
+class V(val underlying: X) extends AnyVal
+Match v.underlying() and extract v</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

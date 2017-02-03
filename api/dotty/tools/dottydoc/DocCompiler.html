@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,17 @@
         <span id="entity-name">
             DocCompiler
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type"><a href="../../../.././api/dotty/tools/dotc/Compiler.html">Compiler</a></span>
+            
+        </div>
+        
     </div>
 
     
@@ -5347,12 +5361,35 @@ wihtout discarding AnyVal interfaces
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">DocCompiler</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="phases" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'phases');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5373,12 +5410,19 @@ wihtout discarding AnyVal interfaces
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+List
+<span class="no-left no-right">[</span>
+<a href="../../../.././api/dotty/tools/dotc/core/Phases$/Phase.html">Phase</a>
+<span class="no-left">]</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Meta-ordering constraint:</p>
+                <div class="member-body-short" id="short-body-phases">
+                    <p>Meta-ordering constraint:</p>
 <p>DenotTransformers that change the signature of their denotation's info must go
 after erasure. The reason is that denotations a...
 </p>
@@ -5386,7 +5430,36 @@ after erasure. The reason is that denotations a...
 </p>
 <ul></ul>
 
+                </div>
+                <div class="member-body-long" id ="long-body-phases">
+                    <p>Meta-ordering constraint:</p>
+<p>DenotTransformers that change the signature of their denotation's info must go
+after erasure. The reason is that denotations are permanently referred to by
+TermRefs which contain a signature. If the signature of a symbol would change,
+all refs to it would become outdated - they could not be dereferenced in the
+new phase.</p>
+<p>After erasure, signature changing denot-transformers are OK because erasure
+will make sure that only term refs with fixed SymDenotations survive beyond it. This
+is possible because:</p>
+<ul>
+<li>splitter has run, so every ident or select refers to a unique symbol</li>
+<li>after erasure, asSeenFrom is the identity, so every reference has a
+plain SymDenotation, as opposed to a UniqueRefDenotation.</li>
+</ul>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

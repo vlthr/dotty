@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             Inferencing
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="IsFullyDefinedAccumulator" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'IsFullyDefinedAccumulator');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,18 +5379,52 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The accumulator which forces type variables using the policy encoded in <code>force</code>
+                <div class="member-body-short" id="short-body-IsFullyDefinedAccumulator">
+                    <p>The accumulator which forces type variables using the policy encoded in <code>force</code>
 and returns whether the type is fully defined. The direction in which
 a ty...
 </p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-IsFullyDefinedAccumulator">
+                    <p>The accumulator which forces type variables using the policy encoded in <code>force</code>
+and returns whether the type is fully defined. The direction in which
+a type variable is instantiated is determined as follows:
+1. T is minimized if the constraint over T is only from below (i.e.
+constrained lower bound != given lower bound and
+constrained upper bound == given upper bound).
+2. T is maximized if the constraint over T is only from above (i.e.
+constrained upper bound != given upper bound and
+constrained lower bound == given lower bound).
+If (1) and (2) do not apply:
+3. T is maximized if it appears only contravariantly in the given type.
+4. T is minimized in all other cases.</p>
+<p>The instantiation is done in two phases:
+1st Phase: Try to instantiate minimizable type variables to
+their lower bound. Record whether successful.
+2nd Phase: If first phase was successful, instantiate all remaining type variables
+to their upper bound.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="VarianceMap" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'VarianceMap');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5397,7 +5447,7 @@ a ty...
                     <span class="equals"> = </span>
                     SimpleMap
 <span class="no-left no-right">[</span>
-TypeVar<span class="">, </span>Integer
+<a href="../../../../.././api/dotty/tools/dotc/core/Types$/TypeVar.html">TypeVar</a><span class="">, </span>Integer
 <span class="no-left">]</span>
                 </span>
                 
@@ -5406,12 +5456,29 @@ TypeVar<span class="">, </span>Integer
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-VarianceMap">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-VarianceMap">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="companionRef(tp)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'companionRef(tp)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5458,20 +5525,40 @@ TypeVar<span class="">, </span>Integer
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Following type aliases and stripping refinements and annotations, if one arrives at a
+                <div class="member-body-short" id="short-body-companionRef(tp)(ctx)">
+                    <p>Following type aliases and stripping refinements and annotations, if one arrives at a
 class type reference where the class has a companion module, a re...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-companionRef(tp)(ctx)">
+                    <p>Following type aliases and stripping refinements and annotations, if one arrives at a
+class type reference where the class has a companion module, a reference to
+that companion module. Otherwise NoType</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="fullyDefinedType(tp,what,pos)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'fullyDefinedType(tp,what,pos)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5534,19 +5621,38 @@ class type reference where the class has a companion module, a re...
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The fully defined type, where all type variables are forced.
+                <div class="member-body-short" id="short-body-fullyDefinedType(tp,what,pos)(ctx)">
+                    <p>The fully defined type, where all type variables are forced.
 Throws an error if type contains wildcards.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-fullyDefinedType(tp,what,pos)(ctx)">
+                    <p>The fully defined type, where all type variables are forced.
+Throws an error if type contains wildcards.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="inferTypeParams(tree,pt)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'inferTypeParams(tree,pt)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5601,18 +5707,36 @@ Throws an error if type contains wildcards.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If <code>tree</code> has a PolyType, infer its type parameters by comparing with expected type <code>pt</code></p>
+                <div class="member-body-short" id="short-body-inferTypeParams(tree,pt)(ctx)">
+                    <p>If <code>tree</code> has a PolyType, infer its type parameters by comparing with expected type <code>pt</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-inferTypeParams(tree,pt)(ctx)">
+                    <p>If <code>tree</code> has a PolyType, infer its type parameters by comparing with expected type <code>pt</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="instDirection(param)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'instDirection(param)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5664,14 +5788,33 @@ Throws an error if type contains wildcards.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The instantiation direction for given poly param computed
+                <div class="member-body-short" id="short-body-instDirection(param)(ctx)">
+                    <p>The instantiation direction for given poly param computed
 from the constraint:</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-instDirection(param)(ctx)">
+                    <p>The instantiation direction for given poly param computed
+from the constraint:</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="instantiateSelected(tp,tvars)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'instantiateSelected(tp,tvars)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5734,13 +5877,31 @@ from the constraint:</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Instantiate selected type variables <code>tvars</code> in type <code>tp</code></p>
+                <div class="member-body-short" id="short-body-instantiateSelected(tp,tvars)(ctx)">
+                    <p>Instantiate selected type variables <code>tvars</code> in type <code>tp</code></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-instantiateSelected(tp,tvars)(ctx)">
+                    <p>Instantiate selected type variables <code>tvars</code> in type <code>tp</code></p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="interpolateUndetVars(tree,ownedBy)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'interpolateUndetVars(tree,ownedBy)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5800,16 +5961,38 @@ from the constraint:</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Interpolate those undetermined type variables in the widened type of this tree
+                <div class="member-body-short" id="short-body-interpolateUndetVars(tree,ownedBy)(ctx)">
+                    <p>Interpolate those undetermined type variables in the widened type of this tree
 which are introduced by type application contained in the tree.
 If such a...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-interpolateUndetVars(tree,ownedBy)(ctx)">
+                    <p>Interpolate those undetermined type variables in the widened type of this tree
+which are introduced by type application contained in the tree.
+If such a variable appears covariantly in type <code>tp</code> or does not appear at all,
+approximate it by its lower bound. Otherwise, if it appears contravariantly
+in type <code>tp</code> approximate it by its upper bound.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isFullyDefined(tp,force)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isFullyDefined(tp,force)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5869,16 +6052,38 @@ If such a...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Is type fully defined, meaning the type does not contain wildcard types
+                <div class="member-body-short" id="short-body-isFullyDefined(tp,force)(ctx)">
+                    <p>Is type fully defined, meaning the type does not contain wildcard types
 or uninstantiated type variables. As a side effect, this will minimize
 any unins...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-isFullyDefined(tp,force)(ctx)">
+                    <p>Is type fully defined, meaning the type does not contain wildcard types
+or uninstantiated type variables. As a side effect, this will minimize
+any uninstantiated type variables, according to the given force degree,
+but only if the overall result of <code>isFullyDefined</code> is <code>true</code>.
+Variables that are successfully minimized do not count as uninstantiated.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="maximizeType(tp)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'maximizeType(tp)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5925,20 +6130,43 @@ any unins...
                 
 
                 
-                <span class="no-left">: Option</span>
+                <span class="no-left">: Option
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Types$/TypeVar.html">TypeVar</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Instantiate undetermined type variables to that type <code>tp</code> is
+                <div class="member-body-short" id="short-body-maximizeType(tp)(ctx)">
+                    <p>Instantiate undetermined type variables to that type <code>tp</code> is
 maximized and return None. If this is not possible, because a non-variant
 typevar is not uniq...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-maximizeType(tp)(ctx)">
+                    <p>Instantiate undetermined type variables to that type <code>tp</code> is
+maximized and return None. If this is not possible, because a non-variant
+typevar is not uniquely determined, return that typevar in a Some.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="tvarsInParams(tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'tvarsInParams(tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5985,21 +6213,48 @@ typevar is not uniq...</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Types$/TypeVar.html">TypeVar</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The list of uninstantiated type variables bound by some prefix of type <code>T</code> which
+                <div class="member-body-short" id="short-body-tvarsInParams(tree)(ctx)">
+                    <p>The list of uninstantiated type variables bound by some prefix of type <code>T</code> which
 occur in at least one formal parameter type of a prefix application.
 Cons...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-tvarsInParams(tree)(ctx)">
+                    <p>The list of uninstantiated type variables bound by some prefix of type <code>T</code> which
+occur in at least one formal parameter type of a prefix application.
+Considered prefixes are:
+- The function <code>f</code> of an application node <code>f(e1, .., en)</code>
+- The function <code>f</code> of a type application node <code>f[T1, ..., Tn]</code>
+- The prefix <code>p</code> of a selection <code>p.f</code>.
+- The result expression <code>e</code> of a block <code>{s1; .. sn; e}</code>.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="variances(tp,include)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'variances(tp,include)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6059,7 +6314,8 @@ Cons...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>All occurrences of type vars in this type that satisfy predicate
+                <div class="member-body-short" id="short-body-variances(tp,include)(ctx)">
+                    <p>All occurrences of type vars in this type that satisfy predicate
 <code>include</code> mapped to their variances (-1/0/1) in this type, where
 -1 means: only covariant...
 </p>
@@ -6068,11 +6324,39 @@ Cons...
 <p></p>
 <p></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-variances(tp,include)(ctx)">
+                    <p>All occurrences of type vars in this type that satisfy predicate
+<code>include</code> mapped to their variances (-1/0/1) in this type, where
+-1 means: only covariant occurrences
++1 means: only covariant occurrences
+0 means: mixed or non-variant occurrences</p>
+<p>Note: We intentionally use a relaxed version of variance here,
+where the variance does not change under a prefix of a named type
+(the strict version makes prefixes invariant). This turns out to be
+better for type inference. In a nutshell, if a type variable occurs
+like this:</p>
+<p>(U? &gt;: x.type) # T</p>
+<p>we want to instantiate U to x.type right away. No need to wait further.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="widenForMatchSelector(tp)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'widenForMatchSelector(tp)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6119,14 +6403,31 @@ Cons...
                 
 
                 
-                <span class="no-left">: Type</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/core/Types$/Type.html">Type</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Recursively widen and also follow type declarations and type aliases.</p>
+                <div class="member-body-short" id="short-body-widenForMatchSelector(tp)(ctx)">
+                    <p>Recursively widen and also follow type declarations and type aliases.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-widenForMatchSelector(tp)(ctx)">
+                    <p>Recursively widen and also follow type declarations and type aliases.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

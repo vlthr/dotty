@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,41 @@
         <span id="entity-name">
             Config
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Config</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="boundValues" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'boundValues');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5360,12 +5388,18 @@
                 
 
                 
-                <span class="no-left">: Array</span>
+                <span class="no-left">: Array
+<span class="no-left no-right">[</span>
+<span class="no-right">(</span>
+String<span>, </span>Any
+<span class="no-left">)</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Initial values in the REPL can also be bound from runtime. Override
+                <div class="member-body-short" id="short-body-boundValues">
+                    <p>Initial values in the REPL can also be bound from runtime. Override
 this variable in the following manner to bind a variable at the start
 of the REPL se...</p>
 <p>
@@ -5373,11 +5407,36 @@ of the REPL se...</p>
 <p>
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-boundValues">
+                    <p>Initial values in the REPL can also be bound from runtime. Override
+this variable in the following manner to bind a variable at the start
+of the REPL session:</p>
+<p>{{{
+override val boundValues = Array(&quot;exampleList&quot; -&gt; List(1, 1, 2, 3, 5))
+}}}</p>
+<p>This is useful if you've integrated the REPL as part of your project
+and already have objects available during runtime that you'd like to
+inspect.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="classLoader" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'classLoader');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5398,18 +5457,39 @@ of the REPL se...</p>
                 
 
                 
-                <span class="no-left">: Option</span>
+                <span class="no-left">: Option
+<span class="no-left no-right">[</span>
+ClassLoader
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>To pass a custom ClassLoader to the Dotty REPL, overwride this value</p>
+                <div class="member-body-short" id="short-body-classLoader">
+                    <p>To pass a custom ClassLoader to the Dotty REPL, overwride this value</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-classLoader">
+                    <p>To pass a custom ClassLoader to the Dotty REPL, overwride this value</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="cleanupCommands" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'cleanupCommands');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5430,20 +5510,43 @@ of the REPL se...</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+String
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Before exiting, the interpreter will also run the cleanup commands
+                <div class="member-body-short" id="short-body-cleanupCommands">
+                    <p>Before exiting, the interpreter will also run the cleanup commands
 issued in the variable below. This is useful if your REPL creates
 things during its r...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-cleanupCommands">
+                    <p>Before exiting, the interpreter will also run the cleanup commands
+issued in the variable below. This is useful if your REPL creates
+things during its run that should be dealt with before shutdown.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="continuationPrompt" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'continuationPrompt');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5469,12 +5572,29 @@ things during its r...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-continuationPrompt">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-continuationPrompt">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="initialCommands" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'initialCommands');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5495,21 +5615,45 @@ things during its r...</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+String
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The first interpreted commands always take a couple of seconds due to
+                <div class="member-body-short" id="short-body-initialCommands">
+                    <p>The first interpreted commands always take a couple of seconds due to
 classloading. To bridge the gap, we warm up the interpreter by letting
 it interpre...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-initialCommands">
+                    <p>The first interpreted commands always take a couple of seconds due to
+classloading. To bridge the gap, we warm up the interpreter by letting
+it interpret at least a dummy line while waiting for the first line of
+input to be entered.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="prompt" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'prompt');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5535,12 +5679,29 @@ it interpre...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-prompt">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-prompt">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="version" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'version');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5566,12 +5727,29 @@ it interpre...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-version">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-version">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="context(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'context(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5605,17 +5783,34 @@ it interpre...
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-context(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-context(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="input(in)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'input(in)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5667,13 +5862,31 @@ it interpre...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The default input reader</p>
+                <div class="member-body-short" id="short-body-input(in)(ctx)">
+                    <p>The default input reader</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-input(in)(ctx)">
+                    <p>The default input reader</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="output" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'output');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5699,9 +5912,26 @@ it interpre...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The default output writer</p>
+                <div class="member-body-short" id="short-body-output">
+                    <p>The default output writer</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-output">
+                    <p>The default output writer</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

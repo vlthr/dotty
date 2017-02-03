@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             Run
         </span>
+        
+        
     </div>
 
     
@@ -5339,12 +5344,59 @@
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Run</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                comp:
+                            </span>
+                            Compiler
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">Run</span>
+                    <span class="no-left">(</span>
+                        
+                        <span class="no-left keyword">implicit</span>
+                        
+                        
+                            <span class="no-left">
+                                ctx:
+                            </span>
+                            Context
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="NoPrintedTree$" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoPrintedTree$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5368,12 +5420,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-NoPrintedTree$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-NoPrintedTree$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="PrintedTree" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'PrintedTree');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5397,12 +5466,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-PrintedTree">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-PrintedTree">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SomePrintedTree" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SomePrintedTree');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5426,12 +5512,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-SomePrintedTree">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-SomePrintedTree">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SomePrintedTree$" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SomePrintedTree$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5455,12 +5558,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-SomePrintedTree$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-SomePrintedTree$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="comp" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'comp');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5481,17 +5601,34 @@
                 
 
                 
-                <span class="no-left">: Compiler</span>
+                <span class="no-left">: <a href="../../../.././api/dotty/tools/dotc/Compiler.html">Compiler</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-comp">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-comp">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ctx" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ctx');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5512,17 +5649,34 @@
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ctx">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ctx">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="units" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'units');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5543,17 +5697,37 @@
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../.././api/dotty/tools/dotc/CompilationUnit.html">CompilationUnit</a>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-units">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-units">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="compile(fileNames)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'compile(fileNames)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5595,12 +5769,29 @@ String
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-compile(fileNames)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-compile(fileNames)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="compile(sourceCode)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'compile(sourceCode)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5639,12 +5830,29 @@ String
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-compile(sourceCode)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-compile(sourceCode)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="compileSources(sources)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'compileSources(sources)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5686,15 +5894,37 @@ String
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>TODO: There's a fundamental design problem here: We assemble phases using <code>squash</code>
+                <div class="member-body-short" id="short-body-compileSources(sources)">
+                    <p>TODO: There's a fundamental design problem here: We assemble phases using <code>squash</code>
 when we first build the compiler. But we modify them with -Yskip, -Yst...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-compileSources(sources)">
+                    <p>TODO: There's a fundamental design problem here: We assemble phases using <code>squash</code>
+when we first build the compiler. But we modify them with -Yskip, -Ystop
+on each run. That modification needs to either transform the tree structure,
+or we need to assemble phases on each run, and take -Yskip, -Ystop into
+account. I think the latter would be preferable.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="compileUnits()" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'compileUnits()');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5727,12 +5957,29 @@ when we first build the compiler. But we modify them with -Yskip, -Yst...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-compileUnits()">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-compileUnits()">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="getSource(fileName)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'getSource(fileName)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5766,17 +6013,34 @@ when we first build the compiler. But we modify them with -Yskip, -Yst...
                 
 
                 
-                <span class="no-left">: SourceFile</span>
+                <span class="no-left">: <a href="../../../.././api/dotty/tools/dotc/util/SourceFile.html">SourceFile</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-getSource(fileName)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-getSource(fileName)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="printSummary()" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'printSummary()');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5804,18 +6068,36 @@ when we first build the compiler. But we modify them with -Yskip, -Yst...
                 
 
                 
-                <span class="no-left">: Reporter</span>
+                <span class="no-left">: <a href="../../../.././api/dotty/tools/dotc/reporting/Reporter.html">Reporter</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Print summary; return # of errors encountered</p>
+                <div class="member-body-short" id="short-body-printSummary()">
+                    <p>Print summary; return # of errors encountered</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-printSummary()">
+                    <p>Print summary; return # of errors encountered</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="printTree(last)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'printTree(last)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5862,17 +6144,34 @@ when we first build the compiler. But we modify them with -Yskip, -Yst...
                 
 
                 
-                <span class="no-left">: PrintedTree</span>
+                <span class="no-left">: <a href="../../../.././api/dotty/tools/dotc/Run/PrintedTree.html">PrintedTree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-printTree(last)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-printTree(last)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="runContext" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'runContext');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5893,18 +6192,36 @@ when we first build the compiler. But we modify them with -Yskip, -Yst...
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The context created for this run</p>
+                <div class="member-body-short" id="short-body-runContext">
+                    <p>The context created for this run</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-runContext">
+                    <p>The context created for this run</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="units_=(x$1)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'units_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5946,8 +6263,24 @@ when we first build the compiler. But we modify them with -Yskip, -Yst...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-units_=(x$1)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-units_=(x$1)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

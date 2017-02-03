@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             Decorators
         </span>
+        
+        
     </div>
 
     
@@ -5339,12 +5344,23 @@
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="ListDecorator" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ListDecorator');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5368,14 +5384,33 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Implements filterConserve, zipWithConserve methods
+                <div class="member-body-short" id="short-body-ListDecorator">
+                    <p>Implements filterConserve, zipWithConserve methods
 on lists that avoid duplication of list nodes where feasible.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ListDecorator">
+                    <p>Implements filterConserve, zipWithConserve methods
+on lists that avoid duplication of list nodes where feasible.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ListDecorator$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ListDecorator$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5399,14 +5434,33 @@ on lists that avoid duplication of list nodes where feasible.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Implements filterConserve, zipWithConserve methods
+                <div class="member-body-short" id="short-body-ListDecorator$">
+                    <p>Implements filterConserve, zipWithConserve methods
 on lists that avoid duplication of list nodes where feasible.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ListDecorator$">
+                    <p>Implements filterConserve, zipWithConserve methods
+on lists that avoid duplication of list nodes where feasible.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ListOfListDecorator" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ListOfListDecorator');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5430,12 +5484,29 @@ on lists that avoid duplication of list nodes where feasible.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ListOfListDecorator">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ListOfListDecorator">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ListOfListDecorator$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ListOfListDecorator$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5459,12 +5530,29 @@ on lists that avoid duplication of list nodes where feasible.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ListOfListDecorator$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ListOfListDecorator$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="PhaseListDecorator" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'PhaseListDecorator');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5488,15 +5576,35 @@ on lists that avoid duplication of list nodes where feasible.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Test whether a list of strings representing phases contains
+                <div class="member-body-short" id="short-body-PhaseListDecorator">
+                    <p>Test whether a list of strings representing phases contains
 a given phase. See [[config.CompilerCommand#explainAdvanced]] for the
 exact meaning of &quot;contai...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-PhaseListDecorator">
+                    <p>Test whether a list of strings representing phases contains
+a given phase. See [[config.CompilerCommand#explainAdvanced]] for the
+exact meaning of &quot;contains&quot; here.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="PhaseListDecorator$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'PhaseListDecorator$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5520,15 +5628,35 @@ exact meaning of &quot;contai...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Test whether a list of strings representing phases contains
+                <div class="member-body-short" id="short-body-PhaseListDecorator$">
+                    <p>Test whether a list of strings representing phases contains
 a given phase. See [[config.CompilerCommand#explainAdvanced]] for the
 exact meaning of &quot;contai...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-PhaseListDecorator$">
+                    <p>Test whether a list of strings representing phases contains
+a given phase. See [[config.CompilerCommand#explainAdvanced]] for the
+exact meaning of &quot;contains&quot; here.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="StringDecorator" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'StringDecorator');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5552,13 +5680,31 @@ exact meaning of &quot;contai...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Turns Strings into PreNames, adding toType/TermName methods</p>
+                <div class="member-body-short" id="short-body-StringDecorator">
+                    <p>Turns Strings into PreNames, adding toType/TermName methods</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-StringDecorator">
+                    <p>Turns Strings into PreNames, adding toType/TermName methods</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="StringDecorator$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'StringDecorator$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5582,13 +5728,31 @@ exact meaning of &quot;contai...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Turns Strings into PreNames, adding toType/TermName methods</p>
+                <div class="member-body-short" id="short-body-StringDecorator$">
+                    <p>Turns Strings into PreNames, adding toType/TermName methods</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-StringDecorator$">
+                    <p>Turns Strings into PreNames, adding toType/TermName methods</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="StringInterpolators" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'StringInterpolators');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5612,12 +5776,29 @@ exact meaning of &quot;contai...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-StringInterpolators">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-StringInterpolators">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="StringInterpolators$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'StringInterpolators$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5641,12 +5822,29 @@ exact meaning of &quot;contai...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-StringInterpolators$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-StringInterpolators$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SymbolIteratorDecorator" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SymbolIteratorDecorator');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5670,14 +5868,33 @@ exact meaning of &quot;contai...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Implements a findSymbol method on iterators of Symbols that
+                <div class="member-body-short" id="short-body-SymbolIteratorDecorator">
+                    <p>Implements a findSymbol method on iterators of Symbols that
 works like find but avoids Option, replacing None with NoSymbol.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-SymbolIteratorDecorator">
+                    <p>Implements a findSymbol method on iterators of Symbols that
+works like find but avoids Option, replacing None with NoSymbol.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SymbolIteratorDecorator$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SymbolIteratorDecorator$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5701,14 +5918,33 @@ works like find but avoids Option, replacing None with NoSymbol.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Implements a findSymbol method on iterators of Symbols that
+                <div class="member-body-short" id="short-body-SymbolIteratorDecorator$">
+                    <p>Implements a findSymbol method on iterators of Symbols that
 works like find but avoids Option, replacing None with NoSymbol.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-SymbolIteratorDecorator$">
+                    <p>Implements a findSymbol method on iterators of Symbols that
+works like find but avoids Option, replacing None with NoSymbol.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="TextToString" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'TextToString');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5732,12 +5968,29 @@ works like find but avoids Option, replacing None with NoSymbol.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-TextToString">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-TextToString">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="TextToString$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'TextToString$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5761,12 +6014,29 @@ works like find but avoids Option, replacing None with NoSymbol.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-TextToString$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-TextToString$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="MaxFilterRecursions" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'MaxFilterRecursions');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5792,12 +6062,29 @@ works like find but avoids Option, replacing None with NoSymbol.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-MaxFilterRecursions">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-MaxFilterRecursions">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ListDecorator(xs)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ListDecorator(xs)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5834,19 +6121,41 @@ T
                 
 
                 
-                <span class="no-left">: ListDecorator</span>
+                <span class="no-left">: ListDecorator
+<span class="no-left no-right">[</span>
+T
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Implements filterConserve, zipWithConserve methods
+                <div class="member-body-short" id="short-body-ListDecorator(xs)">
+                    <p>Implements filterConserve, zipWithConserve methods
 on lists that avoid duplication of list nodes where feasible.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-ListDecorator(xs)">
+                    <p>Implements filterConserve, zipWithConserve methods
+on lists that avoid duplication of list nodes where feasible.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="ListOfListDecorator(xss)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ListOfListDecorator(xss)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5886,17 +6195,37 @@ T
                 
 
                 
-                <span class="no-left">: ListOfListDecorator</span>
+                <span class="no-left">: ListOfListDecorator
+<span class="no-left no-right">[</span>
+T
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ListOfListDecorator(xss)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ListOfListDecorator(xss)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="PhaseListDecorator(names)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'PhaseListDecorator(names)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5938,15 +6267,35 @@ String
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Test whether a list of strings representing phases contains
+                <div class="member-body-short" id="short-body-PhaseListDecorator(names)">
+                    <p>Test whether a list of strings representing phases contains
 a given phase. See [[config.CompilerCommand#explainAdvanced]] for the
 exact meaning of &quot;contai...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-PhaseListDecorator(names)">
+                    <p>Test whether a list of strings representing phases contains
+a given phase. See [[config.CompilerCommand#explainAdvanced]] for the
+exact meaning of &quot;contains&quot; here.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="StringDecorator(s)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'StringDecorator(s)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5985,13 +6334,31 @@ exact meaning of &quot;contai...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Turns Strings into PreNames, adding toType/TermName methods</p>
+                <div class="member-body-short" id="short-body-StringDecorator(s)">
+                    <p>Turns Strings into PreNames, adding toType/TermName methods</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-StringDecorator(s)">
+                    <p>Turns Strings into PreNames, adding toType/TermName methods</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="StringInterpolators(sc)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'StringInterpolators(sc)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6030,12 +6397,29 @@ exact meaning of &quot;contai...</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-StringInterpolators(sc)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-StringInterpolators(sc)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="SymbolIteratorDecorator(it)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'SymbolIteratorDecorator(it)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6077,14 +6461,33 @@ Symbol
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Implements a findSymbol method on iterators of Symbols that
+                <div class="member-body-short" id="short-body-SymbolIteratorDecorator(it)">
+                    <p>Implements a findSymbol method on iterators of Symbols that
 works like find but avoids Option, replacing None with NoSymbol.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-SymbolIteratorDecorator(it)">
+                    <p>Implements a findSymbol method on iterators of Symbols that
+works like find but avoids Option, replacing None with NoSymbol.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="TextToString(text)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'TextToString(text)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6123,12 +6526,29 @@ works like find but avoids Option, replacing None with NoSymbol.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-TextToString(text)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-TextToString(text)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="sourcePos(pos)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'sourcePos(pos)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6180,8 +6600,24 @@ works like find but avoids Option, replacing None with NoSymbol.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-sourcePos(pos)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-sourcePos(pos)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

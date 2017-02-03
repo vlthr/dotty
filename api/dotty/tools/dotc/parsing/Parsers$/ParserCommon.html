@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             abstract
         </span>
@@ -5330,16 +5333,74 @@
         <span id="entity-name">
             ParserCommon
         </span>
+        
+        
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type">DotClass</span>
+            
+        </div>
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">ParserCommon</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                source:
+                            </span>
+                            SourceFile
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">ParserCommon</span>
+                    <span class="no-left">(</span>
+                        
+                        <span class="no-left keyword">implicit</span>
+                        
+                        
+                            <span class="no-left">
+                                ctx:
+                            </span>
+                            Context
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="ctx" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ctx');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5360,17 +5421,34 @@
                 
 
                 
-                <span class="no-left">: Context</span>
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/core/Contexts$/Context.html">Context</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ctx">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ctx">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="in" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'in');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5396,12 +5474,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-in">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-in">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="lastErrorOffset" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'lastErrorOffset');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5427,14 +5522,33 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The offset where the last syntax error was reported, or if a skip to a
+                <div class="member-body-short" id="short-body-lastErrorOffset">
+                    <p>The offset where the last syntax error was reported, or if a skip to a
 safepoint occurred afterwards, the offset of the safe point.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-lastErrorOffset">
+                    <p>The offset where the last syntax error was reported, or if a skip to a
+safepoint occurred afterwards, the offset of the safe point.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="source" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'source');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5460,12 +5574,29 @@ safepoint occurred afterwards, the offset of the safe point.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-source">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-source">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="atPos(pos)(t)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'atPos(pos)(t)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5515,14 +5646,33 @@ safepoint occurred afterwards, the offset of the safe point.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Positions tree.
+                <div class="member-body-short" id="short-body-atPos(pos)(t)">
+                    <p>Positions tree.
 If <code>t</code> does not have a position yet, set its position to the given one.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-atPos(pos)(t)">
+                    <p>Positions tree.
+If <code>t</code> does not have a position yet, set its position to the given one.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="atPos(start,point,end)(t)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'atPos(start,point,end)(t)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5588,12 +5738,29 @@ If <code>t</code> does not have a position yet, set its position to the given on
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-atPos(start,point,end)(t)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-atPos(start,point,end)(t)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="atPos(start,point)(t)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'atPos(start,point)(t)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5651,16 +5818,39 @@ If <code>t</code> does not have a position yet, set its position to the given on
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If the last read offset is strictly greater than <code>start</code>, position tree
+                <div class="member-body-short" id="short-body-atPos(start,point)(t)">
+                    <p>If the last read offset is strictly greater than <code>start</code>, position tree
 to position spanning from <code>start</code> to last read offset, with given point.
 If the last...
 </p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-atPos(start,point)(t)">
+                    <p>If the last read offset is strictly greater than <code>start</code>, position tree
+to position spanning from <code>start</code> to last read offset, with given point.
+If the last offset is less than or equal to start, the tree <code>t</code> did not
+consume any source for its construction. In this case, don't position it yet,
+but wait for its position to be determined by <code>setChildPositions</code> when the
+parent node is positioned.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="atPos(start)(t)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'atPos(start)(t)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5710,12 +5900,29 @@ If the last...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-atPos(start)(t)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-atPos(start)(t)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="endOffset(t)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'endOffset(t)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5754,12 +5961,29 @@ If the last...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-endOffset(t)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-endOffset(t)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="lastErrorOffset_=(x$1)" class="member protected">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'lastErrorOffset_=(x$1)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5798,14 +6022,33 @@ If the last...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>The offset where the last syntax error was reported, or if a skip to a
+                <div class="member-body-short" id="short-body-lastErrorOffset_=(x$1)">
+                    <p>The offset where the last syntax error was reported, or if a skip to a
 safepoint occurred afterwards, the offset of the safe point.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-lastErrorOffset_=(x$1)">
+                    <p>The offset where the last syntax error was reported, or if a skip to a
+safepoint occurred afterwards, the offset of the safe point.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="nameStart" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'nameStart');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5831,12 +6074,29 @@ safepoint occurred afterwards, the offset of the safe point.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-nameStart">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-nameStart">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="pointOffset(t)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'pointOffset(t)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5875,12 +6135,29 @@ safepoint occurred afterwards, the offset of the safe point.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-pointOffset(t)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-pointOffset(t)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="sourcePos(off)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'sourcePos(off)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5919,12 +6196,29 @@ safepoint occurred afterwards, the offset of the safe point.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-sourcePos(off)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-sourcePos(off)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="sourcePos$default$1" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'sourcePos$default$1');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5950,12 +6244,29 @@ safepoint occurred afterwards, the offset of the safe point.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-sourcePos$default$1">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-sourcePos$default$1">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="startOffset(t)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'startOffset(t)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5994,12 +6305,29 @@ safepoint occurred afterwards, the offset of the safe point.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-startOffset(t)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-startOffset(t)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="syntaxError(msg,offset)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'syntaxError(msg,offset)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6046,14 +6374,33 @@ safepoint occurred afterwards, the offset of the safe point.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Issue an error at given offset if beyond last error offset
+                <div class="member-body-short" id="short-body-syntaxError(msg,offset)">
+                    <p>Issue an error at given offset if beyond last error offset
 and update lastErrorOffset.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-syntaxError(msg,offset)">
+                    <p>Issue an error at given offset if beyond last error offset
+and update lastErrorOffset.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="syntaxError(msg,pos)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'syntaxError(msg,pos)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6100,14 +6447,33 @@ and update lastErrorOffset.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Unconditionally issue an error at given position, without
+                <div class="member-body-short" id="short-body-syntaxError(msg,pos)">
+                    <p>Unconditionally issue an error at given position, without
 updating lastErrorOffset.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-syntaxError(msg,pos)">
+                    <p>Unconditionally issue an error at given position, without
+updating lastErrorOffset.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="syntaxError$default$2" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'syntaxError$default$2');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6133,10 +6499,28 @@ updating lastErrorOffset.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Issue an error at given offset if beyond last error offset
+                <div class="member-body-short" id="short-body-syntaxError$default$2">
+                    <p>Issue an error at given offset if beyond last error offset
 and update lastErrorOffset.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-syntaxError$default$2">
+                    <p>Issue an error at given offset if beyond last error offset
+and update lastErrorOffset.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

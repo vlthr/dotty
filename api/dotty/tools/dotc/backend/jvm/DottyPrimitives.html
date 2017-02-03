@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,8 @@
         <span id="entity-name">
             DottyPrimitives
         </span>
+        
+        
     </div>
 
     
@@ -5352,12 +5357,41 @@ etc.). They will all be mapped to the same int.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section ">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section ">
+        
+            
+            <div class="member">
+                <div class="member-title">
+                    <span class="member-name">DottyPrimitives</span>
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                ctx:
+                            </span>
+                            Context
+                            
+                        
+                    <span class="no-left">)</span>
+                </div>
+            </div>
+            
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="ctx" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'ctx');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5383,12 +5417,29 @@ etc.). They will all be mapped to the same int.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-ctx">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-ctx">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="primitives" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'primitives');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5409,17 +5460,37 @@ etc.). They will all be mapped to the same int.</p>
                 
 
                 
-                <span class="no-left">: Map</span>
+                <span class="no-left">: Map
+<span class="no-left no-right">[</span>
+Symbol<span class="">, </span>Int
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-primitives">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-primitives">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="getPrimitive(sym)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'getPrimitive(sym)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5458,13 +5529,31 @@ etc.). They will all be mapped to the same int.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Return the code for the given symbol.</p>
+                <div class="member-body-short" id="short-body-getPrimitive(sym)">
+                    <p>Return the code for the given symbol.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-getPrimitive(sym)">
+                    <p>Return the code for the given symbol.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="getPrimitive(app,tpe)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'getPrimitive(app,tpe)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5524,15 +5613,35 @@ etc.). They will all be mapped to the same int.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Return the primitive code of the given operation. If the
+                <div class="member-body-short" id="short-body-getPrimitive(app,tpe)(ctx)">
+                    <p>Return the primitive code of the given operation. If the
 operation is an array get/set, we inspect the type of the receiver
 to demux the operation.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-getPrimitive(app,tpe)(ctx)">
+                    <p>Return the primitive code of the given operation. If the
+operation is an array get/set, we inspect the type of the receiver
+to demux the operation.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="init" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'init');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5553,18 +5662,39 @@ to demux the operation.</p>
                 
 
                 
-                <span class="no-left">: Map</span>
+                <span class="no-left">: Map
+<span class="no-left no-right">[</span>
+Symbol<span class="">, </span>Int
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Initialize the primitive map</p>
+                <div class="member-body-short" id="short-body-init">
+                    <p>Initialize the primitive map</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-init">
+                    <p>Initialize the primitive map</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="isPrimitive(fun)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isPrimitive(fun)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5603,8 +5733,24 @@ to demux the operation.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-isPrimitive(fun)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-isPrimitive(fun)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

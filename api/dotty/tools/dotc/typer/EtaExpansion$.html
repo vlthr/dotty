@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             final
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             EtaExpansion
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="etaExpand(tree,mt,xarity)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'etaExpand(tree,mt,xarity)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5402,18 +5418,36 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Eta-expanding a tree means converting a method reference to a function value.</p>
+                <div class="member-body-short" id="short-body-etaExpand(tree,mt,xarity)(ctx)">
+                    <p>Eta-expanding a tree means converting a method reference to a function value.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-etaExpand(tree,mt,xarity)(ctx)">
+                    <p>Eta-expanding a tree means converting a method reference to a function value.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="lift(defs,expr,prefix)(ctx)" class="member private">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'lift(defs,expr,prefix)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5479,17 +5513,34 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-lift(defs,expr,prefix)(ctx)">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-lift(defs,expr,prefix)(ctx)">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="lift$default$3" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'lift$default$3');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5515,12 +5566,29 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-lift$default$3">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-lift$default$3">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="liftApp(defs,tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'liftApp(defs,tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5578,12 +5646,13 @@
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Lift out function prefix and all arguments from application</p>
+                <div class="member-body-short" id="short-body-liftApp(defs,tree)(ctx)">
+                    <p>Lift out function prefix and all arguments from application</p>
 <p>pre.f(arg1, ..., argN)   becomes</p>
 <p>val x0 = pre
 val x1 = arg1
@@ -5592,11 +5661,35 @@ val xN = argN
 x0.f(x1, ..., xN)</p>
 <p>B...</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-liftApp(defs,tree)(ctx)">
+                    <p>Lift out function prefix and all arguments from application</p>
+<p>pre.f(arg1, ..., argN)   becomes</p>
+<p>val x0 = pre
+val x1 = arg1
+...
+val xN = argN
+x0.f(x1, ..., xN)</p>
+<p>But leave idempotent expressions alone.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="liftArg(defs,arg,prefix)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'liftArg(defs,arg,prefix)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5662,18 +5755,36 @@ x0.f(x1, ..., xN)</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Lift a function argument, stripping any NamedArg wrapper</p>
+                <div class="member-body-short" id="short-body-liftArg(defs,arg,prefix)(ctx)">
+                    <p>Lift a function argument, stripping any NamedArg wrapper</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-liftArg(defs,arg,prefix)(ctx)">
+                    <p>Lift a function argument, stripping any NamedArg wrapper</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="liftArg$default$3" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'liftArg$default$3');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5699,13 +5810,31 @@ x0.f(x1, ..., xN)</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Lift a function argument, stripping any NamedArg wrapper</p>
+                <div class="member-body-short" id="short-body-liftArg$default$3">
+                    <p>Lift a function argument, stripping any NamedArg wrapper</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-liftArg$default$3">
+                    <p>Lift a function argument, stripping any NamedArg wrapper</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="liftArgs(defs,methRef,args)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'liftArgs(defs,methRef,args)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5774,19 +5903,44 @@ x0.f(x1, ..., xN)</p>
                 
 
                 
-                <span class="no-left">: List</span>
+                <span class="no-left">: List
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Tree.html">Tree</a>
+<span class="no-left no-right">[</span>
+T
+<span class="no-left">]</span>
+<span class="no-left">]</span></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Lift arguments that are not-idempotent into ValDefs in buffer <code>defs</code>
+                <div class="member-body-short" id="short-body-liftArgs(defs,methRef,args)(ctx)">
+                    <p>Lift arguments that are not-idempotent into ValDefs in buffer <code>defs</code>
 and replace by the idents of so created ValDefs.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-liftArgs(defs,methRef,args)(ctx)">
+                    <p>Lift arguments that are not-idempotent into ValDefs in buffer <code>defs</code>
+and replace by the idents of so created ValDefs.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="liftAssigned(defs,tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'liftAssigned(defs,tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5844,19 +5998,38 @@ and replace by the idents of so created ValDefs.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Lift out common part of lhs tree taking part in an operator assignment such as</p>
+                <div class="member-body-short" id="short-body-liftAssigned(defs,tree)(ctx)">
+                    <p>Lift out common part of lhs tree taking part in an operator assignment such as</p>
 <p>lhs += expr</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-liftAssigned(defs,tree)(ctx)">
+                    <p>Lift out common part of lhs tree taking part in an operator assignment such as</p>
+<p>lhs += expr</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="liftPrefix(defs,tree)(ctx)" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'liftPrefix(defs,tree)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5914,17 +6087,37 @@ and replace by the idents of so created ValDefs.</p>
                 
 
                 
-                <span class="no-left">: Tree</span>
+                <span class="no-left">: <a href="../../../../.././api/dotty/tools/dotc/ast/Trees$/Instance.html#Tree">Tree</a></span>
                 
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>Lift prefix <code>pre</code> of an application <code>pre.f(...)</code> to</p>
+                <div class="member-body-short" id="short-body-liftPrefix(defs,tree)(ctx)">
+                    <p>Lift prefix <code>pre</code> of an application <code>pre.f(...)</code> to</p>
 <p>val x0 = pre
 x0.f(...)</p>
 <p>unless <code>pre</code> is a <code>New</code> or <code>pre</code> is idempotent.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-liftPrefix(defs,tree)(ctx)">
+                    <p>Lift prefix <code>pre</code> of an application <code>pre.f(...)</code> to</p>
+<p>val x0 = pre
+x0.f(...)</p>
+<p>unless <code>pre</code> is a <code>New</code> or <code>pre</code> is idempotent.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

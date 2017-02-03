@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,6 +5333,26 @@
         <span id="entity-name">
             PatternExpander
         </span>
+        
+        <span id="entity-type-params">
+            <span class="no-left">[</span>
+            
+            <span class="no-left">
+                
+                    Pattern,
+                
+            </span>
+            
+            <span class="no-left">
+                
+                    Type
+                
+            </span>
+            
+            <span class="no-left">]</span>
+        </span>
+        
+        
     </div>
 
     
@@ -5351,12 +5374,23 @@ is derived from both sets of information.</p>
     </div>
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="Aligned" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Aligned');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5380,7 +5414,8 @@ is derived from both sets of information.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If elementArity is...
+                <div class="member-body-short" id="short-body-Aligned">
+                    <p>If elementArity is...
 0: A perfect match between extractor and the fixed patterns.
 If there is a star pattern it will match any sequence.</p>
 <blockquote>
@@ -5389,11 +5424,35 @@ If there is a star pattern it will match any sequence.</p>
 </p>
 </blockquote>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Aligned">
+                    <p>If elementArity is...
+0: A perfect match between extractor and the fixed patterns.
+If there is a star pattern it will match any sequence.</p>
+<blockquote>
+<p>0: There are more patterns than products. There will have to be a
+sequence which can populate at least <elementArity> patterns.
+&lt; 0: There are more products than patterns: compile time error.</p>
+</blockquote>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Aligned$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Aligned$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5417,7 +5476,8 @@ If there is a star pattern it will match any sequence.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>If elementArity is...
+                <div class="member-body-short" id="short-body-Aligned$">
+                    <p>If elementArity is...
 0: A perfect match between extractor and the fixed patterns.
 If there is a star pattern it will match any sequence.</p>
 <blockquote>
@@ -5426,11 +5486,35 @@ If there is a star pattern it will match any sequence.</p>
 </p>
 </blockquote>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Aligned$">
+                    <p>If elementArity is...
+0: A perfect match between extractor and the fixed patterns.
+If there is a star pattern it will match any sequence.</p>
+<blockquote>
+<p>0: There are more patterns than products. There will have to be a
+sequence which can populate at least <elementArity> patterns.
+&lt; 0: There are more products than patterns: compile time error.</p>
+</blockquote>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Extractor" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Extractor');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5454,7 +5538,8 @@ If there is a star pattern it will match any sequence.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An 'extractor' can be a case class or an unapply or unapplySeq method.
+                <div class="member-body-short" id="short-body-Extractor">
+                    <p>An 'extractor' can be a case class or an unapply or unapplySeq method.
 Decoding what it is that they extract takes place before we arrive here,
 so that...
 </p>
@@ -5467,11 +5552,40 @@ so that...
 [Char]</p>
 <p>[Char]</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Extractor">
+                    <p>An 'extractor' can be a case class or an unapply or unapplySeq method.
+Decoding what it is that they extract takes place before we arrive here,
+so that this class can concentrate only on the relationship between
+patterns and types.</p>
+<p>In a case class, the class is the unextracted type and the fixed and
+repeated types are derived from its constructor parameters.</p>
+<p>In an unapply, this is reversed: the parameter to the unapply is the
+unextracted type, and the other types are derived based on the return
+type of the unapply method.</p>
+<p>In other words, this case class and unapply are encoded the same:</p>
+<p>case class Foo(x: Int, y: Int, zs: Char*)
+def unapplySeq(x: Foo): Option[(Int, Int, Seq[Char])]</p>
+<p>Both are Extractor(Foo, Int :: Int :: Nil, Repeated(Seq[Char], Char, Char*))</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Extractor$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Extractor$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5495,7 +5609,8 @@ so that...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>An 'extractor' can be a case class or an unapply or unapplySeq method.
+                <div class="member-body-short" id="short-body-Extractor$">
+                    <p>An 'extractor' can be a case class or an unapply or unapplySeq method.
 Decoding what it is that they extract takes place before we arrive here,
 so that...
 </p>
@@ -5508,11 +5623,40 @@ so that...
 [Char]</p>
 <p>[Char]</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Extractor$">
+                    <p>An 'extractor' can be a case class or an unapply or unapplySeq method.
+Decoding what it is that they extract takes place before we arrive here,
+so that this class can concentrate only on the relationship between
+patterns and types.</p>
+<p>In a case class, the class is the unextracted type and the fixed and
+repeated types are derived from its constructor parameters.</p>
+<p>In an unapply, this is reversed: the parameter to the unapply is the
+unextracted type, and the other types are derived based on the return
+type of the unapply method.</p>
+<p>In other words, this case class and unapply are encoded the same:</p>
+<p>case class Foo(x: Int, y: Int, zs: Char*)
+def unapplySeq(x: Foo): Option[(Int, Int, Seq[Char])]</p>
+<p>Both are Extractor(Foo, Int :: Int :: Nil, Repeated(Seq[Char], Char, Char*))</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoRepeated$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoRepeated$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5536,12 +5680,29 @@ so that...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-NoRepeated$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-NoRepeated$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Patterns" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Patterns');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5565,12 +5726,29 @@ so that...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-Patterns">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-Patterns">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Patterns$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Patterns$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5594,12 +5772,29 @@ so that...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-Patterns$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-Patterns$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Repeated" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Repeated');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5623,16 +5818,37 @@ so that...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>It's not optimal that we're carrying both sequence and repeated
+                <div class="member-body-short" id="short-body-Repeated">
+                    <p>It's not optimal that we're carrying both sequence and repeated
 type here, but the implementation requires more unraveling before
 it can be avoided.</p>
 <p>sequ...[T]</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Repeated">
+                    <p>It's not optimal that we're carrying both sequence and repeated
+type here, but the implementation requires more unraveling before
+it can be avoided.</p>
+<p>sequenceType is Seq[T], elementType is T, repeatedType is T*.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="Repeated$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'Repeated$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5656,16 +5872,37 @@ it can be avoided.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>It's not optimal that we're carrying both sequence and repeated
+                <div class="member-body-short" id="short-body-Repeated$">
+                    <p>It's not optimal that we're carrying both sequence and repeated
 type here, but the implementation requires more unraveling before
 it can be avoided.</p>
 <p>sequ...[T]</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-Repeated$">
+                    <p>It's not optimal that we're carrying both sequence and repeated
+type here, but the implementation requires more unraveling before
+it can be avoided.</p>
+<p>sequenceType is Seq[T], elementType is T, repeatedType is T*.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="TypedPat" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'TypedPat');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5689,12 +5926,29 @@ it can be avoided.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-TypedPat">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-TypedPat">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="TypedPat$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'TypedPat$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5718,12 +5972,29 @@ it can be avoided.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-TypedPat$">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-TypedPat$">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoPattern" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoPattern');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5749,14 +6020,33 @@ it can be avoided.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>You'll note we're not inside the cake. &quot;Pattern&quot; and &quot;Type&quot; are
+                <div class="member-body-short" id="short-body-NoPattern">
+                    <p>You'll note we're not inside the cake. &quot;Pattern&quot; and &quot;Type&quot; are
 arbitrary types here, and NoPattern and NoType arbitrary values.</p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-NoPattern">
+                    <p>You'll note we're not inside the cake. &quot;Pattern&quot; and &quot;Type&quot; are
+arbitrary types here, and NoPattern and NoType arbitrary values.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="NoType" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'NoType');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5782,8 +6072,24 @@ arbitrary types here, and NoPattern and NoType arbitrary values.</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-NoType">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-NoType">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>

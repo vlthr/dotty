@@ -5321,6 +5321,9 @@
 
 <div id="entity-container">
     <div id="entity-title">
+        <span id="entity-annotations">
+            
+        </span>
         <span id="entity-modifiers">
             
         </span>
@@ -5330,16 +5333,29 @@
         <span id="entity-name">
             strawman.collections
         </span>
+        
+        
     </div>
 
     
 
-    <h1 class="section ">Members</h1>
+    <h1 class="section empty">
+        Constructors
+    </h1>
+
+    <div id="entity-constructors" class="entity-section empty">
+        
+    </div>
+
+    <h1 class="section ">
+        Members
+    </h1>
 
     <div id="entity-members" class="entity-section ">
         
         <div id="CollectionStrawMan1$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'CollectionStrawMan1$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5363,17 +5379,40 @@
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A strawman architecture for new collections. It contains some
+                <div class="member-body-short" id="short-body-CollectionStrawMan1$">
+                    <p>A strawman architecture for new collections. It contains some
 example collection classes and methods with the intent to expose
 some key issues. It would...
 </p>
 <p></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-CollectionStrawMan1$">
+                    <p>A strawman architecture for new collections. It contains some
+example collection classes and methods with the intent to expose
+some key issues. It would be good to compare this to other
+implementations of the same functionality, to get an idea of the
+strengths and weaknesses of different collection architectures.</p>
+<p>For a test file, see tests/run/CollectionTests.scala.</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="CollectionStrawMan4$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'CollectionStrawMan4$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5397,18 +5436,42 @@ some key issues. It would...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A strawman architecture for new collections. It contains some
+                <div class="member-body-short" id="short-body-CollectionStrawMan4$">
+                    <p>A strawman architecture for new collections. It contains some
 example collection classes and methods with the intent to expose
 some key issues. It would...
 </p>
 <p></p>
 <p></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-CollectionStrawMan4$">
+                    <p>A strawman architecture for new collections. It contains some
+example collection classes and methods with the intent to expose
+some key issues. It would be good to compare this to other
+implementations of the same functionality, to get an idea of the
+strengths and weaknesses of different collection architectures.</p>
+<p>For a test file, see tests/run/CollectionTests.scala.</p>
+<p>Strawman4 is like strawman1, but built over views instead of by-name iterators</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="CollectionStrawMan5$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'CollectionStrawMan5$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5432,7 +5495,8 @@ some key issues. It would...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A strawman architecture for new collections. It contains some
+                <div class="member-body-short" id="short-body-CollectionStrawMan5$">
+                    <p>A strawman architecture for new collections. It contains some
 example collection classes and methods with the intent to expose
 some key issues. It would...
 </p>
@@ -5443,11 +5507,38 @@ some key issues. It would...
 </p>
 <p></p>
 
+                </div>
+                <div class="member-body-long" id ="long-body-CollectionStrawMan5$">
+                    <p>A strawman architecture for new collections. It contains some
+example collection classes and methods with the intent to expose
+some key issues. It would be good to compare this to other
+implementations of the same functionality, to get an idea of the
+strengths and weaknesses of different collection architectures.</p>
+<p>For a test file, see tests/run/CollectionTests.scala.</p>
+<p>Strawman5 is like strawman4, but using inheritance through ...Like traits
+instead of decorators.</p>
+<p>Advantage: Much easier to specialize. See partition for strict (buildable) collections
+or drop for Lists.</p>
+<p>Disadvantage: More &quot;weird&quot; types in base traits; some awkwardness with</p>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="CollectionStrawMan6$" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'CollectionStrawMan6$');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5471,7 +5562,8 @@ some key issues. It would...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <p>A strawman architecture for new collections. It contains some
+                <div class="member-body-short" id="short-body-CollectionStrawMan6$">
+                    <p>A strawman architecture for new collections. It contains some
 example collection classes and methods with the intent to expose
 some key issues. It would...
 </p>
@@ -5483,11 +5575,95 @@ some key issues. It would...
 <p></p>
 <ol></ol>
 
+                </div>
+                <div class="member-body-long" id ="long-body-CollectionStrawMan6$">
+                    <p>A strawman architecture for new collections. It contains some
+example collection classes and methods with the intent to expose
+some key issues. It would be good to compare this to odether
+implementations of the same functionality, to get an idea of the
+strengths and weaknesses of different collection architectures.</p>
+<p>For a test file, see tests/run/CollectionTests.scala.</p>
+<p>Strawman6 is like strawman5, and adds lazy lists (i.e. lazie streams), arrays
+and some utilitity methods (take, tail, mkString, toArray). Also, systematically
+uses builders for all strict collections.</p>
+<p>Types covered in this strawman:</p>
+<ol>
+<li>
+<p>Collection base types:</p>
+<pre><code>IterableOnce, Iterable, Seq, LinearSeq, View, IndexedView
+</code></pre>
+</li>
+<li>
+<p>Collection creator base types:</p>
+<pre><code>FromIterable, IterableFactory, Buildable, Builder
+</code></pre>
+</li>
+<li>
+<p>Types that bundle operations:</p>
+<pre><code>IterableOps, IterableMonoTransforms, IterablePolyTransforms, IterableLike
+SeqMonoTransforms, SeqLike
+</code></pre>
+</li>
+<li>
+<p>Concrete collection types:</p>
+<pre><code>List, LazyList, ListBuffer, ArrayBuffer, ArrayBufferView, StringView, ArrayView
+</code></pre>
+</li>
+<li>
+<p>Decorators for existing types</p>
+<pre><code>StringOps, ArrayOps
+</code></pre>
+</li>
+<li>
+<p>Related non collection types:</p>
+<pre><code>Iterator, StringBuilder
+</code></pre>
+</li>
+</ol>
+<p>Operations covered in this strawman:</p>
+<ol>
+<li>
+<p>Abstract operations, or expected to be overridden:</p>
+<p>For iterables:</p>
+<p>iterator, fromIterable, fromIterableWithSameElemType, knownLength, className</p>
+<p>For sequences:</p>
+<p>apply, length</p>
+<p>For buildables:</p>
+<p>newBuilder</p>
+<p>For builders:</p>
+<p>+=, result</p>
+</li>
+<li>
+<p>Utility methods, might be overridden for performance:</p>
+<p>Operations returning not necessarily a collection:</p>
+<p>foreach, foldLeft, foldRight, indexWhere, isEmpty, head, size, mkString</p>
+<p>Operations returning a collection of a fixed type constructor:</p>
+<p>view, to, toArray, copyToArray</p>
+<p>Type-preserving generic transforms:</p>
+<p>filter, partition, take, drop, tail, reverse</p>
+<p>Generic transforms returning collections of different element types:</p>
+<p>map, flatMap, ++, zip</p>
+</li>
+</ol>
+
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
         <div id="LowPriority" class="member ">
             <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'LowPriority');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -5511,8 +5687,24 @@ some key issues. It would...
             </div><!-- end member-title -->
 
             <div class="member-body">
-                
+                <div class="member-body-short" id="short-body-LowPriority">
+                    
+                </div>
+                <div class="member-body-long" id ="long-body-LowPriority">
+                    
+                </div>
             </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
         </div><!-- end member -->
         
     </div>
