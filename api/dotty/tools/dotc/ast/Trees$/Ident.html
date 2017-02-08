@@ -5659,6 +5659,56 @@ T
             </script>
         </div><!-- end member -->
         
+        <div id="isBackquoted" class="member ">
+            <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'isBackquoted');">[+]</span>
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        isBackquoted
+                    
+                </span>
+
+                
+
+                
+
+                
+                <span class="no-left">: Boolean</span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                <div class="member-body-short" id="short-body-isBackquoted">
+                    <p>Is this a <code>BackquotedIdent</code> ?</p>
+
+                </div>
+                <div class="member-body-long" id ="long-body-isBackquoted">
+                    <p>Is this a <code>BackquotedIdent</code> ?</p>
+
+                </div>
+            </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
+        </div><!-- end member -->
+        
         <div id="qualifier" class="member ">
             <div class="member-title">
                 <span class="expand-button" onclick="toggleMemberBody(this, 'qualifier');">[+]</span>
