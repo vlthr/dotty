@@ -5335,6 +5335,15 @@
         </span>
         
         
+        <div id="super-types">
+            
+            
+            <span class="keyword">extends</span>
+            
+            <span class="entity-super-type"><a href="../../../../../.././api/dotty/tools/dotc/printing/Showable.html">Showable</a></span>
+            
+        </div>
+        
     </div>
 
     
@@ -5364,11 +5373,78 @@
         
     </div>
 
-    <h1 class="section empty">
+    <h1 class="section ">
         Members
     </h1>
 
-    <div id="entity-members" class="entity-section empty">
+    <div id="entity-members" class="entity-section ">
+        
+        <div id="toText(printer)" class="member ">
+            <div class="member-title">
+                <span class="expand-button" onclick="toggleMemberBody(this, 'toText(printer)');">[+]</span>
+                <span class="member-annotations">
+                    
+                </span>
+                <span class="member-modifiers">
+                    
+                </span>
+                <span class="member-kind">
+                    def
+                </span>
+                <span class="member-name ">
+                    
+                        toText
+                    
+                </span>
+
+                
+                    
+                    <span class="no-left">(</span>
+                        
+                        
+                            <span class="no-left">
+                                printer:
+                            </span>
+                            <a href="../../../../../.././api/dotty/tools/dotc/printing/Printer.html">Printer</a>
+                            
+                        
+                    <span class="no-left">)</span>
+                    
+                
+
+                
+
+                
+                <span class="no-left">: <a href="../../../../../.././api/dotty/tools/dotc/printing/Texts$/Text.html">Text</a></span>
+                
+            </div><!-- end member-title -->
+
+            <div class="member-body">
+                <div class="member-body-short" id="short-body-toText(printer)">
+                    <p>The text representation of this showable element.
+This normally dispatches to a pattern matching
+method in Printers.</p>
+
+                </div>
+                <div class="member-body-long" id ="long-body-toText(printer)">
+                    <p>The text representation of this showable element.
+This normally dispatches to a pattern matching
+method in Printers.</p>
+
+                </div>
+            </div>
+            <script>
+                function toggleMemberBody(span, sig) {
+                    var shortBody = document.getElementById("short-body-" + sig);
+                    var longBody = document.getElementById("long-body-" + sig);
+
+                    shortBody.classList.toggle("toggled")
+                    longBody.classList.toggle("toggled")
+
+                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
+                }
+            </script>
+        </div><!-- end member -->
         
     </div>
 </div><!-- end entity-container -->
