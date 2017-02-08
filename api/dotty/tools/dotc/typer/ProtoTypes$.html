@@ -6925,9 +6925,9 @@ treat constructors specially</p>
             </script>
         </div><!-- end member -->
         
-        <div id="wildApprox(tp,theMap)(ctx)" class="member ">
+        <div id="wildApprox(tp,theMap,seen)(ctx)" class="member ">
             <div class="member-title">
-                <span class="expand-button" onclick="toggleMemberBody(this, 'wildApprox(tp,theMap)(ctx)');">[+]</span>
+                <span class="expand-button" onclick="toggleMemberBody(this, 'wildApprox(tp,theMap,seen)(ctx)');">[+]</span>
                 <span class="member-annotations">
                     
                 </span>
@@ -6961,6 +6961,17 @@ treat constructors specially</p>
                             </span>
                             WildApproxMap
                             
+                                <span class="no-left">, </span>
+                            
+                        
+                            <span class="">
+                                seen:
+                            </span>
+                            Set
+<span class="no-left no-right">[</span>
+<a href="../../../../.././api/dotty/tools/dotc/core/Types$/PolyParam.html">PolyParam</a>
+<span class="no-left">]</span>
+                            
                         
                     <span class="no-left">)</span>
                     
@@ -6987,64 +6998,12 @@ treat constructors specially</p>
             </div><!-- end member-title -->
 
             <div class="member-body">
-                <div class="member-body-short" id="short-body-wildApprox(tp,theMap)(ctx)">
+                <div class="member-body-short" id="short-body-wildApprox(tp,theMap,seen)(ctx)">
                     <p>Approximate occurrences of parameter types and uninstantiated typevars
 by wildcard types.</p>
 
                 </div>
-                <div class="member-body-long" id ="long-body-wildApprox(tp,theMap)(ctx)">
-                    <p>Approximate occurrences of parameter types and uninstantiated typevars
-by wildcard types.</p>
-
-                </div>
-            </div>
-            <script>
-                function toggleMemberBody(span, sig) {
-                    var shortBody = document.getElementById("short-body-" + sig);
-                    var longBody = document.getElementById("long-body-" + sig);
-
-                    shortBody.classList.toggle("toggled")
-                    longBody.classList.toggle("toggled")
-
-                    span.innerHTML = (span.innerHTML == "[+]") ?  "[-]" : "[+]";
-                }
-            </script>
-        </div><!-- end member -->
-        
-        <div id="wildApprox$default$2" class="member ">
-            <div class="member-title">
-                <span class="expand-button" onclick="toggleMemberBody(this, 'wildApprox$default$2');">[+]</span>
-                <span class="member-annotations">
-                    
-                </span>
-                <span class="member-modifiers">
-                    
-                </span>
-                <span class="member-kind">
-                    def
-                </span>
-                <span class="member-name ">
-                    
-                        wildApprox$default$2
-                    
-                </span>
-
-                
-
-                
-
-                
-                <span class="no-left">: Null</span>
-                
-            </div><!-- end member-title -->
-
-            <div class="member-body">
-                <div class="member-body-short" id="short-body-wildApprox$default$2">
-                    <p>Approximate occurrences of parameter types and uninstantiated typevars
-by wildcard types.</p>
-
-                </div>
-                <div class="member-body-long" id ="long-body-wildApprox$default$2">
+                <div class="member-body-long" id ="long-body-wildApprox(tp,theMap,seen)(ctx)">
                     <p>Approximate occurrences of parameter types and uninstantiated typevars
 by wildcard types.</p>
 
