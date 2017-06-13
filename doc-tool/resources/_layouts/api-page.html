@@ -23,7 +23,9 @@ extraCSS:
                     {% for annot in entity.annotations %}@{{ annot | split: '.' | last }} {% endfor %}
                 </span>
                 <span id="entity-modifiers">
-                    {{ entity.modifiers | join: " " }}
+                    {% if entity.modifiers %}
+                        {{ entity.modifiers | join: " " }}
+                    {% endif %}
                 </span>
                 <span id="entity-kind">
                     {{ entity.kind }}

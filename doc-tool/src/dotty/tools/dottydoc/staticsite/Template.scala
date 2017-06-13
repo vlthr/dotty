@@ -25,7 +25,7 @@ case class Include(path: String, content: SourceFile) extends Template
 case class LiquidTemplate(path: String, content: SourceFile) extends Template with ResourceFinder {
   import scala.collection.JavaConverters._
   import dotc.printing.Highlighting._
-  import liqp.Template
+  import liqp.{Template, RenderSettings}
   import liqp.filters.Filter
   import liqp.parser.Flavor.JEKYLL
   import java.util.{ HashMap, Map => JMap }
@@ -86,6 +86,7 @@ case class LiquidTemplate(path: String, content: SourceFile) extends Template wi
   def render(params: Map[String, AnyRef], includes: Map[String, Include])(implicit ctx: Context): Option[String] =
     protectedRender {
       Template.parse(show, JEKYLL)
+        .withRenderSettings(new RenderSettings.Builder().withStrictVariables(true).build())
         .`with`(ResourceInclude(params, includes))
         .`with`(RenderReference(params))
         .`with`(RenderLink(params))

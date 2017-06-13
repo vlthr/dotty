@@ -7,7 +7,7 @@ import dotc.core.Contexts.Context
 
 import liqp.tags.Tag
 import liqp.TemplateContext
-import liqp.nodes.LNode
+import liqp.nodes.{LNode, AtomNode}
 
 import java.util.{ Map => JMap, List => JList }
 import model._
@@ -182,13 +182,15 @@ object tags {
       }
     }
 
-    override def render(ctx: TemplateContext, nodes: LNode*): AnyRef =
-      (nodes(0).render(ctx), nodes(1).render(ctx)) match {
+    override def render(ctx: TemplateContext, nodes: LNode*): AnyRef = {
+      val Array(n1, n2) = nodes(0).render(ctx).asInstanceOf[String].split(", ")
+      (new AtomNode(n1).render(ctx), new AtomNode(n2).render(ctx)) match {
         case (map: JMap[String, AnyRef] @unchecked, parent: String) =>
           Title(map).map(renderTitle(_, parent)).getOrElse(null)
         case (map: JMap[String, AnyRef] @unchecked, _) =>
           Title(map).map(renderTitle(_, "./")).getOrElse(null) // file is in top dir
         case _ => null
+      }
       }
   }
 
