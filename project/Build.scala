@@ -319,6 +319,7 @@ object Build {
       val cp: Seq[String] = Seq("-classpath", s"$dottyLib:$dottyInterfaces:$otherDeps")
         (runMain in Compile).toTask(s""" dotty.tools.dottydoc.Main ${cp.mkString(" ")} """ + args.mkString(" "))
     }.evaluated,
+    resolvers += Resolver.mavenLocal,
 
     libraryDependencies ++= Seq(
       "com.novocode" % "junit-interface" % "0.11" % "test",
@@ -331,7 +332,7 @@ object Build {
       "com.vladsch.flexmark" % "flexmark-ext-gfm-strikethrough" % "0.11.1",
       "com.vladsch.flexmark" % "flexmark-ext-yaml-front-matter" % "0.11.1",
       Dependencies.`jackson-dataformat-yaml`,
-      "nl.big-o" % "liqp" % "0.6.7"
+      "nl.big-o" % "liqp" % "0.7.0"
     )
   )
 
